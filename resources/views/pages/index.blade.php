@@ -1,0 +1,7 @@
+@include('pages/home')
+@include('pages/about')
+@include('pages/contact')
+@include('pages/faq')
+@include('pages/patient-portal')
+@include('pages/resources')
+@include('pages/services')

@@ -1,0 +1,33 @@
+#about {
+	display: flex;
+	h3 {
+		color: #5ED222;
+	}
+	a {
+		color: #FFA900;
+	}
+	p {
+		font-size: 17px;
+		font-weight: 400;
+		color: #777;
+	}
+	li {
+		color: #777;
+	}
+	.side-tabs {
+		background: white;
+		border-radius: 4px;
+		margin-right: 20px;
+		li {
+			white-space: nowrap;
+			cursor: pointer;
+			padding: 5px 17px;
+			transition: all, .3s, ease;
+			&:hover {
+				background: darken(lightgrey, 10%);
+				// padding: 10px 17px;
+				font-size: 16px;
+			}
+		}
+	}
+}
