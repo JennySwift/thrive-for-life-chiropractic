@@ -16,11 +16,11 @@
 @include('templates.header')
 
 <!-- ==============================.container============================== -->    
-<div class="container">
+<div class="main">
 
     @include('pages/index')
       
-</div> <!-- .container -->  
+</div>
 
 @include('templates.footer')
 @include('footer')

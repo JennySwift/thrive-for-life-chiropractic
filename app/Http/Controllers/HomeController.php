@@ -34,9 +34,7 @@ class HomeController extends Controller {
 	public function index()
 	{
         JavaScript::put([
-//            'me' => Auth::user()
-
-        'test' => 'hi'
+            'me' => Auth::user()
         ]);
 
 //        return Auth::user();

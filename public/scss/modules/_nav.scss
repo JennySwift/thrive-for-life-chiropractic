@@ -8,7 +8,7 @@
     background: white;
     padding: 0;
     margin: 0;
-    img {
+    img.logo {
         height: 20px;
         width: 15px;
     }
@@ -18,7 +18,9 @@
         justify-content: center;
         position: relative;
         height: 44px;
-        min-width: 70px;
+        &:not(:first-child) {
+            min-width: 120px;
+        }
         > a {
             transition: all .5s ease;
         }

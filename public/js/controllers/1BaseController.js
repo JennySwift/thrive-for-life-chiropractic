@@ -11,7 +11,7 @@ var app = angular.module('thriveForLife', [], function ($interpolateProvider) {
 
     function base ($scope, $http) {
 
-        $scope.me = test;
+        $scope.me = me;
 
         $scope.tab = 'about';
         $scope.about_tab = 1;

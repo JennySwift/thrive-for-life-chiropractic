@@ -17,6 +17,23 @@ html, body {
 body {
   padding-top: 80px; }
 
+html, body {
+  height: 100%; }
+
+body .main {
+  padding-bottom: 60px;
+  min-height: 100%; }
+body footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 11px;
+  height: 60px;
+  position: relative;
+  margin-top: -60px; }
+  body footer li {
+    display: flex;
+    align-items: center; }
+
 button {
   background: #fff;
   border: 1px solid #ccc;
@@ -79,9 +96,6 @@ ul {
   margin: 0;
   padding: 0; }
 
-.main {
-  height: 100%; }
-
 .container {
   width: 100%; }
 
@@ -95,7 +109,7 @@ ul {
   background: white;
   padding: 0;
   margin: 0; }
-  #navbar img {
+  #navbar img.logo {
     height: 20px;
     width: 15px; }
   #navbar > li {
@@ -103,8 +117,9 @@ ul {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 44px;
-    min-width: 70px; }
+    height: 44px; }
+    #navbar > li:not(:first-child) {
+      min-width: 120px; }
     #navbar > li > a {
       transition: all .5s ease; }
     #navbar > li:hover > a {
