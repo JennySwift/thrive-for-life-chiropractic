@@ -23,3 +23,4 @@
 </div> <!-- .container -->  
 
 @include('templates.footer')
+@include('footer')
