@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="548" height="127" viewBox="0, 0, 548, 127">
+  <g id="Layer_1">
+    <text transform="matrix(1, 0, 0, 1, 84.5, 32.5)">
+      <tspan x="-83.904" y="20" font-family="AvenirNextCondensed-Heavy" font-size="64" kerning="0" fill="#41B920">thrive</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 301.5, 32.5)">
+      <tspan x="-46.112" y="20" font-family="AvenirNextCondensed-Heavy" font-size="64" kerning="0" fill="#41B920">life</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 212.75, 32.5)">
+      <tspan x="-31.68" y="20" font-family="AvenirNextCondensed-Medium" font-size="64" kerning="0" fill="#41B920">for</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 176.5, 113.75)">
+      <tspan x="-178.725" y="-3.75" font-family="AvenirNextCondensed-Medium" font-size="63" kerning="8" fill="#000000">chiropractic</tspan>
+    </text>
+  </g>
+</svg>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="tools/bootstrap.min.css">
     <link rel="stylesheet" href="tools/tooltipster.css">  
     <link rel="stylesheet" href="tools/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body class="" ng-controller="BaseController">

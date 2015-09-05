@@ -13,7 +13,7 @@ var app = angular.module('thriveForLife', [], function ($interpolateProvider) {
 
         $scope.me = me;
 
-        $scope.tab = 'about';
+        $scope.tab = 'home';
         $scope.about_tab = 1;
 
         $scope.changeTab = function ($tab) {

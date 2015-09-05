@@ -1,18 +1,26 @@
 <div ng-if="tab === 'about'" id="about">
 
-	<!-- side navigation -->
-	<div class="side-tabs">
-		<ul>
-			<li ng-click="about_tab = 1">Thrive for Life Chiropractic</li>
-			<li ng-click="about_tab = 2">(Meet) Pete</li>
-			<li ng-click="about_tab = 3">Chiropractic</li>
-			<li ng-click="about_tab = 4">Health (Philosophy) / My Approach to Health Care / Principles</li>
-			<li ng-click="about_tab = 5">Treatment Methods/Techniques</li>
-		</ul>
-	</div>
+    <div>
+        <!-- side navigation -->
+        <div class="side-tabs">
+            <ul>
+                <li ng-click="about_tab = 1">Thrive for Life Chiropractic</li>
+                <li ng-click="about_tab = 2">(Meet) Pete</li>
+                <li ng-click="about_tab = 3">Chiropractic</li>
+                <li ng-click="about_tab = 4">Health (Philosophy) / My Approach to Health Care / Principles</li>
+                <li ng-click="about_tab = 5">Treatment Methods/Techniques</li>
+            </ul>
+        </div>
+
+        <div class="img-container">
+            <img src="img/pete.JPG" alt=""/>
+        </div>
+    </div>
+
+
 	
 	<!-- content -->
-	<div>
+	<div class="content">
 
 		<div ng-show="about_tab === 1">
 			<p>Thrive for Life Chiropractic is conveniently located in Hurstville and proudly cares for many people in the surrounding southern suburbs of Sydney.</p>

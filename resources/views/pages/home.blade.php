@@ -1,4 +1,47 @@
 <div ng-if="tab === 'home'" id="home">
+
+    {{--<div>--}}
+        {{--<img src="img/thrive-for-life.svg"/>--}}
+    {{--</div>--}}
+
+    {{--<div id="thrive-for-life-logo">--}}
+        {{--<img src="img/thrive-for-life-logo.svg"/>--}}
+    {{--</div>--}}
+
+    <div id="logo">
+        <div id="logo-upper">
+            <span>t</span>
+            <span>h</span>
+            <span>r</span>
+            <span>i</span>
+            <span>v</span>
+            <span>e</span>
+            <span> </span>
+            <span class="light">f</span>
+            <span class="light">o</span>
+            <span class="light">r</span>
+            <span> </span>
+            <span>l</span>
+            <span>i</span>
+            <span>f</span>
+            <span>e</span>
+        </div>
+        <div id="logo-lower">
+            <span>C</span>
+            <span>H</span>
+            <span>I</span>
+            <span>R</span>
+            <span>O</span>
+            <span>P</span>
+            <span>R</span>
+            <span>A</span>
+            <span>C</span>
+            <span>T</span>
+            <span>I</span>
+            <span>C</span>
+        </div>
+    </div>
+
 	<div class="jumbotron">
 		<p>Welcome! My name is Peter, chiropractor and owner of Thrive for Life Chiropractic. If you're looking for a friendly, caring, and personal service to help you get well and stay well, you've come to the right place! (include photo of me)</p>
 		<p>Finding the right health practitioner to care for you and your family can be tricky (a very personal decision, and not one you want to make flippantly). My hope is that the information here will make your quest a little easier, but if you need any further assistance at all, please don't hesitate to <button class="btn btn-success">contact me</button>.</p>
