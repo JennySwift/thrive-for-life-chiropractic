@@ -25,21 +25,4 @@ class HomeController extends Controller {
 	{
 		$this->middleware('auth');
 	}
-
-	/**
-	 * Show the application dashboard to the user.
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-        JavaScript::put([
-            'me' => Auth::user()
-        ]);
-
-//        return Auth::user();
-
-		return view('thrive-for-life');
-	}
-
 }

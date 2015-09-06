@@ -1,15 +1,10 @@
 <?php
 
-use App\User;
-
-Route::get('/test', function()
+Route::get('/', 'PagesController@home');
+Route::get('/test', function ()
 {
-    $user = User::first();
-    //dd($user);
-    return $user;
+    return view('test');
 });
-
-Route::get('/', 'HomeController@index');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

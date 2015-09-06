@@ -1,38 +1,6 @@
-#logo {
-    font-family: 'avenir next condensed';
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-    > * {
-        width: 800px;
-    }
-    #logo-upper {
-        color: rgb(65, 185, 32);
-        span:not(.light) {
-            font-weight: 900;
-        }
-//        background: pink;
-        display: flex;
-        span {
-            flex-grow: 1;
-            text-align: center;
-        }
-    }
-    #logo-lower {
-//        letter-spacing: 3px;
-//        background: lightblue;
-        display: flex;
-        margin-top: -25px;
-        font-size: 34px;
-        span {
-            flex-grow: 1;
-            text-align: center;
-        }
-    }
+.tlt {
+    visibility: hidden;
 }
-
 .bg-dark {
 	background: darken(#f2f8fa, 5%);
 }

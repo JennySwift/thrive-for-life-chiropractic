@@ -509,45 +509,24 @@ ul {
       border-radius: 30px; }
 
 #logo {
+  text-align: center;
   font-family: 'avenir next condensed';
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   font-size: 100px; }
-  #logo > * {
-    width: 800px; }
   #logo #logo-upper {
     color: #41b920;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    #logo #logo-upper span:not(.light) {
+    text-shadow: 3px 3px 5px #bcbcbc; }
+    #logo #logo-upper .word1, #logo #logo-upper .word3 {
       font-weight: 900; }
-    #logo #logo-upper span {
-      -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-      flex-grow: 1;
-      text-align: center; }
   #logo #logo-lower {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    visibility: hidden;
     margin-top: -25px;
-    font-size: 34px; }
-    #logo #logo-lower span {
-      -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-      flex-grow: 1;
-      text-align: center; }
+    font-size: 34px;
+    color: #777; }
+    #logo #logo-lower span:not(:last-child) {
+      margin-right: 35px; }
+
+.tlt {
+  visibility: hidden; }
 
 .bg-dark {
   background: #e0eef3; }

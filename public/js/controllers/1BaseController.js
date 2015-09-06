@@ -20,6 +20,24 @@ var app = angular.module('thriveForLife', [], function ($interpolateProvider) {
             $scope.tab = $tab;
         };
 
+        $("#logo-upper").textillate({
+            //loop: true,
+            autostart: true,
+            //initialDelay: 10,
+            in: { effect: 'fadeIn' }
+        }).on('end.tlt', function () {
+            $("#logo-lower").addClass('rubberBand').css('visibility', 'visible');
+        });
+
+        $("#logo-lower").lettering();
+
+        //$("#logo-lower").textillate({
+        //    //loop: true,
+        //    autostart: true,
+        //    //initialDelay: 1000,
+        //    in: { effect: 'slideIn' }
+        //});
+
     }
 
 })();

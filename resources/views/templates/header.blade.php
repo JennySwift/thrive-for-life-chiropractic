@@ -2,34 +2,38 @@
 
 <ul id="navbar" style="z-index:1000">
 
-    <li>
-        <img src="img/logo.png" class="logo"/>
-    </li>
+    @if (Auth::guest())
+        <li>
+            <a href="/auth/login">Login</a>
+        </li>
+        <li>
+            <a href="/auth/register">Register</a>
+        </li>
 
-    <li>
-        <a href="#" ng-click="changeTab('home')" class="fa fa-home"></a>
-    </li>
+    @else
 
-    <li>
-        <a href="#" ng-click="changeTab('about')">About</a>
-    </li>
+        <li>
+            <a href="/" class="fa fa-home"></a>
+        </li>
 
-    <li>
-        <a href="#" ng-click="changeTab('FAQ')">FAQ</a>
-    </li>
+        <li>
+            <a href="/meet-pete">Meet Pete</a>
+        </li>
 
-    <li>
-        <a href="#" ng-click="changeTab('contact')">Contact</a>
-    </li>
+        <li>
+            <a href="/services">Services</a>
+        </li>
 
-    <li>
-        <a href="#" ng-click="changeTab('resources')">Resources</a>
-    </li>
+        <li>
+            <a href="/fees">Fees</a>
+        </li>
 
-    <li>
-        <a href="#" ng-click="changeTab('patient portal')">Patient Portal</a>
-    </li>
+        <li>
+            <a href="/contact">Contact</a>
+        </li>
 
-    @include('templates/header/user')
+        @include('templates/header/user')
+
+    @endif
 
 </ul>
