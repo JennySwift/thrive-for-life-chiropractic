@@ -13,6 +13,10 @@ html, body {
   overflow-x: hidden;
   margin: 0; }
 
+h1, h2, h3, h4, h5 {
+  text-align: center;
+  margin-bottom: 20px; }
+
 body {
   padding-top: 80px;
   color: #777;
@@ -526,13 +530,22 @@ ul {
       margin-top: 30px;
       border-radius: 30px; }
 
-#meet-pete {
+#meet-pete a {
+  color: #41b920; }
+
+#meet-pete p {
+  font-weight: 400;
+  font-size: 20px;
   max-width: 700px;
-  margin: auto; }
-  #meet-pete a {
-    color: #41b920; }
-  #meet-pete p {
-    font-weight: 400;
-    font-size: 20px; }
+  margin: 0 auto 10px; }
+
+.services a {
+  color: #41b920; }
+
+.services p {
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 10px; }
 
 /*# sourceMappingURL=app.css.map */
