@@ -68,7 +68,7 @@ class PagesController extends Controller
             'me' => Auth::user()
         ]);
 
-        return view('pages/meet-pete');
+        return view('pages/meet-pete/meet-pete');
     }
 
     /**
