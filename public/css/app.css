@@ -1,5 +1,4 @@
 /*==============================colours==============================*/
-/*==============================variables==============================*/
 /* @mixin hover_span {
 	position: absolute;
 	background: black;
@@ -15,7 +14,9 @@ html, body {
   margin: 0; }
 
 body {
-  padding-top: 80px; }
+  padding-top: 80px;
+  color: #777;
+  font-size: 18px; }
 
 html, body {
   height: 100%; }
@@ -118,8 +119,7 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-  color: #888;
-  background: white;
+  background: #41b920;
   padding: 0;
   margin: 0; }
   #navbar img.logo {
@@ -144,7 +144,8 @@ ul {
     #navbar > li:hover > a {
       font-size: 25px; }
   #navbar a {
-    color: #6E8F04; }
+    color: white;
+    font-weight: bold; }
   #navbar .gravatar-li {
     min-width: 160px; }
     #navbar .gravatar-li .gravatar-container {
@@ -312,19 +313,6 @@ ul {
 .margin-bottom {
   margin-bottom: 15px; }
 
-.block {
-  display: block; }
-
-.selected {
-  background: #6D84B4; }
-
-.absolute {
-  position: absolute; }
-
-.fixed-bottom {
-  position: fixed;
-  bottom: 0; }
-
 .border-box {
   box-sizing: border-box; }
 
@@ -350,30 +338,6 @@ ul {
 
 .font-size-md {
   font-size: 20px; }
-
-.bg-blue {
-  background: #6D84B4; }
-
-.bg-red {
-  background: #ff8080; }
-
-.bg-green-1 {
-  background: #dff0d8; }
-
-.bg-green {
-  background: #004d00; }
-
-.bg-yellow {
-  background: #ffffb3; }
-
-.bg-pink {
-  background: pink; }
-
-.bg-grey {
-  background: #aaaaaa; }
-
-.bg-black {
-  background: black; }
 
 .min-width-md {
   min-width: 40px; }
@@ -478,10 +442,6 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  #about h3 {
-    color: #6E8F04; }
-  #about a {
-    color: #BE8E5E; }
   #about p {
     font-size: 17px;
     font-weight: 400;
@@ -498,7 +458,6 @@ ul {
       padding: 5px 17px;
       transition: all, 0.3s, ease; }
       #about .side-tabs li:hover {
-        background: #BFF056;
         font-size: 16px; }
   #about .img-container {
     width: 100%; }
@@ -511,6 +470,7 @@ ul {
 #logo {
   text-align: center;
   font-family: 'avenir next condensed';
+  margin-top: 30px;
   font-size: 100px; }
   #logo #logo-upper {
     color: #41b920;
@@ -525,49 +485,11 @@ ul {
     #logo #logo-lower span:not(:last-child) {
       margin-right: 35px; }
 
-.tlt {
+#home .tlt {
   visibility: hidden; }
 
-.bg-dark {
-  background: #e0eef3; }
-
-#my_results .my-dropdown-container, #new-transaction-wrapper .my-dropdown-container {
-  padding: 0px !important; }
-
-.list-group-heading {
-  text-align: center; }
-
-.label {
-  margin-right: 3px; }
-
-#description_autocomplete tbody:nth-child(even) {
-  background: white; }
-
-#description_autocomplete tbody:nth-child(odd) {
-  background: #F2F8FA; }
-
-.no_match {
-  display: none; }
-
-.hidden_tag {
-  display: none; }
-
-#tag_exists {
-  display: none; }
-
-.checked {
-  background: #6D84B4 !important; }
-
-.select, #description_autocomplete tbody.select {
-  background: #6D84B4; }
-
-.tag-with-budget {
-  background: green; }
-
-.allocated {
-  background: green; }
-
-.not-allocated {
-  background: #ff6666; }
+#home #text {
+  margin: 50px auto auto;
+  max-width: 650px; }
 
 /*# sourceMappingURL=app.css.map */

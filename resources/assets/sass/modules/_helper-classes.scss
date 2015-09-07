@@ -21,23 +21,6 @@
 	margin-bottom: 15px;
 }
 
-.block {
-	display:block;
-}
-
-.selected {
-	background: $select_blue;
-}
-
-.absolute {
-	position: absolute;
-}
-
-.fixed-bottom {
-	position: fixed;
-	bottom: 0;
-}
-
 .border-box {
 	box-sizing: border-box;
 }
@@ -46,11 +29,6 @@
 	font-size: 8px;
 	padding: 1px;
 }
-
-// .table {
-// 	//overridding bootstrap's width: 100%
-// 	width: auto;
-// }
 
 // =================================bubbles=================================
 
@@ -74,40 +52,6 @@
 
 .font-size-md {
 	font-size: 20px;
-}
-
-// =================================background=================================
-
-.bg-blue {
-	background: $select_blue;
-}
-
-.bg-red {
-	background: lighten(red, 25%);
-}
-
-.bg-green-1 {
-	background: $bootstrap_green;
-}
-
-.bg-green {
-	background: darken(green, 10%);
-}
-
-.bg-yellow {
-	background: lighten(yellow, 35%);
-}
-
-.bg-pink {
-	background: pink;
-}
-
-.bg-grey {
-	background: lighten($grey, 20%);
-}
-
-.bg-black {
-	background: black;
 }
 
 // =================================width=================================

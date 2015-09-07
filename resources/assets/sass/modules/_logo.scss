@@ -1,6 +1,7 @@
 #logo {
     text-align: center;
     font-family: 'avenir next condensed';
+    margin-top: 30px;
 //    display: flex;
 //    flex-direction: column;
 //    justify-content: center;
@@ -11,7 +12,7 @@
 //    }
     #logo-upper {
 //        background: lightblue;
-        color: rgb(65, 185, 32);
+        color: $base;
         text-shadow: 3px 3px 5px #bcbcbc;
         .word1, .word3 {
             font-weight: 900;
