@@ -435,9 +435,6 @@ ul {
   flex-basis: 80px;
   -webkit-flex-basis: 80px; }
 
-#home p {
-  text-align: center; }
-
 #about {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -491,5 +488,46 @@ ul {
 #home #text {
   margin: 50px auto auto;
   max-width: 650px; }
+
+#home p {
+  text-align: center; }
+
+#about {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  #about p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #777; }
+  #about li {
+    color: #777; }
+  #about .side-tabs {
+    background: white;
+    border-radius: 4px;
+    margin-right: 20px; }
+    #about .side-tabs li {
+      white-space: nowrap;
+      cursor: pointer;
+      padding: 5px 17px;
+      transition: all, 0.3s, ease; }
+      #about .side-tabs li:hover {
+        font-size: 16px; }
+  #about .img-container {
+    width: 100%; }
+    #about .img-container img {
+      width: 384px;
+      margin-left: 17px;
+      margin-top: 30px;
+      border-radius: 30px; }
+
+#meet-pete {
+  max-width: 700px;
+  margin: auto; }
+  #meet-pete a {
+    color: #41b920; }
+  #meet-pete p {
+    font-weight: 400;
+    font-size: 20px; }
 
 /*# sourceMappingURL=app.css.map */
