@@ -20,9 +20,7 @@
             <a href="/meet-pete">Meet Pete</a>
         </li>
 
-        <li>
-            <a href="/services">Services</a>
-        </li>
+        @include('templates/header/services')
 
         <li>
             <a href="/fees">Fees</a>

@@ -140,11 +140,16 @@ ul {
     #navbar > li:not(:first-child) {
       min-width: 120px; }
     #navbar > li > a {
-      transition: all 0.5s ease; }
+      transition: all 0.5s ease;
+      color: white; }
     #navbar > li:hover > a {
       font-size: 25px; }
+    #navbar > li .dropdown-menu a {
+      color: #777; }
+      #navbar > li .dropdown-menu a:hover {
+        background: #41b920;
+        color: white; }
   #navbar a {
-    color: white;
     font-weight: bold; }
   #navbar .gravatar-li {
     min-width: 160px; }

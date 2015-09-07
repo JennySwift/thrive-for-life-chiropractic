@@ -23,15 +23,25 @@
         }
         > a {
             transition: all .5s ease;
+            color: white;
         }
         &:hover {
             > a {
                 font-size: 25px;
             }
         }
+        .dropdown-menu {
+            a {
+                color: #777;
+                &:hover {
+                    background: $base;
+                    color: white;
+                }
+            }
+
+        }
     }
     a {
-        color: white;
         font-weight: bold;
     }
     .gravatar-li {

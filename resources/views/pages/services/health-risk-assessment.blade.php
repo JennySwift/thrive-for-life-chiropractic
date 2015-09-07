@@ -4,6 +4,7 @@
 
 @section('page-content')
 
+    <h1>Health Risk Assessment</h1>
 
     <div>
 
