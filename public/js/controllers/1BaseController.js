@@ -1,4 +1,4 @@
-var app = angular.module('thriveForLife', [], function ($interpolateProvider) {
+var app = angular.module('thriveForLife', ['ngAnimate'], function ($interpolateProvider) {
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]');
 });

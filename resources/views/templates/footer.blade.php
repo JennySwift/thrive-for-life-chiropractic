@@ -7,6 +7,7 @@
 {{--<script type="text/javascript" src="js/directives.js"></script>--}}
 
 <script type="text/javascript" src="js/controllers/1BaseController.js"></script>
+<script type="text/javascript" src="js/controllers/MeetPeteController.js"></script>
 
 </body>
 </html>

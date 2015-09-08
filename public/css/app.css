@@ -530,14 +530,40 @@ ul {
       margin-top: 30px;
       border-radius: 30px; }
 
+#meet-pete .tab-content {
+  -webkit-animation: zoomIn 2s;
+  animation: zoomIn 2s; }
+  #meet-pete .tab-content.ng-animate.ng-hide-animate.ng-hide-add.ng-hide.ng-hide-add-active {
+    background: pink;
+    display: none; }
+
 #meet-pete a {
   color: #41b920; }
 
-#meet-pete p {
+#meet-pete p, #meet-pete ul {
   font-weight: 400;
   font-size: 20px;
   max-width: 700px;
   margin: 0 auto 10px; }
+
+#meet-pete li {
+  font-weight: 400;
+  font-size: 20px; }
+
+#meet-pete #tabs {
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #41b920;
+  margin-bottom: 20px; }
+  #meet-pete #tabs li {
+    padding: 0 3px; }
+    #meet-pete #tabs li.hovered, #meet-pete #tabs li.selected:not(.hovering) {
+      background: #41b920;
+      color: white; }
+
+#meet-pete img {
+  max-width: 500px;
+  margin: 20px auto;
+  display: block; }
 
 .services a {
   color: #41b920; }

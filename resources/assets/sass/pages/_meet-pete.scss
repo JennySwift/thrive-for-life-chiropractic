@@ -1,11 +1,64 @@
 #meet-pete {
+    .tab-content {
+//        animation-duration: 15s;
+        animation: zoomIn 2s;
+//        background: lightblue;
+        &.ng-hide {
+//            animation: fadeOut 3s;
+//            height: 0px;
+//            background: pink;
+        }
+
+        &.ng-animate.ng-hide-animate.ng-hide-add.ng-hide.ng-hide-add-active {
+            background: pink;
+            display: none;
+        }
+
+
+    }
     a {
         color: $base;
     }
-    p {
+    p, ul {
         font-weight: 400;
         font-size: 20px;
         max-width: 700px;
         margin: 0 auto 10px;
     }
+    li {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    #tabs {
+        cursor: pointer;
+        box-shadow: 3px 3px 5px $base;
+        margin-bottom: 20px;
+        li {
+            padding: 0 3px;
+            &.hovered, &.selected:not(.hovering) {
+                background: $base;
+                color: white;
+            }
+//            &:hover:not(.selected) {
+//                background: $base;
+//                color: white;
+//            }
+//            &.selected {
+//                background: $base;
+//                color: white;
+//            }
+        }
+    }
+    img {
+        max-width: 500px;
+        margin: 20px auto;
+        display: block;
+    }
+//    .flex {
+//        display: flex;
+//        justify-content: space-around;
+//        p {
+//            max-width: 300px;
+//        }
+//    }
 }
