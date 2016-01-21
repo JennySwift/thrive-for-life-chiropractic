@@ -14,4 +14,14 @@
 
 </div>
 
+    <div id="welcome"></div>
+    <div id="chiropractic"></div>
+    <div id="ak"></div>
+    <div id="rnr"></div>
+    <div id="lifestyle"></div>
+    <div id="hra"></div>
+    <div id="government"></div>
+    <div id="about"></div>
+    <div id="contact"></div>
+
 @stop

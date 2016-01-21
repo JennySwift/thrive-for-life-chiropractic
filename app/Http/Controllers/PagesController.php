@@ -20,7 +20,6 @@ class PagesController extends Controller
     }
 
     /**
-     * home page
      * @return \Illuminate\View\View
      */
     public function home()
@@ -30,6 +29,30 @@ class PagesController extends Controller
         ]);
 
         return view('pages/home');
+    }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function services()
+    {
+        JavaScript::put([
+            'me' => Auth::user()
+        ]);
+
+        return view('pages/services');
+    }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function about()
+    {
+        JavaScript::put([
+            'me' => Auth::user()
+        ]);
+
+        return view('pages/about');
     }
 
     /**
@@ -45,107 +68,4 @@ class PagesController extends Controller
         return view('pages/contact');
     }
 
-    /**
-     * fees page
-     * @return \Illuminate\View\View
-     */
-    public function fees()
-    {
-        JavaScript::put([
-            'me' => Auth::user()
-        ]);
-
-        return view('pages/fees');
-    }
-
-    /**
-     * meet-pete page
-     * @return \Illuminate\View\View
-     */
-    public function meetPete()
-    {
-        JavaScript::put([
-            'me' => Auth::user()
-        ]);
-
-        return view('pages/meet-pete/meet-pete');
-    }
-
-    /**
-     * applied kinesiology page
-     * @return \Illuminate\View\View
-     */
-    public function appliedKinesiology()
-    {
-        JavaScript::put([
-            'me' => Auth::user()
-        ]);
-
-        return view('pages/services/applied-kinesiology');
-    }
-
-    /**
-     * chiropractic page
-     * @return \Illuminate\View\View
-     */
-    public function chiropractic()
-    {
-        JavaScript::put([
-            'me' => Auth::user()
-        ]);
-
-        return view('pages/services/chiropractic');
-    }
-
-    /**
-     * government supported services page
-     * @return \Illuminate\View\View
-     */
-    public function governmentSupportedServices()
-    {
-        JavaScript::put([
-            'me' => Auth::user()
-        ]);
-
-        return view('pages/services/government-supported-services');
-    }
-
-    /**
-     * health promoting lifestyle advice page
-     * @return \Illuminate\View\View
-     */
-    public function healthPromotingLifestyleAdvice()
-    {
-        JavaScript::put([
-            'me' => Auth::user()
-        ]);
-
-        return view('pages/services/health-promoting-lifestyle-advice');
-    }
-
-    /**
-     * health risk assessment page
-     * @return \Illuminate\View\View
-     */
-    public function healthRiskAssessment()
-    {
-        JavaScript::put([
-            'me' => Auth::user()
-        ]);
-
-        return view('pages/services/health-risk-assessment');
-    }
-
-    /**
-     * retained neonatal reflexes page
-     * @return \Illuminate\View\View
-     */
-    public function retainedNeonatalReflexes()
-    {
-        JavaScript::put([
-            'me' => Auth::user()
-        ]);
-
-        return view('pages/services/retained-neonatal-reflexes');
-    }
 }

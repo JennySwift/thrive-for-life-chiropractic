@@ -1,11 +1,3 @@
-/* @mixin hover_span {
-	position: absolute;
-	background: black;
-	color: white;
-	height: 35px;
-	border-radius: 5px;
-	text-align: center;
-} */
 /*==============================global==============================*/
 html, body {
   max-width: 100%;
@@ -17,7 +9,7 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 20px; }
 
 body {
-  padding-top: 80px;
+  padding-top: 14px;
   color: #777;
   font-size: 18px; }
 
@@ -25,27 +17,7 @@ html, body {
   height: 100%; }
 
 body .main {
-  padding-bottom: 60px;
-  min-height: 100%; }
-
-body footer {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  padding: 11px;
-  height: 60px;
-  position: relative;
-  margin-top: -60px; }
-  body footer li {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
+  height: 100%; }
 
 button {
   background: #fff;
@@ -487,15 +459,63 @@ ul {
     #logo #logo-lower span:not(:last-child) {
       margin-right: 35px; }
 
-#home .tlt {
-  visibility: hidden; }
+#home {
+  background: url("/img/Home/spring.jpg") no-repeat center center;
+  height: 100%;
+  background-size: cover; }
+  #home .tlt {
+    visibility: hidden; }
+  #home #text {
+    margin: 50px auto auto;
+    max-width: 650px; }
+  #home p {
+    text-align: center; }
 
-#home #text {
-  margin: 50px auto auto;
-  max-width: 650px; }
+#welcome {
+  background: url("/img/Home/spring.jpg") no-repeat center center;
+  opacity: .2;
+  height: 100%;
+  background-size: cover; }
 
-#home p {
-  text-align: center; }
+#chiropractic {
+  background: url("/img/Chiropractic/balance.jpg") no-repeat center center;
+  height: 100%;
+  background-size: cover; }
+
+#ak {
+  background: url("/img/AK/walk.jpg") no-repeat center center;
+  height: 100%;
+  background-size: cover; }
+
+#rnr {
+  background: url("/img/RNR/child.jpg") no-repeat center center;
+  height: 100%;
+  background-size: cover; }
+
+#lifestyle {
+  background: url("/img/Lifestyle/hiker.jpg") no-repeat center center;
+  height: 100%;
+  background-size: cover; }
+
+#hra {
+  background: url("/img/HRA/tape.jpg") no-repeat center center;
+  height: 100%;
+  background-size: cover; }
+
+#government {
+  background: url("/img/Government/meadow.jpg") no-repeat center center;
+  height: 100%;
+  background-size: cover; }
+
+#about {
+  background: url("/img/About/about.jpg") no-repeat center center;
+  height: 100%;
+  background-size: cover; }
+
+#contact {
+  background: url("/img/Contact/map.jpg") no-repeat center center;
+  height: 100%;
+  background-size: cover; }
 
 #about {
   display: -webkit-flex;
@@ -526,54 +546,10 @@ ul {
       margin-top: 30px;
       border-radius: 30px; }
 
-#meet-pete .tab-content {
-  -webkit-animation: zoomIn 2s;
-  animation: zoomIn 2s; }
-  #meet-pete .tab-content.ng-animate.ng-hide-animate.ng-hide-add.ng-hide.ng-hide-add-active {
-    background: pink;
-    display: none; }
-
-#meet-pete a {
-  color: #41b920; }
-
-#meet-pete p, #meet-pete ul {
-  font-weight: 400;
-  font-size: 20px;
-  max-width: 700px;
-  margin: 0 auto 10px; }
-
-#meet-pete li {
-  font-weight: 400;
-  font-size: 20px; }
-
-#meet-pete #tabs {
-  cursor: pointer;
-  box-shadow: 3px 3px 5px #41b920;
-  margin-bottom: 20px; }
-  #meet-pete #tabs li {
-    padding: 0 3px; }
-    #meet-pete #tabs li.hovered, #meet-pete #tabs li.selected:not(.hovering) {
-      background: #41b920;
-      color: white; }
-
-#meet-pete img {
-  max-width: 500px;
-  margin: 20px auto;
-  display: block; }
-
 .services a {
   color: #41b920; }
 
 .services p {
-  font-weight: 400;
-  font-size: 20px;
-  max-width: 700px;
-  margin: 0 auto 10px; }
-
-#fees a {
-  color: #41b920; }
-
-#fees p {
   font-weight: 400;
   font-size: 20px;
   max-width: 700px;

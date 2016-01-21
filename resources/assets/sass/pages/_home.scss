@@ -1,14 +1,61 @@
 
 #home {
+    background: url('/img/Home/spring.jpg') no-repeat center center;
+    @include backgroundImage;
     .tlt {
         visibility: hidden;
     }
     #text {
-//        background: pink;
         margin: 50px auto auto;
         max-width: 650px
     }
     p {
         text-align: center;
     }
+}
+
+#welcome {
+    background: url('/img/Home/spring.jpg') no-repeat center center;
+    opacity: .2;
+    @include backgroundImage;
+}
+
+#chiropractic {
+    background: url('/img/Chiropractic/balance.jpg') no-repeat center center;
+    @include backgroundImage;
+}
+
+#ak {
+    background: url('/img/AK/walk.jpg') no-repeat center center;
+    @include backgroundImage;
+}
+
+#rnr {
+    background: url('/img/RNR/child.jpg') no-repeat center center;
+    @include backgroundImage;
+}
+
+#lifestyle {
+    background: url('/img/Lifestyle/hiker.jpg') no-repeat center center;
+    @include backgroundImage;
+}
+
+#hra {
+    background: url('/img/HRA/tape.jpg') no-repeat center center;
+    @include backgroundImage;
+}
+
+#government {
+    background: url('/img/Government/meadow.jpg') no-repeat center center;
+    @include backgroundImage;
+}
+
+#about {
+    background: url('/img/About/about.jpg') no-repeat center center;
+    @include backgroundImage;
+}
+
+#contact {
+    background: url('/img/Contact/map.jpg') no-repeat center center;
+    @include backgroundImage;
 }
