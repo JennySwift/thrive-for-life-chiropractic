@@ -52,7 +52,7 @@ class PagesController extends Controller
             'me' => Auth::user()
         ]);
 
-        return view('pages/about');
+        return view('pages/about/about-page');
     }
 
     /**
@@ -65,7 +65,7 @@ class PagesController extends Controller
             'me' => Auth::user()
         ]);
 
-        return view('pages/contact');
+        return view('pages/contact/contact-page');
     }
 
 }

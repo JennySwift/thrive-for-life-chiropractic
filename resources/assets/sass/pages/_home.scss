@@ -2,12 +2,19 @@
 #home {
     background: url('/img/Home/spring.jpg') no-repeat center center;
     @include backgroundImage;
+    position: relative;
     .tlt {
         visibility: hidden;
     }
-    #text {
+    .text {
         margin: 50px auto auto;
-        max-width: 650px
+        max-width: 650px;
+        width: 200px;
+        position: absolute;
+        top: 50px;
+        //.thrive-for-life {
+        //    font-size: 30px;
+        //}
     }
     p {
         text-align: center;
@@ -66,6 +73,12 @@
 #chiropractic {
     background: url('/img/Chiropractic/balance.jpg') no-repeat center center;
     @include backgroundImage;
+    //transform: scaleX(-1);
+    .text {
+        width: 600px;
+        color: white;
+        padding: 40px;
+    }
 }
 
 #ak {

@@ -462,12 +462,16 @@ ul {
 #home {
   background: url("/img/Home/spring.jpg") no-repeat center center;
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   #home .tlt {
     visibility: hidden; }
-  #home #text {
+  #home .text {
     margin: 50px auto auto;
-    max-width: 650px; }
+    max-width: 650px;
+    width: 200px;
+    position: absolute;
+    top: 50px; }
   #home p {
     text-align: center; }
 
@@ -511,6 +515,10 @@ ul {
   background: url("/img/Chiropractic/balance.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
+  #chiropractic .text {
+    width: 600px;
+    color: white;
+    padding: 40px; }
 
 #ak {
   background: url("/img/AK/walk.jpg") no-repeat center center;
