@@ -84,21 +84,56 @@
 #ak {
     background: url('/img/AK/walk.jpg') no-repeat center center;
     @include backgroundImage;
+    position: relative;
+    .text {
+        max-width: 468px;
+        position: absolute;
+        bottom: 50px;
+        //left: 222px;
+        left: 22%;
+        color: white;
+        h1 {
+            text-align: left;
+        }
+    }
 }
 
 #rnr {
     background: url('/img/RNR/child.jpg') no-repeat center center;
     @include backgroundImage;
+    .text {
+        max-width: 800px;
+        color: white;
+        padding: 40px;
+        h1 {
+            text-align: left;
+        }
+    }
 }
 
 #lifestyle {
     background: url('/img/Lifestyle/hiker.jpg') no-repeat center center;
     @include backgroundImage;
+    .text {
+        color: white;
+        max-width: 600px;
+        padding: 40px;
+        h1 {
+            text-align: left;
+        }
+    }
 }
 
 #hra {
     background: url('/img/HRA/tape.jpg') no-repeat center center;
     @include backgroundImage;
+    .text {
+        max-width: 700px;
+        padding: 40px;
+        h1 {
+            text-align: left;
+        }
+    }
 }
 
 #government {

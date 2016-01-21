@@ -523,22 +523,48 @@ ul {
 #ak {
   background: url("/img/AK/walk.jpg") no-repeat center center;
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  #ak .text {
+    max-width: 468px;
+    position: absolute;
+    bottom: 50px;
+    left: 22%;
+    color: white; }
+    #ak .text h1 {
+      text-align: left; }
 
 #rnr {
   background: url("/img/RNR/child.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
+  #rnr .text {
+    max-width: 800px;
+    color: white;
+    padding: 40px; }
+    #rnr .text h1 {
+      text-align: left; }
 
 #lifestyle {
   background: url("/img/Lifestyle/hiker.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
+  #lifestyle .text {
+    color: white;
+    max-width: 600px;
+    padding: 40px; }
+    #lifestyle .text h1 {
+      text-align: left; }
 
 #hra {
   background: url("/img/HRA/tape.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
+  #hra .text {
+    max-width: 700px;
+    padding: 40px; }
+    #hra .text h1 {
+      text-align: left; }
 
 #government {
   background: url("/img/Government/meadow.jpg") no-repeat center center;
