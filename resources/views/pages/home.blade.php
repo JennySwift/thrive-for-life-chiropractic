@@ -3,10 +3,10 @@
 @section('page-content')
 
     <div id="home">
-        <div class="text">
-            <h1 class="thrive-for-life">thrive for life</h1>
-            <p class="chiropractic">chiropractic</p>
-        </div>
+        {{--<div class="text">--}}
+            {{--<h1 class="thrive-for-life">thrive for life</h1>--}}
+            {{--<p class="chiropractic">chiropractic</p>--}}
+        {{--</div>--}}
     </div>
 
     <div id="welcome">

@@ -431,20 +431,9 @@ ul {
       margin-right: 35px; }
 
 #home {
-  background: url("/img/Home/spring.jpg") no-repeat center center;
+  background: url("/img/Home/spring-with-text.jpg") no-repeat center center;
   height: 100%;
-  background-size: cover;
-  position: relative; }
-  #home .tlt {
-    visibility: hidden; }
-  #home .text {
-    margin: 50px auto auto;
-    max-width: 650px;
-    width: 200px;
-    position: absolute;
-    top: 50px; }
-  #home p {
-    text-align: center; }
+  background-size: cover; }
 
 #welcome {
   height: 100%;

@@ -1,24 +1,24 @@
 
 #home {
-    background: url('/img/Home/spring.jpg') no-repeat center center;
+    background: url('/img/Home/spring-with-text.jpg') no-repeat center center;
     @include backgroundImage;
-    position: relative;
-    .tlt {
-        visibility: hidden;
-    }
-    .text {
-        margin: 50px auto auto;
-        max-width: 650px;
-        width: 200px;
-        position: absolute;
-        top: 50px;
-        //.thrive-for-life {
-        //    font-size: 30px;
-        //}
-    }
-    p {
-        text-align: center;
-    }
+    //position: relative;
+    //.tlt {
+    //    visibility: hidden;
+    //}
+    //.text {
+    //    margin: 50px auto auto;
+    //    max-width: 650px;
+    //    width: 200px;
+    //    position: absolute;
+    //    top: 50px;
+    //    //.thrive-for-life {
+    //    //    font-size: 30px;
+    //    //}
+    //}
+    //p {
+    //    text-align: center;
+    //}
 }
 
 #welcome {
