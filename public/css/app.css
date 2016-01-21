@@ -555,13 +555,25 @@ ul {
     right: 40px; }
     #about .text p {
       font-size: 8.6px; }
-    #about .text h1 {
-      text-align: left; }
 
 #contact {
   background: url("/img/Contact/map.jpg") no-repeat center center;
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  #contact .text-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 60px; }
+    #contact .text-container .text {
+      background: black;
+      opacity: .8;
+      padding: 40px;
+      color: white; }
 
 .services a {
   color: #41b920; }

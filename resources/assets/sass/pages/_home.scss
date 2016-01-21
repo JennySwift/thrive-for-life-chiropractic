@@ -154,13 +154,27 @@
         p {
             font-size: 8.6px;
         }
-        h1 {
-            text-align: left;
-        }
     }
 }
 
 #contact {
     background: url('/img/Contact/map.jpg') no-repeat center center;
     @include backgroundImage;
+    position: relative;
+    .text-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        .text {
+            background: black;
+            opacity: .8;
+            padding: 40px;
+            color: white;
+            //position: absolute;
+            //left: 0;
+            //right: 0;
+            //margin: auto;
+        }
+    }
+
 }
