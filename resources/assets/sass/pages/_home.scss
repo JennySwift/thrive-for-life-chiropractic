@@ -147,6 +147,8 @@
     position: relative;
     .text {
         max-width: 700px;
+        max-height: 100%;
+        overflow:scroll;
         padding: 40px;
         color: white;
         position: absolute;
