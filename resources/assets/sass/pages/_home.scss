@@ -144,6 +144,20 @@
 #about {
     background: url('/img/About/about.jpg') no-repeat center center;
     @include backgroundImage;
+    position: relative;
+    .text {
+        max-width: 700px;
+        padding: 40px;
+        color: white;
+        position: absolute;
+        right: 40px;
+        p {
+            font-size: 8.6px;
+        }
+        h1 {
+            text-align: left;
+        }
+    }
 }
 
 #contact {
