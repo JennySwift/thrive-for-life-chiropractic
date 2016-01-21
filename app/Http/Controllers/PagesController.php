@@ -40,7 +40,7 @@ class PagesController extends Controller
             'me' => Auth::user()
         ]);
 
-        return view('pages/services');
+        return view('pages/services/services-page');
     }
 
     /**
