@@ -1,7 +1,5 @@
 @extends('layouts.master')
 
-@section('controller', 'BaseController')
-
 @section('page-content')
 
     <div id="retained-neonatal-reflexes" class="services">

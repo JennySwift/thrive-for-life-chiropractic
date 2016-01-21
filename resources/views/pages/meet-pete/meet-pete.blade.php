@@ -1,11 +1,9 @@
 @extends('layouts.master')
 
-@section('controller', 'BaseController')
-
 @section('page-content')
 
 
-    <div ng-controller='MeetPeteController' id="meet-pete">
+    <div id="meet-pete">
 
         <div>
             <p>Your health is arguably your most valuable asset, so it's nice to know who's looking after it (got your back), right? Take a moment to get to know me, and if you have any further questions or would like to make an appointment please feel free to

@@ -1,7 +1,5 @@
 @extends('layouts.master')
 
-@section('controller', 'BaseController')
-
 @section('page-content')
 
     <div id="health-promoting-lifestyle-advice" class="services">

@@ -4,7 +4,6 @@
 
 @section('page-content')
 
-
     <div id="contact">
 
         <div class="flex">
@@ -27,14 +26,6 @@
 
 
         </div>
-
-
-        {{--<div id="opening-hours-container" class="flex">--}}
-            {{----}}
-        {{--</div>--}}
-
-
-
 
     </div>
 

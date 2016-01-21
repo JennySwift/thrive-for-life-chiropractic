@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en" class="" ng-app="thriveForLife">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,9 @@
     @include('templates.head-links')
 </head>
 
-{{--@include('templates.page-loading')--}}
+<body>
 
-<body ng-controller="BaseController">
-
-{{--@include('templates.loading')--}}
-
-<div ng-controller=@yield('controller') id=@yield('id', 'nothing') class="main">
+<div id=@yield('id', 'nothing') class="main">
 
     @include('templates.header')
 
