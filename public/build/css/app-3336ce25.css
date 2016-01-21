@@ -472,10 +472,40 @@ ul {
     text-align: center; }
 
 #welcome {
-  background: url("/img/Home/spring.jpg") no-repeat center center;
-  opacity: .2;
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  #welcome .flex {
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #welcome .flex > * {
+      margin: 0 60px; }
+  #welcome .background-img {
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%; }
+  #welcome .text {
+    text-align: center;
+    max-width: 327px; }
+    #welcome .text i {
+      font-weight: bold; }
+  #welcome .img-container img {
+    width: 400px;
+    height: 400px; }
 
 #chiropractic {
   background: url("/img/Chiropractic/balance.jpg") no-repeat center center;
