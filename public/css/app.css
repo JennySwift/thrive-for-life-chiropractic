@@ -1,4 +1,3 @@
-/*==============================colours==============================*/
 /* @mixin hover_span {
 	position: absolute;
 	background: black;
@@ -110,9 +109,6 @@ ul {
   margin: 0;
   padding: 0; }
 
-.container {
-  width: 100%; }
-
 #navbar {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -123,7 +119,7 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #41b920;
+  background: black;
   padding: 0;
   margin: 0; }
   #navbar img.logo {

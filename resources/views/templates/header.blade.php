@@ -17,13 +17,11 @@
         </li>
 
         <li>
-            <a href="/meet-pete">Meet Pete</a>
+            <a href="/services">Services</a>
         </li>
 
-        @include('templates/header/services')
-
         <li>
-            <a href="/fees">Fees</a>
+            <a href="/about">About</a>
         </li>
 
         <li>
