@@ -435,7 +435,7 @@ ul {
       margin-right: 35px; }
 
 #home {
-  background: url("/img/Home/Layer 2.svg") no-repeat left top fixed, url("/img/Home/Layer 1.jpg") no-repeat left top fixed;
+  background: url("/img/Home/Layer 2.svg") no-repeat left top fixed, url("/img/Home/bg-img.jpg") no-repeat left top fixed;
   height: 100%;
   background-size: cover;
   position: relative; }
