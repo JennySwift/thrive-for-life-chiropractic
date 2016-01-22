@@ -89,11 +89,14 @@
 #chiropractic {
     background: url('/img/Chiropractic/balance.jpg') no-repeat center center;
     @include backgroundImage;
+    @include cover;
     //transform: scaleX(-1);
     .text {
         width: 600px;
         color: white;
         padding: 40px;
+        //So it appears above the black cover
+        position: relative;
     }
 }
 

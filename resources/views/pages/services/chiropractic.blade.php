@@ -3,6 +3,7 @@
 @section('page-content')
 
     <div id="chiropractic">
+        <div class="cover"></div>
         <div class="text">
             <h1>Chiropractic</h1>
             <p>Your body is constantly monitoring and responding to every event that takes place - both internally and
