@@ -5,7 +5,9 @@
     <div id="home">
         {{--<div class="cover"></div>--}}
         {{--<img class="text" src="/img/Home/Layer 2.svg">--}}
-        <i class="fa fa-chevron-circle-down"></i>
+        <a href="#welcome">
+            <i class="fa fa-chevron-circle-down"></i>
+        </a>
         {{--<div class="text">--}}
             {{--<div class="thrive-for-life">thrive for life</div>--}}
             {{--<div class="chiropractic">chiropractic</div>--}}
@@ -13,7 +15,9 @@
     </div>
 
     <div id="welcome">
-        <i class="fa fa-chevron-circle-up"></i>
+        <a href="#home">
+            <i class="fa fa-chevron-circle-up"></i>
+        </a>
         <img class="background-img" src="/img/Home/spring.jpg">
         <div class="flex">
             <div class="text">

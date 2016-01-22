@@ -4,6 +4,10 @@ Route::get('/', 'PagesController@home');
 Route::get('services', 'PagesController@services');
 Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
+Route::get('test', function()
+{
+    return view('pages.test');
+});
 
 //Services
 
