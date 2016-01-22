@@ -6,6 +6,7 @@
     width: 100%;
 //    color: #888;
     background: black;
+    opacity: .55;
     padding: 0;
     margin: 0;
     img.logo {
@@ -17,7 +18,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        height: 44px;
+        height: 34px;
         &:not(:first-child) {
             min-width: 120px;
         }
