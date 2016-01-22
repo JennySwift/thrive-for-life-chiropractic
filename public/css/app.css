@@ -433,12 +433,31 @@ ul {
 #home {
   background: url("/img/Home/spring-with-text.jpg") no-repeat center center fixed;
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  #home .fa-chevron-circle-down {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 40px;
+    width: 36px;
+    cursor: pointer; }
 
 #welcome {
   height: 100%;
   background-size: cover;
   position: relative; }
+  #welcome .fa-chevron-circle-up {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 40px;
+    width: 36px;
+    cursor: pointer; }
   #welcome .flex {
     height: 100%;
     display: -webkit-flex;

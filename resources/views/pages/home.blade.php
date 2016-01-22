@@ -3,13 +3,11 @@
 @section('page-content')
 
     <div id="home">
-        {{--<div class="text">--}}
-            {{--<h1 class="thrive-for-life">thrive for life</h1>--}}
-            {{--<p class="chiropractic">chiropractic</p>--}}
-        {{--</div>--}}
+        <i class="fa fa-chevron-circle-down"></i>
     </div>
 
     <div id="welcome">
+        <i class="fa fa-chevron-circle-up"></i>
         <img class="background-img" src="/img/Home/spring.jpg">
         <div class="flex">
             <div class="text">

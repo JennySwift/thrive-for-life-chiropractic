@@ -2,28 +2,18 @@
 #home {
     background: url('/img/Home/spring-with-text.jpg') no-repeat center center fixed;
     @include backgroundImage;
-    //position: relative;
-    //.tlt {
-    //    visibility: hidden;
-    //}
-    //.text {
-    //    margin: 50px auto auto;
-    //    max-width: 650px;
-    //    width: 200px;
-    //    position: absolute;
-    //    top: 50px;
-    //    //.thrive-for-life {
-    //    //    font-size: 30px;
-    //    //}
-    //}
-    //p {
-    //    text-align: center;
-    //}
+    position: relative;
+    .fa-chevron-circle-down {
+        @include arrow;
+    }
 }
 
 #welcome {
     @include backgroundImage;
     position: relative;
+    .fa-chevron-circle-up {
+        @include arrow;
+    }
     .flex {
         height: 100%;
         display: flex;
