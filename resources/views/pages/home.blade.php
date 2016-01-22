@@ -3,8 +3,13 @@
 @section('page-content')
 
     <div id="home">
-        <div class="cover"></div>
+        {{--<div class="cover"></div>--}}
+        {{--<img class="text" src="/img/Home/Layer 2.svg">--}}
         <i class="fa fa-chevron-circle-down"></i>
+        {{--<div class="text">--}}
+            {{--<div class="thrive-for-life">thrive for life</div>--}}
+            {{--<div class="chiropractic">chiropractic</div>--}}
+        {{--</div>--}}
     </div>
 
     <div id="welcome">
