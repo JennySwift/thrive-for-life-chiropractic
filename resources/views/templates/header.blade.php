@@ -16,9 +16,7 @@
             <a href="/" class="fa fa-home"></a>
         </li>
 
-        <li>
-            <a href="/services">Services</a>
-        </li>
+        @include('templates.header.services')
 
         <li>
             <a href="/about">About</a>

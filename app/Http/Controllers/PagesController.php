@@ -34,13 +34,73 @@ class PagesController extends Controller
     /**
      * @return \Illuminate\View\View
      */
-    public function services()
+    public function ak()
     {
         JavaScript::put([
             'me' => Auth::user()
         ]);
 
-        return view('pages/services/services-page');
+        return view('pages/services/applied-kinesiology');
+    }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function chiropractic()
+    {
+        JavaScript::put([
+            'me' => Auth::user()
+        ]);
+
+        return view('pages/services/chiropractic');
+    }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function government()
+    {
+        JavaScript::put([
+            'me' => Auth::user()
+        ]);
+
+        return view('pages/services/government');
+    }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function hra()
+    {
+        JavaScript::put([
+            'me' => Auth::user()
+        ]);
+
+        return view('pages/services/hra');
+    }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function lifestyle()
+    {
+        JavaScript::put([
+            'me' => Auth::user()
+        ]);
+
+        return view('pages/services/lifestyle');
+    }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function rnr()
+    {
+        JavaScript::put([
+            'me' => Auth::user()
+        ]);
+
+        return view('pages/services/rnr');
     }
 
     /**

@@ -18,14 +18,14 @@ Route::get('contact', 'PagesController@contact');
  * http://thrive_for_life.dev:8000/css/app.css
  * How to fix??
  */
-//Route::group(['prefix' => 'services'], function(){
-//    Route::get('applied-kinesiology', 'PagesController@appliedKinesiology');
-//    Route::get('chiropractic', 'PagesController@chiropractic');
-//    Route::get('government-supported-services', 'PagesController@governmentSupportedServices');
-//    Route::get('health-promoting-lifestyle-advice', 'PagesController@healthPromotingLifestyleAdvice');
-//    Route::get('health-risk-assessment', 'PagesController@healthRiskAssessment');
-//    Route::get('retained-neonatal-reflexes', 'PagesController@retainedNeonatalReflexes');
-//});
+Route::group(['prefix' => 'services'], function(){
+    Route::get('ak', 'PagesController@ak');
+    Route::get('chiropractic', 'PagesController@chiropractic');
+    Route::get('government', 'PagesController@government');
+    Route::get('lifestyle', 'PagesController@lifestyle');
+    Route::get('hra', 'PagesController@hra');
+    Route::get('rnr', 'PagesController@rnr');
+});
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
