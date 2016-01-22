@@ -3,6 +3,7 @@
 @section('page-content')
 
     <div id="about">
+        <div class="gradient-cover"></div>
         <div class="text">
             <h1>Meet Pete</h1>
 

@@ -27,6 +27,16 @@
 	}
 }
 
+@mixin gradientCover {
+	.gradient-cover {
+		opacity: 0.9;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background: linear-gradient(to right, rgba(0,0,0,0), black 60%);
+	}
+}
+
 @mixin text {
 	.text {
 		padding: 40px;
