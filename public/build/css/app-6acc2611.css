@@ -607,6 +607,17 @@ ul {
       opacity: .8;
       padding: 40px;
       color: white; }
+      #contact .text-container .text .flex {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        #contact .text-container .text .flex .fa-at {
+          font-size: 12px; }
+        #contact .text-container .text .flex > * {
+          margin: 0 20px; }
 
 .services a {
   color: #41b920; }
@@ -616,28 +627,5 @@ ul {
   font-size: 20px;
   max-width: 700px;
   margin: 0 auto 10px; }
-
-#contact h1, #contact h2, #contact h3, #contact h4, #contact h5 {
-  text-align: left; }
-
-#contact a {
-  color: #41b920; }
-
-#contact p {
-  font-weight: 400;
-  font-size: 20px;
-  max-width: 700px;
-  margin: 0 auto 10px; }
-
-#contact .flex {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
 
 /*# sourceMappingURL=app.css.map */

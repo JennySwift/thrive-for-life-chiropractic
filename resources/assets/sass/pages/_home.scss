@@ -196,11 +196,40 @@
             opacity: .8;
             padding: 40px;
             color: white;
-            //position: absolute;
-            //left: 0;
-            //right: 0;
-            //margin: auto;
+            .flex {
+                display: flex;
+                justify-content: space-around;
+                .fa-at {
+                    font-size: 12px;
+                }
+                > * {
+                    margin: 0 20px;
+                }
+            }
         }
     }
+
+
+
+    //#contact {
+    //    h1,h2,h3,h4,h5 {
+    //        text-align: left;
+    //    }
+    //    a {
+    //        color: $base;
+    //    }
+    //    p {
+    //        font-weight: 400;
+    //        font-size: 20px;
+    //        max-width: 700px;
+    //        margin: 0 auto 10px;
+    //    }
+    //    .flex {
+    //        display: flex;
+    //        flex-direction: column;
+    //        //        justify-content: center;
+    //        align-items: center;
+    //    }
+    //}
 
 }
