@@ -99,7 +99,7 @@
 }
 
 #ak {
-    background: url('/img/AK/walk.jpg') no-repeat center center;
+    background: url('/img/AK/walk.jpg') no-repeat left bottom;
     @include backgroundImage;
     position: relative;
     .text {
@@ -116,7 +116,7 @@
 }
 
 #rnr {
-    background: url('/img/RNR/child.jpg') no-repeat center center;
+    background: url('/img/RNR/child.jpg') no-repeat right center;
     @include backgroundImage;
     @include text;
     .text {
@@ -129,7 +129,7 @@
 }
 
 #lifestyle {
-    background: url('/img/Lifestyle/hiker.jpg') no-repeat center center;
+    background: url('/img/Lifestyle/hiker.jpg') no-repeat left center;
     @include backgroundImage;
     @include text;
     .text {
