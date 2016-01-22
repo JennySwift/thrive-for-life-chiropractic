@@ -590,10 +590,14 @@ ul {
       font-size: 8.6px; }
 
 #contact {
-  background: url("/img/Contact/map.jpg") no-repeat center center;
-  height: 100%;
-  background-size: cover;
-  position: relative; }
+  position: relative;
+  height: 100%; }
+  #contact .map {
+    height: 100%;
+    padding-top: 34px; }
+    #contact .map iframe {
+      width: 100%;
+      height: 100%; }
   #contact .text-container {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -601,7 +605,10 @@ ul {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-top: 60px; }
+    padding-top: 60px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%; }
     #contact .text-container .text {
       background: black;
       opacity: .8;
