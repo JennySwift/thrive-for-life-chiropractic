@@ -458,6 +458,8 @@ ul {
     width: 100%;
     height: 100%;
     position: fixed; }
+  #home a {
+    color: inherit; }
   #home .fa-chevron-circle-down {
     position: absolute;
     bottom: 5px;
@@ -480,6 +482,8 @@ ul {
   height: 100%;
   background-size: cover;
   position: relative; }
+  #welcome a {
+    color: inherit; }
   #welcome .fa-chevron-circle-up {
     position: absolute;
     bottom: 5px;
