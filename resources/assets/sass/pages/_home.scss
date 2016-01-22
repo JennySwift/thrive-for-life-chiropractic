@@ -1,7 +1,8 @@
 
 #home {
-    background: url('/img/Home/spring-with-text.jpg') no-repeat center center fixed;
+    background: url('/img/Home/text.svg') no-repeat center top fixed, url('/img/Home/spring-small.jpg') no-repeat center top fixed;
     @include backgroundImage;
+    @include cover;
     position: relative;
     .fa-chevron-circle-down {
         @include arrow;

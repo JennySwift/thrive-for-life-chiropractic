@@ -435,10 +435,15 @@ ul {
       margin-right: 35px; }
 
 #home {
-  background: url("/img/Home/spring-with-text.jpg") no-repeat center center fixed;
+  background: url("/img/Home/text.svg") no-repeat center top fixed, url("/img/Home/spring-small.jpg") no-repeat center top fixed;
   height: 100%;
   background-size: cover;
   position: relative; }
+  #home .cover {
+    background: black;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%; }
   #home .fa-chevron-circle-down {
     position: absolute;
     bottom: 5px;

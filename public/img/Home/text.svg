@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="1932" height="1221" viewBox="0, 0, 1932, 1221">
+  <g id="Layer_2" transform="translate(12, 0)">
+    <text transform="matrix(1, 0, 0, 1, 498, 447.5)">
+      <tspan x="-279.399" y="36.5" font-family="AnnieUseYourTelescope" font-size="121" fill="#FFFDFD">thrive for life</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 498, 558)">
+      <tspan x="-155.271" y="13" font-family="NanumPen" font-size="73" fill="#FFFDFD">chiropractic</tspan>
+    </text>
+    <path d="M-12,0 L0,0 L0,0 L-12,0 L-12,0 z" fill="#FFFDFD"/>
+  </g>
+</svg>

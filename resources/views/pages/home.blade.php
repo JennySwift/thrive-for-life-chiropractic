@@ -3,6 +3,7 @@
 @section('page-content')
 
     <div id="home">
+        <div class="cover"></div>
         <i class="fa fa-chevron-circle-down"></i>
     </div>
 
