@@ -3,6 +3,7 @@
 @section('page-content')
 
     <div id="rnr">
+        <div class="cover"></div>
         <div class="text">
             <h1>Retained Neonatal Reflexes</h1>
             <p>Hard-wired into the nervous system (specifically the brainstem) are a number of reflexes which help

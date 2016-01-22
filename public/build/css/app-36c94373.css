@@ -434,6 +434,13 @@ ul {
     #logo #logo-lower span:not(:last-child) {
       margin-right: 35px; }
 
+.cover {
+  background: black;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  position: fixed; }
+
 #home {
   background: url("/img/Home/Layer 2.svg") no-repeat left top fixed, url("/img/Home/bg-img.jpg") no-repeat left top fixed;
   height: 100%;
@@ -441,7 +448,7 @@ ul {
   position: relative; }
   #home .cover {
     background: black;
-    opacity: 0.2;
+    opacity: 0.4;
     width: 100%;
     height: 100%;
     position: fixed; }
@@ -512,17 +519,12 @@ ul {
   background: url("/img/Chiropractic/balance.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
-  #chiropractic .cover {
-    background: black;
-    opacity: 0.2;
-    width: 100%;
-    height: 100%;
-    position: fixed; }
   #chiropractic .text {
-    width: 600px;
-    color: white;
     padding: 40px;
     position: relative; }
+  #chiropractic .text {
+    width: 600px;
+    color: white; }
 
 #ak {
   background: url("/img/AK/walk.jpg") no-repeat center center;
@@ -543,9 +545,11 @@ ul {
   height: 100%;
   background-size: cover; }
   #rnr .text {
+    padding: 40px;
+    position: relative; }
+  #rnr .text {
     max-width: 800px;
-    color: white;
-    padding: 40px; }
+    color: white; }
     #rnr .text h1 {
       text-align: left; }
 
@@ -554,9 +558,11 @@ ul {
   height: 100%;
   background-size: cover; }
   #lifestyle .text {
+    padding: 40px;
+    position: relative; }
+  #lifestyle .text {
     color: white;
-    max-width: 600px;
-    padding: 40px; }
+    max-width: 600px; }
     #lifestyle .text h1 {
       text-align: left; }
 
@@ -574,6 +580,9 @@ ul {
   background: url("/img/Government/meadow.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
+  #government .text {
+    padding: 40px;
+    position: relative; }
   #government .text {
     max-width: 700px;
     padding: 40px;

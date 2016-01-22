@@ -3,6 +3,7 @@
 @section('page-content')
 
     <div id="government">
+        <div class="cover"></div>
         <div class="text">
             <h1>Government-Supported Services</h1>
             <p>Chronic Disease Management (formerly Enhanced Primary Care)</p>

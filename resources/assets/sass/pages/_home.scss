@@ -1,4 +1,4 @@
-
+@include cover;
 #home {
     background: url('/img/Home/Layer 2.svg') no-repeat left top fixed, url('/img/Home/bg-img.jpg') no-repeat left top fixed;
     //background: url('/img/Home/spring-small.jpg') no-repeat left top fixed;
@@ -89,14 +89,10 @@
 #chiropractic {
     background: url('/img/Chiropractic/balance.jpg') no-repeat center center;
     @include backgroundImage;
-    @include cover;
-    //transform: scaleX(-1);
+    @include text;
     .text {
         width: 600px;
         color: white;
-        padding: 40px;
-        //So it appears above the black cover
-        position: relative;
     }
 }
 
@@ -120,10 +116,10 @@
 #rnr {
     background: url('/img/RNR/child.jpg') no-repeat center center;
     @include backgroundImage;
+    @include text;
     .text {
         max-width: 800px;
         color: white;
-        padding: 40px;
         h1 {
             text-align: left;
         }
@@ -133,10 +129,10 @@
 #lifestyle {
     background: url('/img/Lifestyle/hiker.jpg') no-repeat center center;
     @include backgroundImage;
+    @include text;
     .text {
         color: white;
         max-width: 600px;
-        padding: 40px;
         h1 {
             text-align: left;
         }
@@ -158,6 +154,7 @@
 #government {
     background: url('/img/Government/meadow.jpg') no-repeat center center;
     @include backgroundImage;
+    @include text;
     .text {
         max-width: 700px;
         padding: 40px;

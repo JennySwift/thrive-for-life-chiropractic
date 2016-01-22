@@ -436,7 +436,6 @@ ul {
 
 .cover {
   background: black;
-  opacity: 0.4;
   width: 100%;
   height: 100%;
   position: fixed; }
@@ -448,7 +447,6 @@ ul {
   position: relative; }
   #home .cover {
     background: black;
-    opacity: 0.4;
     width: 100%;
     height: 100%;
     position: fixed; }
@@ -518,10 +516,9 @@ ul {
 #chiropractic {
   background: url("/img/Chiropractic/balance.jpg") no-repeat center center;
   height: 100%;
-  background-size: cover; }
-  #chiropractic .text {
-    padding: 40px;
-    position: relative; }
+  background-size: cover;
+  padding: 40px;
+  position: relative; }
   #chiropractic .text {
     width: 600px;
     color: white; }
@@ -545,21 +542,18 @@ ul {
   height: 100%;
   background-size: cover; }
   #rnr .text {
-    padding: 40px;
-    position: relative; }
-  #rnr .text {
     max-width: 800px;
-    color: white; }
+    color: white;
+    padding: 40px; }
     #rnr .text h1 {
       text-align: left; }
 
 #lifestyle {
   background: url("/img/Lifestyle/hiker.jpg") no-repeat center center;
   height: 100%;
-  background-size: cover; }
-  #lifestyle .text {
-    padding: 40px;
-    position: relative; }
+  background-size: cover;
+  padding: 40px;
+  position: relative; }
   #lifestyle .text {
     color: white;
     max-width: 600px; }
@@ -580,9 +574,6 @@ ul {
   background: url("/img/Government/meadow.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
-  #government .text {
-    padding: 40px;
-    position: relative; }
   #government .text {
     max-width: 700px;
     padding: 40px;

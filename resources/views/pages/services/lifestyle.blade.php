@@ -3,6 +3,7 @@
 @section('page-content')
 
     <div id="lifestyle">
+        <div class="cover"></div>
         <div class="text">
             <h1>Health-Promoting Lifestyle Advice/Coaching</h1>
             <p>The biggest determining factor in whether you enjoy good health or suffer from chronic illness, and also how much chiropractic treatment you will need, is lifestyle. Nothing has a greater impact on your overall health, well-being, performance and vitality than your day-to-day habits and activities - how you eat, move, think, sleep, etc.</p>
