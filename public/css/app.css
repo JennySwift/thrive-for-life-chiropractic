@@ -112,6 +112,8 @@ ul {
     justify-content: center;
     position: relative;
     height: 34px; }
+    #navbar > li.current-page {
+      text-decoration: underline; }
     #navbar > li:not(:first-child) {
       min-width: 120px; }
     #navbar > li > a {

@@ -12,7 +12,7 @@
 
 <div id=@yield('id', 'nothing') class="main">
 
-    @include('templates.header')
+    <navbar></navbar>
 
     @section('page-content')
     @show

@@ -1,1 +1,1 @@
-//Vue.config.debug = true;
+Vue.config.debug = true;

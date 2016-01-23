@@ -1,4 +1,4 @@
-<li id="menu-dropdown" class="dropdown">
+<li v-bind:class="{'current-page': window.location.pathname.indexOf('/services') !== -1}" id="menu-dropdown" class="dropdown">
     <a href="#" data-toggle="dropdown">
         Services
         <span class="caret"></span>
