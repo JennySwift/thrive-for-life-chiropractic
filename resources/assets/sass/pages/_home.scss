@@ -165,6 +165,7 @@
     @include backgroundImage;
     position: relative;
     @include text;
+    @include accordion;
     .text {
         max-width: 700px;
         max-height: 100%;
@@ -172,9 +173,6 @@
         color: white;
         position: absolute;
         right: 40px;
-        p {
-            font-size: 8.6px;
-        }
     }
 }
 

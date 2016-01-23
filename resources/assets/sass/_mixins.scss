@@ -54,3 +54,31 @@
 		position: relative;
 	}
 }
+
+@mixin accordion {
+	.accordion-item {
+		margin: 20px 0;
+	}
+	.accordion-heading {
+		cursor: pointer;
+	}
+	h1,h2,h3,h4,h5 {
+		//So the transition isn't jerky
+		margin: 0;
+	}
+	/* always present */
+	.expand-transition {
+		transition: all .3s ease;
+		height: auto;
+		padding: 10px;
+		overflow: hidden;
+	}
+
+	/* .expand-enter defines the starting state for entering */
+	/* .expand-leave defines the ending state for leaving */
+	.expand-enter, .expand-leave {
+		height: 0;
+		padding: 0 10px;
+		opacity: 0;
+	}
+}

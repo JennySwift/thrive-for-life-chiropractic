@@ -613,10 +613,28 @@ ul {
   background: url("/img/About/about.jpg") no-repeat center center;
   height: 100%;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  /* always present */
+  /* .expand-enter defines the starting state for entering */
+  /* .expand-leave defines the ending state for leaving */ }
   #about .text {
     padding: 40px;
     position: relative; }
+  #about .accordion-item {
+    margin: 20px 0; }
+  #about .accordion-heading {
+    cursor: pointer; }
+  #about h1, #about h2, #about h3, #about h4, #about h5 {
+    margin: 0; }
+  #about .expand-transition {
+    transition: all 0.3s ease;
+    height: auto;
+    padding: 10px;
+    overflow: hidden; }
+  #about .expand-enter, #about .expand-leave {
+    height: 0;
+    padding: 0 10px;
+    opacity: 0; }
   #about .text {
     max-width: 700px;
     max-height: 100%;
@@ -624,8 +642,6 @@ ul {
     color: white;
     position: absolute;
     right: 40px; }
-    #about .text p {
-      font-size: 8.6px; }
 
 #contact {
   position: relative;

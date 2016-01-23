@@ -5,7 +5,6 @@ elixir(function(mix) {
 
     mix.scripts([
         'plugins/*.js',
-        'controllers/**/*.js',
         'config.js',
         //'helpers.js',
         'repositories/**/*.js',

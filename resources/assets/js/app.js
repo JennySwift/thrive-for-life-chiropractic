@@ -45,3 +45,10 @@ jQuery(function( $ ){
     });
 });
 
+new Vue({
+    el: 'body',
+    events: {
+
+    }
+});
+
