@@ -13,7 +13,7 @@
     @else
 
         <li>
-            <a href="/" class="fa fa-home"></a>
+            <a href="/">Home</a>
         </li>
 
         @include('templates.header.services')
