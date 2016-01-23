@@ -520,7 +520,13 @@ ul {
     height: 100%; }
   #welcome .text {
     text-align: center;
-    max-width: 327px; }
+    max-width: 480px;
+    color: black; }
+    #welcome .text h1 {
+      font-size: 64px;
+      margin-bottom: 34px; }
+    #welcome .text p {
+      font-size: 27px; }
     #welcome .text i {
       font-weight: bold; }
   #welcome .img-container img {

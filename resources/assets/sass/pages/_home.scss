@@ -55,7 +55,15 @@
     }
     .text {
         text-align: center;
-        max-width: 327px;
+        max-width: 480px;
+        color: black;
+        h1 {
+            font-size: 64px;
+            margin-bottom: 34px;
+        }
+        p {
+            font-size: 27px;
+        }
         i {
             font-weight: bold;
         }
