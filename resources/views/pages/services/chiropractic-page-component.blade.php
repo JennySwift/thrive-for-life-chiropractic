@@ -1,6 +1,4 @@
-@extends('layouts.master')
-
-@section('page-content')
+<script id="chiropractic-page-template" type="x-template">
 
     <div id="chiropractic">
         <div class="cover"></div>
@@ -24,4 +22,4 @@
         </div>
     </div>
 
-@stop
+</script>

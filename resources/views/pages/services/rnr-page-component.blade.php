@@ -1,6 +1,4 @@
-@extends('layouts.master')
-
-@section('page-content')
+<script id="rnr-page-template" type="x-template">
 
     <div id="rnr">
         <div class="cover"></div>
@@ -22,4 +20,4 @@
         </div>
     </div>
 
-@stop
+</script>

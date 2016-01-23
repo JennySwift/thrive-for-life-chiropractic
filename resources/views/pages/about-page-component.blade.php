@@ -1,6 +1,4 @@
-@extends('layouts.master')
-
-@section('page-content')
+<script id="about-page-template" type="x-template">
 
     <div id="about">
         <div class="gradient-cover"></div>
@@ -88,4 +86,4 @@
         </div>
     </div>
 
-@stop
+</script>

@@ -4,11 +4,11 @@
         <span class="caret"></span>
     </a>
     <ul class="dropdown-menu" role="menu">
-        <li><a href="/services/chiropractic">Chiropractic</a></li>
-        <li><a href="/services/ak">AK</a></li>
-        <li><a href="/services/rnr">RNR</a></li>
-        <li><a href="/services/lifestyle">lifestyle</a></li>
-        <li><a href="/services/hra">HRA</a></li>
-        <li><a href="/services/government">Government</a></li>
+        <li><a v-link="{path: '/services/chiropractic'}" href="#">Chiropractic</a></li>
+        <li><a v-link="{path: '/services/ak'}" href="#">AK</a></li>
+        <li><a v-link="{path: '/services/rnr'}" href="#">RNR</a></li>
+        <li><a v-link="{path: '/services/lifestyle'}" href="#">lifestyle</a></li>
+        <li><a v-link="{path: '/services/hra'}" href="#">HRA</a></li>
+        <li><a v-link="{path: '/services/government'}" href="#">Government</a></li>
     </ul>
 </li>

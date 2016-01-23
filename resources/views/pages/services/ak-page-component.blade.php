@@ -1,6 +1,4 @@
-@extends('layouts.master')
-
-@section('page-content')
+<script id="ak-page-template" type="x-template">
 
     <div id="ak">
         <div class="text">
@@ -10,4 +8,4 @@
         </div>
     </div>
 
-@stop
+</script>

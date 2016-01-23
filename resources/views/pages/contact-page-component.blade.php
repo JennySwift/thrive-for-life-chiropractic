@@ -1,6 +1,4 @@
-@extends('layouts.master')
-
-@section('page-content')
+<script id="contact-page-template" type="x-template">
 
     <div id="contact">
 
@@ -38,4 +36,4 @@
 
     </div>
 
-@stop
+</script>

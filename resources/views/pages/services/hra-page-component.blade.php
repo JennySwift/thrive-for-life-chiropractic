@@ -1,6 +1,4 @@
-@extends('layouts.master')
-
-@section('page-content')
+<script id="hra-page-template" type="x-template">
 
     <div id="hra">
         <div class="gradient-cover-white"></div>
@@ -19,4 +17,4 @@
         </div>
     </div>
 
-@stop
+</script>

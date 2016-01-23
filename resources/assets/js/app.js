@@ -45,6 +45,51 @@ jQuery(function( $ ){
     });
 });
 
+var App = Vue.component('app', {
+
+});
+
+var router = new VueRouter({
+    hashbang: false
+});
+
+router.map({
+    '/': {
+        component: HomePage
+    },
+    '/home': {
+        component: HomePage,
+    },
+    '/about': {
+        component: AboutPage
+    },
+    '/contact': {
+        component: ContactPage
+    },
+    //Services
+    '/services/ak': {
+        component: AKPage
+    },
+    '/services/chiropractic': {
+        component: ChiropracticPage
+    },
+    '/services/government': {
+        component: GovernmentPage
+    },
+    '/services/hra': {
+        component: HRAPage
+    },
+    '/services/lifestyle': {
+        component: LifestylePage
+    },
+    '/services/rnr': {
+        component: RNRPage
+    }
+
+});
+
+router.start(App, 'body');
+
 new Vue({
     el: 'body',
     events: {

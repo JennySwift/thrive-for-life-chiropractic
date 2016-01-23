@@ -1,6 +1,4 @@
-@extends('layouts.master')
-
-@section('page-content')
+<script id="lifestyle-page-template" type="x-template">
 
     <div id="lifestyle">
         <div class="cover"></div>
@@ -11,4 +9,4 @@
         </div>
     </div>
 
-@stop
+</script>
