@@ -537,6 +537,7 @@ ul {
       font-weight: bold; }
   #welcome .img-container img {
     width: 400px;
+    border-radius: 50%;
     height: 400px; }
 
 #chiropractic {

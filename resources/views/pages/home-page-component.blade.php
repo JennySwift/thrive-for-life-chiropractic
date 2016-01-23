@@ -19,7 +19,7 @@
                 <p>If you want to get well and stay well - not just survive, but thrive - I'm here for you.</p>
             </div>
             <div class="img-container">
-                <img src="/img/Welcome/welcome.png">
+                <img src="/img/Welcome/welcome.jpg">
             </div>
         </div>
     </div>
