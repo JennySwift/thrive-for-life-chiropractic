@@ -135,6 +135,7 @@
 #hra {
     background: url('/img/HRA/tape.jpg') no-repeat center center;
     @include backgroundImage;
+    @include gradientCoverWhite;
     .text {
         max-width: 700px;
         padding: 40px;

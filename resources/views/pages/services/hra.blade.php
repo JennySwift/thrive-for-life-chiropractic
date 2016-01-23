@@ -3,6 +3,7 @@
 @section('page-content')
 
     <div id="hra">
+        <div class="gradient-cover-white"></div>
         <div class="text">
             <h1>Health Risk Assessment</h1>
             <p>The Health Risk Assessment not only gives you a scientifically-validated rating of your current health
