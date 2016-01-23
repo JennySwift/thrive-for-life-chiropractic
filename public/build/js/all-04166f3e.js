@@ -19817,7 +19817,7 @@ var App = Vue.component('app', {
 });
 
 var router = new VueRouter({
-    //hashbang: false
+    hashbang: false
 });
 
 router.map({
@@ -19856,13 +19856,13 @@ router.map({
 });
 
 router.start(App, 'body');
-
-new Vue({
-    el: 'body',
-    events: {
-
-    }
-});
+//
+//new Vue({
+//    el: 'body',
+//    events: {
+//
+//    }
+//});
 
 
 //# sourceMappingURL=all.js.map
