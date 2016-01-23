@@ -464,13 +464,15 @@ ul {
     color: inherit; }
   #home .fa-chevron-circle-down {
     position: absolute;
-    bottom: 5px;
+    bottom: 15px;
     left: 0;
     right: 0;
     margin: auto;
     font-size: 40px;
     width: 36px;
-    cursor: pointer; }
+    cursor: pointer;
+    color: black;
+    opacity: .55; }
   #home .text {
     top: 0;
     left: 0;
@@ -488,13 +490,15 @@ ul {
     color: inherit; }
   #welcome .fa-chevron-circle-up {
     position: absolute;
-    bottom: 5px;
+    bottom: 15px;
     left: 0;
     right: 0;
     margin: auto;
     font-size: 40px;
     width: 36px;
-    cursor: pointer; }
+    cursor: pointer;
+    color: black;
+    opacity: .55; }
   #welcome .flex {
     height: 100%;
     display: -webkit-flex;

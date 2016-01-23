@@ -8,13 +8,15 @@
 
 @mixin arrow {
 	position: absolute;
-	bottom: 5px;
+	bottom: 15px;
 	left: 0;
 	right: 0;
 	margin: auto;
 	font-size: 40px;
 	width: 36px;
 	cursor: pointer;
+	color: black;
+	opacity: .55;
 }
 
 @mixin cover {
