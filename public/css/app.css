@@ -117,6 +117,8 @@ ul {
     #navbar > li > a {
       transition: all 0.5s ease;
       color: white; }
+      #navbar > li > a:focus {
+        outline: none; }
     #navbar > li:hover > a {
       font-size: 25px; }
     #navbar > li .dropdown-menu a {
