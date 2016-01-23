@@ -672,7 +672,8 @@ ul {
   #about .accordion-item {
     margin: 20px 0; }
   #about .accordion-heading {
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 23px; }
   #about h1, #about h2, #about h3, #about h4, #about h5 {
     margin: 0; }
   #about .expand-transition {
