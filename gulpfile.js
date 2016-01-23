@@ -9,6 +9,7 @@ elixir(function(mix) {
         //'helpers.js',
         'repositories/**/*.js',
         'components/**/*.js',
+        'transitions/**/*.js',
         'app.js',
         //'routes.js'
     ], 'public/js/all.js');

@@ -19629,7 +19629,8 @@ var ChiropracticPage = Vue.component('chiropractic-page', {
     data: function () {
         return {
             path: this.$route.path,
-            sliderStep: 1
+            sliderStep: 1,
+            transitionTime: 300
         };
     },
     components: {},
@@ -19745,6 +19746,25 @@ var RNRPage = Vue.component('rnr-page', {
     }
 });
 
+Vue.transition('fade', {
+    css: false,
+    enter: function (el, done) {
+        var that = this;
+        setTimeout(function () {
+            $(el).animate({ opacity: 1 }, that._data.transitionTime, done)
+        }, this._data.transitionTime);
+
+    },
+    enterCancelled: function (el) {
+        $(el).stop()
+    },
+    leave: function (el, done) {
+        $(el).animate({ opacity: 0 }, this._data.transitionTime, done)
+    },
+    leaveCancelled: function (el) {
+        $(el).stop()
+    }
+});
 
 $("#logo-upper").textillate({
     //loop: true,

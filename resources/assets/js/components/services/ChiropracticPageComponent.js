@@ -3,7 +3,8 @@ var ChiropracticPage = Vue.component('chiropractic-page', {
     data: function () {
         return {
             path: this.$route.path,
-            sliderStep: 1
+            sliderStep: 1,
+            transitionTime: 300
         };
     },
     components: {},
