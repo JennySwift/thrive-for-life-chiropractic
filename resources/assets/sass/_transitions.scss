@@ -1,7 +1,7 @@
 @mixin expand {
     /* always present */
     .expand-transition {
-        transition: all 3s ease;
+        transition: all .3s ease;
         height: auto;
         padding: 10px;
         overflow: hidden;

@@ -494,7 +494,7 @@ ul {
   /* .expand-enter defines the starting state for entering */
   /* .expand-leave defines the ending state for leaving */ }
   .accordion-item .expand-transition {
-    transition: all 3s ease;
+    transition: all 0.3s ease;
     height: auto;
     padding: 10px;
     overflow: hidden; }
