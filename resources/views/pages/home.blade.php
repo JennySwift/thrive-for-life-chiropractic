@@ -18,7 +18,7 @@
         <a href="#home">
             <i class="fa fa-chevron-circle-up"></i>
         </a>
-        <img class="background-img" src="/img/Home/spring.jpg">
+        <img class="background-img" src="/img/Home/spring-small.jpg">
         <div class="flex">
             <div class="text">
                 <h2>Welcome!</h2>
