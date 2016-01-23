@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    @include('templates.header')
+    <navbar></navbar>
     <div class="main">
         @section('content')
         @show

@@ -540,7 +540,7 @@ ul {
     height: 400px; }
 
 #chiropractic {
-  background: url("/img/Chiropractic/balance.jpg") no-repeat center center;
+  background: url("/img/Chiropractic/balance-compressed.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
   #chiropractic .text {
@@ -551,7 +551,7 @@ ul {
     color: white; }
 
 #ak {
-  background: url("/img/AK/walk.jpg") no-repeat left bottom;
+  background: url("/img/AK/walk-small-compressed.jpg") no-repeat left bottom;
   height: 100%;
   background-size: cover;
   position: relative; }
@@ -565,7 +565,7 @@ ul {
       text-align: left; }
 
 #rnr {
-  background: url("/img/RNR/child.jpg") no-repeat right center;
+  background: url("/img/RNR/child-small-compressed.jpg") no-repeat right center;
   height: 100%;
   background-size: cover; }
   #rnr .text {
@@ -578,7 +578,7 @@ ul {
       text-align: left; }
 
 #lifestyle {
-  background: url("/img/Lifestyle/hiker.jpg") no-repeat left center;
+  background: url("/img/Lifestyle/hiker-small-compressed.jpg") no-repeat left center;
   height: 100%;
   background-size: cover; }
   #lifestyle .text {
@@ -591,7 +591,7 @@ ul {
       text-align: left; }
 
 #hra {
-  background: url("/img/HRA/tape.jpg") no-repeat center center;
+  background: url("/img/HRA/tape-small-compressed.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
   #hra .gradient-cover-white {
@@ -610,7 +610,7 @@ ul {
       text-align: left; }
 
 #government {
-  background: url("/img/Government/meadow.jpg") no-repeat center center;
+  background: url("/img/Government/meadow-small-compressed.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
   #government .text {
