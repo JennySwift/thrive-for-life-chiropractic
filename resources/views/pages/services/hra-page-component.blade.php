@@ -1,6 +1,7 @@
 <script id="hra-page-template" type="x-template">
 
-    <div id="hra">
+    <div id="hra" class="service">
+        @include('templates.shared.services-tabs')
         <div class="gradient-cover-white"></div>
         <div class="text">
             <h1>Health Risk Assessment</h1>

@@ -50,7 +50,7 @@ var App = Vue.component('app', {
 });
 
 var router = new VueRouter({
-    hashbang: false
+    //hashbang: false
 });
 
 router.map({

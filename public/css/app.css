@@ -112,8 +112,6 @@ ul {
     justify-content: center;
     position: relative;
     height: 34px; }
-    #navbar > li.current-page {
-      text-decoration: underline; }
     #navbar > li:not(:first-child) {
       min-width: 120px; }
     #navbar > li > a {
@@ -442,14 +440,43 @@ ul {
   opacity: 0.4;
   width: 100%;
   height: 100%;
+  top: 0;
   position: fixed; }
 
 .gradient-cover {
   opacity: 0.9;
   width: 100%;
   height: 100%;
+  top: 0;
   position: fixed;
   background: linear-gradient(to right, transparent 45%, black 60%); }
+
+.current-page {
+  text-decoration: underline; }
+
+.service .tabs {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+  top: 34px;
+  z-index: 9;
+  font-family: 'Josefin Sans'; }
+  .service .tabs .tab {
+    background: rgba(0, 0, 0, 0.55);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin: 0 11px;
+    text-align: center; }
+    .service .tabs .tab a {
+      color: white; }
 
 #home {
   background: url("/img/Home/Layer 2.svg") no-repeat left top, url("/img/Home/Layer 3.svg") no-repeat left top fixed, url("/img/Home/spring-small-compressed.jpg") no-repeat left top fixed;
@@ -461,6 +488,7 @@ ul {
     opacity: 0.4;
     width: 100%;
     height: 100%;
+    top: 0;
     position: fixed; }
   #home a {
     color: inherit; }
@@ -546,7 +574,8 @@ ul {
   background-size: cover; }
   #chiropractic .text {
     padding: 40px;
-    position: relative; }
+    position: relative;
+    margin-top: 28px; }
   #chiropractic .text {
     width: 600px;
     color: white; }
@@ -571,7 +600,8 @@ ul {
   background-size: cover; }
   #rnr .text {
     padding: 40px;
-    position: relative; }
+    position: relative;
+    margin-top: 28px; }
   #rnr .text {
     max-width: 800px;
     color: white; }
@@ -584,7 +614,8 @@ ul {
   background-size: cover; }
   #lifestyle .text {
     padding: 40px;
-    position: relative; }
+    position: relative;
+    margin-top: 28px; }
   #lifestyle .text {
     color: white;
     max-width: 600px; }
@@ -603,7 +634,8 @@ ul {
     background: linear-gradient(to right, white, transparent 60%); }
   #hra .text {
     padding: 40px;
-    position: relative; }
+    position: relative;
+    margin-top: 28px; }
   #hra .text {
     max-width: 700px;
     color: black; }
@@ -616,7 +648,8 @@ ul {
   background-size: cover; }
   #government .text {
     padding: 40px;
-    position: relative; }
+    position: relative;
+    margin-top: 28px; }
   #government .text {
     max-width: 700px;
     padding: 40px;
@@ -634,7 +667,8 @@ ul {
   /* .expand-leave defines the ending state for leaving */ }
   #about .text {
     padding: 40px;
-    position: relative; }
+    position: relative;
+    margin-top: 28px; }
   #about .accordion-item {
     margin: 20px 0; }
   #about .accordion-heading {

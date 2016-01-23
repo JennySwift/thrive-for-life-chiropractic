@@ -12,19 +12,19 @@
 
         @else
 
-            <li v-bind:class="{'current-page': window.location.pathname === '/'}">
+            <li v-bind:class="{'current-page': path === '/'}">
                 <a v-link="{path: '/'}" href="#">Home</a>
             </li>
 
             @include('templates.header.services')
 
             <li
-                v-bind:class="{'current-page': window.location.pathname === '/about'}"
+                v-bind:class="{'current-page': path === '/about'}"
             >
                 <a v-link="{path: '/about'}" href="#">About</a>
             </li>
 
-            <li v-bind:class="{'current-page': window.location.pathname === '/contact'}">
+            <li v-bind:class="{'current-page': path === '/contact'}">
                 <a v-link="{path: '/contact'}" href="#">Contact</a>
             </li>
 

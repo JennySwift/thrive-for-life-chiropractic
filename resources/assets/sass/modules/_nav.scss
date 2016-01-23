@@ -21,9 +21,6 @@
         justify-content: center;
         position: relative;
         height: 34px;
-        &.current-page {
-            text-decoration: underline;
-        }
         &:not(:first-child) {
             min-width: 120px;
         }
