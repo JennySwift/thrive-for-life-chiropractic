@@ -587,8 +587,11 @@ ul {
     position: fixed;
     background: linear-gradient(to right, white, transparent 60%); }
   #hra .text {
+    padding: 40px;
+    position: relative; }
+  #hra .text {
     max-width: 700px;
-    padding: 40px; }
+    color: black; }
     #hra .text h1 {
       text-align: left; }
 
