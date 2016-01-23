@@ -2,7 +2,8 @@ var ChiropracticPage = Vue.component('chiropractic-page', {
     template: '#chiropractic-page-template',
     data: function () {
         return {
-            path: this.$route.path
+            path: this.$route.path,
+            sliderStep: 1
         };
     },
     components: {},

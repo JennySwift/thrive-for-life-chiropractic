@@ -478,6 +478,31 @@ ul {
     .service .tabs .tab a {
       color: white; }
 
+.slider-navigation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: 30px; }
+  .slider-navigation .slider-navigation-item {
+    transition: all, 0.5s, ease;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    margin: 5px 10px;
+    box-shadow: -9px 0px 7px black inset;
+    position: relative;
+    bottom: 0; }
+    .slider-navigation .slider-navigation-item.current-step {
+      width: 30px;
+      height: 30px;
+      bottom: 5px; }
+
 #home {
   background: url("/img/Home/Layer 2.svg") no-repeat left top, url("/img/Home/Layer 3.svg") no-repeat left top fixed, url("/img/Home/spring-small-compressed.jpg") no-repeat left top fixed;
   height: 100%;
