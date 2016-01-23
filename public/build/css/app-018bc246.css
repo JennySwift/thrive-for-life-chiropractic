@@ -715,7 +715,7 @@ h1, h2, h3, h4, h5 {
     max-width: 700px;
     padding: 40px;
     color: white; }
-    #government .text h1 {
+    #government .text h1, #government .text h5 {
       text-align: left; }
 
 #about {
