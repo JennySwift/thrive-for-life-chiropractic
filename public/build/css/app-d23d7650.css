@@ -450,7 +450,7 @@ ul {
   background: linear-gradient(to right, transparent 45%, black 60%); }
 
 #home {
-  background: url("/img/Home/Layer 2.svg") no-repeat left top fixed, url("/img/Home/Layer 3.svg") no-repeat left top fixed, url("/img/Home/spring-small.jpg") no-repeat left top fixed;
+  background: url("/img/Home/Layer 2.svg") no-repeat left top, url("/img/Home/Layer 3.svg") no-repeat left top fixed, url("/img/Home/spring-small.jpg") no-repeat left top fixed;
   height: 100%;
   background-size: cover;
   position: relative; }
