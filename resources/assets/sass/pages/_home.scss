@@ -58,6 +58,7 @@
     #welcome {
         @include backgroundImage;
         position: relative;
+        font-size: 30px;
         a {
             color: inherit;
         }
@@ -71,7 +72,7 @@
         .flex {
             height: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             > * {
                 margin: 0 60px;
@@ -89,15 +90,17 @@
             height: 100%;
         }
         .text {
+            margin: 62px;
+            margin-top: $navHeight;
             text-align: center;
-            max-width: 480px;
+            max-width: 540px;
             color: black;
             h1 {
-                font-size: 64px;
+                font-size: 76px;
                 margin-bottom: 34px;
             }
             p {
-                font-size: 27px;
+                margin-bottom: 28px;
             }
             i {
                 font-weight: bold;
@@ -105,9 +108,10 @@
         }
         .img-container {
             img {
-                width: 400px;
+                margin-top: $navHeight;
+                width: 500px;
                 border-radius: 50%;
-                height: 400px;
+                height: 500px;
             }
         }
     }

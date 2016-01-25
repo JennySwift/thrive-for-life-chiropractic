@@ -590,7 +590,8 @@ ul {
   #home-page-container #welcome {
     height: 100%;
     background-size: cover;
-    position: relative; }
+    position: relative;
+    font-size: 30px; }
     #home-page-container #welcome a {
       color: inherit; }
     #home-page-container #welcome .arrow {
@@ -627,9 +628,9 @@ ul {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center; }
@@ -646,20 +647,23 @@ ul {
       width: 100%;
       height: 100%; }
     #home-page-container #welcome .text {
+      margin: 62px;
+      margin-top: 34px;
       text-align: center;
-      max-width: 480px;
+      max-width: 540px;
       color: black; }
       #home-page-container #welcome .text h1 {
-        font-size: 64px;
+        font-size: 76px;
         margin-bottom: 34px; }
       #home-page-container #welcome .text p {
-        font-size: 27px; }
+        margin-bottom: 28px; }
       #home-page-container #welcome .text i {
         font-weight: bold; }
     #home-page-container #welcome .img-container img {
-      width: 400px;
+      margin-top: 34px;
+      width: 500px;
       border-radius: 50%;
-      height: 400px; }
+      height: 500px; }
 
 #chiropractic {
   background: url("/img/Chiropractic/balance-compressed.jpg") no-repeat center center;
