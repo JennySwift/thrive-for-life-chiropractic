@@ -2,13 +2,19 @@
 
     <div id="home">
         <a href="#welcome">
-            <i class="fa fa-chevron-circle-down"></i>
+            {{--<i class="fa fa-chevron-circle-down"></i>--}}
+            <div class="arrow">
+                <span>V</span>
+            </div>
         </a>
     </div>
 
     <div id="welcome">
         <a href="#home">
-            <i class="fa fa-chevron-circle-up"></i>
+            {{--<i class="fa fa-chevron-circle-up"></i>--}}
+            <div class="arrow">
+                <span>V</span>
+            </div>
         </a>
         <img class="background-img" src="/img/Home/spring-small-compressed.jpg">
         <div class="flex">

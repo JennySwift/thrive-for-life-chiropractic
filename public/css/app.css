@@ -551,17 +551,32 @@ ul {
     position: fixed; }
   #home a {
     color: inherit; }
-  #home .fa-chevron-circle-down {
+  #home .arrow {
     position: absolute;
     bottom: 15px;
     left: 0;
     right: 0;
     margin: auto;
-    font-size: 40px;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 3px;
     width: 36px;
+    height: 36px;
+    border-radius: 50%;
     cursor: pointer;
-    color: black;
-    opacity: .55; }
+    color: white;
+    background: black;
+    opacity: .55;
+    font-family: 'Architects Daughter';
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
   #home .text {
     top: 0;
     left: 0;
@@ -577,17 +592,35 @@ ul {
   position: relative; }
   #welcome a {
     color: inherit; }
-  #welcome .fa-chevron-circle-up {
+  #welcome .arrow {
     position: absolute;
     bottom: 15px;
     left: 0;
     right: 0;
     margin: auto;
-    font-size: 40px;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 3px;
     width: 36px;
+    height: 36px;
+    border-radius: 50%;
     cursor: pointer;
-    color: black;
-    opacity: .55; }
+    color: white;
+    background: black;
+    opacity: .55;
+    font-family: 'Architects Daughter';
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #welcome .arrow {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
   #welcome .flex {
     height: 100%;
     display: -webkit-flex;

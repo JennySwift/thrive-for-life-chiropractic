@@ -38,9 +38,10 @@
     a {
         color: inherit;
     }
-    .fa-chevron-circle-down {
-        @include arrow;
-    }
+    //.fa-chevron-circle-down {
+    //    @include arrow;
+    //}
+    @include arrow;
     .text {
         top: 0;
         left: 0;
@@ -58,8 +59,12 @@
     a {
         color: inherit;
     }
-    .fa-chevron-circle-up {
-        @include arrow;
+    //.fa-chevron-circle-up {
+    //    @include arrow;
+    //}
+    @include arrow;
+    .arrow {
+        transform: rotate(180deg);
     }
     .flex {
         height: 100%;

@@ -7,16 +7,28 @@
 }
 
 @mixin arrow {
-	position: absolute;
-	bottom: 15px;
-	left: 0;
-	right: 0;
-	margin: auto;
-	font-size: 40px;
-	width: 36px;
-	cursor: pointer;
-	color: black;
-	opacity: .55;
+	.arrow {
+		position: absolute;
+		bottom: 15px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		font-size: 23px;
+		font-weight: bold;
+		padding-top: 3px;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		cursor: pointer;
+		color: white;
+		background: black;
+		opacity: .55;
+		font-family: 'Architects Daughter';
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 }
 
 @mixin cover {
