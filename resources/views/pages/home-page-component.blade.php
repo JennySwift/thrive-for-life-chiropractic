@@ -11,13 +11,14 @@
         </div>
 
         <div id="welcome">
+            <div class="cover"></div>
             <a href="#home">
                 {{--<i class="fa fa-chevron-circle-up"></i>--}}
                 <div class="arrow">
                     <span>V</span>
                 </div>
             </a>
-            <img class="background-img" src="/img/Home/spring-small-compressed.jpg">
+            {{--<img class="background-img" src="/img/Home/spring-small-compressed.jpg">--}}
             <div class="flex">
                 <div class="text">
                     <h1>Welcome!</h1>
