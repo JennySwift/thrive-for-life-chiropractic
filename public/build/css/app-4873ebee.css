@@ -1,5 +1,6 @@
 html, body {
   max-width: 100%;
+  overflow-x: hidden;
   margin: 0; }
 
 h1, h2, h3, h4, h5 {
@@ -536,6 +537,14 @@ ul {
     text-align: center; }
     .service .tabs .tab a {
       color: white; }
+
+#preloaded-images {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 0;
+  width: 0; }
 
 #home-page-container {
   height: 100%; }
