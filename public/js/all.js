@@ -19577,7 +19577,7 @@ var Navbar = Vue.component('navbar', {
     template: '#navbar-template',
     data: function () {
         return {
-            path: this.$route.path
+            //path: this.$route.path
         };
     },
     components: {},
@@ -19593,7 +19593,7 @@ var Navbar = Vue.component('navbar', {
         }
     },
     props: [
-        //data to be received from parent
+        'path'
     ],
     ready: function () {
         this.ready();
@@ -19604,20 +19604,20 @@ var AKPage = Vue.component('ak-page', {
     template: '#ak-page-template',
     data: function () {
         return {
-            path: this.$route.path
+            //path: this.$route.path
         };
     },
     components: {},
-    watch: {
-        '$route': function (val) {
-            this.path = val.path;
-        }
-    },
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
     methods: {
 
     },
     props: [
-        //data to be received from parent
+        'path'
     ],
     ready: function () {
 
@@ -19628,22 +19628,22 @@ var ChiropracticPage = Vue.component('chiropractic-page', {
     template: '#chiropractic-page-template',
     data: function () {
         return {
-            path: this.$route.path,
+            //path: this.$route.path,
             sliderStep: 1,
             transitionTime: 300
         };
     },
     components: {},
-    watch: {
-        '$route': function (val) {
-            this.path = val.path;
-        }
-    },
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
     methods: {
 
     },
     props: [
-        //data to be received from parent
+        'path'
     ],
     ready: function () {
 
@@ -19654,20 +19654,20 @@ var GovernmentPage = Vue.component('government-page', {
     template: '#government-page-template',
     data: function () {
         return {
-            path: this.$route.path
+            //path: this.$route.path
         };
     },
     components: {},
-    watch: {
-        '$route': function (val) {
-            this.path = val.path;
-        }
-    },
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
     methods: {
 
     },
     props: [
-        //data to be received from parent
+        'path'
     ],
     ready: function () {
 
@@ -19678,20 +19678,20 @@ var HRAPage = Vue.component('hra-page', {
     template: '#hra-page-template',
     data: function () {
         return {
-            path: this.$route.path
+            //path: this.$route.path
         };
     },
     components: {},
-    watch: {
-        '$route': function (val) {
-            this.path = val.path;
-        }
-    },
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
     methods: {
 
     },
     props: [
-        //data to be received from parent
+        'path'
     ],
     ready: function () {
 
@@ -19702,20 +19702,20 @@ var LifestylePage = Vue.component('lifestyle-page', {
     template: '#lifestyle-page-template',
     data: function () {
         return {
-            path: this.$route.path
+            //path: this.$route.path
         };
     },
     components: {},
-    watch: {
-        '$route': function (val) {
-            this.path = val.path;
-        }
-    },
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
     methods: {
 
     },
     props: [
-        //data to be received from parent
+        'path'
     ],
     ready: function () {
 
@@ -19726,20 +19726,20 @@ var RNRPage = Vue.component('rnr-page', {
     template: '#rnr-page-template',
     data: function () {
         return {
-            path: this.$route.path
+            //path: this.$route.path
         };
     },
     components: {},
-    watch: {
-        '$route': function (val) {
-            this.path = val.path;
-        }
-    },
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
     methods: {
 
     },
     props: [
-        //data to be received from parent
+        'path'
     ],
     ready: function () {
 
@@ -19812,57 +19812,60 @@ jQuery(function( $ ){
     });
 });
 
-var App = Vue.component('app', {
-
-});
-
-var router = new VueRouter({
-    hashbang: false
-});
-
-router.map({
-    '/': {
-        component: HomePage
-    },
-    '/home': {
-        component: HomePage,
-    },
-    '/about': {
-        component: AboutPage
-    },
-    '/contact': {
-        component: ContactPage
-    },
-    //Services
-    '/services/ak': {
-        component: AKPage
-    },
-    '/services/chiropractic': {
-        component: ChiropracticPage
-    },
-    '/services/government': {
-        component: GovernmentPage
-    },
-    '/services/hra': {
-        component: HRAPage
-    },
-    '/services/lifestyle': {
-        component: LifestylePage
-    },
-    '/services/rnr': {
-        component: RNRPage
-    }
-
-});
-
-router.start(App, 'body');
+//var App = Vue.component('app', {
 //
-//new Vue({
-//    el: 'body',
-//    events: {
-//
-//    }
 //});
+//
+//var router = new VueRouter({
+//    hashbang: false
+//});
+//
+//router.map({
+//    '/': {
+//        component: HomePage
+//    },
+//    '/home': {
+//        component: HomePage,
+//    },
+//    '/about': {
+//        component: AboutPage
+//    },
+//    '/contact': {
+//        component: ContactPage
+//    },
+//    //Services
+//    '/services/ak': {
+//        component: AKPage
+//    },
+//    '/services/chiropractic': {
+//        component: ChiropracticPage
+//    },
+//    '/services/government': {
+//        component: GovernmentPage
+//    },
+//    '/services/hra': {
+//        component: HRAPage
+//    },
+//    '/services/lifestyle': {
+//        component: LifestylePage
+//    },
+//    '/services/rnr': {
+//        component: RNRPage
+//    }
+//
+//});
+//
+//router.start(App, 'body');
+
+new Vue({
+    el: 'body',
+    data: {
+        'path': '/'
+    },
+    events: {
+
+    }
+});
 
 
 //# sourceMappingURL=all.js.map

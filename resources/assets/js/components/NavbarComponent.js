@@ -2,7 +2,7 @@ var Navbar = Vue.component('navbar', {
     template: '#navbar-template',
     data: function () {
         return {
-            path: this.$route.path
+            //path: this.$route.path
         };
     },
     components: {},
@@ -18,7 +18,7 @@ var Navbar = Vue.component('navbar', {
         }
     },
     props: [
-        //data to be received from parent
+        'path'
     ],
     ready: function () {
         this.ready();

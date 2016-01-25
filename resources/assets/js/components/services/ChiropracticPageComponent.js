@@ -2,22 +2,22 @@ var ChiropracticPage = Vue.component('chiropractic-page', {
     template: '#chiropractic-page-template',
     data: function () {
         return {
-            path: this.$route.path,
+            //path: this.$route.path,
             sliderStep: 1,
             transitionTime: 300
         };
     },
     components: {},
-    watch: {
-        '$route': function (val) {
-            this.path = val.path;
-        }
-    },
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
     methods: {
 
     },
     props: [
-        //data to be received from parent
+        'path'
     ],
     ready: function () {
 

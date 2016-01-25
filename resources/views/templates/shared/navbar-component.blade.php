@@ -13,7 +13,13 @@
         @else
 
             <li v-bind:class="{'current-page': path === '/'}">
-                <a v-link="{path: '/'}" href="#">Home</a>
+                <a
+                    {{--v-link="{path: '/'}"--}}
+                    v-on:click="path = '/'"
+                    href="#"
+                >
+                    Home
+                </a>
             </li>
 
             @include('templates.header.services')
@@ -21,11 +27,23 @@
             <li
                 v-bind:class="{'current-page': path === '/about'}"
             >
-                <a v-link="{path: '/about'}" href="#">About</a>
+                <a
+                    {{--v-link="{path: '/about'}"--}}
+                    v-on:click="path = '/about'"
+                    href="#"
+                >
+                    About
+                </a>
             </li>
 
             <li v-bind:class="{'current-page': path === '/contact'}">
-                <a v-link="{path: '/contact'}" href="#">Contact</a>
+                <a
+                    {{--v-link="{path: '/contact'}"--}}
+                    v-on:click="path = '/contact'"
+                    href="#"
+                >
+                    Contact
+                </a>
             </li>
 
             @include('templates/header/user')

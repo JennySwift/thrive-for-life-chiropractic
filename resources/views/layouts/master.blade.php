@@ -12,7 +12,10 @@
 
 <div id=@yield('id', 'nothing') class="main">
 
-    <navbar></navbar>
+    <navbar
+        :path.sync="path"
+    >
+    </navbar>
 
     @section('page-content')
     @show

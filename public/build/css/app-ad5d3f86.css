@@ -537,128 +537,129 @@ ul {
     .service .tabs .tab a {
       color: white; }
 
-#home {
-  background: url("/img/Home/Layer 2.svg") no-repeat left top, url("/img/Home/Layer 3.svg") no-repeat left top fixed, url("/img/Home/spring-small-compressed.jpg") no-repeat left top fixed;
-  height: 100%;
-  background-size: cover;
-  position: relative; }
-  #home .cover {
-    background: black;
-    opacity: 0.4;
-    width: 100%;
+#home-page-container {
+  height: 100%; }
+  #home-page-container #home {
+    background: url("/img/Home/Layer 2.svg") no-repeat left top, url("/img/Home/Layer 3.svg") no-repeat left top fixed, url("/img/Home/spring-small-compressed.jpg") no-repeat left top fixed;
     height: 100%;
-    top: 0;
-    position: fixed; }
-  #home a {
-    color: inherit; }
-  #home .arrow {
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 23px;
-    font-weight: bold;
-    padding-top: 3px;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    cursor: pointer;
-    color: white;
-    background: black;
-    opacity: .55;
-    font-family: 'Architects Daughter';
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  #home .text {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%; }
-
-#welcome {
-  height: 100%;
-  background-size: cover;
-  position: relative; }
-  #welcome a {
-    color: inherit; }
-  #welcome .arrow {
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 23px;
-    font-weight: bold;
-    padding-top: 3px;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    cursor: pointer;
-    color: white;
-    background: black;
-    opacity: .55;
-    font-family: 'Architects Daughter';
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  #welcome .arrow {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); }
-  #welcome .flex {
+    background-size: cover;
+    position: relative; }
+    #home-page-container #home .cover {
+      background: black;
+      opacity: 0.4;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      position: fixed; }
+    #home-page-container #home a {
+      color: inherit; }
+    #home-page-container #home .arrow {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-size: 23px;
+      font-weight: bold;
+      padding-top: 3px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      color: white;
+      background: black;
+      opacity: .55;
+      font-family: 'Architects Daughter';
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    #home-page-container #home .text {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: fixed;
+      width: 100%;
+      height: 100%; }
+  #home-page-container #welcome {
     height: 100%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    #welcome .flex > * {
-      margin: 0 60px; }
-  #welcome .background-img {
-    opacity: 0.2;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    height: 100%; }
-  #welcome .text {
-    text-align: center;
-    max-width: 480px;
-    color: black; }
-    #welcome .text h1 {
-      font-size: 64px;
-      margin-bottom: 34px; }
-    #welcome .text p {
-      font-size: 27px; }
-    #welcome .text i {
-      font-weight: bold; }
-  #welcome .img-container img {
-    width: 400px;
-    border-radius: 50%;
-    height: 400px; }
+    background-size: cover;
+    position: relative; }
+    #home-page-container #welcome a {
+      color: inherit; }
+    #home-page-container #welcome .arrow {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-size: 23px;
+      font-weight: bold;
+      padding-top: 3px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      color: white;
+      background: black;
+      opacity: .55;
+      font-family: 'Architects Daughter';
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    #home-page-container #welcome .arrow {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
+    #home-page-container #welcome .flex {
+      height: 100%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #home-page-container #welcome .flex > * {
+        margin: 0 60px; }
+    #home-page-container #welcome .background-img {
+      opacity: 0.2;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: fixed;
+      z-index: -1;
+      width: 100%;
+      height: 100%; }
+    #home-page-container #welcome .text {
+      text-align: center;
+      max-width: 480px;
+      color: black; }
+      #home-page-container #welcome .text h1 {
+        font-size: 64px;
+        margin-bottom: 34px; }
+      #home-page-container #welcome .text p {
+        font-size: 27px; }
+      #home-page-container #welcome .text i {
+        font-weight: bold; }
+    #home-page-container #welcome .img-container img {
+      width: 400px;
+      border-radius: 50%;
+      height: 400px; }
 
 #chiropractic {
   background: url("/img/Chiropractic/balance-compressed.jpg") no-repeat center center;
