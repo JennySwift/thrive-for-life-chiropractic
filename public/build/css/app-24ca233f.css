@@ -502,14 +502,12 @@ ul {
     height: 0;
     padding: 0 10px;
     opacity: 0; }
-
-.accordion-heading {
-  cursor: pointer;
-  font-size: 23px;
-  color: white; }
-
-h1, h2, h3, h4, h5 {
-  margin: 0; }
+  .accordion-item .accordion-heading {
+    cursor: pointer;
+    font-size: 23px;
+    color: white; }
+  .accordion-item h1, .accordion-item h2, .accordion-item h3, .accordion-item h4, .accordion-item h5 {
+    margin: 0; }
 
 .current-page {
   text-decoration: underline; }

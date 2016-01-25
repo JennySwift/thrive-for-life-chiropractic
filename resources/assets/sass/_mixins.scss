@@ -65,14 +65,14 @@
 		margin: 20px 0;
 		position: relative;
 		@include expand;
-	}
-	.accordion-heading {
-		cursor: pointer;
-		font-size: 23px;
-		color: white;
-	}
-	h1,h2,h3,h4,h5 {
-		//So the transition isn't jerky
-		margin: 0;
+		.accordion-heading {
+			cursor: pointer;
+			font-size: 23px;
+			color: white;
+		}
+		h1,h2,h3,h4,h5 {
+			//So the transition isn't jerky
+			margin: 0;
+		}
 	}
 }
