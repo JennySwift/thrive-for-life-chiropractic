@@ -473,6 +473,47 @@ ul {
     .slider-content p:not(:first-child) {
       opacity: 0; }
 
+.service .tabs {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+  top: 34px;
+  z-index: 9;
+  font-family: 'Josefin Sans';
+  background: rgba(64, 64, 64, 0.5); }
+  .service .tabs .tab {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 6px 0; }
+    .service .tabs .tab:not(:last-child) .tab-inner {
+      border-right: 1px solid white; }
+    .service .tabs .tab.current-tab {
+      background: rgba(0, 0, 0, 0.55); }
+      .service .tabs .tab.current-tab .tab-inner {
+        border: none; }
+    .service .tabs .tab.next-to-current-tab .tab-inner {
+      border: none; }
+    .service .tabs .tab .tab-inner {
+      padding-top: 3px;
+      height: 24px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .service .tabs .tab a {
+      color: white; }
+
 .cover {
   background: black;
   opacity: 0.4;
@@ -513,30 +554,6 @@ ul {
 
 .current-page {
   text-decoration: underline; }
-
-.service .tabs {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  position: relative;
-  width: 100%;
-  top: 34px;
-  z-index: 9;
-  font-family: 'Josefin Sans'; }
-  .service .tabs .tab {
-    background: rgba(0, 0, 0, 0.55);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    margin: 0 11px;
-    text-align: center; }
-    .service .tabs .tab a {
-      color: white; }
 
 #preloaded-images {
   display: -webkit-flex;

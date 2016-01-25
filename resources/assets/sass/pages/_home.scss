@@ -6,29 +6,6 @@
     text-decoration: underline;
 }
 
-.service {
-    .tabs {
-        display: flex;
-        justify-content: space-around;
-        position: relative;
-        width: 100%;
-        top: 34px;
-        z-index: 9;
-        font-family: 'Josefin Sans';
-        .tab {
-            background: rgba(0,0,0,.55);
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            flex-grow: 1;
-            margin: 0 11px;
-            text-align: center;
-            a {
-                color: white;
-            }
-        }
-    }
-}
-
 #preloaded-images {
     display: flex;
     position: absolute;

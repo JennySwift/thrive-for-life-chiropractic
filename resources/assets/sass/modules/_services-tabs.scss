@@ -1,0 +1,42 @@
+.service {
+    .tabs {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        width: 100%;
+        top: 34px;
+        z-index: 9;
+        font-family: 'Josefin Sans';
+        background: rgba(64,64,64, .5);
+        .tab {
+            flex-grow: 1;
+            padding: 6px 0;
+            &:not(:last-child) {
+                .tab-inner {
+                    border-right: 1px solid white;
+                }
+            }
+            &.current-tab {
+                background: rgba(0,0,0,.55);
+                .tab-inner {
+                    border: none;
+                }
+            }
+            &.next-to-current-tab {
+                .tab-inner {
+                    border: none;
+                }
+            }
+            .tab-inner {
+                padding-top: 3px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            a {
+                color: white;
+            }
+        }
+    }
+}
