@@ -7,6 +7,9 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 20px;
   font-family: 'Annie Use Your Telescope'; }
 
+a:focus {
+  outline: none; }
+
 body {
   color: #777;
   font-size: 18px;
@@ -116,8 +119,6 @@ ul {
     #navbar > li > a {
       transition: all 0.5s ease;
       color: white; }
-      #navbar > li > a:focus {
-        outline: none; }
     #navbar > li:hover > a {
       font-size: 25px; }
     #navbar > li .dropdown-menu a {

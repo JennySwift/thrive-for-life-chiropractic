@@ -27,9 +27,6 @@
         > a {
             transition: all .5s ease;
             color: white;
-            &:focus {
-                outline: none;
-            }
         }
         &:hover {
             > a {
