@@ -27,6 +27,8 @@
         > a {
             transition: all .5s ease;
             color: white;
+            //To center vertically because space is allowed for the underline
+            padding-top: 3px;
         }
         &:hover {
             > a {

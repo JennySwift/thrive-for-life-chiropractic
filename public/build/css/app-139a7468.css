@@ -118,7 +118,8 @@ ul {
       min-width: 120px; }
     #navbar > li > a {
       transition: all 0.5s ease;
-      color: white; }
+      color: white;
+      padding-top: 3px; }
     #navbar > li:hover > a {
       font-size: 25px; }
     #navbar > li .dropdown-menu a {
