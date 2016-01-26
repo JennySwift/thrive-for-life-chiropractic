@@ -608,7 +608,8 @@ ul {
       justify-content: center;
       -webkit-align-items: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      z-index: 9; }
     #home-page-container #home .text {
       top: 0;
       left: 0;
@@ -661,7 +662,8 @@ ul {
       justify-content: center;
       -webkit-align-items: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      z-index: 9; }
     #home-page-container #welcome .arrow {
       -webkit-transform: rotate(180deg);
       transform: rotate(180deg); }
