@@ -514,6 +514,13 @@ ul {
     .service .tabs .tab a {
       color: white; }
 
+.scrollbar-container {
+  position: relative;
+  height: 400px;
+  overflow: auto; }
+  .scrollbar-container .scrollbar-content {
+    height: 720px; }
+
 .cover {
   background: black;
   opacity: 0.4;
