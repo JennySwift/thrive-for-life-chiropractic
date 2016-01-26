@@ -10,6 +10,13 @@ $("#logo-upper").textillate({
 
 $("#logo-lower").lettering();
 
+//Perfect scrollbar
+window.onload = function () {
+    [].forEach.call(document.querySelectorAll('.scrollbar-container'), function (el) {
+        Ps.initialize(el);
+    });
+};
+
 //$(function() {
 //    $('a[href*=#]:not([href=#])').click(function() {
 //        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

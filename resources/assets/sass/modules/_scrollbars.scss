@@ -1,0 +1,10 @@
+.scrollbar-container {
+    position:relative;
+    //width: 600px;
+    height: 100%;
+    overflow: auto;
+    .scrollbar-content {
+        //width: 1280px;
+        //height: 720px;
+    }
+}
