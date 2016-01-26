@@ -681,20 +681,20 @@ ul {
       position: relative; }
       #home-page-container #welcome .flex > * {
         margin: 0 60px; }
-    #home-page-container #welcome .text {
-      margin: 62px;
-      margin-top: 34px;
-      max-height: 100%;
-      text-align: center;
+    #home-page-container #welcome .scrollbar-container {
       max-width: 540px;
-      color: black; }
-      #home-page-container #welcome .text h1 {
-        font-size: 76px;
-        margin-bottom: 34px; }
-      #home-page-container #welcome .text p {
-        margin-bottom: 28px; }
-      #home-page-container #welcome .text i {
-        font-weight: bold; }
+      padding-top: 100px; }
+      #home-page-container #welcome .scrollbar-container .text {
+        max-height: 100%;
+        text-align: center;
+        color: black; }
+        #home-page-container #welcome .scrollbar-container .text h1 {
+          font-size: 76px;
+          margin-bottom: 34px; }
+        #home-page-container #welcome .scrollbar-container .text p {
+          margin-bottom: 28px; }
+        #home-page-container #welcome .scrollbar-container .text i {
+          font-weight: bold; }
     #home-page-container #welcome .img-container img {
       margin-top: 34px;
       width: 500px;
