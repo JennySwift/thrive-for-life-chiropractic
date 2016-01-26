@@ -1,0 +1,13 @@
+#about {
+    background: url('/img/About/about-quality5.jpg') no-repeat center center;
+    @include backgroundImage;
+    position: relative;
+    @include text;
+    .text {
+        max-width: 700px;
+        max-height: 100%;
+        color: white;
+        position: absolute;
+        right: 40px;
+    }
+}

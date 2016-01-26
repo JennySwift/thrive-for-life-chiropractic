@@ -86,6 +86,8 @@
             //padding-top: $navHeight;
             max-width: 540px;
             padding-top: 100px;
+            display: flex;
+            align-items: center;
             //max-height: 100%;
             .text {
                 max-height: 100%;
@@ -104,148 +106,12 @@
             }
         }
         .img-container {
+            margin-top: $navHeight;
             img {
-                margin-top: $navHeight;
                 width: 500px;
                 border-radius: 50%;
                 height: 500px;
             }
         }
     }
-}
-
-#chiropractic {
-    background: url('/img/Chiropractic/balance-compressed.jpg') no-repeat center center;
-    @include backgroundImage;
-    @include text;
-    .text {
-        width: 600px;
-        color: white;
-        height: 100%;
-    }
-}
-
-#ak {
-    background: url('/img/AK/walk-small-compressed.jpg') no-repeat left bottom;
-    @include backgroundImage;
-    position: relative;
-    .text {
-        max-width: 468px;
-        position: absolute;
-        bottom: 50px;
-        //left: 222px;
-        left: 10%;
-        color: white;
-        h1 {
-            text-align: left;
-        }
-    }
-}
-
-#rnr {
-    background: url('/img/RNR/child-small-compressed.jpg') no-repeat right center;
-    @include backgroundImage;
-    @include text;
-    .text {
-        max-width: 800px;
-        color: white;
-        h1 {
-            text-align: left;
-        }
-    }
-}
-
-#lifestyle {
-    background: url('/img/Lifestyle/hiker-small-compressed.jpg') no-repeat left center;
-    @include backgroundImage;
-    @include text;
-    .text {
-        color: white;
-        max-width: 600px;
-        h1 {
-            text-align: left;
-        }
-    }
-}
-
-#hra {
-    background: url('/img/HRA/tape-small.jpg') no-repeat center center;
-    @include backgroundImage;
-    @include gradientCoverWhite;
-    @include text;
-    .text {
-        max-width: 700px;
-        color: black;
-        h1 {
-            text-align: left;
-        }
-    }
-}
-
-#government {
-    background: url('/img/Government/meadow-small-compressed.jpg') no-repeat center center;
-    @include backgroundImage;
-    @include text;
-    .text {
-        max-width: 700px;
-        padding: 40px;
-        color: white;
-        h1, h5 {
-            text-align: left;
-        }
-    }
-}
-
-#about {
-    background: url('/img/About/about-quality5.jpg') no-repeat center center;
-    @include backgroundImage;
-    position: relative;
-    @include text;
-    .text {
-        max-width: 700px;
-        max-height: 100%;
-        color: white;
-        position: absolute;
-        right: 40px;
-    }
-}
-
-#contact {
-    //background: url('/img/Contact/map.jpg') no-repeat center center;
-    //@include backgroundImage;
-    position: relative;
-    height: 100%;
-    .map {
-        height: 100%;
-        padding-top: 34px;
-        iframe {
-            width: 100%;
-            height: 100%;
-        }
-    }
-    .text-container {
-        display: flex;
-        justify-content: center;
-        padding-top: 60px;
-        position: absolute;
-        bottom: 40px;
-        width: 100%;
-        .text {
-            background: black;
-            opacity: .8;
-            padding: 40px;
-            color: white;
-            .flex {
-                display: flex;
-                justify-content: space-around;
-                .fa-at {
-                    font-size: 12px;
-                }
-                > * {
-                    margin: 0 20px;
-                }
-            }
-        }
-    }
-
 }

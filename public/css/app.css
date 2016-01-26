@@ -683,7 +683,13 @@ ul {
         margin: 0 60px; }
     #home-page-container #welcome .scrollbar-container {
       max-width: 540px;
-      padding-top: 100px; }
+      padding-top: 100px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
       #home-page-container #welcome .scrollbar-container .text {
         max-height: 100%;
         text-align: center;
@@ -695,11 +701,21 @@ ul {
           margin-bottom: 28px; }
         #home-page-container #welcome .scrollbar-container .text i {
           font-weight: bold; }
-    #home-page-container #welcome .img-container img {
-      margin-top: 34px;
-      width: 500px;
-      border-radius: 50%;
-      height: 500px; }
+    #home-page-container #welcome .img-container {
+      margin-top: 34px; }
+      #home-page-container #welcome .img-container img {
+        width: 500px;
+        border-radius: 50%;
+        height: 500px; }
+
+.services a {
+  color: #41b920; }
+
+.services p {
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 10px; }
 
 #chiropractic {
   background: url("/img/Chiropractic/balance-compressed.jpg") no-repeat center center;
@@ -791,22 +807,6 @@ ul {
     #government .text h1, #government .text h5 {
       text-align: left; }
 
-#about {
-  background: url("/img/About/about-quality5.jpg") no-repeat center center;
-  height: 100%;
-  background-size: cover;
-  position: relative; }
-  #about .text {
-    padding: 40px;
-    position: relative;
-    margin-top: 28px; }
-  #about .text {
-    max-width: 700px;
-    max-height: 100%;
-    color: white;
-    position: absolute;
-    right: 40px; }
-
 #contact {
   position: relative;
   height: 100%; }
@@ -844,13 +844,161 @@ ul {
         #contact .text-container .text .flex > * {
           margin: 0 20px; }
 
-.services a {
-  color: #41b920; }
+#about {
+  background: url("/img/About/about-quality5.jpg") no-repeat center center;
+  height: 100%;
+  background-size: cover;
+  position: relative; }
+  #about .text {
+    padding: 40px;
+    position: relative;
+    margin-top: 28px; }
+  #about .text {
+    max-width: 700px;
+    max-height: 100%;
+    color: white;
+    position: absolute;
+    right: 40px; }
 
-.services p {
-  font-weight: 400;
-  font-size: 20px;
-  max-width: 700px;
-  margin: 0 auto 10px; }
+@media (max-width: 1185px) {
+  #home-page-container #welcome .scrollbar-container .text p {
+    font-size: 29px; } }
+
+@media (max-width: 1160px) {
+  #home-page-container #welcome .scrollbar-container .text p {
+    font-size: 29px; }
+  #home-page-container #welcome .img-container img {
+    width: 450px;
+    height: 450px; } }
+
+@media (max-width: 1150px) {
+  #home-page-container #welcome .scrollbar-container .text p {
+    font-size: 28px; } }
+
+@media (max-width: 1030px) {
+  #home-page-container #welcome .scrollbar-container .text p {
+    font-size: 27px; } }
+
+@media (max-width: 1020px) {
+  #home-page-container #welcome .flex > * {
+    margin: 0 59px; }
+  #home-page-container #welcome .scrollbar-container {
+    padding-top: 75px; }
+    #home-page-container #welcome .scrollbar-container .text p {
+      font-size: 27px; } }
+
+@media (max-width: 1005px) {
+  #home-page-container #welcome .scrollbar-container .text p {
+    font-size: 26px; } }
+
+@media (max-width: 980px) {
+  #home-page-container #welcome .flex > * {
+    margin: 0 58px; }
+  #home-page-container #welcome .scrollbar-container {
+    padding-top: 70px; }
+    #home-page-container #welcome .scrollbar-container .text p {
+      font-size: 26px; }
+  #home-page-container #welcome .img-container img {
+    width: 440px;
+    height: 440px; } }
+
+@media (max-width: 965px) {
+  #home-page-container #welcome .flex > * {
+    margin: 0 57px; }
+  #home-page-container #welcome .scrollbar-container {
+    padding-top: 70px; }
+    #home-page-container #welcome .scrollbar-container .text p {
+      font-size: 25px; } }
+
+@media (max-width: 940px) {
+  #home-page-container #welcome .flex > * {
+    margin: 0 57px; }
+  #home-page-container #welcome .scrollbar-container {
+    padding-top: 70px; }
+    #home-page-container #welcome .scrollbar-container .text h1 {
+      font-size: 70px;
+      margin-bottom: 26px; }
+    #home-page-container #welcome .scrollbar-container .text p {
+      font-size: 24px; } }
+
+@media (max-width: 930px) {
+  #home-page-container #welcome .flex > * {
+    margin: 0 57px; }
+  #home-page-container #welcome .scrollbar-container {
+    padding-top: 70px; }
+    #home-page-container #welcome .scrollbar-container .text h1 {
+      font-size: 70px;
+      margin-bottom: 26px; }
+    #home-page-container #welcome .scrollbar-container .text p {
+      font-size: 24px; }
+  #home-page-container #welcome .img-container img {
+    width: 420px;
+    height: 420px; } }
+
+@media (max-width: 905px) {
+  #home-page-container #welcome .flex > * {
+    margin: 0 55px; }
+  #home-page-container #welcome .scrollbar-container {
+    padding-top: 60px; }
+    #home-page-container #welcome .scrollbar-container .text h1 {
+      font-size: 60px;
+      margin-bottom: 22px; }
+    #home-page-container #welcome .scrollbar-container .text p {
+      font-size: 23px; }
+  #home-page-container #welcome .img-container img {
+    width: 400px;
+    height: 400px; } }
+
+@media (max-width: 830px) {
+  #home-page-container #welcome .flex > * {
+    margin: 0 50px; }
+  #home-page-container #welcome .scrollbar-container {
+    padding-top: 55px; }
+    #home-page-container #welcome .scrollbar-container .text h1 {
+      font-size: 60px;
+      margin-bottom: 22px; }
+    #home-page-container #welcome .scrollbar-container .text p {
+      font-size: 23px; }
+  #home-page-container #welcome .img-container img {
+    width: 380px;
+    height: 380px; } }
+
+@media (max-width: 780px) {
+  #home-page-container #welcome .scrollbar-container {
+    padding-top: 50px; }
+    #home-page-container #welcome .scrollbar-container .text h1 {
+      font-size: 58px;
+      margin-bottom: 20px; }
+    #home-page-container #welcome .scrollbar-container .text p {
+      font-size: 21px; }
+  #home-page-container #welcome .img-container img {
+    width: 360px;
+    height: 360px; } }
+
+@media (max-width: 735px) {
+  #home-page-container #welcome .scrollbar-container .text h1 {
+    font-size: 40px;
+    margin-bottom: 20px; }
+  #home-page-container #welcome .scrollbar-container .text p {
+    font-size: 19px; }
+  #home-page-container #welcome .img-container img {
+    width: 340px;
+    height: 340px; } }
+
+@media (max-width: 680px) {
+  #home-page-container #welcome .img-container img {
+    width: 300px;
+    height: 300px; } }
+
+@media (max-width: 600px) {
+  #home-page-container #welcome .scrollbar-container .text p {
+    font-size: 14px; }
+  #home-page-container #welcome .img-container img {
+    width: 200px;
+    height: 200px; } }
+
+@media (max-width: 500px) {
+  #home-page-container #welcome .img-container {
+    display: none; } }
 
 /*# sourceMappingURL=app.css.map */
