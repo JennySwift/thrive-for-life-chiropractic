@@ -113,7 +113,7 @@ ul {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
-    height: 34px; }
+    height: 37px; }
     #navbar > li:not(:first-child) {
       min-width: 120px; }
     #navbar > li > a {
@@ -121,7 +121,7 @@ ul {
       color: white;
       padding-top: 3px; }
     #navbar > li:hover > a {
-      font-size: 25px; }
+      font-size: 22px; }
     #navbar > li .dropdown-menu a {
       color: #777; }
       #navbar > li .dropdown-menu a:hover {
@@ -702,7 +702,7 @@ ul {
         #home-page-container #welcome .scrollbar-container .text i {
           font-weight: bold; }
     #home-page-container #welcome .img-container {
-      margin-top: 34px; }
+      margin-top: 37px; }
       #home-page-container #welcome .img-container img {
         width: 500px;
         border-radius: 50%;
