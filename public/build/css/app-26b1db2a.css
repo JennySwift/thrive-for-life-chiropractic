@@ -532,7 +532,7 @@ ul {
   height: 100%;
   top: 0;
   position: fixed;
-  background: linear-gradient(to right, transparent 45%, pink 60%, yellow 65%, black 75%); }
+  background: linear-gradient(to right, transparent 45%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.7) 65%, rgba(0, 0, 0, 0.9) 90%); }
 
 .accordion-item {
   margin: 20px 0;
