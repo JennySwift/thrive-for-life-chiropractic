@@ -121,7 +121,7 @@ ul {
       color: white;
       padding-top: 3px; }
     #navbar > li:hover > a {
-      font-size: 22px; }
+      font-size: 20px; }
     #navbar > li .dropdown-menu a {
       color: #777; }
       #navbar > li .dropdown-menu a:hover {
@@ -552,7 +552,9 @@ ul {
   .accordion-item .accordion-heading {
     cursor: pointer;
     font-size: 23px;
-    color: white; }
+    color: white;
+    font-family: "Josefin Sans";
+    font-weight: bold; }
   .accordion-item h1, .accordion-item h2, .accordion-item h3, .accordion-item h4, .accordion-item h5 {
     margin: 0; }
 
@@ -696,9 +698,9 @@ ul {
         color: black; }
         #home-page-container #welcome .scrollbar-container .text h1 {
           font-size: 77px;
-          margin-bottom: 34px; }
+          margin-bottom: 37px; }
         #home-page-container #welcome .scrollbar-container .text p {
-          margin-bottom: 28px; }
+          margin-bottom: 31px; }
         #home-page-container #welcome .scrollbar-container .text i {
           font-weight: bold; }
     #home-page-container #welcome .img-container {
@@ -786,11 +788,18 @@ ul {
     padding: 40px;
     position: relative;
     margin-top: 28px; }
+  #hra .gradient-cover-white {
+    opacity: 1;
+    background: linear-gradient(to left, transparent 25%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.9) 85%, white 95%); }
   #hra .text {
+    margin-top: 18px;
+    padding: 58px;
     max-width: 700px;
     color: black; }
     #hra .text h1 {
-      text-align: left; }
+      text-align: left;
+      font-size: 53px;
+      margin-bottom: 30px; }
 
 #government {
   background: url("/img/Government/meadow-small-compressed.jpg") no-repeat center center;
@@ -853,6 +862,8 @@ ul {
     padding: 40px;
     position: relative;
     margin-top: 28px; }
+  #about .gradient-cover {
+    background: linear-gradient(to right, transparent 42%, rgba(0, 0, 0, 0.7) 53%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.9) 85%, black 95%); }
   #about .text {
     max-width: 700px;
     max-height: 100%;
