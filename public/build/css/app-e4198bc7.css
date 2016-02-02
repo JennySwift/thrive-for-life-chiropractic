@@ -623,7 +623,7 @@ ul {
     height: 100%;
     background-size: cover;
     position: relative;
-    font-size: 30px; }
+    font-size: 28px; }
     #home-page-container #welcome .cover {
       background: black;
       opacity: 0.4;
@@ -633,7 +633,7 @@ ul {
       position: fixed; }
     #home-page-container #welcome .cover {
       background: white;
-      opacity: .75;
+      opacity: .85;
       position: absolute; }
     #home-page-container #welcome a {
       color: inherit; }
@@ -695,7 +695,7 @@ ul {
         text-align: center;
         color: black; }
         #home-page-container #welcome .scrollbar-container .text h1 {
-          font-size: 76px;
+          font-size: 77px;
           margin-bottom: 34px; }
         #home-page-container #welcome .scrollbar-container .text p {
           margin-bottom: 28px; }
@@ -704,9 +704,9 @@ ul {
     #home-page-container #welcome .img-container {
       margin-top: 37px; }
       #home-page-container #welcome .img-container img {
-        width: 500px;
+        width: 480px;
         border-radius: 50%;
-        height: 500px; }
+        height: 480px; }
 
 .services a {
   color: #41b920; }

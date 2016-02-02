@@ -44,12 +44,12 @@
         @include cover;
         .cover {
             background: white;
-            opacity: .75;
+            opacity: .85;
             position: absolute;
         }
         @include backgroundImage;
         position: relative;
-        font-size: 30px;
+        font-size: 28px;
         a {
             color: inherit;
         }
@@ -70,17 +70,6 @@
                 margin: 0 60px;
             }
         }
-        //.background-img {
-        //    opacity: 0.2;
-        //    top: 0;
-        //    left: 0;
-        //    bottom: 0;
-        //    right: 0;
-        //    position: fixed;
-        //    z-index: -1;
-        //    width: 100%;
-        //    height: 100%;
-        //}
         .scrollbar-container {
             //margin: 62px;
             //padding-top: $navHeight;
@@ -94,7 +83,7 @@
                 text-align: center;
                 color: black;
                 h1 {
-                    font-size: 76px;
+                    font-size: 77px;
                     margin-bottom: 34px;
                 }
                 p {
@@ -108,9 +97,9 @@
         .img-container {
             margin-top: $navHeight;
             img {
-                width: 500px;
+                width: 480px;
                 border-radius: 50%;
-                height: 500px;
+                height: 480px;
             }
         }
     }
