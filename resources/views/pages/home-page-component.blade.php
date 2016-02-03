@@ -4,9 +4,7 @@
         <div id="home">
             <a href="#welcome">
                 {{--<i class="fa fa-chevron-circle-down"></i>--}}
-                <div class="arrow">
-                    <span>V</span>
-                </div>
+                <span class="arrow fa fa-chevron-circle-down"></span>
             </a>
         </div>
 
@@ -14,9 +12,7 @@
             <div class="cover"></div>
             <a href="#home">
                 {{--<i class="fa fa-chevron-circle-up"></i>--}}
-                <div class="arrow">
-                    <span>V</span>
-                </div>
+                <span class="arrow fa fa-chevron-circle-down"></span>
             </a>
             {{--<img class="background-img" src="/img/Home/spring-small-compressed.jpg">--}}
             <div class="flex">

@@ -586,26 +586,11 @@ ul {
       left: 0;
       right: 0;
       margin: auto;
-      font-size: 23px;
-      font-weight: bold;
-      padding-top: 3px;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
+      font-size: 40px;
+      width: 35px;
       cursor: pointer;
-      color: white;
-      background: black;
+      color: black;
       opacity: .55;
-      font-family: 'Architects Daughter';
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
       z-index: 9; }
     #home-page-container #home .text {
       top: 0;
@@ -640,26 +625,11 @@ ul {
       left: 0;
       right: 0;
       margin: auto;
-      font-size: 23px;
-      font-weight: bold;
-      padding-top: 3px;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
+      font-size: 40px;
+      width: 35px;
       cursor: pointer;
-      color: white;
-      background: black;
+      color: black;
       opacity: .55;
-      font-family: 'Architects Daughter';
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
       z-index: 9; }
     #home-page-container #welcome .arrow {
       -webkit-transform: rotate(180deg);
