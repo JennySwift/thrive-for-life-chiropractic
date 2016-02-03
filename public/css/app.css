@@ -465,12 +465,12 @@ ul {
 .slider-content {
   height: 100%;
   position: relative; }
-  .slider-content p {
+  .slider-content div {
     margin: 0;
     padding: 0;
     height: 100%;
     position: absolute; }
-    .slider-content p:not(:first-child) {
+    .slider-content div:not(:first-child) {
       opacity: 0; }
 
 .service .tabs {
