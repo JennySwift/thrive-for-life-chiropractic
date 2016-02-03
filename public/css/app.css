@@ -510,6 +510,9 @@ ul {
   height: 100%;
   overflow: auto; }
 
+.accordion-item .expanded {
+  text-decoration: underline; }
+
 .cover {
   background: black;
   opacity: 0.4;

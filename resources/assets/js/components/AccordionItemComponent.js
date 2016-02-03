@@ -7,12 +7,28 @@ var AccordionItem = Vue.component('accordion-item', {
     },
     components: {},
     methods: {
+
+        /**
+         * Remove underlines and underline the appropriate heading
+         * @param heading
+         */
+        setUnderlines: function (heading) {
+            $('.expanded').removeClass('expanded');
+            if (this.showText) {
+                heading.addClass('expanded');
+            }
+        },
+
+        /**
+         *
+         */
         listen: function () {
             var that = this;
             var heading = $(this.$el).find('h5');
             heading.on('click', function () {
                 $.event.trigger('closeItems', [that]);
                 that.showText = !that.showText;
+                that.setUnderlines(heading);
             });
             
             $(document).on('closeItems', function (event, item) {
