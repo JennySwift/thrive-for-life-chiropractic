@@ -448,19 +448,10 @@ ul {
   height: 30px; }
   .slider-navigation .slider-navigation-item {
     transition: all, 0.5s, ease;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: white;
     cursor: pointer;
-    margin: 5px 10px;
-    box-shadow: -9px 0px 7px black inset;
-    position: relative;
-    bottom: 0; }
+    margin: 5px 4px; }
     .slider-navigation .slider-navigation-item.current-step {
-      width: 30px;
-      height: 30px;
-      bottom: 5px; }
+      color: black; }
 
 .slider-content {
   height: 100%;

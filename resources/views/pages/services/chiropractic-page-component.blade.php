@@ -7,8 +7,19 @@
             <h1>Chiropractic</h1>
 
             <div class="slider-navigation">
-                <div v-on:click="sliderStep = 1" v-bind:class="{'current-step': sliderStep === 1}" class="slider-navigation-item"></div>
-                <div v-on:click="sliderStep = 2" v-bind:class="{'current-step': sliderStep === 2}" class="slider-navigation-item"></div>
+                <div
+                    v-on:click="sliderStep = 1"
+                    v-bind:class="{'current-step': sliderStep === 1}"
+                    class="slider-navigation-item fa fa-circle"
+                >
+                </div>
+
+                <div
+                    v-on:click="sliderStep = 2"
+                    v-bind:class="{'current-step': sliderStep === 2}"
+                    class="slider-navigation-item fa fa-circle"
+                >
+                </div>
             </div>
 
             <div class="slider-content">
