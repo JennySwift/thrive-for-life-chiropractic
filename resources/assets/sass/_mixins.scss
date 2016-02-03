@@ -20,7 +20,20 @@
 		opacity: .55;
 		z-index: 9;
 	}
+}
 
+@mixin animatedArrow {
+	.arrow {
+		animation-name: arrow;
+		animation-duration: 1.2s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes arrow {
+		0% {bottom: 15px;}
+		50% {bottom: 25px;}
+		100% {bottom: 15px;}
+	}
 }
 
 @mixin cover {

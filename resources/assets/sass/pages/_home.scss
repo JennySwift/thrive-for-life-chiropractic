@@ -20,6 +20,7 @@
         //background: url('/img/Home/spring-small.jpg') no-repeat left top fixed;
         @include backgroundImage;
         @include cover;
+        @include animatedArrow;
         position: relative;
         a {
             color: inherit;
