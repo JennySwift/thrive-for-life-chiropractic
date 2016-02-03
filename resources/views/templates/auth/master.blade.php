@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Budget App</title>
+    <title>Thrive For Life</title>
     {{--<link rel="stylesheet" href="../tools/bootstrap.min.css">--}}
     {{--Bootstrap is the only one I need from plugins.css--}}
     <link rel="stylesheet" href="../css/plugins.css">
