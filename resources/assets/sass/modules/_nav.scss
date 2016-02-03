@@ -21,6 +21,7 @@
         justify-content: center;
         position: relative;
         height: $navHeight;
+        min-width: 80px;
         &:not(:first-child) {
             min-width: 120px;
         }
