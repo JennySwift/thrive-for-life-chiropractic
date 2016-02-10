@@ -550,7 +550,10 @@ ul {
     font-size: 23px;
     color: white;
     font-family: "Josefin Sans";
-    font-weight: bold; }
+    font-weight: bold;
+    display: inline-block; }
+    .accordion-item .accordion-heading:hover {
+      text-decoration: underline; }
   .accordion-item h1, .accordion-item h2, .accordion-item h3, .accordion-item h4, .accordion-item h5 {
     margin: 0; }
   .accordion-item .accordion-text.expand-transition p:last-child {
