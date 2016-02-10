@@ -512,9 +512,6 @@ ul {
   height: 100%;
   overflow: auto; }
 
-.accordion-item .expanded {
-  text-decoration: underline; }
-
 .cover {
   background: black;
   opacity: 0.4;
@@ -532,7 +529,7 @@ ul {
   background: linear-gradient(to right, transparent 45%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.7) 65%, rgba(0, 0, 0, 0.9) 90%); }
 
 .accordion-item {
-  margin: 20px 0;
+  margin: 34px 0;
   position: relative;
   /* always present */
   /* .expand-enter defines the starting state for entering */
@@ -546,6 +543,8 @@ ul {
     height: 0;
     padding: 0 10px;
     opacity: 0; }
+  .accordion-item .expanded {
+    text-decoration: underline; }
   .accordion-item .accordion-heading {
     cursor: pointer;
     font-size: 23px;
@@ -554,6 +553,8 @@ ul {
     font-weight: bold; }
   .accordion-item h1, .accordion-item h2, .accordion-item h3, .accordion-item h4, .accordion-item h5 {
     margin: 0; }
+  .accordion-item .accordion-text.expand-transition p:last-child {
+    margin-bottom: 0; }
 
 .current-page {
   text-decoration: underline; }
@@ -758,12 +759,20 @@ ul {
     padding: 40px;
     position: relative;
     margin-top: 28px; }
+  #government .cover {
+    opacity: .3; }
   #government .text {
-    max-width: 700px;
+    max-width: 740px;
     padding: 40px;
-    color: white; }
+    color: white;
+    font-size: 20px; }
+    #government .text p:not(:last-child) {
+      margin-bottom: 26px; }
     #government .text h1, #government .text h5 {
       text-align: left; }
+    #government .text h1 {
+      font-size: 60px;
+      margin-bottom: 40px; }
 
 #hra {
   background: url("/img/HRA/tape-small.jpg") no-repeat center center;

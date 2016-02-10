@@ -2,12 +2,23 @@
     background: url('/img/Government/meadow-small-compressed.jpg') no-repeat center center;
     @include backgroundImage;
     @include text;
+    .cover {
+        opacity: .3;
+    }
     .text {
-        max-width: 700px;
+        max-width: 740px;
         padding: 40px;
         color: white;
+        font-size: 20px;
+        p:not(:last-child) {
+            margin-bottom: 26px;
+        }
         h1, h5 {
             text-align: left;
+        }
+        h1 {
+            font-size: 60px;
+            margin-bottom: 40px;
         }
     }
 }

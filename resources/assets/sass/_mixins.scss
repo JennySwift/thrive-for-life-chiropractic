@@ -79,9 +79,12 @@
 
 @mixin accordion {
 	.accordion-item {
-		margin: 20px 0;
+		margin: 34px 0;
 		position: relative;
 		@include expand;
+		.expanded {
+			text-decoration: underline;
+		}
 		.accordion-heading {
 			cursor: pointer;
 			font-size: 23px;
@@ -92,6 +95,15 @@
 		h1,h2,h3,h4,h5 {
 			//So the transition isn't jerky
 			margin: 0;
+		}
+		.accordion-text {
+			&.expand-transition {
+				p {
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
 		}
 	}
 }
