@@ -787,10 +787,12 @@ ul {
     padding: 58px;
     max-width: 700px;
     color: black; }
+    #hra .text p:not(:last-child) {
+      margin-bottom: 26px; }
     #hra .text h1 {
       text-align: left;
-      font-size: 53px;
-      margin-bottom: 30px; }
+      font-size: 58px;
+      margin-bottom: 36px; }
 
 #lifestyle {
   background: url("/img/Lifestyle/hiker-small-compressed.jpg") no-repeat left center;
