@@ -3,7 +3,7 @@
     <a
         href="#"
         {{--v-link="{path: '/services/chiropractic'}"--}}
-        v-on:click="path = '/services/chiropractic'"
+        v-on:click="toggleServicesTabs()"
     >
         Services
     </a>

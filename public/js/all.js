@@ -19598,6 +19598,7 @@ var Navbar = Vue.component('navbar', {
     data: function () {
         return {
             //path: this.$route.path
+            showServicesTabs: false
         };
     },
     components: {},
@@ -19607,16 +19608,19 @@ var Navbar = Vue.component('navbar', {
         }
     },
     methods: {
-        ready: function () {
-            //console.log(window.location);
-            //console.log(this.$route);
+
+        /**
+         *
+         */
+        toggleServicesTabs: function () {
+            $.event.trigger('toggle-services-tabs');
         }
     },
     props: [
         'path'
     ],
     ready: function () {
-        this.ready();
+
     }
 });
 
@@ -19763,6 +19767,43 @@ var RNRPage = Vue.component('rnr-page', {
     ],
     ready: function () {
 
+    }
+});
+
+var ServicesTabs = Vue.component('services-tabs', {
+    template: '#services-tabs-template',
+    data: function () {
+        return {
+            showTabs: false
+        };
+    },
+    components: {},
+    methods: {
+
+        /**
+         *
+         */
+        listen: function () {
+            var that = this;
+            $(document).on('toggle-services-tabs', function (event) {
+                that.showTabs = !that.showTabs;
+            });
+        },
+
+        /**
+         *
+         * @param response
+         */
+        handleResponseError: function (response) {
+            this.$broadcast('response-error', response);
+            this.showLoading = false;
+        }
+    },
+    props: [
+        'path'
+    ],
+    ready: function () {
+        this.listen();
     }
 });
 

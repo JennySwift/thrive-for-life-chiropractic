@@ -1,19 +1,22 @@
 #hra {
     background: url('/img/HRA/tape-small.jpg') no-repeat center center;
     @include backgroundImage;
-    @include gradientCoverWhite;
     @include text;
-    .gradient-cover-white {
+    .gradient-cover {
         opacity: 1;
         background: linear-gradient(to left, transparent 25%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.9) 85%, rgba(255, 255, 255, 1) 95%);
     }
     .text {
+        color: black;
+        height: 100%;
+        max-width: 700px;
         margin-top: 18px;
         padding: 58px;
-        max-width: 700px;
-        color: black;
-        p:not(:last-child) {
-            margin-bottom: 26px;
+        p {
+            font-size: 20px;
+            &:not(:last-child) {
+                margin-bottom: 26px;
+            }
         }
         h1 {
             text-align: left;

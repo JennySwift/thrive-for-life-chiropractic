@@ -3,6 +3,7 @@ var Navbar = Vue.component('navbar', {
     data: function () {
         return {
             //path: this.$route.path
+            showServicesTabs: false
         };
     },
     components: {},
@@ -12,15 +13,18 @@ var Navbar = Vue.component('navbar', {
         }
     },
     methods: {
-        ready: function () {
-            //console.log(window.location);
-            //console.log(this.$route);
+
+        /**
+         *
+         */
+        toggleServicesTabs: function () {
+            $.event.trigger('toggle-services-tabs');
         }
     },
     props: [
         'path'
     ],
     ready: function () {
-        this.ready();
+
     }
 });

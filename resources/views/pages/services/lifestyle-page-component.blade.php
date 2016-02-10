@@ -1,7 +1,6 @@
 <script id="lifestyle-page-template" type="x-template">
 
     <div id="lifestyle" class="service">
-        @include('templates.shared.services-tabs')
         <div class="cover"></div>
         <div class="text">
             <h1>Health-Promoting Lifestyle Advice/Coaching</h1>

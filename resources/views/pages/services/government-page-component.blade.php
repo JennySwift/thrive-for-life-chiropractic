@@ -1,7 +1,6 @@
 <script id="government-page-template" type="x-template">
 
     <div id="government" class="service">
-        @include('templates.shared.services-tabs')
         <div class="cover"></div>
         <div class="text">
             <h1>Government-Supported Services</h1>

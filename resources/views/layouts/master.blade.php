@@ -17,6 +17,10 @@
     >
     </navbar>
 
+    <services-tabs
+        :path.sync="path">
+    </services-tabs>
+
     @section('page-content')
     @show
 

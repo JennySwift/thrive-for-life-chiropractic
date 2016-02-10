@@ -1,7 +1,6 @@
 <script id="ak-page-template" type="x-template">
 
     <div id="ak" class="service">
-        @include('templates.shared.services-tabs')
         <div class="cover"></div>
         <div class="text">
             <h1>Applied Kinesiology</h1>

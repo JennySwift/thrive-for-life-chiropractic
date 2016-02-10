@@ -1,7 +1,6 @@
 <script id="chiropractic-page-template" type="x-template">
 
     <div id="chiropractic" class="service">
-        @include('templates.shared.services-tabs')
         <div class="cover"></div>
         <div class="text">
             <h1>Chiropractic</h1>

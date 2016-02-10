@@ -471,33 +471,33 @@ ul {
       height: 100%;
       position: absolute; }
 
-.service .tabs {
+.tabs {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  position: relative;
+  position: absolute;
   width: 100%;
   top: 37px;
   z-index: 9;
   font-family: 'Josefin Sans';
   background: rgba(64, 64, 64, 0.5); }
-  .service .tabs .tab {
+  .tabs .tab {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     padding: 6px 0; }
-    .service .tabs .tab:not(:last-child) .tab-inner {
+    .tabs .tab:not(:last-child) .tab-inner {
       border-right: 1px solid white; }
-    .service .tabs .tab.current-tab {
+    .tabs .tab.current-tab {
       background: rgba(0, 0, 0, 0.55); }
-      .service .tabs .tab.current-tab .tab-inner {
+      .tabs .tab.current-tab .tab-inner {
         border: none; }
-    .service .tabs .tab.next-to-current-tab .tab-inner {
+    .tabs .tab.next-to-current-tab .tab-inner {
       border: none; }
-    .service .tabs .tab .tab-inner {
+    .tabs .tab .tab-inner {
       padding-top: 3px;
       height: 24px;
       display: -webkit-flex;
@@ -509,7 +509,7 @@ ul {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; }
-    .service .tabs .tab a {
+    .tabs .tab a {
       color: white; }
 
 .scrollbar-container {
@@ -740,9 +740,8 @@ ul {
   height: 100%;
   background-size: cover; }
   #chiropractic .text {
-    padding: 40px;
-    position: relative;
-    margin-top: 28px; }
+    padding: 68px 40px 40px 40px;
+    position: relative; }
   #chiropractic .cover {
     opacity: .3; }
   #chiropractic .text {
@@ -764,14 +763,12 @@ ul {
   height: 100%;
   background-size: cover; }
   #government .text {
-    padding: 40px;
-    position: relative;
-    margin-top: 28px; }
+    padding: 68px 40px 40px 40px;
+    position: relative; }
   #government .cover {
     opacity: .3; }
   #government .text {
     max-width: 740px;
-    padding: 40px;
     color: white;
     font-size: 20px; }
     #government .text p:not(:last-child) {
@@ -786,26 +783,22 @@ ul {
   background: url("/img/HRA/tape-small.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
-  #hra .gradient-cover-white {
-    opacity: 0.9;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background: linear-gradient(to right, white, transparent 60%); }
   #hra .text {
-    padding: 40px;
-    position: relative;
-    margin-top: 28px; }
-  #hra .gradient-cover-white {
+    padding: 68px 40px 40px 40px;
+    position: relative; }
+  #hra .gradient-cover {
     opacity: 1;
     background: linear-gradient(to left, transparent 25%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.9) 85%, white 95%); }
   #hra .text {
-    margin-top: 18px;
-    padding: 58px;
+    color: black;
+    height: 100%;
     max-width: 700px;
-    color: black; }
-    #hra .text p:not(:last-child) {
-      margin-bottom: 26px; }
+    margin-top: 18px;
+    padding: 58px; }
+    #hra .text p {
+      font-size: 20px; }
+      #hra .text p:not(:last-child) {
+        margin-bottom: 26px; }
     #hra .text h1 {
       text-align: left;
       font-size: 58px;
@@ -816,9 +809,8 @@ ul {
   height: 100%;
   background-size: cover; }
   #lifestyle .text {
-    padding: 40px;
-    position: relative;
-    margin-top: 28px; }
+    padding: 68px 40px 40px 40px;
+    position: relative; }
   #lifestyle .cover {
     opacity: .5; }
   #lifestyle .text {
@@ -838,15 +830,15 @@ ul {
   height: 100%;
   background-size: cover; }
   #rnr .text {
-    padding: 40px;
-    position: relative;
-    margin-top: 28px; }
+    padding: 68px 40px 40px 40px;
+    position: relative; }
   #rnr .cover {
     opacity: .45; }
   #rnr .text {
     max-width: 750px;
     color: white;
-    font-size: 18px; }
+    font-size: 18px;
+    padding-top: 120px; }
     #rnr .text h1 {
       text-align: left;
       font-size: 56px;
@@ -895,9 +887,8 @@ ul {
   background-size: cover;
   position: relative; }
   #about .text {
-    padding: 40px;
-    position: relative;
-    margin-top: 28px; }
+    padding: 68px 40px 40px 40px;
+    position: relative; }
   #about .gradient-cover {
     background: linear-gradient(to right, transparent 42%, rgba(0, 0, 0, 0.7) 53%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.9) 85%, black 95%); }
   #about .text {

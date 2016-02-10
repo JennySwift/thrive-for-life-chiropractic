@@ -1,7 +1,6 @@
 <script id="rnr-page-template" type="x-template">
 
     <div id="rnr" class="service">
-        @include('templates.shared.services-tabs')
         <div class="cover"></div>
         <div class="text">
             <h1>Retained Neonatal Reflexes</h1>
