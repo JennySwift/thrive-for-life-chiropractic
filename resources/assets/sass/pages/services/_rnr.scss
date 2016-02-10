@@ -2,11 +2,17 @@
     background: url('/img/RNR/child-small-compressed.jpg') no-repeat right center;
     @include backgroundImage;
     @include text;
+    .cover {
+        opacity: .45;
+    }
     .text {
-        max-width: 800px;
+        max-width: 750px;
         color: white;
+        font-size: 18px;
         h1 {
             text-align: left;
+            font-size: 56px;
+            margin-bottom: 34px;
         }
     }
 }

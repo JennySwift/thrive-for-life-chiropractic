@@ -814,11 +814,16 @@ ul {
     padding: 40px;
     position: relative;
     margin-top: 28px; }
+  #rnr .cover {
+    opacity: .45; }
   #rnr .text {
-    max-width: 800px;
-    color: white; }
+    max-width: 750px;
+    color: white;
+    font-size: 18px; }
     #rnr .text h1 {
-      text-align: left; }
+      text-align: left;
+      font-size: 56px;
+      margin-bottom: 34px; }
 
 #contact {
   position: relative;
