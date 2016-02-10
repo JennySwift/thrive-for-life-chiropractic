@@ -8,7 +8,7 @@
 
             <div class="slider-container">
                 <div class="slider-content">
-                    <div v-show="sliderStep === 1" transition="fade" class="slider-item">
+                    <div v-show="sliderStep === 1" transition="slide" class="slider-item">
                         <p>Your body is constantly monitoring and responding to every event that takes place - both internally and
                             externally - consciously and unconsciously - at every moment of every day. It does this via the nervous
                             system - your brain, spinal cord, and peripheral nerves.</p>
@@ -18,7 +18,7 @@
                             disease.</p>
                     </div>
 
-                    <div v-show="sliderStep === 2" transition="fade" class="slider-item">
+                    <div v-show="sliderStep === 2" transition="slide" class="slider-item">
                         <p>Healthy movement and alignment, especially of the spine, is vital to the health of your nervous system.
                             Unfortunately, living in an unnatural, toxic environment results in poor movement patterns and stiffness
                             in and around your joints.</p>

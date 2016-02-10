@@ -1,3 +1,10 @@
+/* always present */
+/* .expand-enter defines the starting state for entering */
+/* .expand-leave defines the ending state for leaving */
+.slide-enter {
+  -webkit-animation: slideInLeft 1s;
+  animation: slideInLeft 1s; }
+
 html, body {
   max-width: 100%;
   margin: 0; }
@@ -456,15 +463,13 @@ ul {
       .slider-container .slider-navigation .slider-navigation-item.current-step {
         color: black; }
   .slider-container .slider-content {
-    height: 380px;
+    height: 436px;
     position: relative; }
     .slider-container .slider-content div {
       margin: 0;
       padding: 0;
       height: 100%;
       position: absolute; }
-      .slider-container .slider-content div:not(:first-child) {
-        opacity: 0; }
 
 .service .tabs {
   display: -webkit-flex;

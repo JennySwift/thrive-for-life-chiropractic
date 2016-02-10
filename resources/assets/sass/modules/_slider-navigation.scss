@@ -17,7 +17,7 @@
     }
 
     .slider-content {
-        height: 380px;
+        height: 436px;
         position: relative;
         div {
             //So the transition isn't jerky
@@ -27,9 +27,9 @@
             //Needed for the transition to work nicely,
             //so one doesn't appear below the other during the transition
             position: absolute;
-            &:not(:first-child) {
-                opacity: 0;
-            }
+            //&:not(:first-child) {
+            //    opacity: 0;
+            //}
         }
     }
 }
