@@ -1,9 +1,26 @@
 /* always present */
-/* .expand-enter defines the starting state for entering */
-/* .expand-leave defines the ending state for leaving */
-.slide-enter {
-  -webkit-animation: slideInLeft 1s;
-  animation: slideInLeft 1s; }
+.slide-in-right-transition {
+  opacity: 1; }
+
+.slide-in-right-enter {
+  -webkit-animation: slideInRight 1s, fadeInRight 1s;
+  animation: slideInRight 1s, fadeInRight 1s; }
+
+.slide-in-right-leave {
+  -webkit-animation: slideOutRight 1s, fadeOutRight 1s;
+  animation: slideOutRight 1s, fadeOutRight 1s; }
+
+/* always present */
+.slide-in-left-transition {
+  opacity: 1; }
+
+.slide-in-left-enter {
+  -webkit-animation: slideInLeft 1s, fadeInLeft 1s;
+  animation: slideInLeft 1s, fadeInLeft 1s; }
+
+.slide-in-left-leave {
+  -webkit-animation: slideOutLeft 1s, fadeOutLeft 1s;
+  animation: slideOutLeft 1s, fadeOutLeft 1s; }
 
 html, body {
   max-width: 100%;

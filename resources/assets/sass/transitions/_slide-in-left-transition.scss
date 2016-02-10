@@ -1,0 +1,12 @@
+/* always present */
+.slide-in-left-transition {
+    opacity: 1;
+}
+
+.slide-in-left-enter {
+    animation: slideInLeft 1s, fadeInLeft 1s;
+}
+
+.slide-in-left-leave {
+    animation: slideOutLeft 1s, fadeOutLeft 1s;
+}

@@ -1,0 +1,15 @@
+/* always present */
+.slide-in-right-transition {
+    //transition: all, 1.5s, ease;
+    opacity: 1;
+}
+
+.slide-in-right-enter {
+    animation: slideInRight 1s, fadeInRight 1s;
+    //opacity: 1;
+}
+
+.slide-in-right-leave {
+    animation: slideOutRight 1s, fadeOutRight 1s;
+    //opacity: 0;
+}
