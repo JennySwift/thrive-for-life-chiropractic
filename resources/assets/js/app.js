@@ -100,10 +100,25 @@ jQuery(function( $ ){
 new Vue({
     el: 'body',
     data: {
-        'path': '/'
+        path: '/',
+        showServicesTabs: false
+    },
+    methods: {
+        /**
+         *
+         */
+        listen: function () {
+            var that = this;
+            $(document).on('toggle-services-tabs', function (event) {
+                that.showServicesTabs = !that.showServicesTabs;
+            });
+        }
     },
     events: {
 
+    },
+    ready: function () {
+        this.listen();
     }
 });
 

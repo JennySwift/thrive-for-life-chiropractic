@@ -30,6 +30,9 @@
             color: white;
             //To center vertically because space is allowed for the underline
             padding-top: 3px;
+            .fa-chevron-down, .fa-chevron-up {
+                font-size: 14px;
+            }
         }
         &:hover {
             > a {

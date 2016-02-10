@@ -2,21 +2,21 @@ var ServicesTabs = Vue.component('services-tabs', {
     template: '#services-tabs-template',
     data: function () {
         return {
-            showTabs: false
+
         };
     },
     components: {},
     methods: {
 
-        /**
-         *
-         */
-        listen: function () {
-            var that = this;
-            $(document).on('toggle-services-tabs', function (event) {
-                that.showTabs = !that.showTabs;
-            });
-        },
+        ///**
+        // *
+        // */
+        //listen: function () {
+        //    var that = this;
+        //    $(document).on('toggle-services-tabs', function (event) {
+        //        that.showServicesTabs = !that.showServicesTabs;
+        //    });
+        //},
 
         /**
          *
@@ -28,9 +28,10 @@ var ServicesTabs = Vue.component('services-tabs', {
         }
     },
     props: [
-        'path'
+        'path',
+        'showServicesTabs'
     ],
     ready: function () {
-        this.listen();
+        //this.listen();
     }
 });

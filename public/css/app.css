@@ -128,6 +128,8 @@ ul {
       transition: all .2s ease;
       color: white;
       padding-top: 3px; }
+      #navbar > li > a .fa-chevron-down, #navbar > li > a .fa-chevron-up {
+        font-size: 14px; }
     #navbar > li:hover > a {
       font-size: 20px; }
     #navbar > li .dropdown-menu a {

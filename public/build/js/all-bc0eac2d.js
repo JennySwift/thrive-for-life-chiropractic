@@ -19598,7 +19598,6 @@ var Navbar = Vue.component('navbar', {
     data: function () {
         return {
             //path: this.$route.path
-            showServicesTabs: false
         };
     },
     components: {},
@@ -19613,11 +19612,13 @@ var Navbar = Vue.component('navbar', {
          *
          */
         toggleServicesTabs: function () {
-            $.event.trigger('toggle-services-tabs');
+            //$.event.trigger('toggle-services-tabs');
+            this.showServicesTabs = !this.showServicesTabs;
         }
     },
     props: [
-        'path'
+        'path',
+        'showServicesTabs'
     ],
     ready: function () {
 
@@ -19774,21 +19775,21 @@ var ServicesTabs = Vue.component('services-tabs', {
     template: '#services-tabs-template',
     data: function () {
         return {
-            showTabs: false
+
         };
     },
     components: {},
     methods: {
 
-        /**
-         *
-         */
-        listen: function () {
-            var that = this;
-            $(document).on('toggle-services-tabs', function (event) {
-                that.showTabs = !that.showTabs;
-            });
-        },
+        ///**
+        // *
+        // */
+        //listen: function () {
+        //    var that = this;
+        //    $(document).on('toggle-services-tabs', function (event) {
+        //        that.showServicesTabs = !that.showServicesTabs;
+        //    });
+        //},
 
         /**
          *
@@ -19800,10 +19801,11 @@ var ServicesTabs = Vue.component('services-tabs', {
         }
     },
     props: [
-        'path'
+        'path',
+        'showServicesTabs'
     ],
     ready: function () {
-        this.listen();
+        //this.listen();
     }
 });
 
@@ -19928,10 +19930,25 @@ jQuery(function( $ ){
 new Vue({
     el: 'body',
     data: {
-        'path': '/'
+        path: '/',
+        showServicesTabs: false
+    },
+    methods: {
+        /**
+         *
+         */
+        listen: function () {
+            var that = this;
+            $(document).on('toggle-services-tabs', function (event) {
+                that.showServicesTabs = !that.showServicesTabs;
+            });
+        }
     },
     events: {
 
+    },
+    ready: function () {
+        this.listen();
     }
 });
 

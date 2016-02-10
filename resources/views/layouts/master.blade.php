@@ -14,11 +14,14 @@
 
     <navbar
         :path.sync="path"
+        :show-services-tabs.sync="showServicesTabs"
     >
     </navbar>
 
     <services-tabs
-        :path.sync="path">
+        :path.sync="path"
+        :show-services-tabs.sync="showServicesTabs"
+    >
     </services-tabs>
 
     @section('page-content')
