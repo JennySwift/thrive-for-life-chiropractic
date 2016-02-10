@@ -1,0 +1,12 @@
+#lifestyle {
+    background: url('/img/Lifestyle/hiker-small-compressed.jpg') no-repeat left center;
+    @include backgroundImage;
+    @include text;
+    .text {
+        color: white;
+        max-width: 600px;
+        h1 {
+            text-align: left;
+        }
+    }
+}

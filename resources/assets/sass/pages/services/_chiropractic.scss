@@ -1,0 +1,25 @@
+#chiropractic {
+    background: url('/img/Chiropractic/balance-compressed.jpg') no-repeat center center;
+    @include backgroundImage;
+    @include text;
+    .cover {
+        opacity: .3;
+    }
+    .text {
+        color: white;
+        height: 100%;
+        margin-top: 0px;
+        width: 700px;
+        padding: 95px;
+        p {
+            font-size: 20px;
+            &:not(:last-child) {
+                margin-bottom: 26px;
+            }
+        }
+        h1 {
+            font-size: 60px;
+            text-align: left;
+        }
+    }
+}

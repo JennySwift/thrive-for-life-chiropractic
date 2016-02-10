@@ -1,0 +1,12 @@
+#rnr {
+    background: url('/img/RNR/child-small-compressed.jpg') no-repeat right center;
+    @include backgroundImage;
+    @include text;
+    .text {
+        max-width: 800px;
+        color: white;
+        h1 {
+            text-align: left;
+        }
+    }
+}

@@ -9,6 +9,7 @@
             transition: all, .5s, ease;
             cursor: pointer;
             margin: 5px 4px;
+            font-size: 16px;
             &.current-step {
                 color: black;
             }

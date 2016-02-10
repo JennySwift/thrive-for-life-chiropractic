@@ -118,7 +118,7 @@ ul {
     #navbar > li:not(:first-child) {
       min-width: 120px; }
     #navbar > li > a {
-      transition: all 0.2s ease;
+      transition: all .2s ease;
       color: white;
       padding-top: 3px; }
     #navbar > li:hover > a {
@@ -248,7 +248,7 @@ ul {
     position: absolute;
     left: 0;
     cursor: pointer;
-    transition: all, 0.5s, ease; }
+    transition: all, .5s, ease; }
   .cb-slider-wrapper input:checked + label span.label-icon {
     background: green;
     left: 23px; }
@@ -271,7 +271,7 @@ ul {
     bottom: 0;
     margin: auto;
     cursor: pointer;
-    transition: all, 0.5s, ease; }
+    transition: all, .5s, ease; }
     .cb-fa-wrapper label i {
       position: absolute;
       left: 0;
@@ -449,9 +449,10 @@ ul {
     margin-bottom: 20px;
     height: 30px; }
     .slider-container .slider-navigation .slider-navigation-item {
-      transition: all, 0.5s, ease;
+      transition: all, .5s, ease;
       cursor: pointer;
-      margin: 5px 4px; }
+      margin: 5px 4px;
+      font-size: 16px; }
       .slider-container .slider-navigation .slider-navigation-item.current-step {
         color: black; }
   .slider-container .slider-content {
@@ -537,7 +538,7 @@ ul {
   /* .expand-enter defines the starting state for entering */
   /* .expand-leave defines the ending state for leaving */ }
   .accordion-item .expand-transition {
-    transition: all 0.3s ease;
+    transition: all .3s ease;
     height: auto;
     padding: 10px;
     overflow: hidden; }
@@ -708,19 +709,6 @@ ul {
   max-width: 700px;
   margin: 0 auto 10px; }
 
-#chiropractic {
-  background: url("/img/Chiropractic/balance-compressed.jpg") no-repeat center center;
-  height: 100%;
-  background-size: cover; }
-  #chiropractic .text {
-    padding: 40px;
-    position: relative;
-    margin-top: 28px; }
-  #chiropractic .text {
-    width: 600px;
-    color: white;
-    height: 100%; }
-
 #ak {
   background: url("/img/AK/walk-small-compressed.jpg") no-repeat left bottom;
   height: 100%;
@@ -735,32 +723,43 @@ ul {
     #ak .text h1 {
       text-align: left; }
 
-#rnr {
-  background: url("/img/RNR/child-small-compressed.jpg") no-repeat right center;
+#chiropractic {
+  background: url("/img/Chiropractic/balance-compressed.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
-  #rnr .text {
+  #chiropractic .text {
     padding: 40px;
     position: relative;
     margin-top: 28px; }
-  #rnr .text {
-    max-width: 800px;
-    color: white; }
-    #rnr .text h1 {
+  #chiropractic .cover {
+    opacity: .3; }
+  #chiropractic .text {
+    color: white;
+    height: 100%;
+    margin-top: 0px;
+    width: 700px;
+    padding: 95px; }
+    #chiropractic .text p {
+      font-size: 20px; }
+      #chiropractic .text p:not(:last-child) {
+        margin-bottom: 26px; }
+    #chiropractic .text h1 {
+      font-size: 60px;
       text-align: left; }
 
-#lifestyle {
-  background: url("/img/Lifestyle/hiker-small-compressed.jpg") no-repeat left center;
+#government {
+  background: url("/img/Government/meadow-small-compressed.jpg") no-repeat center center;
   height: 100%;
   background-size: cover; }
-  #lifestyle .text {
+  #government .text {
     padding: 40px;
     position: relative;
     margin-top: 28px; }
-  #lifestyle .text {
-    color: white;
-    max-width: 600px; }
-    #lifestyle .text h1 {
+  #government .text {
+    max-width: 700px;
+    padding: 40px;
+    color: white; }
+    #government .text h1, #government .text h5 {
       text-align: left; }
 
 #hra {
@@ -790,19 +789,32 @@ ul {
       font-size: 53px;
       margin-bottom: 30px; }
 
-#government {
-  background: url("/img/Government/meadow-small-compressed.jpg") no-repeat center center;
+#lifestyle {
+  background: url("/img/Lifestyle/hiker-small-compressed.jpg") no-repeat left center;
   height: 100%;
   background-size: cover; }
-  #government .text {
+  #lifestyle .text {
     padding: 40px;
     position: relative;
     margin-top: 28px; }
-  #government .text {
-    max-width: 700px;
+  #lifestyle .text {
+    color: white;
+    max-width: 600px; }
+    #lifestyle .text h1 {
+      text-align: left; }
+
+#rnr {
+  background: url("/img/RNR/child-small-compressed.jpg") no-repeat right center;
+  height: 100%;
+  background-size: cover; }
+  #rnr .text {
     padding: 40px;
+    position: relative;
+    margin-top: 28px; }
+  #rnr .text {
+    max-width: 800px;
     color: white; }
-    #government .text h1, #government .text h5 {
+    #rnr .text h1 {
       text-align: left; }
 
 #contact {
