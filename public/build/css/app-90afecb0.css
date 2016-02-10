@@ -154,6 +154,8 @@ ul {
       #navbar > li .dropdown-menu a:hover {
         background: #41b920;
         color: white; }
+    #navbar > li.services a:first-child {
+      margin-right: 2px; }
   #navbar a {
     font-weight: bold; }
   #navbar .gravatar-li {

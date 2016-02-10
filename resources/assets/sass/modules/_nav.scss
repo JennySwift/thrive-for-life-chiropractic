@@ -49,6 +49,11 @@
             }
 
         }
+        &.services {
+            a:first-child {
+                margin-right: 2px;
+            }
+        }
     }
     a {
         font-weight: bold;
