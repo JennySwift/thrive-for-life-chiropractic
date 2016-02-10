@@ -715,13 +715,16 @@ ul {
   background-size: cover;
   position: relative; }
   #ak .text {
-    max-width: 468px;
+    max-width: 680px;
     position: absolute;
     bottom: 50px;
     left: 10%;
-    color: white; }
+    color: white;
+    font-size: 20px; }
     #ak .text h1 {
-      text-align: left; }
+      margin-bottom: 40px;
+      text-align: left;
+      font-size: 60px; }
 
 #chiropractic {
   background: url("/img/Chiropractic/balance-compressed.jpg") no-repeat center center;

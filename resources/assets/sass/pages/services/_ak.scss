@@ -3,14 +3,16 @@
     @include backgroundImage;
     position: relative;
     .text {
-        max-width: 468px;
+        max-width: 680px;
         position: absolute;
         bottom: 50px;
-        //left: 222px;
         left: 10%;
         color: white;
+        font-size: 20px;
         h1 {
+            margin-bottom: 40px;
             text-align: left;
+            font-size: 60px;
         }
     }
 }
