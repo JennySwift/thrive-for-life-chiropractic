@@ -12,5 +12,14 @@
         color: white;
         position: absolute;
         right: 40px;
+        font-size: 20px;
+        text-align: center;
+        p:not(:last-child) {
+            margin-bottom: 26px;
+        }
+        h1 {
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
     }
 }

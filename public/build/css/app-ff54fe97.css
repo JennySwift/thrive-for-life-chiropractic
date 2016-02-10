@@ -897,7 +897,14 @@ ul {
     max-height: 100%;
     color: white;
     position: absolute;
-    right: 40px; }
+    right: 40px;
+    font-size: 20px;
+    text-align: center; }
+    #about .text p:not(:last-child) {
+      margin-bottom: 26px; }
+    #about .text h1 {
+      font-size: 60px;
+      margin-bottom: 30px; }
 
 @media (max-width: 1185px) {
   #home-page-container #welcome .scrollbar-container .text p {
