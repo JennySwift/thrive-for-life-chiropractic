@@ -2,11 +2,21 @@
     background: url('/img/Lifestyle/hiker-small-compressed.jpg') no-repeat left center;
     @include backgroundImage;
     @include text;
+    .cover {
+        opacity: .5;
+    }
     .text {
         color: white;
-        max-width: 600px;
+        max-width: 520px;
+        font-size: 20px;
+        p:not(:last-child) {
+            margin-bottom: 26px;
+        }
         h1 {
             text-align: left;
+            font-size: 58px;
+            margin-bottom: 32px;
+            max-width: 690px;
         }
     }
 }

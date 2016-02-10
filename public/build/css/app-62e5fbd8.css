@@ -800,11 +800,19 @@ ul {
     padding: 40px;
     position: relative;
     margin-top: 28px; }
+  #lifestyle .cover {
+    opacity: .5; }
   #lifestyle .text {
     color: white;
-    max-width: 600px; }
+    max-width: 520px;
+    font-size: 20px; }
+    #lifestyle .text p:not(:last-child) {
+      margin-bottom: 26px; }
     #lifestyle .text h1 {
-      text-align: left; }
+      text-align: left;
+      font-size: 58px;
+      margin-bottom: 32px;
+      max-width: 690px; }
 
 #rnr {
   background: url("/img/RNR/child-small-compressed.jpg") no-repeat right center;
