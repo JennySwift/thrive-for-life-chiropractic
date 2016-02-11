@@ -7,16 +7,18 @@
     }
     .text {
         color: white;
-        max-width: 520px;
         font-size: 20px;
-        p:not(:last-child) {
-            margin-bottom: 26px;
+        padding: 115px 40px 40px;
+        p {
+            max-width: 520px;
+            &:not(:last-child) {
+                margin-bottom: 26px;
+            }
         }
         h1 {
             text-align: left;
             font-size: 58px;
             margin-bottom: 32px;
-            max-width: 690px;
         }
     }
 }

@@ -770,14 +770,15 @@ ul {
     height: 100%;
     margin-top: 0px;
     width: 700px;
-    padding: 95px; }
+    padding: 125px 95px 95px 80px; }
     #chiropractic .text p {
       font-size: 20px; }
       #chiropractic .text p:not(:last-child) {
         margin-bottom: 26px; }
     #chiropractic .text h1 {
       font-size: 60px;
-      text-align: left; }
+      text-align: left;
+      margin-bottom: 30px; }
 
 #government {
   background: url("/img/Government/meadow-small-compressed.jpg") no-repeat center center;
@@ -791,7 +792,8 @@ ul {
   #government .text {
     max-width: 740px;
     color: white;
-    font-size: 20px; }
+    font-size: 20px;
+    padding: 98px 40px 40px; }
     #government .text p:not(:last-child) {
       margin-bottom: 26px; }
     #government .text h1, #government .text h5 {
@@ -815,7 +817,7 @@ ul {
     height: 100%;
     max-width: 700px;
     margin-top: 18px;
-    padding: 58px; }
+    padding: 90px 58px 58px; }
     #hra .text p {
       font-size: 20px; }
       #hra .text p:not(:last-child) {
@@ -836,15 +838,16 @@ ul {
     opacity: .5; }
   #lifestyle .text {
     color: white;
-    max-width: 520px;
-    font-size: 20px; }
-    #lifestyle .text p:not(:last-child) {
-      margin-bottom: 26px; }
+    font-size: 20px;
+    padding: 115px 40px 40px; }
+    #lifestyle .text p {
+      max-width: 520px; }
+      #lifestyle .text p:not(:last-child) {
+        margin-bottom: 26px; }
     #lifestyle .text h1 {
       text-align: left;
       font-size: 58px;
-      margin-bottom: 32px;
-      max-width: 690px; }
+      margin-bottom: 32px; }
 
 #rnr {
   background: url("/img/RNR/child-small-compressed.jpg") no-repeat right center;
@@ -860,6 +863,8 @@ ul {
     color: white;
     font-size: 18px;
     padding-top: 120px; }
+    #rnr .text p {
+      margin-bottom: 20px; }
     #rnr .text h1 {
       text-align: left;
       font-size: 56px;
