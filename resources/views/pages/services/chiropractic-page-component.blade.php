@@ -32,15 +32,15 @@
                 <div class="slider-navigation">
                     <div
                             v-on:click="sliderStep = 1"
-                            v-bind:class="{'current-step': sliderStep === 1}"
-                            class="slider-navigation-item fa fa-circle"
+                            v-bind:class="{'current-step': sliderStep === 1, 'fa-circle': sliderStep === 1, 'fa-circle-thin': sliderStep !== 1}"
+                            class="slider-navigation-item fa"
                     >
                     </div>
 
                     <div
                             v-on:click="sliderStep = 2"
-                            v-bind:class="{'current-step': sliderStep === 2}"
-                            class="slider-navigation-item fa fa-circle"
+                            v-bind:class="{'current-step': sliderStep === 2, 'fa-circle': sliderStep === 2, 'fa-circle-thin': sliderStep !== 2}"
+                            class="slider-navigation-item fa"
                     >
                     </div>
                 </div>

@@ -481,8 +481,6 @@ ul {
       cursor: pointer;
       margin: 5px 4px;
       font-size: 16px; }
-      .slider-container .slider-navigation .slider-navigation-item.current-step {
-        color: black; }
   .slider-container .slider-content {
     height: 436px;
     position: relative; }
