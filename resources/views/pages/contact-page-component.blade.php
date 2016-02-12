@@ -49,6 +49,8 @@
                     </ul>
                 </div>
 
+                <div class="consultations-msg">Consultations by appointment only.</div>
+
             </div>
         </div>
 

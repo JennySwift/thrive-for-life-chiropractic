@@ -23,6 +23,7 @@
             opacity: .8;
             padding: 40px;
             color: white;
+            position: relative;
             .flex {
                 display: flex;
                 justify-content: space-around;
@@ -48,6 +49,14 @@
                         width: 56px;
                     }
                 }
+            }
+            .consultations-msg {
+                font-size: 15px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 10px;
+                text-align: center;
             }
         }
     }

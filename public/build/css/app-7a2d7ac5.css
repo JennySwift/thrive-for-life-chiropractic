@@ -898,7 +898,8 @@ ul {
       background: black;
       opacity: .8;
       padding: 40px;
-      color: white; }
+      color: white;
+      position: relative; }
       #contact .text-container .text .flex {
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -921,6 +922,13 @@ ul {
           display: flex; }
           #contact .text-container .text .flex .day-and-time-container div:first-child {
             width: 56px; }
+      #contact .text-container .text .consultations-msg {
+        font-size: 15px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        text-align: center; }
 
 #about {
   background: url("/img/About/about-quality5.jpg") no-repeat center center;
