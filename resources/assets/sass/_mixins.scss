@@ -74,6 +74,9 @@
 		.expanded {
 			text-decoration: underline;
 		}
+		&:last-child {
+			margin-bottom: 0;
+		}
 		.accordion-heading {
 			cursor: pointer;
 			font-size: 23px;

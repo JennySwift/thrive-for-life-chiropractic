@@ -559,18 +559,15 @@ ul {
   /* .expand-enter defines the starting state for entering */
   /* .expand-leave defines the ending state for leaving */ }
   .accordion-item .expand-transition {
-    transition: all .3s ease;
+    transition: all 1s ease;
     height: auto;
     padding: 10px;
     overflow: hidden; }
   .accordion-item .expand-enter, .accordion-item .expand-leave {
     height: 0;
-    padding: 0 10px;
-    opacity: 0; }
+    padding: 0 10px; }
   .accordion-item .expanded {
     text-decoration: underline; }
-  .accordion-item:last-child {
-    margin-bottom: 0; }
   .accordion-item .accordion-heading {
     cursor: pointer;
     font-size: 23px;
@@ -793,7 +790,7 @@ ul {
     max-width: 740px;
     color: white;
     font-size: 20px;
-    padding: 98px 40px 0 40px; }
+    padding: 98px 40px 40px; }
     #government .text p:not(:last-child) {
       margin-bottom: 26px; }
     #government .text h1, #government .text h5 {
