@@ -1,6 +1,7 @@
 <script id="about-page-template" type="x-template">
 
     <div id="about">
+
         <div class="gradient-cover"></div>
         <div class="scrollbar-container">
             <div class="text scrollbar-content">
@@ -12,7 +13,7 @@
                 <accordion-item inline-template>
                     <div class="accordion-item">
                         <h5 class="accordion-heading">Qualifications.</h5>
-                        <div v-show="showText" transition="expand" class="accordion-text">
+                        <div v-show="showText" transition="expand" class="accordion-text about-accordion-one">
                             <p>I have completed 5 years of full-time study at Macquarie University, graduating with a bachelor degree
                                 in Chiropractic Science (2005-2007) and a masters degree in Chiropractic (2008-2009).</p>
                             <p>In 2011 I completed a 100-hour post-graduate Professional Applied Kinesiology course and passed the
@@ -30,7 +31,7 @@
                 <accordion-item inline-template>
                     <div class="accordion-item">
                         <h5 class="accordion-heading">Why chiropractic?</h5>
-                        <div v-show="showText" transition="expand" class="accordion-text">
+                        <div v-show="showText" transition="expand" class="accordion-text about-accordion-two">
                             <p>Chiropractic gives me so many opportunities to help people. I can't think of any aspect of life that
                                 isn't impacted by how well you feel. As a chiropractor I have the means to help people be well and have
                                 a positive impact on their life. This is both a privilege and a joy.</p>

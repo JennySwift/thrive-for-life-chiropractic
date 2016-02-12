@@ -570,19 +570,7 @@ ul {
 
 .accordion-item {
   margin: 34px 0;
-  position: relative;
-  /* always present */
-  /* .expand-enter defines the starting state for entering */
-  /* .expand-leave defines the ending state for leaving */ }
-  .accordion-item .expand-transition {
-    transition: all .3s ease;
-    height: auto;
-    padding: 10px;
-    overflow: hidden; }
-  .accordion-item .expand-enter, .accordion-item .expand-leave {
-    height: 0;
-    padding: 0 10px;
-    opacity: 0; }
+  position: relative; }
   .accordion-item .expanded {
     text-decoration: underline; }
   .accordion-item:last-child {
@@ -598,8 +586,11 @@ ul {
       text-decoration: underline; }
   .accordion-item h1, .accordion-item h2, .accordion-item h3, .accordion-item h4, .accordion-item h5 {
     margin: 0; }
-  .accordion-item .accordion-text.expand-transition p:last-child {
-    margin-bottom: 0; }
+  .accordion-item .accordion-text {
+    height: 0;
+    margin: 10px; }
+    .accordion-item .accordion-text.expand-transition p:last-child {
+      margin-bottom: 0; }
 
 #preloaded-images {
   display: -webkit-flex;

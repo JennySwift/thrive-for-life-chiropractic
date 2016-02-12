@@ -13,6 +13,7 @@ var AboutPage = Vue.component('about-page', {
         //data to be received from parent
     ],
     ready: function () {
-
+        //var height = $("#test").height();
+        //console.log(height);
     }
 });

@@ -75,7 +75,7 @@
 	.accordion-item {
 		margin: 34px 0;
 		position: relative;
-		@include expand;
+		//@include expand;
 		.expanded {
 			text-decoration: underline;
 		}
@@ -98,6 +98,8 @@
 			margin: 0;
 		}
 		.accordion-text {
+			height: 0;
+			margin: 10px;
 			&.expand-transition {
 				p {
 					&:last-child {
