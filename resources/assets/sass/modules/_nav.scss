@@ -52,8 +52,19 @@
 
         }
         &.services {
-            a:first-child {
-                padding-right: 2px;
+            a {
+                &:focus {
+                    outline: none;
+                    text-decoration: none;
+                }
+                &:first-child {
+                    padding-right: 2px;
+                }
+            }
+        }
+        &.current-page {
+            a {
+                @include currentPage;
             }
         }
     }

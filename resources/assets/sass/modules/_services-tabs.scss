@@ -19,6 +19,9 @@
         }
         &.current-tab {
             background: rgba(0,0,0,.55);
+            a {
+                @include currentPage;
+            }
             .tab-inner {
                 border: none;
             }

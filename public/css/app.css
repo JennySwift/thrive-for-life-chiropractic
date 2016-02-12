@@ -155,8 +155,14 @@ ul {
       #navbar > li .dropdown-menu a:hover {
         background: #41b920;
         color: white; }
+    #navbar > li.services a:focus {
+      outline: none;
+      text-decoration: none; }
     #navbar > li.services a:first-child {
       padding-right: 2px; }
+    #navbar > li.current-page a {
+      text-decoration: underline !important;
+      color: rgba(255, 255, 255, 0.9); }
   #navbar a {
     font-weight: bold; }
   #navbar .gravatar-li {
@@ -516,6 +522,9 @@ ul {
       border-right: 1px solid white; }
     .tabs .tab.current-tab {
       background: rgba(0, 0, 0, 0.55); }
+      .tabs .tab.current-tab a {
+        text-decoration: underline !important;
+        color: rgba(255, 255, 255, 0.9); }
       .tabs .tab.current-tab .tab-inner {
         border: none; }
     .tabs .tab.next-to-current-tab .tab-inner {
@@ -591,9 +600,6 @@ ul {
     margin: 0; }
   .accordion-item .accordion-text.expand-transition p:last-child {
     margin-bottom: 0; }
-
-.current-page {
-  text-decoration: underline; }
 
 #preloaded-images {
   display: -webkit-flex;

@@ -6,6 +6,11 @@
 	background-size: cover;
 }
 
+@mixin currentPage {
+	text-decoration: underline !important;
+	color: rgba(255,255,255,.9);
+}
+
 @mixin arrow {
 	.arrow {
 		position: absolute;
