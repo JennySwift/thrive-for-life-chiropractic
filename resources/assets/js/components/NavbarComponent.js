@@ -14,6 +14,17 @@ var Navbar = Vue.component('navbar', {
     methods: {
 
         /**
+         * 
+         * @param path
+         */
+        goToPage: function (path) {
+            this.path = path;
+            if (path.indexOf('services') == -1) {
+                this.showServicesTabs = false
+            }
+        },
+
+        /**
          *
          */
         toggleServicesTabs: function () {

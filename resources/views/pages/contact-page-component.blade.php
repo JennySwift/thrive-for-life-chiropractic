@@ -16,18 +16,36 @@
                             <a href="mailto:peter.c.swift@gmail.com">peter.c.swift<i class="fa fa-at"></i>gmail.com</a>
                         </li>
                         <li>
-                            <div>40 Vine St</div>
-                            <div>Hurstville NSW</div>
+                            <div>40 Vine Street</div>
+                            <div>Hurstville NSW 2220</div>
                         </li>
                     </ul>
 
                     <ul>
-                        <li>Mon 9am-6pm</li>
-                        <li>Tue 10am-12pm</li>
-                        <li>Wed closed</li>
-                        <li>Thu 9am-5pm</li>
-                        <li>Fri 10:30am-6pm</li>
-                        <li>Sat 9am-12pm</li>
+                        <li class="day-and-time-container">
+                            <div>Mon</div>
+                            <div>9am-6pm</div>
+                        </li>
+                        <li class="day-and-time-container">
+                            <div>Tue</div>
+                            <div>10am-12pm</div>
+                        </li>
+                        <li class="day-and-time-container">
+                            <div>Wed</div>
+                            <div>closed</div>
+                        </li>
+                        <li class="day-and-time-container">
+                            <div>Thu</div>
+                            <div>9am-5pm</div>
+                        </li>
+                        <li class="day-and-time-container">
+                            <div>Fri</div>
+                            <div>10:30am-6pm</div>
+                        </li>
+                        <li class="day-and-time-container">
+                            <div>Sat</div>
+                            <div>9am-12pm</div>
+                        </li>
                     </ul>
                 </div>
 

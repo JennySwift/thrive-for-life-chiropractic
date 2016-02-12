@@ -906,10 +906,20 @@ ul {
         -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
         justify-content: space-around; }
+        #contact .text-container .text .flex > :first-child {
+          text-align: right; }
         #contact .text-container .text .flex .fa-at {
           font-size: 12px; }
         #contact .text-container .text .flex > * {
           margin: 0 20px; }
+        #contact .text-container .text .flex a {
+          color: white; }
+        #contact .text-container .text .flex .day-and-time-container {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
+          #contact .text-container .text .flex .day-and-time-container div:first-child {
+            width: 56px; }
 
 #about {
   background: url("/img/About/about-quality5.jpg") no-repeat center center;

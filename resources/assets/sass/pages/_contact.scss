@@ -26,11 +26,23 @@
             .flex {
                 display: flex;
                 justify-content: space-around;
+                > :first-child {
+                    text-align: right;
+                }
                 .fa-at {
                     font-size: 12px;
                 }
                 > * {
                     margin: 0 20px;
+                }
+                a {
+                    color: white;
+                }
+                .day-and-time-container {
+                    display: flex;
+                    div:first-child {
+                        width: 56px;
+                    }
                 }
             }
         }
