@@ -28,12 +28,16 @@
                 justify-content: space-around;
                 > :first-child {
                     text-align: right;
+                    border-right: .5px solid white;
+                }
+                > :last-child {
+                    //border-left: 1px solid white;
                 }
                 .fa-at {
                     font-size: 12px;
                 }
                 > * {
-                    margin: 0 20px;
+                    padding: 0 20px;
                 }
                 a {
                     color: white;
