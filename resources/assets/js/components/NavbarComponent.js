@@ -14,7 +14,7 @@ var Navbar = Vue.component('navbar', {
     methods: {
 
         /**
-         * 
+         *
          * @param path
          */
         goToPage: function (path) {

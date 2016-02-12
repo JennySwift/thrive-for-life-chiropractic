@@ -1,6 +1,6 @@
 <li class="services">
     <a
-        href="#"
+        href="javascript:void(0)"
         v-bind:class="{'current-page': path.indexOf('/services') !== -1}"
         {{--v-link="{path: '/services/chiropractic'}"--}}
         v-on:click="toggleServicesTabs()"
