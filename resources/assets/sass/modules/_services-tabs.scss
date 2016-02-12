@@ -6,6 +6,8 @@
     top: 37px;
     z-index: 9;
     font-family: 'Josefin Sans';
+    //background: black;
+    //opacity: .5;
     background: rgba(64,64,64, .5);
     .tab {
         flex-grow: 1;
@@ -34,7 +36,13 @@
             justify-content: center;
         }
         a {
-            color: white;
+            color: rgba(255,255,255, .5);
+        }
+        &:hover {
+            a {
+                color: rgba(255,255,255,.9);
+                text-decoration: none;
+            }
         }
     }
 }

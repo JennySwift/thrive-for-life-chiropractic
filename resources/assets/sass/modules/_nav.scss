@@ -4,9 +4,9 @@
     position: fixed;
     top: 0;
     width: 100%;
-//    color: #888;
-    background: black;
-    opacity: .55;
+    //background: black;
+    //opacity: .5;
+    background: rgba(0,0,0, .5);
     padding: 0;
     margin: 0;
     font-size: 17px;
@@ -27,7 +27,7 @@
         }
         > a {
             transition: all .2s ease;
-            color: white;
+            color: rgba(255,255,255, .5);
             //To center vertically because space is allowed for the underline
             padding-top: 3px;
             .fa-chevron-down, .fa-chevron-up {
@@ -37,6 +37,8 @@
         &:hover {
             > a {
                 font-size: 20px;
+                color: rgba(255,255,255,.9);
+                text-decoration: none;
             }
         }
         .dropdown-menu {

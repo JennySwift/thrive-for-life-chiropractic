@@ -117,8 +117,7 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-  background: black;
-  opacity: .55;
+  background: rgba(0, 0, 0, 0.5);
   padding: 0;
   margin: 0;
   font-size: 17px;
@@ -143,12 +142,14 @@ ul {
       min-width: 120px; }
     #navbar > li > a {
       transition: all .2s ease;
-      color: white;
+      color: rgba(255, 255, 255, 0.5);
       padding-top: 3px; }
       #navbar > li > a .fa-chevron-down, #navbar > li > a .fa-chevron-up {
         font-size: 14px; }
     #navbar > li:hover > a {
-      font-size: 20px; }
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none; }
     #navbar > li .dropdown-menu a {
       color: #777; }
       #navbar > li .dropdown-menu a:hover {
@@ -529,7 +530,10 @@ ul {
       -ms-flex-pack: center;
       justify-content: center; }
     .tabs .tab a {
-      color: white; }
+      color: rgba(255, 255, 255, 0.5); }
+    .tabs .tab:hover a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none; }
 
 .scrollbar-container {
   position: relative;
