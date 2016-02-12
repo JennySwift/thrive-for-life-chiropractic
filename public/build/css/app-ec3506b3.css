@@ -172,6 +172,9 @@ ul {
       #navbar .gravatar-li .gravatar-container .gravatar {
         border-radius: 8px;
         height: 32px; }
+  #navbar.contact-page-nav {
+    background: black;
+    opacity: .9; }
 
 .error_message {
   font-size: 17px;

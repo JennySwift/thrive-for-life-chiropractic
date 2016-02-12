@@ -1,6 +1,10 @@
 <script id="navbar-template" type="x-template">
 
-    <ul id="navbar" style="z-index:1000">
+    <ul
+        v-bind:class="{'contact-page-nav': path === '/contact'}"
+        id="navbar"
+        style="z-index:1000"
+    >
 
         @if (Auth::guest())
             <li>
