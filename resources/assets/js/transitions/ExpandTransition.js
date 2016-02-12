@@ -20,5 +20,5 @@ Vue.transition('expand', {
     },
     leaveCancelled: function (el) {
         $(el).stop()
-    }
+    },
 });
