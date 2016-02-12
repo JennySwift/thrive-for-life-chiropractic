@@ -498,7 +498,7 @@ ul {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 37px;
   z-index: 9;
