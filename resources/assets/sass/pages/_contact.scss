@@ -16,7 +16,7 @@
         justify-content: center;
         padding-top: 60px;
         position: absolute;
-        bottom: 40px;
+        bottom: 80px;
         width: 100%;
         .text {
             background: black;
@@ -24,39 +24,65 @@
             padding: 40px;
             color: white;
             position: relative;
-            .flex {
-                display: flex;
-                justify-content: space-around;
-                > :first-child {
-                    text-align: right;
-                    border-right: .5px solid white;
+            transition: all 1s ease;
+            //height: 400px;
+            //width: 500px;
+            &.collapsed {
+                padding: 10px;
+                h1 {
+                    margin-bottom: 0;
                 }
-                > :last-child {
-                    //border-left: 1px solid white;
-                }
-                .fa-at {
-                    font-size: 12px;
-                }
-                > * {
-                    padding: 0 20px;
-                }
-                a {
-                    color: white;
-                }
-                .day-and-time-container {
+                //height: 60px;
+                //width: 100px;
+            }
+            .fa-minus-square, .fa-plus-square {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                cursor: pointer;
+            }
+            .details {
+                //transition: all 1s ease;
+                //height: 200px;
+                //width: auto;
+                //&.collapsed {
+                //    //width: 0;
+                //    height: 0;
+                //}
+                .flex {
                     display: flex;
-                    div:first-child {
-                        width: 56px;
+                    justify-content: space-around;
+                    > :first-child {
+                        text-align: right;
+                        border-right: .5px solid white;
+                    }
+                    > :last-child {
+                        //border-left: 1px solid white;
+                    }
+                    .fa-at {
+                        font-size: 12px;
+                    }
+                    > * {
+                        padding: 0 20px;
+                    }
+                    a {
+                        color: white;
+                    }
+                    .day-and-time-container {
+                        display: flex;
+                        div:first-child {
+                            width: 56px;
+                        }
                     }
                 }
-            }
-            .consultations-msg {
-                font-size: 15px;
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: 10px;
-                text-align: center;
+                .consultations-msg {
+                    font-size: 15px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 10px;
+                    text-align: center;
+                }
             }
         }
     }

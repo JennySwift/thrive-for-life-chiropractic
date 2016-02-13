@@ -10,7 +10,9 @@ Vue.transition('expand', {
         var height = clone.height();
         clone.remove();
 
-        $(el).animate({ height: height }, 1000, done);
+        $(el).animate({
+            height: height
+        }, 1000, done);
     },
     enterCancelled: function (el) {
         $(el).stop()

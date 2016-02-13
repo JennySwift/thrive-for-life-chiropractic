@@ -892,37 +892,47 @@ ul {
     justify-content: center;
     padding-top: 60px;
     position: absolute;
-    bottom: 40px;
+    bottom: 80px;
     width: 100%; }
     #contact .text-container .text {
       background: black;
       opacity: .8;
       padding: 40px;
       color: white;
-      position: relative; }
-      #contact .text-container .text .flex {
+      position: relative;
+      transition: all 1s ease; }
+      #contact .text-container .text.collapsed {
+        padding: 10px; }
+        #contact .text-container .text.collapsed h1 {
+          margin-bottom: 0; }
+      #contact .text-container .text .fa-minus-square, #contact .text-container .text .fa-plus-square {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer; }
+      #contact .text-container .text .details .flex {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
         justify-content: space-around; }
-        #contact .text-container .text .flex > :first-child {
+        #contact .text-container .text .details .flex > :first-child {
           text-align: right;
           border-right: .5px solid white; }
-        #contact .text-container .text .flex .fa-at {
+        #contact .text-container .text .details .flex .fa-at {
           font-size: 12px; }
-        #contact .text-container .text .flex > * {
+        #contact .text-container .text .details .flex > * {
           padding: 0 20px; }
-        #contact .text-container .text .flex a {
+        #contact .text-container .text .details .flex a {
           color: white; }
-        #contact .text-container .text .flex .day-and-time-container {
+        #contact .text-container .text .details .flex .day-and-time-container {
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex; }
-          #contact .text-container .text .flex .day-and-time-container div:first-child {
+          #contact .text-container .text .details .flex .day-and-time-container div:first-child {
             width: 56px; }
-      #contact .text-container .text .consultations-msg {
+      #contact .text-container .text .details .consultations-msg {
         font-size: 15px;
         position: absolute;
         left: 0;

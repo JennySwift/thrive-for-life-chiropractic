@@ -9,13 +9,13 @@
     </home-page>
 
     <about-page
-        v-show="path === '/about'"
+        v-if="path === '/about'"
         {{--transition="fade"--}}
     >
     </about-page>
 
     <contact-page
-        v-show="path === '/contact'"
+        v-if="path === '/contact'"
         {{--transition="fade"--}}
     >
     </contact-page>
