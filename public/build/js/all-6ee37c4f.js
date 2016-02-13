@@ -19885,7 +19885,7 @@ Vue.transition('contact-details', {
         $(el).animate({
             height: height,
             width: width
-        }, 1000, done);
+        }, 800, done);
     },
     enterCancelled: function (el) {
         $(el).stop()
@@ -19894,7 +19894,7 @@ Vue.transition('contact-details', {
         $(el).animate({
             height: 0,
             width: 0,
-        }, 1000, done)
+        }, 800, done)
     },
     leaveCancelled: function (el) {
         $(el).stop()

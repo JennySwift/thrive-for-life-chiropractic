@@ -900,7 +900,7 @@ ul {
       padding: 40px 40px 0px 40px;
       color: white;
       position: relative;
-      transition: all 1s ease;
+      transition: all .8s ease;
       white-space: nowrap;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -915,7 +915,7 @@ ul {
       -ms-flex-align: center;
       align-items: center; }
       #contact .text-container .text h1 {
-        transition: all 1s ease;
+        transition: all .8s ease;
         font-size: 36px; }
       #contact .text-container .text.collapsed {
         padding: 10px 33px 10px 10px;
