@@ -70,19 +70,25 @@
                     }
                     .day-and-time-container {
                         display: flex;
+                        white-space: nowrap;
                         div:first-child {
                             width: 56px;
                         }
                     }
                 }
-                .consultations-msg {
-                    font-size: 15px;
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    bottom: 10px;
-                    text-align: center;
+                .consultations-msg-container {
+                    display: flex;
+                    justify-content: center;
+                    .consultations-msg {
+                        font-size: 15px;
+                        //position: absolute;
+                        //left: 0;
+                        //right: 0;
+                        //bottom: 10px;
+                        //text-align: center;
+                    }
                 }
+
             }
         }
     }

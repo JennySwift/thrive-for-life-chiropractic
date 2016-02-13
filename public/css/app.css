@@ -929,16 +929,19 @@ ul {
         #contact .text-container .text .details .flex .day-and-time-container {
           display: -webkit-flex;
           display: -ms-flexbox;
-          display: flex; }
+          display: flex;
+          white-space: nowrap; }
           #contact .text-container .text .details .flex .day-and-time-container div:first-child {
             width: 56px; }
-      #contact .text-container .text .details .consultations-msg {
-        font-size: 15px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 10px;
-        text-align: center; }
+      #contact .text-container .text .details .consultations-msg-container {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        #contact .text-container .text .details .consultations-msg-container .consultations-msg {
+          font-size: 15px; }
 
 #about {
   background: url("/img/About/about-quality5.jpg") no-repeat center center;

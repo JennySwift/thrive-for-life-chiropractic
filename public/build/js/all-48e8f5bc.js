@@ -19889,7 +19889,7 @@ Vue.transition('contact-details', {
 
         var height = clone.height();
         var width = clone.width();
-        ////console.log(width);
+        console.log(height, width);
         clone.remove();
 
         //$('#contact .text').animate({
