@@ -5,7 +5,7 @@ Vue.transition('expand', {
 
         var clone = $(el).clone()
             .css({height: 'auto'})
-            .appendTo("#about .text");
+            .appendTo($(el).closest('.text'));
 
         var height = clone.height();
         clone.remove();
