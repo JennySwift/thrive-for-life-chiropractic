@@ -19597,9 +19597,14 @@ var ContactPage = Vue.component('contact-page', {
         };
     },
     components: {},
-    watch: {
-
-    },
+    //watch: {
+    //    'showContactDetails': function (val) {
+    //        if (!val) {
+    //            this.boxHeight = 0;
+    //            this.boxWidth = 0;
+    //        }
+    //    }
+    //},
     methods: {
 
         /**
@@ -19869,19 +19874,6 @@ Vue.transition('contact-details', {
     enter: function (el, done) {
         var that = this;
 
-        //Animate the contact box that will still be visible
-        //var clone = $('#contact .text').clone()
-        //    .css({height: 'auto'})
-        //    .appendTo($(el).closest('.text'));
-        //
-        //var width = clone.width();
-        //clone.remove();
-
-        //$('#contact .text').animate({
-        //    width: '450px'
-        //}, 1000);
-
-
         //Animate the box that will not be visible
         var clone = $(el).clone()
             .css({height: 'auto', width: 'auto'})
@@ -19925,7 +19917,8 @@ Vue.transition('contact-details', {
 
         $(el).animate({
             height: 0,
-            width: 0
+            width: 0,
+            //'font-size': '1px'
         }, 1000, done)
     },
     leaveCancelled: function (el) {

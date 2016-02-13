@@ -1,3 +1,7 @@
+@mixin contactBoxTransition {
+    transition: all 1s ease;
+}
+
 #contact {
     //background: url('/img/Contact/map.jpg') no-repeat center center;
     //@include backgroundImage;
@@ -21,19 +25,31 @@
         .text {
             background: black;
             opacity: .8;
-            padding: 40px;
+            padding: 40px 40px 0px 40px;
             color: white;
             position: relative;
-            transition: all 1s ease;
+            @include contactBoxTransition;
+            white-space: nowrap;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            //.buttons {
+            //    position: relative;
+            //}
             //height: 400px;
             //width: 500px;
+            h1 {
+                @include contactBoxTransition;
+                font-size: 36px;
+            }
             &.collapsed {
-                padding: 10px;
+                padding: 10px 33px 10px 10px;
+                border-radius: 4px;
                 h1 {
                     margin-bottom: 0;
+                    font-size: 16px;
                 }
-                //height: 60px;
-                //width: 100px;
             }
             .fa-minus-square, .fa-plus-square {
                 position: absolute;
@@ -42,13 +58,6 @@
                 cursor: pointer;
             }
             .details {
-                //transition: all 1s ease;
-                //height: 200px;
-                //width: auto;
-                //&.collapsed {
-                //    //width: 0;
-                //    height: 0;
-                //}
                 .flex {
                     display: flex;
                     justify-content: space-around;
@@ -79,13 +88,9 @@
                 .consultations-msg-container {
                     display: flex;
                     justify-content: center;
+                    padding: 20px 0 10px 0;
                     .consultations-msg {
                         font-size: 15px;
-                        //position: absolute;
-                        //left: 0;
-                        //right: 0;
-                        //bottom: 10px;
-                        //text-align: center;
                     }
                 }
 

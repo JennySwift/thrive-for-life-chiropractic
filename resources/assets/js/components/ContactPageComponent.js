@@ -8,9 +8,14 @@ var ContactPage = Vue.component('contact-page', {
         };
     },
     components: {},
-    watch: {
-
-    },
+    //watch: {
+    //    'showContactDetails': function (val) {
+    //        if (!val) {
+    //            this.boxHeight = 0;
+    //            this.boxWidth = 0;
+    //        }
+    //    }
+    //},
     methods: {
 
         /**
