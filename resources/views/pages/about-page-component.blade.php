@@ -11,7 +11,7 @@
                     a moment to get to know me, and if you have any further questions please feel free to contact me.</p>
 
                 <div class="accordion">
-                    <accordion-item inline-template>
+                    <accordion-item inline-template auto-scroll="true">
                         <div class="accordion-item">
                             <h5 class="accordion-heading">Qualifications.</h5>
                             <div
@@ -33,7 +33,7 @@
                         </div>
                     </accordion-item>
 
-                    <accordion-item inline-template>
+                    <accordion-item inline-template auto-scroll="true">
                         <div class="accordion-item">
                             <h5 class="accordion-heading">Why chiropractic?</h5>
                             <div v-show="showText" transition="expand" class="accordion-text about-accordion-two">
@@ -46,7 +46,7 @@
                         </div>
                     </accordion-item>
 
-                    <accordion-item inline-template>
+                    <accordion-item inline-template auto-scroll="true">
                         <div class="accordion-item">
                             <h5 class="accordion-heading">Principles. (Values. Beliefs.)</h5>
                             <div v-show="showText" transition="expand" class="accordion-text">
@@ -74,7 +74,7 @@
                         </div>
                     </accordion-item>
 
-                    <accordion-item inline-template>
+                    <accordion-item inline-template auto-scroll="true">
                         <div class="accordion-item">
                             <h5 class="accordion-heading">Daily life.</h5>
                             <div v-show="showText" transition="expand" class="accordion-text">

@@ -2,7 +2,8 @@ var AccordionItem = Vue.component('accordion-item', {
     //template: '#accordion-item-template',
     data: function () {
         return {
-            showText: false
+            showText: false,
+            accordion: ''
         };
     },
     components: {},
@@ -30,22 +31,31 @@ var AccordionItem = Vue.component('accordion-item', {
         /**
          *
          */
+        scroll: function () {
+            // Doing this here rather than on page load so that on page load
+            // there isn't extra scrolling space at the bottom when all items are collapsed
+            this.setAccordionHeight();
+            var scrollTop = this.accordion.position().top - 13;
+            setTimeout(function () {
+                $('.scrollbar-container').animate({scrollTop: scrollTop}, 700);
+
+            }, 100);
+        },
+
+        /**
+         *
+         */
         listen: function () {
             var that = this;
             var heading = $(this.$el).find('h5');
-            var accordion = $(this.$el).closest('.accordion');
+            this.accordion = $(this.$el).closest('.accordion');
 
             heading.on('click', function (e) {
                 e.preventDefault();
-                // Doing this here rather than on page load so that on page load
-                // there isn't extra scrolling space at the bottom when all items are collapsed
-                that.setAccordionHeight();
-                var scrollTop = accordion.position().top - 13;
-                console.log(scrollTop);
-                setTimeout(function () {
-                    $('.scrollbar-container').animate({scrollTop: scrollTop}, 700);
 
-                }, 100);
+                if (that.autoScroll) {
+                    that.scroll();
+                }
 
                 $.event.trigger('closeItems', [that]);
                 that.showText = !that.showText;
@@ -60,7 +70,7 @@ var AccordionItem = Vue.component('accordion-item', {
         }
     },
     props: [
-        //data to be received from parent
+        'autoScroll'
     ],
     ready: function () {
         this.listen();
