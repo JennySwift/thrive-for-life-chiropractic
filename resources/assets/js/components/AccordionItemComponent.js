@@ -14,7 +14,7 @@ var AccordionItem = Vue.component('accordion-item', {
          */
         setAccordionHeight: function () {
             var height = $(window).height() - 50;
-            $('.accordion').height(height);
+            this.accordion.height(height);
         },
 
         /**
