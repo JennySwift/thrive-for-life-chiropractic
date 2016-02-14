@@ -973,6 +973,7 @@ ul {
   #about .gradient-cover {
     background: linear-gradient(to right, transparent 42%, rgba(0, 0, 0, 0.7) 53%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.9) 85%, black 95%); }
   #about .text {
+    padding-top: 31px;
     max-width: 700px;
     max-height: 100%;
     color: white;
@@ -985,6 +986,9 @@ ul {
     #about .text h1 {
       font-size: 60px;
       margin-bottom: 30px; }
+  #about .scrollbar-container {
+    top: 37px;
+    height: calc(100% - 37px); }
 
 @media (max-width: 1185px) {
   #home-page-container #welcome .scrollbar-container .text p {
