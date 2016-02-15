@@ -864,7 +864,8 @@ ul {
     max-width: 750px;
     color: white;
     font-size: 18px;
-    padding-top: 120px; }
+    padding-top: 120px;
+    padding-bottom: 0; }
     #rnr .text p {
       margin-bottom: 20px; }
     #rnr .text h1 {
