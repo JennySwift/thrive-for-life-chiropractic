@@ -2,7 +2,7 @@
 
     <div id="chiropractic" class="service">
         <div class="cover"></div>
-        <div class="text">
+        <div class="text scrollbar-container">
             <h1>Chiropractic</h1>
 
             <div class="slider-container">

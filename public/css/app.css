@@ -771,6 +771,8 @@ ul {
     opacity: .3; }
   #chiropractic .text {
     color: white;
+    height: auto;
+    max-height: 100%;
     margin-top: 0px;
     width: 700px;
     padding: 125px 95px 0px 80px; }
@@ -1127,6 +1129,15 @@ ul {
     height: 200px; } }
 
 @media (max-width: 500px) {
+  #home-page-container #welcome .img-container {
+    display: none; } }
+
+@media (max-height: 560px) {
+  #home-page-container #welcome .img-container img {
+    width: 300px;
+    height: 300px; } }
+
+@media (max-height: 345px) {
   #home-page-container #welcome .img-container {
     display: none; } }
 

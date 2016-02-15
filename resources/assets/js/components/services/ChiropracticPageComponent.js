@@ -20,6 +20,6 @@ var ChiropracticPage = Vue.component('chiropractic-page', {
         'path'
     ],
     ready: function () {
-
+        HelpersRepository.scrollbars();
     }
 });

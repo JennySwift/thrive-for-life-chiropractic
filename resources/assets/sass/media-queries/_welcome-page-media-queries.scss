@@ -404,5 +404,46 @@
                 }
             }
         }
+
+        //Max height
+
+        @media (max-height: 560px) {
+            .scrollbar-container {
+                .text {
+                    h1 {
+                        //font-size: 12px;
+                    }
+                    p {
+                        //font-size: 14px;
+                    }
+                }
+            }
+            .img-container {
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+
+        @media (max-height: 345px) {
+            .scrollbar-container {
+                .text {
+                    h1 {
+                        //font-size: 12px;
+                    }
+                    p {
+                        //font-size: 14px;
+                    }
+                }
+            }
+            .img-container {
+                display: none;
+                //img {
+                //    width: 300px;
+                //    height: 300px;
+                //}
+            }
+        }
     }
 }

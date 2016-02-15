@@ -11,15 +11,6 @@ var HomePage = Vue.component('home-page', {
         /**
          *
          */
-        scrollbars: function () {
-            [].forEach.call(document.querySelectorAll('.scrollbar-container'), function (el) {
-                Ps.initialize(el);
-            });
-        },
-
-        /**
-         *
-         */
         listen: function () {
             $("#home a").on("click",function(e){
                 e.preventDefault();
@@ -44,7 +35,7 @@ var HomePage = Vue.component('home-page', {
         //data to be received from parent
     ],
     ready: function () {
-        this.scrollbars();
+        HelpersRepository.scrollbars();
         this.listen();
     }
 });
