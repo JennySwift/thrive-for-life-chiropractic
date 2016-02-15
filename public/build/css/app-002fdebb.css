@@ -773,7 +773,7 @@ ul {
     color: white;
     margin-top: 0px;
     width: 700px;
-    padding: 125px 95px 95px 80px; }
+    padding: 125px 95px 0px 80px; }
     #chiropractic .text p {
       font-size: 20px; }
       #chiropractic .text p:not(:last-child) {
