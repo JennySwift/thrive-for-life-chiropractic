@@ -12,8 +12,8 @@ var HomePage = Vue.component('home-page', {
          *
          */
         scrollbars: function () {
-            $(".scrollbar-container").mCustomScrollbar({
-                theme:'minimal-dark'
+            [].forEach.call(document.querySelectorAll('.scrollbar-container'), function (el) {
+                Ps.initialize(el);
             });
         },
 
