@@ -19501,6 +19501,15 @@ var AboutPage = Vue.component('about-page', {
         /**
          *
          */
+        perfectScrollbar: function () {
+            [].forEach.call(document.querySelectorAll('.scrollbar-container'), function (el) {
+                Ps.initialize(el);
+            });
+        },
+
+        /**
+         *
+         */
         listen: function () {
             var that = this;
 
@@ -19515,6 +19524,7 @@ var AboutPage = Vue.component('about-page', {
     ],
     ready: function () {
         this.listen();
+        this.perfectScrollbar();
     }
 });
 
