@@ -2,7 +2,7 @@
 
     <div id="rnr" class="service">
         <div class="cover"></div>
-        <div class="text">
+        <div class="text scrollbar-container">
             <h1>Retained Neonatal Reflexes</h1>
             <p>Hard-wired into the nervous system (specifically the brainstem) are a number of reflexes which help
                 children survive the birthing process and the early stages of life before they develop the ability to

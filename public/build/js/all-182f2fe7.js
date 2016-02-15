@@ -19599,7 +19599,7 @@ var HRAPage = Vue.component('hra-page', {
         'path'
     ],
     ready: function () {
-
+        HelpersRepository.scrollbars();
     }
 });
 
@@ -19647,7 +19647,7 @@ var RNRPage = Vue.component('rnr-page', {
         'path'
     ],
     ready: function () {
-
+        HelpersRepository.scrollbars();
     }
 });
 

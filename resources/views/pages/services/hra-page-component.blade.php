@@ -2,7 +2,7 @@
 
     <div id="hra" class="service">
         <div class="gradient-cover"></div>
-        <div class="text">
+        <div class="text scrollbar-container">
             <h1>Health Risk Assessment</h1>
             <p>The Health Risk Assessment not only gives you a scientifically-validated rating of your current health
                 status but also your predicted future health status, giving you the opportunity and the information you

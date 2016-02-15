@@ -18,6 +18,6 @@ var RNRPage = Vue.component('rnr-page', {
         'path'
     ],
     ready: function () {
-
+        HelpersRepository.scrollbars();
     }
 });

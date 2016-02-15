@@ -18,6 +18,6 @@ var HRAPage = Vue.component('hra-page', {
         'path'
     ],
     ready: function () {
-
+        HelpersRepository.scrollbars();
     }
 });
