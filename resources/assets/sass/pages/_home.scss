@@ -9,6 +9,10 @@
     width: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 #home-page-container {
     height: 100%;
     #home {
