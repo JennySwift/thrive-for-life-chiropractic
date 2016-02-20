@@ -902,12 +902,12 @@ ul {
     justify-content: center;
     padding-top: 60px;
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
     width: 100%; }
     #contact .text-container .text {
       background: black;
       opacity: .8;
-      padding: 40px 40px 0px 40px;
+      padding: 10px 0 0;
       color: white;
       position: relative;
       transition: all .8s ease;
@@ -926,13 +926,13 @@ ul {
       align-items: center; }
       #contact .text-container .text h1 {
         transition: all .8s ease;
-        font-size: 36px; }
+        font-size: 40px; }
       #contact .text-container .text.collapsed {
-        padding: 10px 33px 10px 10px;
+        padding: 6px 33px 6px 8px;
         border-radius: 4px; }
         #contact .text-container .text.collapsed h1 {
           margin-bottom: 0;
-          font-size: 16px; }
+          font-size: 22px; }
       #contact .text-container .text .fa-minus-square, #contact .text-container .text .fa-plus-square {
         position: absolute;
         top: 5px;
@@ -944,7 +944,8 @@ ul {
         display: flex;
         -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+        font-size: 17px; }
         #contact .text-container .text .details .flex > :first-child {
           text-align: right;
           border-right: .5px solid white; }
@@ -970,7 +971,8 @@ ul {
         justify-content: center;
         padding: 20px 0 10px 0; }
         #contact .text-container .text .details .consultations-msg-container .consultations-msg {
-          font-size: 15px; }
+          font-size: 15px;
+          font-style: italic; }
 
 #about {
   background: url("/img/About/about-quality5.jpg") no-repeat center center;

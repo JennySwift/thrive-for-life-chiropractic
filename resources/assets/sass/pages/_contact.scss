@@ -21,12 +21,12 @@
         justify-content: center;
         padding-top: 60px;
         position: absolute;
-        bottom: 80px;
+        bottom: 50px;
         width: 100%;
         .text {
             background: black;
             opacity: .8;
-            padding: 40px 40px 0px 40px;
+            padding: 10px 0 0;
             color: white;
             position: relative;
             @include contactBoxTransition;
@@ -35,21 +35,18 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            //.buttons {
-            //    position: relative;
-            //}
-            //height: 400px;
-            //width: 500px;
+            //height: 204px;
+            //width: 391px;
             h1 {
                 @include contactBoxTransition;
-                font-size: 36px;
+                font-size: 40px;
             }
             &.collapsed {
-                padding: 10px 33px 10px 10px;
+                padding: 6px 33px 6px 8px;
                 border-radius: 4px;
                 h1 {
                     margin-bottom: 0;
-                    font-size: 16px;
+                    font-size: 22px;
                 }
             }
             .fa-minus-square, .fa-plus-square {
@@ -62,6 +59,7 @@
                 .flex {
                     display: flex;
                     justify-content: space-around;
+                    font-size: 17px;
                     > :first-child {
                         text-align: right;
                         border-right: .5px solid white;
@@ -92,6 +90,7 @@
                     padding: 20px 0 10px 0;
                     .consultations-msg {
                         font-size: 15px;
+                        font-style: italic;
                     }
                 }
 
