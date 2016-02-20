@@ -551,6 +551,14 @@ ul {
     .tabs .tab:hover a {
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none; }
+  @media (max-width: 945px) {
+    .tabs {
+      display: block; }
+      .tabs .tab {
+        padding-left: 8px; }
+        .tabs .tab .tab-inner {
+          border: none !important;
+          display: inline-block; } }
 
 .scrollbar-container {
   position: relative;
