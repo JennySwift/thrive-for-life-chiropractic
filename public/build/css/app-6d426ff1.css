@@ -117,7 +117,7 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   padding: 0;
   margin: 0;
   font-size: 17px;
@@ -142,7 +142,7 @@ ul {
       min-width: 120px; }
     #navbar > li > a {
       transition: all .2s ease;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.6);
       padding-top: 3px; }
       #navbar > li > a .fa-chevron-down, #navbar > li > a .fa-chevron-up {
         font-size: 14px; }
@@ -517,7 +517,7 @@ ul {
   top: 37px;
   z-index: 9;
   font-family: 'Josefin Sans';
-  background: rgba(64, 64, 64, 0.5); }
+  background: rgba(64, 64, 64, 0.6); }
   .tabs .tab {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
@@ -547,7 +547,7 @@ ul {
       -ms-flex-pack: center;
       justify-content: center; }
     .tabs .tab a {
-      color: rgba(255, 255, 255, 0.5); }
+      color: rgba(255, 255, 255, 0.6); }
     .tabs .tab:hover a {
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none; }

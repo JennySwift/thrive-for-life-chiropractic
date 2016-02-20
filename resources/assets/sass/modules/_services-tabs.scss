@@ -8,7 +8,7 @@
     font-family: 'Josefin Sans';
     //background: black;
     //opacity: .5;
-    background: rgba(64,64,64, .5);
+    background: rgba(64,64,64, .6);
     .tab {
         flex-grow: 1;
         padding: 6px 0;
@@ -39,7 +39,7 @@
             justify-content: center;
         }
         a {
-            color: rgba(255,255,255, .5);
+            color: rgba(255,255,255, .6);
         }
         &:hover {
             a {
