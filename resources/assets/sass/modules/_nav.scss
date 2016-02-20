@@ -94,6 +94,15 @@
         background: black;
         opacity: .9;
     }
+
+    @media (max-width: 425px) {
+        li {
+            min-width: 65px !important;
+        }
+    }
+    @media (max-width: 265px) {
+        font-size: 14px;
+    }
 }
 
 

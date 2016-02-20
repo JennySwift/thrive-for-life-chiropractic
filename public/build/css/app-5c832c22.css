@@ -186,6 +186,12 @@ ul {
   #navbar.contact-page-nav {
     background: black;
     opacity: .9; }
+  @media (max-width: 425px) {
+    #navbar li {
+      min-width: 65px !important; } }
+  @media (max-width: 265px) {
+    #navbar {
+      font-size: 14px; } }
 
 .error_message {
   font-size: 17px;

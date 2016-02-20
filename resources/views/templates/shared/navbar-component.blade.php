@@ -50,7 +50,7 @@
                 </a>
             </li>
 
-            @include('templates/header/user')
+{{--            @include('templates/header/user')--}}
 
         @endif
 
