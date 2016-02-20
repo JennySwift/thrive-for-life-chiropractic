@@ -42,7 +42,7 @@
                 font-size: 40px;
             }
             &.collapsed {
-                padding: 6px 33px 6px 8px;
+                padding: 6px 8px 6px 33px;
                 border-radius: 4px;
                 h1 {
                     margin-bottom: 0;
@@ -52,7 +52,7 @@
             .fa-minus-square, .fa-plus-square {
                 position: absolute;
                 top: 5px;
-                right: 5px;
+                left: 5px;
                 cursor: pointer;
             }
             .details {

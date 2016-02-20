@@ -928,7 +928,7 @@ ul {
         transition: all .8s ease;
         font-size: 40px; }
       #contact .text-container .text.collapsed {
-        padding: 6px 33px 6px 8px;
+        padding: 6px 8px 6px 33px;
         border-radius: 4px; }
         #contact .text-container .text.collapsed h1 {
           margin-bottom: 0;
@@ -936,7 +936,7 @@ ul {
       #contact .text-container .text .fa-minus-square, #contact .text-container .text .fa-plus-square {
         position: absolute;
         top: 5px;
-        right: 5px;
+        left: 5px;
         cursor: pointer; }
       #contact .text-container .text .details .flex {
         display: -webkit-flex;
