@@ -57,7 +57,7 @@
                         v-on:click="path = '/services/lifestyle'"
                         href="#"
                 >
-                    Lifestyle
+                    Lifestyle Coaching
                 </a>
             </div>
         </li>
