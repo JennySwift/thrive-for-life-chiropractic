@@ -29,6 +29,11 @@
                     <div class="flex">
 
                         <ul>
+
+                            <li>
+                                <a href="tel:0432926007">&#48;&#52;&#51;&#50;&#57;&#50;&#54;&#48;&#48;&#55;</a>
+                            </li>
+
                             <li>
                                 <a href="mailto:peter.c.swift@gmail.com">peter.c.swift<i class="fa fa-at"></i>gmail.com</a>
                             </li>
