@@ -1,6 +1,11 @@
 <script id="services-tabs-template" type="x-template">
 
-    <ul v-show="showServicesTabs" id="services-tabs" class="tabs">
+    <ul
+        v-show="showServicesTabs"
+        v-bind:class="{'contact-page-services-tabs': path === '/contact'}"
+        id="services-tabs"
+        class="tabs"
+        >
 
         <li
                 v-bind:class="{'current-tab': path === '/services/chiropractic', 'next-to-current-tab': path === '/services/ak'}"

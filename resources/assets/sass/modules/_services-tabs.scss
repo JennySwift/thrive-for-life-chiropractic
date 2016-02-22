@@ -9,6 +9,9 @@
     //background: black;
     //opacity: .5;
     background: rgba(64,64,64, .6);
+    &.contact-page-services-tabs {
+        background: rgba(64,64,64, .9);
+    }
     .tab {
         flex-grow: 1;
         padding: 6px 0;

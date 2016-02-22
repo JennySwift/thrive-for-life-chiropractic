@@ -159,6 +159,8 @@ ul {
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
       border: 1px solid rgba(0, 0, 0, 0.15);
       border-radius: 4px; }
+      #navbar > li #services-dropdown-menu.contact-page-services-dropdown-menu {
+        background: rgba(64, 64, 64, 0.9); }
       #navbar > li #services-dropdown-menu .tab {
         padding: 3px 11px; }
       #navbar > li #services-dropdown-menu a {
@@ -541,6 +543,8 @@ ul {
   z-index: 9;
   font-family: 'Josefin Sans';
   background: rgba(64, 64, 64, 0.6); }
+  .tabs.contact-page-services-tabs {
+    background: rgba(64, 64, 64, 0.9); }
   .tabs .tab {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;

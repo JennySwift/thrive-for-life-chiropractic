@@ -1,6 +1,12 @@
 <script id="services-dropdown-menu-template" type="x-template">
 
-    <ul v-show="showServicesTabs" id="services-dropdown-menu" class="" role="menu">
+    <ul
+        v-show="showServicesTabs"
+        v-bind:class="{'contact-page-services-dropdown-menu': path === '/contact'}"
+        id="services-dropdown-menu"
+        class=""
+        role="menu"
+    >
 
         <li
                 v-bind:class="{'current-tab': path === '/services/chiropractic', 'next-to-current-tab': path === '/services/ak'}"
