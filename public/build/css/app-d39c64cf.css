@@ -951,7 +951,8 @@ ul {
         position: absolute;
         top: 5px;
         left: 5px;
-        cursor: pointer; }
+        cursor: pointer;
+        margin-top: -1px; }
       #contact .text-container .text .details .flex {
         display: -webkit-flex;
         display: -ms-flexbox;
