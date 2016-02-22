@@ -162,8 +162,8 @@ ul {
       padding-right: 2px; }
     #navbar > li.services a:last-child {
       margin-bottom: 2px;
-      margin-left: 2px; }
-      #navbar > li.services a:last-child .fa-chevron-down {
+      padding-left: 2px; }
+      #navbar > li.services a:last-child .fa-chevron-down, #navbar > li.services a:last-child .fa-chevron-up {
         font-size: 9px; }
     #navbar > li.current-page a {
       text-decoration: underline !important;

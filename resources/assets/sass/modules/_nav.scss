@@ -62,8 +62,8 @@
                 }
                 &:last-child {
                     margin-bottom: 2px;
-                    margin-left: 2px;
-                    .fa-chevron-down {
+                    padding-left: 2px;
+                    .fa-chevron-down, .fa-chevron-up {
                         font-size: 9px;
                     }
                 }
