@@ -82,6 +82,9 @@
                         &:focus {
                             text-decoration: none;
                         }
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                     .day-and-time-container {
                         display: flex;

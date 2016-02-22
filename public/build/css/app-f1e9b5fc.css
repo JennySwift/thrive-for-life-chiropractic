@@ -981,6 +981,8 @@ ul {
           color: white; }
           #contact .text-container .text .details .flex a:focus {
             text-decoration: none; }
+          #contact .text-container .text .details .flex a:hover {
+            text-decoration: underline; }
         #contact .text-container .text .details .flex .day-and-time-container {
           display: -webkit-flex;
           display: -ms-flexbox;
