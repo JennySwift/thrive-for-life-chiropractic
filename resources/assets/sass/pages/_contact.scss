@@ -79,6 +79,9 @@
                     }
                     a {
                         color: white;
+                        &:focus {
+                            text-decoration: none;
+                        }
                     }
                     .day-and-time-container {
                         display: flex;
