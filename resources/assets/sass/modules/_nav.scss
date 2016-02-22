@@ -42,12 +42,14 @@
             }
         }
         .dropdown-menu {
+            background: rgba(64,64,64, .6);
+            white-space: nowrap;
             a {
-                color: #777;
-                &:hover {
-                    background: $base;
-                    color: white;
-                }
+                color: white;
+            //    &:hover {
+            //        background: $base;
+            //        color: white;
+            //    }
             }
 
         }
@@ -102,6 +104,17 @@
     }
     @media (max-width: 265px) {
         font-size: 14px;
+    }
+
+    @media (max-width: 945px) {
+        #navbar-services-wide-screen {
+            display: none;
+        }
+    }
+    @media (min-width: 945px) {
+        #navbar-services-narrow-screen {
+            display: none;
+        }
     }
 }
 

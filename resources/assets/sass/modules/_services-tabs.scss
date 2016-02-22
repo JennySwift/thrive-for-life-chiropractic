@@ -50,17 +50,18 @@
     }
 
     @media (max-width: 945px) {
-        display: block;
-        .tab {
-            //display: flex;
-            //justify-content: center;
-            padding-left: 8px;
-            .tab-inner {
-                border: none !important;
-                display: inline-block;
-                //width: 198px;
-            }
-        }
+        display: none;
+        //display: block;
+        //.tab {
+        //    //display: flex;
+        //    //justify-content: center;
+        //    padding-left: 8px;
+        //    .tab-inner {
+        //        border: none !important;
+        //        display: inline-block;
+        //        //width: 198px;
+        //    }
+        //}
 
     }
 }

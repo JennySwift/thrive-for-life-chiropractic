@@ -150,10 +150,10 @@ ul {
       font-size: 20px;
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none; }
-    #navbar > li .dropdown-menu a {
-      color: #777; }
-      #navbar > li .dropdown-menu a:hover {
-        background: #41b920;
+    #navbar > li .dropdown-menu {
+      background: rgba(64, 64, 64, 0.6);
+      white-space: nowrap; }
+      #navbar > li .dropdown-menu a {
         color: white; }
     #navbar > li.services a:focus {
       outline: none;
@@ -192,6 +192,12 @@ ul {
   @media (max-width: 265px) {
     #navbar {
       font-size: 14px; } }
+  @media (max-width: 945px) {
+    #navbar #navbar-services-wide-screen {
+      display: none; } }
+  @media (min-width: 945px) {
+    #navbar #navbar-services-narrow-screen {
+      display: none; } }
 
 .error_message {
   font-size: 17px;
@@ -559,12 +565,7 @@ ul {
       text-decoration: none; }
   @media (max-width: 945px) {
     .tabs {
-      display: block; }
-      .tabs .tab {
-        padding-left: 8px; }
-        .tabs .tab .tab-inner {
-          border: none !important;
-          display: inline-block; } }
+      display: none; } }
 
 .scrollbar-container {
   position: relative;
