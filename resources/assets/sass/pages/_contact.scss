@@ -63,6 +63,9 @@
                     > :first-child {
                         text-align: right;
                         border-right: .5px solid white;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
                     }
                     > :last-child {
                         //border-left: 1px solid white;

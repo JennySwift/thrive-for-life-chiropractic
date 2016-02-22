@@ -962,7 +962,16 @@ ul {
         font-size: 17px; }
         #contact .text-container .text .details .flex > :first-child {
           text-align: right;
-          border-right: .5px solid white; }
+          border-right: .5px solid white;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
         #contact .text-container .text .details .flex .fa-at {
           font-size: 12px; }
         #contact .text-container .text .details .flex > * {
