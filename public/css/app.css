@@ -985,8 +985,7 @@ ul {
         justify-content: center;
         padding: 20px 0 10px 0; }
         #contact .text-container .text .details .consultations-msg-container .consultations-msg {
-          font-size: 15px;
-          font-style: italic; }
+          font-size: 15px; }
 
 #about {
   background: url("/img/About/about-quality5.jpg") no-repeat center center;

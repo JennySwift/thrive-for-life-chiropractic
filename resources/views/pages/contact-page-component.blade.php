@@ -72,7 +72,7 @@
                     </div>
 
                     <div class="consultations-msg-container">
-                        <div class="consultations-msg">Consultations by appointment only.</div>
+                        <i class="consultations-msg">Consultations by appointment only.</i>
                     </div>
 
                 </div>
