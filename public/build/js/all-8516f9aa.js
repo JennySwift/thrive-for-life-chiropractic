@@ -19927,6 +19927,26 @@ var Navbar = Vue.component('navbar', {
     }
 });
 
+var ServicesDropdownMenu = Vue.component('services-dropdown-menu', {
+    template: '#services-dropdown-menu-template',
+    data: function () {
+        return {
+
+        };
+    },
+    components: {},
+    methods: {
+
+    },
+    props: [
+        'path',
+        'showServicesTabs'
+    ],
+    ready: function () {
+
+    }
+});
+
 Vue.transition('contact-details', {
     css: false,
     enter: function (el, done) {
