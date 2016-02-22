@@ -60,7 +60,11 @@
             //        color: white;
             //    }
             }
-
+            .current-tab {
+                a {
+                    @include currentPage;
+                }
+            }
         }
         &.services {
             a {
@@ -81,7 +85,7 @@
             }
         }
         &.current-page {
-            a {
+            > a {
                 @include currentPage;
             }
         }

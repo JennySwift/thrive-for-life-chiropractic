@@ -18,8 +18,8 @@
     </a>
 
     <services-dropdown-menu
-            :path="path"
-            :show-services-tabs="showServicesTabs"
+            :path.sync="path"
+            :show-services-tabs.sync="showServicesTabs"
     >
     </services-dropdown-menu>
     

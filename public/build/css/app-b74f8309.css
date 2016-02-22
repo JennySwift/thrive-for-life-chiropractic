@@ -163,6 +163,9 @@ ul {
         padding: 3px 11px; }
       #navbar > li #services-dropdown-menu a {
         color: white; }
+      #navbar > li #services-dropdown-menu .current-tab a {
+        text-decoration: underline !important;
+        color: rgba(255, 255, 255, 0.9); }
     #navbar > li.services a:focus {
       outline: none;
       text-decoration: none; }
@@ -173,7 +176,7 @@ ul {
       padding-left: 2px; }
       #navbar > li.services a:last-child .fa-chevron-down, #navbar > li.services a:last-child .fa-chevron-up {
         font-size: 9px; }
-    #navbar > li.current-page a {
+    #navbar > li.current-page > a {
       text-decoration: underline !important;
       color: rgba(255, 255, 255, 0.9); }
   #navbar a {

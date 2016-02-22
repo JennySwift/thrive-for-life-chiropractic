@@ -8,6 +8,14 @@ var ServicesDropdownMenu = Vue.component('services-dropdown-menu', {
     components: {},
     methods: {
 
+        /**
+         *
+         * @param path
+         */
+        goToPage: function (path) {
+            this.path = path;
+            this.showServicesTabs = false;
+        }
     },
     props: [
         'path',

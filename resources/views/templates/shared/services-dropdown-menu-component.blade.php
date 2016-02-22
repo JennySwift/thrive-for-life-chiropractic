@@ -9,7 +9,7 @@
             <div class="tab-inner">
                 <a
                         {{--v-link="{path: '/services/chiropractic'}"--}}
-                        v-on:click="path = '/services/chiropractic'"
+                        v-on:click="goToPage('/services/chiropractic')"
                         href="#"
                 >
                     Chiropractic
@@ -24,7 +24,7 @@
             <div class="tab-inner">
                 <a
                         {{--v-link="{path: '/services/ak'}"--}}
-                        v-on:click="path = '/services/ak'"
+                        v-on:click="goToPage('/services/ak')"
                         href="#"
                 >
                     Applied Kinesiology
@@ -39,7 +39,7 @@
             <div class="tab-inner">
                 <a
                         {{--v-link="{path: '/services/rnr'}"--}}
-                        v-on:click="path = '/services/rnr'"
+                        v-on:click="goToPage('/services/rnr')"
                         href="#"
                 >
                     Retained Neonatal Reflexes
@@ -54,7 +54,7 @@
             <div class="tab-inner">
                 <a
                         {{--v-link="{path: '/services/lifestyle'}"--}}
-                        v-on:click="path = '/services/lifestyle'"
+                        v-on:click="goToPage('/services/lifestyle')"
                         href="#"
                 >
                     Lifestyle Coaching
@@ -70,7 +70,7 @@
             <div class="tab-inner">
                 <a
                         {{--v-link="{path: '/services/hra'}"--}}
-                        v-on:click="path = '/services/hra'"
+                        v-on:click="goToPage('/services/hra')"
                         href="#"
                 >
                     Health Risk Assessment
@@ -82,7 +82,7 @@
             <div class="tab-inner">
                 <a
                         {{--v-link="{path: '/services/government'}"--}}
-                        v-on:click="path = '/services/government'"
+                        v-on:click="goToPage('/services/government')"
                         href="#"
                 >
                     Government-Supported
