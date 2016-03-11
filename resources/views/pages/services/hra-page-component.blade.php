@@ -13,7 +13,6 @@
                 the unique ability to identify your risk factors and reveal if you are at risk of developing illness or
                 disease in the future, thus providing you with a window of opportunity to take preventative action.</p>
             <p>Prevention is better than cure, and the Health Risk Assessment allows you to do just that!</p>
-            <p>For more information visit www.wellnessandprevention.com</p>
         </div>
     </div>
 
