@@ -122,8 +122,6 @@ ul {
   margin: 0;
   font-size: 17px;
   font-family: 'Josefin Sans'; }
-  #navbar .services .fa-chevron-down, #navbar .services .fa-chevron-up {
-    font-size: 9px; }
   #navbar img.logo {
     height: 20px;
     width: 15px; }
@@ -150,7 +148,17 @@ ul {
       font-size: 20px;
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none; }
-    #navbar > li #services-dropdown-menu {
+    #navbar > li.services a:focus {
+      outline: none;
+      text-decoration: none; }
+    #navbar > li.services a:first-child {
+      padding-right: 2px; }
+    #navbar > li.services a.arrow-container {
+      margin-bottom: 2px;
+      padding-left: 2px; }
+      #navbar > li.services a.arrow-container .fa-chevron-down, #navbar > li.services a.arrow-container .fa-chevron-up {
+        font-size: 9px; }
+    #navbar > li.services #services-dropdown-menu {
       background: rgba(64, 64, 64, 0.9);
       white-space: nowrap;
       position: absolute;
@@ -159,26 +167,16 @@ ul {
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
       border: 1px solid rgba(0, 0, 0, 0.15);
       border-radius: 4px; }
-      #navbar > li #services-dropdown-menu.contact-page-services-dropdown-menu {
+      #navbar > li.services #services-dropdown-menu.contact-page-services-dropdown-menu {
         background: rgba(64, 64, 64, 0.9); }
-      #navbar > li #services-dropdown-menu .tab {
+      #navbar > li.services #services-dropdown-menu .tab {
         padding: 3px 11px; }
-      #navbar > li #services-dropdown-menu a {
+      #navbar > li.services #services-dropdown-menu a {
         color: white;
         font-weight: normal; }
-      #navbar > li #services-dropdown-menu .current-tab a {
+      #navbar > li.services #services-dropdown-menu .current-tab a {
         text-decoration: underline !important;
         color: rgba(255, 255, 255, 0.9); }
-    #navbar > li.services a:focus {
-      outline: none;
-      text-decoration: none; }
-    #navbar > li.services a:first-child {
-      padding-right: 2px; }
-    #navbar > li.services a:last-child {
-      margin-bottom: 2px;
-      padding-left: 2px; }
-      #navbar > li.services a:last-child .fa-chevron-down, #navbar > li.services a:last-child .fa-chevron-up {
-        font-size: 9px; }
     #navbar > li.current-page > a {
       text-decoration: underline !important;
       color: rgba(255, 255, 255, 0.9); }

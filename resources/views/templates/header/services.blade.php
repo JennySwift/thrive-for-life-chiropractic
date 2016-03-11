@@ -12,6 +12,7 @@
     <a
         href="#"
         v-on:click="toggleServicesTabs()"
+        class="arrow-container"
     >
         <span v-show="showServicesTabs" class="fa fa-chevron-up"></span>
         <span v-show="!showServicesTabs" class="fa fa-chevron-down"></span>

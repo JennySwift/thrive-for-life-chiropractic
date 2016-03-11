@@ -4,18 +4,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-    //background: black;
-    //opacity: .5;
     background: rgba(0,0,0, .6);
     padding: 0;
     margin: 0;
     font-size: 17px;
     font-family: 'Josefin Sans';
-    .services {
-        .fa-chevron-down, .fa-chevron-up {
-            font-size: 9px;
-        }
-    }
     img.logo {
         height: 20px;
         width: 15px;
@@ -46,35 +39,6 @@
                 text-decoration: none;
             }
         }
-        #services-dropdown-menu {
-            background: rgba(64,64,64, .9);
-            white-space: nowrap;
-            position: absolute;
-            left: 0;
-            top: $navHeight + 1;
-            box-shadow: 0 6px 12px rgba(0,0,0,.175);
-            border: 1px solid rgba(0,0,0,.15);
-            border-radius: 4px;
-            &.contact-page-services-dropdown-menu {
-                background: rgba(64,64,64, .9);
-            }
-            .tab {
-                padding: 3px 11px;
-            }
-            a {
-                color: white;
-                font-weight: normal;
-            //    &:hover {
-            //        background: $base;
-            //        color: white;
-            //    }
-            }
-            .current-tab {
-                a {
-                    @include currentPage;
-                }
-            }
-        }
         &.services {
             a {
                 &:focus {
@@ -84,11 +48,36 @@
                 &:first-child {
                     padding-right: 2px;
                 }
-                &:last-child {
+                &.arrow-container {
                     margin-bottom: 2px;
                     padding-left: 2px;
                     .fa-chevron-down, .fa-chevron-up {
                         font-size: 9px;
+                    }
+                }
+            }
+            #services-dropdown-menu {
+                background: rgba(64,64,64, .9);
+                white-space: nowrap;
+                position: absolute;
+                left: 0;
+                top: $navHeight + 1;
+                box-shadow: 0 6px 12px rgba(0,0,0,.175);
+                border: 1px solid rgba(0,0,0,.15);
+                border-radius: 4px;
+                &.contact-page-services-dropdown-menu {
+                    background: rgba(64,64,64, .9);
+                }
+                .tab {
+                    padding: 3px 11px;
+                }
+                a {
+                    color: white;
+                    font-weight: normal;
+                }
+                .current-tab {
+                    a {
+                        @include currentPage;
                     }
                 }
             }
