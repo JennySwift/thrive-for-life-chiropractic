@@ -46,12 +46,20 @@
                 font-size: 40px;
             }
             &.collapsed {
-                padding: 6px 8px 6px 33px;
+                padding: 2px 0;
                 border-radius: 4px;
                 width: 94px;
+                flex-direction: row;
                 h1 {
                     margin-bottom: 0;
                     font-size: 22px;
+                }
+                .buttons {
+                    display: flex;
+                    margin-right: 6px;
+                    .fa-minus-square, .fa-plus-square {
+                        position: static;
+                    }
                 }
             }
             .fa-minus-square, .fa-plus-square {

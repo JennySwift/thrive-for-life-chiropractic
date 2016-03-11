@@ -953,12 +953,22 @@ ul {
       transition: all .8s ease;
       font-size: 40px; }
     #contact .text.collapsed {
-      padding: 6px 8px 6px 33px;
+      padding: 2px 0;
       border-radius: 4px;
-      width: 94px; }
+      width: 94px;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row; }
       #contact .text.collapsed h1 {
         margin-bottom: 0;
         font-size: 22px; }
+      #contact .text.collapsed .buttons {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-right: 6px; }
+        #contact .text.collapsed .buttons .fa-minus-square, #contact .text.collapsed .buttons .fa-plus-square {
+          position: static; }
     #contact .text .fa-minus-square, #contact .text .fa-plus-square {
       position: absolute;
       top: 3px;
