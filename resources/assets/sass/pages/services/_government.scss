@@ -20,8 +20,6 @@
             font-size: 60px;
             margin-bottom: 40px;
         }
-        a {
-            color: white;
-        }
+        @include link;
     }
 }

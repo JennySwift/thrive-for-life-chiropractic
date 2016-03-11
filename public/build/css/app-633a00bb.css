@@ -845,6 +845,9 @@ ul {
       margin-bottom: 40px; }
     #government .text a {
       color: white; }
+      #government .text a:hover {
+        text-decoration: none;
+        border-bottom: 1px solid white; }
 
 #hra {
   background: url("/img/HRA/tape-small.jpg") no-repeat center center;
@@ -1065,6 +1068,9 @@ ul {
       margin-bottom: 30px; }
     #about .text a {
       color: white; }
+      #about .text a:hover {
+        text-decoration: none;
+        border-bottom: 1px solid white; }
   #about .scrollbar-container {
     top: 37px;
     height: calc(100% - 37px); }

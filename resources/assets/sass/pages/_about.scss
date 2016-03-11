@@ -22,9 +22,7 @@
             font-size: 60px;
             margin-bottom: 30px;
         }
-        a {
-            color: white;
-        }
+        @include link;
     }
     .scrollbar-container {
         //To stop text overlapping the navbar
