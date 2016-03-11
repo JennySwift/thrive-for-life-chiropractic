@@ -843,6 +843,8 @@ ul {
     #government .text h1 {
       font-size: 60px;
       margin-bottom: 40px; }
+    #government .text a {
+      color: white; }
 
 #hra {
   background: url("/img/HRA/tape-small.jpg") no-repeat center center;
