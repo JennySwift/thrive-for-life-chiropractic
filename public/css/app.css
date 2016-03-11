@@ -151,7 +151,7 @@ ul {
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none; }
     #navbar > li #services-dropdown-menu {
-      background: rgba(64, 64, 64, 0.6);
+      background: rgba(64, 64, 64, 0.9);
       white-space: nowrap;
       position: absolute;
       left: 0;
