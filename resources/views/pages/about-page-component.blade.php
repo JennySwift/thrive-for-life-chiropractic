@@ -53,7 +53,7 @@
                             <div v-show="showText" transition="expand" class="accordion-text">
                                 <p><i>Health.</i> My interest in health doesn't stop when I finish work for the day. I enjoy learning about and doing pretty much anything that promotes health and wellness.</p>
                                 <p><i>People.</i> Toys and technology can be fun and useful, but I find that it’s people and relationships that bring much more fulfilment to life, so I consider myself extraordinarily fortunate to have such wonderful family, friends and patients to share life with.</p>
-                                <p><i>Music.</i> Whether listening to it or playing it myself, music is a great gift from God that I thoroughly enjoy :)</p>
+                                <p><i>Music.</i> Whether listening to it or playing it myself, music is a great gift from God that I thoroughly enjoy <img src="/img/About/smiley.png"></p>
                             </div>
                         </div>
                     </accordion-item>
