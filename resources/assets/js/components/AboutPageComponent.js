@@ -21,7 +21,7 @@ var AboutPage = Vue.component('about-page', {
         }
     },
     props: [
-        //data to be received from parent
+        'path'
     ],
     ready: function () {
         this.listen();

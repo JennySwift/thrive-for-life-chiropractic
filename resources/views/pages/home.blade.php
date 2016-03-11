@@ -10,6 +10,7 @@
 
     <about-page
         v-if="path === '/about'"
+        :path.sync="path"
         {{--transition="fade"--}}
     >
     </about-page>

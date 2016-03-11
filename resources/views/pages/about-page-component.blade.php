@@ -7,7 +7,10 @@
             <div class="text scrollbar-content">
                 <h1>Meet Pete</h1>
 
-                <p>Your health is arguably your most valuable asset, so it’s important to have a health practitioner you can trust will look after you well. Take a moment to get to know me, and if you have any further questions please feel free to <a>contact me</a>.</p>
+                <p>
+                    Your health is arguably your most valuable asset, so it’s important to have a health practitioner you can trust will look after you well. Take a moment to get to know me, and if you have any further questions please feel free to
+                    <a v-on:click="path = '/contact'" href="#">contact me</a>.
+                </p>
 
                 <div class="accordion">
                     <accordion-item inline-template auto-scroll="true">
