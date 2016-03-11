@@ -1,5 +1,6 @@
 @mixin contactBoxTransition {
     transition: all .8s ease;
+    //transition: all 3s ease;
 }
 
 #contact {
@@ -16,108 +17,114 @@
             display: block;
         }
     }
-    //.text-container {
-    //    display: flex;
-    //    justify-content: center;
-    //    position: absolute;
-    //    bottom: 50px;
-    //    width: 100%;
-        .text {
-            background: black;
-            opacity: .8;
-            padding: 10px 0 0;
-            color: white;
-            position: absolute;
-            bottom: 50px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 391px;
-            @include contactBoxTransition;
-            white-space: nowrap;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            //height: 204px;
-            //width: 391px;
-            h1 {
-                @include contactBoxTransition;
-                font-size: 40px;
-            }
-            &.collapsed {
-                padding: 2px 0;
-                border-radius: 4px;
-                width: 94px;
-                flex-direction: row;
-                h1 {
-                    margin-bottom: 0;
-                    font-size: 22px;
-                }
-                .buttons {
-                    display: flex;
-                    margin-right: 6px;
-                    .fa-minus-square, .fa-plus-square {
-                        position: static;
-                    }
-                }
-            }
-            .fa-minus-square, .fa-plus-square {
-                position: absolute;
-                top: 3px;
-                left: 5px;
-                cursor: pointer;
-            }
+    .text {
+        background: black;
+        opacity: .8;
+        padding: 10px 0 0;
+        color: white;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 391px;
+        @include contactBoxTransition;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 275px;
+        &.collapsed {
+            padding: 2px 0;
+            border-radius: 4px;
+            width: 94px;
+            height: 34px;
+            flex-direction: row;
             .details {
-                .flex {
-                    display: flex;
-                    justify-content: space-around;
-                    font-size: 17px;
-                    > :first-child {
-                        text-align: right;
-                        border-right: .5px solid white;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                    }
-                    > :last-child {
-                        //border-left: 1px solid white;
-                    }
-                    .fa-at {
-                        font-size: 12px;
-                    }
-                    > * {
-                        padding: 0 20px;
-                    }
-                    a {
-                        color: white;
-                        &:focus {
-                            text-decoration: none;
-                        }
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                    .day-and-time-container {
-                        display: flex;
-                        white-space: nowrap;
-                        div:first-child {
-                            width: 56px;
-                        }
-                    }
+                //height: 0;
+            }
+            h1 {
+                margin-bottom: 0;
+                font-size: 22px;
+            }
+            .buttons {
+                display: flex;
+                margin-right: 6px;
+                .fa-minus-square, .fa-plus-square {
+                    position: static;
                 }
-                .consultations-msg-container {
-                    display: flex;
-                    justify-content: center;
-                    padding: 20px 0 10px 0;
-                    .consultations-msg {
-                        font-size: 15px;
-                        //font-style: italic;
-                    }
-                }
-
             }
         }
-    //}
+        h1 {
+            @include contactBoxTransition;
+            font-size: 40px;
+        }
+        .fa-minus-square, .fa-plus-square {
+            position: absolute;
+            top: 3px;
+            left: 5px;
+            cursor: pointer;
+        }
+        .details {
+            @include contactBoxTransition;
+            height: 201px;
+            width: 392px;
+            opacity: 1;
+            &.contact-details-enter {
+                height: 0;
+                opacity: 0;
+                width: 0;
+            }
+            &.contact-details-leave {
+                height: 0;
+                opacity: 0;
+                width: 0;
+            }
+            .flex {
+                display: flex;
+                justify-content: space-around;
+                font-size: 17px;
+                > :first-child {
+                    text-align: right;
+                    border-right: .5px solid white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                .fa-at {
+                    font-size: 12px;
+                }
+                > * {
+                    padding: 0 20px;
+                }
+                a {
+                    color: white;
+                    &:focus {
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .day-and-time-container {
+                    display: flex;
+                    white-space: nowrap;
+                    div:first-child {
+                        width: 56px;
+                    }
+                }
+            }
+            .consultations-msg-container {
+                display: flex;
+                justify-content: center;
+                padding: 20px 0 10px 0;
+                .consultations-msg {
+                    font-size: 15px;
+                }
+            }
+
+        }
+    }
 
 }

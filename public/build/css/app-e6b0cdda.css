@@ -946,14 +946,13 @@ ul {
     justify-content: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
-    #contact .text h1 {
-      transition: all .8s ease;
-      font-size: 40px; }
+    align-items: center;
+    height: 275px; }
     #contact .text.collapsed {
       padding: 2px 0;
       border-radius: 4px;
       width: 94px;
+      height: 34px;
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row; }
@@ -967,58 +966,74 @@ ul {
         margin-right: 6px; }
         #contact .text.collapsed .buttons .fa-minus-square, #contact .text.collapsed .buttons .fa-plus-square {
           position: static; }
+    #contact .text h1 {
+      transition: all .8s ease;
+      font-size: 40px; }
     #contact .text .fa-minus-square, #contact .text .fa-plus-square {
       position: absolute;
       top: 3px;
       left: 5px;
       cursor: pointer; }
-    #contact .text .details .flex {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      font-size: 17px; }
-      #contact .text .details .flex > :first-child {
-        text-align: right;
-        border-right: .5px solid white;
+    #contact .text .details {
+      transition: all .8s ease;
+      height: 201px;
+      width: 392px;
+      opacity: 1; }
+      #contact .text .details.contact-details-enter {
+        height: 0;
+        opacity: 0;
+        width: 0; }
+      #contact .text .details.contact-details-leave {
+        height: 0;
+        opacity: 0;
+        width: 0; }
+      #contact .text .details .flex {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        justify-content: space-between; }
-      #contact .text .details .flex .fa-at {
-        font-size: 12px; }
-      #contact .text .details .flex > * {
-        padding: 0 20px; }
-      #contact .text .details .flex a {
-        color: white; }
-        #contact .text .details .flex a:focus {
-          text-decoration: none; }
-        #contact .text .details .flex a:hover {
-          text-decoration: underline; }
-      #contact .text .details .flex .day-and-time-container {
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        font-size: 17px; }
+        #contact .text .details .flex > :first-child {
+          text-align: right;
+          border-right: .5px solid white;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+        #contact .text .details .flex .fa-at {
+          font-size: 12px; }
+        #contact .text .details .flex > * {
+          padding: 0 20px; }
+        #contact .text .details .flex a {
+          color: white; }
+          #contact .text .details .flex a:focus {
+            text-decoration: none; }
+          #contact .text .details .flex a:hover {
+            text-decoration: underline; }
+        #contact .text .details .flex .day-and-time-container {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          white-space: nowrap; }
+          #contact .text .details .flex .day-and-time-container div:first-child {
+            width: 56px; }
+      #contact .text .details .consultations-msg-container {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        white-space: nowrap; }
-        #contact .text .details .flex .day-and-time-container div:first-child {
-          width: 56px; }
-    #contact .text .details .consultations-msg-container {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      padding: 20px 0 10px 0; }
-      #contact .text .details .consultations-msg-container .consultations-msg {
-        font-size: 15px; }
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 20px 0 10px 0; }
+        #contact .text .details .consultations-msg-container .consultations-msg {
+          font-size: 15px; }
 
 #about {
   background: url("/img/About/about-quality5.jpg") no-repeat center center;
