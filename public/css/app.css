@@ -907,6 +907,8 @@ ul {
     padding-bottom: 0; }
     #rnr .text p {
       margin-bottom: 20px; }
+      #rnr .text p a {
+        color: white; }
     #rnr .text h1 {
       text-align: left;
       font-size: 56px;
