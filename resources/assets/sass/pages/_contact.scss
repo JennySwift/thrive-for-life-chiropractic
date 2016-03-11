@@ -35,6 +35,7 @@
         justify-content: center;
         align-items: center;
         height: 275px;
+        overflow: hidden;
         &.collapsed {
             padding: 2px 0;
             border-radius: 4px;
@@ -67,20 +68,20 @@
             cursor: pointer;
         }
         .details {
-            @include contactBoxTransition;
+            //@include contactBoxTransition;
             height: 201px;
             width: 392px;
             opacity: 1;
-            &.contact-details-enter {
-                height: 0;
-                opacity: 0;
-                width: 0;
-            }
-            &.contact-details-leave {
-                height: 0;
-                opacity: 0;
-                width: 0;
-            }
+            //&.contact-details-enter {
+            //    height: 0;
+            //    opacity: 0;
+            //    width: 0;
+            //}
+            //&.contact-details-leave {
+            //    height: 0;
+            //    opacity: 0;
+            //    width: 0;
+            //}
             .flex {
                 display: flex;
                 justify-content: space-around;

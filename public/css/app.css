@@ -954,7 +954,8 @@ ul {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 275px; }
+    height: 275px;
+    overflow: hidden; }
     #contact .text.collapsed {
       padding: 2px 0;
       border-radius: 4px;
@@ -982,18 +983,9 @@ ul {
       left: 5px;
       cursor: pointer; }
     #contact .text .details {
-      transition: all .8s ease;
       height: 201px;
       width: 392px;
       opacity: 1; }
-      #contact .text .details.contact-details-enter {
-        height: 0;
-        opacity: 0;
-        width: 0; }
-      #contact .text .details.contact-details-leave {
-        height: 0;
-        opacity: 0;
-        width: 0; }
       #contact .text .details .flex {
         display: -webkit-flex;
         display: -ms-flexbox;
