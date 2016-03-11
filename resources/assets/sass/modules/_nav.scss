@@ -11,6 +11,11 @@
     margin: 0;
     font-size: 17px;
     font-family: 'Josefin Sans';
+    .services {
+        .fa-chevron-down, .fa-chevron-up {
+            font-size: 9px;
+        }
+    }
     img.logo {
         height: 20px;
         width: 15px;
@@ -30,9 +35,9 @@
             color: rgba(255,255,255, .6);
             //To center vertically because space is allowed for the underline
             padding-top: 3px;
-            .fa-chevron-down, .fa-chevron-up {
-                font-size: 14px;
-            }
+            //.fa-chevron-down, .fa-chevron-up {
+            //    font-size: 14px;
+            //}
         }
         &:hover {
             > a {

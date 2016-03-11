@@ -122,6 +122,8 @@ ul {
   margin: 0;
   font-size: 17px;
   font-family: 'Josefin Sans'; }
+  #navbar .services .fa-chevron-down, #navbar .services .fa-chevron-up {
+    font-size: 9px; }
   #navbar img.logo {
     height: 20px;
     width: 15px; }
@@ -144,8 +146,6 @@ ul {
       transition: all .2s ease;
       color: rgba(255, 255, 255, 0.6);
       padding-top: 3px; }
-      #navbar > li > a .fa-chevron-down, #navbar > li > a .fa-chevron-up {
-        font-size: 14px; }
     #navbar > li:hover > a {
       font-size: 20px;
       color: rgba(255, 255, 255, 0.9);
