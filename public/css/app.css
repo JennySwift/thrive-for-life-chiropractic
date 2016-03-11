@@ -164,7 +164,8 @@ ul {
       #navbar > li #services-dropdown-menu .tab {
         padding: 3px 11px; }
       #navbar > li #services-dropdown-menu a {
-        color: white; }
+        color: white;
+        font-weight: normal; }
       #navbar > li #services-dropdown-menu .current-tab a {
         text-decoration: underline !important;
         color: rgba(255, 255, 255, 0.9); }
