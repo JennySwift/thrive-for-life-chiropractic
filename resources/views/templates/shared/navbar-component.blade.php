@@ -6,15 +6,15 @@
         style="z-index:1000"
     >
 
-        @if (Auth::guest())
-            <li>
-                <a href="/auth/login">Login</a>
-            </li>
-            <li>
-                <a href="/auth/register">Register</a>
-            </li>
+        {{--@if (Auth::guest())--}}
+            {{--<li>--}}
+                {{--<a href="/auth/login">Login</a>--}}
+            {{--</li>--}}
+            {{--<li>--}}
+                {{--<a href="/auth/register">Register</a>--}}
+            {{--</li>--}}
 
-        @else
+        {{--@else--}}
 
             <li v-bind:class="{'current-page': path === '/'}">
                 <a
@@ -52,7 +52,7 @@
 
 {{--            @include('templates/header/user')--}}
 
-        @endif
+        {{--@endif--}}
 
     </ul>
 
