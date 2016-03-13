@@ -15,4 +15,11 @@
             font-size: 60px;
         }
     }
+    @media (max-width: 320px) {
+        @include text;
+        .text {
+            padding-top: 94px;
+            left: 0;
+        }
+    }
 }

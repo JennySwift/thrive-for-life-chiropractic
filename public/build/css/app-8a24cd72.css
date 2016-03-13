@@ -796,6 +796,13 @@ ul {
       margin-bottom: 40px;
       text-align: left;
       font-size: 60px; }
+  @media (max-width: 320px) {
+    #ak .text {
+      padding: 68px 40px 40px 40px;
+      position: relative; }
+    #ak .text {
+      padding-top: 94px;
+      left: 0; } }
 
 #chiropractic {
   background: url("/img/Chiropractic/balance-compressed.jpg") no-repeat center center;
