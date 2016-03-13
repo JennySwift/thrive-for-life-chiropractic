@@ -17,8 +17,10 @@
     height: 100%;
     #home {
         background: url('/img/Home/Layer 2.svg') no-repeat left top, url('/img/Home/Layer 3.svg') no-repeat left top fixed, url('/img/Home/spring-small-compressed.jpg') no-repeat left top fixed;
-        //background: url('/img/Home/spring-small.jpg') no-repeat left top fixed;
         @include backgroundImage;
+        @media (max-width: 405px) {
+            background-size: 470px, cover, cover;
+        }
         @include cover;
         @include animatedArrow;
         position: relative;

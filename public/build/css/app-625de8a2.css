@@ -650,6 +650,9 @@ ul {
     height: 100%;
     background-size: cover;
     position: relative; }
+    @media (max-width: 405px) {
+      #home-page-container #home {
+        background-size: 470px, cover, cover; } }
     #home-page-container #home .cover {
       background: black;
       opacity: 0.4;
