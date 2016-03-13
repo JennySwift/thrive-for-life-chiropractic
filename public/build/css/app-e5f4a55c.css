@@ -939,6 +939,12 @@ ul {
       text-align: left;
       font-size: 56px;
       margin-bottom: 34px; }
+  @media (max-width: 920px) {
+    #rnr .text {
+      padding: 68px 40px 40px 40px;
+      position: relative; }
+    #rnr .text {
+      padding-top: 58px; } }
 
 #contact {
   position: relative;
