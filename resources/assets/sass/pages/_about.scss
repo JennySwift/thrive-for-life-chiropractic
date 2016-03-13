@@ -24,6 +24,17 @@
         }
         @include link;
     }
+    @media (max-width: 320px) {
+        @include text;
+        .text {
+            padding-top: 19px;
+            right: 0;
+            text-align: left;
+            .accordion-text {
+                margin-left: 0;
+            }
+        }
+    }
     .scrollbar-container {
         //To stop text overlapping the navbar
         top: 37px;

@@ -2,9 +2,10 @@ Vue.transition('expand', {
     css: false,
     enter: function (el, done) {
         var that = this;
+        var width = $(el).width();
 
         var clone = $(el).clone()
-            .css({height: 'auto'})
+            .css({height: 'auto', width: width, color: 'red'})
             .appendTo($(el).closest('.text'));
 
         var height = clone.height();

@@ -1072,6 +1072,16 @@ ul {
       #about .text a:hover {
         text-decoration: none;
         border-bottom: 1px solid white; }
+  @media (max-width: 320px) {
+    #about .text {
+      padding: 68px 40px 40px 40px;
+      position: relative; }
+    #about .text {
+      padding-top: 19px;
+      right: 0;
+      text-align: left; }
+      #about .text .accordion-text {
+        margin-left: 0; } }
   #about .scrollbar-container {
     top: 37px;
     height: calc(100% - 37px); }
