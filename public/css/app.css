@@ -791,7 +791,8 @@ ul {
     bottom: 50px;
     left: 10%;
     color: white;
-    font-size: 20px; }
+    font-size: 20px;
+    height: auto; }
     #ak .text h1 {
       margin-bottom: 40px;
       text-align: left;
@@ -802,7 +803,8 @@ ul {
       position: relative; }
     #ak .text {
       padding-top: 94px;
-      left: 0; } }
+      left: 0;
+      height: 100%; } }
 
 #chiropractic {
   background: url("/img/Chiropractic/balance-compressed.jpg") no-repeat center center;
