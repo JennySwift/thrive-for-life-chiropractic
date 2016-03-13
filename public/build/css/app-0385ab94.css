@@ -528,6 +528,12 @@ ul {
       padding: 0;
       height: 100%;
       position: absolute; }
+  @media (max-width: 675px) {
+    .slider-container .slider-content {
+      height: 809px; } }
+  @media (max-width: 675px) {
+    .slider-container .slider-content {
+      height: 809px; } }
 
 .tabs {
   display: -webkit-flex;
@@ -830,6 +836,9 @@ ul {
       font-size: 60px;
       text-align: left;
       margin-bottom: 30px; }
+  @media (max-width: 675px) {
+    #chiropractic .text {
+      padding: 57px 40px 40px 40px; } }
 
 #government {
   background: url("/img/Government/meadow-small-compressed.jpg") no-repeat center center;
