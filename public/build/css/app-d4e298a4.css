@@ -915,6 +915,9 @@ ul {
       text-align: left;
       font-size: 58px;
       margin-bottom: 32px; }
+  @media (max-width: 920px) {
+    #lifestyle .text {
+      padding-top: 58px; } }
 
 #rnr {
   background: url("/img/RNR/child-small-compressed.jpg") no-repeat right center;
