@@ -28,6 +28,7 @@
         right: 0;
         margin: auto;
         width: 391px;
+        max-width: 100%;
         @include contactBoxTransition;
         white-space: nowrap;
         display: flex;
@@ -125,6 +126,35 @@
                 }
             }
 
+        }
+    }
+    @media (max-width: 490px) {
+        .text {
+            height: 229px;
+            bottom: 90px;
+            h1 {
+                margin-bottom: 14px;
+            }
+            .details {
+                //height: 148px;
+                .flex {
+                    justify-content: center;
+                    .day-and-time-container {
+                        div:first-child {
+                            width: 43px;
+                        }
+                    }
+                }
+            }
+            li {
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: 390px) {
+        .text {
+            bottom: 0;
+            top: 0;
         }
     }
 

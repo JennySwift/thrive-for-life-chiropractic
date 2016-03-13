@@ -949,6 +949,7 @@ ul {
     right: 0;
     margin: auto;
     width: 391px;
+    max-width: 100%;
     transition: all .8s ease;
     white-space: nowrap;
     display: -webkit-flex;
@@ -1042,6 +1043,24 @@ ul {
         padding: 20px 0 10px 0; }
         #contact .text .details .consultations-msg-container .consultations-msg {
           font-size: 15px; }
+  @media (max-width: 490px) {
+    #contact .text {
+      height: 229px;
+      bottom: 90px; }
+      #contact .text h1 {
+        margin-bottom: 14px; }
+      #contact .text .details .flex {
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        #contact .text .details .flex .day-and-time-container div:first-child {
+          width: 43px; }
+      #contact .text li {
+        font-size: 14px; } }
+  @media (max-width: 390px) {
+    #contact .text {
+      bottom: 0;
+      top: 0; } }
 
 #about {
   background: url("/img/About/about-quality5.jpg") no-repeat center center;
