@@ -18,7 +18,12 @@
                                     months or longer.</p>
                                 <p>Eligibility requires a referral from your GP.</p>
                                 <p>If you would like more information, please click
-                                    <a href="http://www.health.gov.au/internet/main/publishing.nsf/Content/health-medicare-allied-health-brochure.htm">here</a>.
+                                    <a
+                                        href="http://www.health.gov.au/internet/main/publishing.nsf/Content/health-medicare-allied-health-brochure.htm"
+                                        target="_blank"
+                                    >
+                                        here
+                                    </a>.
                                 </p>
                             </div>
                         </div>
@@ -34,7 +39,14 @@
                                     holders. For White Card holders, DVA will fund those services required because of their accepted
                                     war-caused or service-related condition(s).</p>
                                 <p>Eligibility requires a referral.</p>
-                                <p>If you would like more information, please click <a href="http://factsheets.dva.gov.au/factsheets/documents/HSV13%20Chiropractic%20Services.htm">here</a>.</p>
+                                <p>If you would like more information, please click
+                                    <a
+                                        href="http://factsheets.dva.gov.au/factsheets/documents/HSV13%20Chiropractic%20Services.htm"
+                                        target="_blank"
+                                    >
+                                        here
+                                    </a>.
+                                </p>
                             </div>
                         </div>
                     </accordion-item>
@@ -49,7 +61,12 @@
                                     between family members (for example, a family of 3 dependants will be allocated $1,200 per financial
                                     year).</p>
                                 <p>If you would like more information, please click
-                                    <a href="http://www.defence.gov.au/Health/SHC/DependantHealthcare/default.asp">here</a>.
+                                    <a
+                                        href="http://www.defence.gov.au/Health/SHC/DependantHealthcare/default.asp"
+                                        target="_blank"
+                                    >
+                                        here
+                                    </a>.
                                 </p>
                             </div>
                         </div>
