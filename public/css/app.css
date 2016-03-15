@@ -648,146 +648,98 @@ ul {
   #home-page-container #home {
     background: url("/img/Home/Layer 2.svg") no-repeat left top, url("/img/Home/Layer 3.svg") no-repeat left top fixed, url("/img/Home/spring-small-compressed.jpg") no-repeat left top fixed;
     height: 100%;
-    background-size: cover;
-    position: relative; }
-    #home-page-container #home .text {
-      display: none; }
-    @media (max-width: 405px) {
-      #home-page-container #home {
-        background: url("/img/Home/Layer 3.svg") no-repeat left top fixed, url("/img/Home/spring-small-compressed.jpg") no-repeat left top fixed;
-        background-size: cover, cover;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center; }
-        #home-page-container #home .text {
-          display: block;
-          padding: 0 37px; }
-          #home-page-container #home .text img {
-            width: 100%; } }
-    #home-page-container #home .cover {
-      background: black;
-      opacity: 0.4;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      position: fixed; }
-    #home-page-container #home .arrow {
-      -webkit-animation-name: arrow;
-      animation-name: arrow;
-      -webkit-animation-duration: 1.2s;
-      animation-duration: 1.2s;
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite; }
+    background-size: cover; }
 
-@-webkit-keyframes arrow {
-  0% {
-    bottom: 15px; }
-  50% {
-    bottom: 25px; }
-  100% {
-    bottom: 15px; } }
-
-@keyframes arrow {
-  0% {
-    bottom: 15px; }
-  50% {
-    bottom: 25px; }
-  100% {
-    bottom: 15px; } }
-    #home-page-container #home a {
-      color: inherit; }
-    #home-page-container #home .arrow {
-      position: absolute;
-      bottom: 15px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      font-size: 40px;
-      width: 35px;
-      cursor: pointer;
-      color: black;
-      opacity: .55;
-      z-index: 9; }
-  #home-page-container #welcome {
-    background: url("/img/Home/spring-small-compressed.jpg") no-repeat left top fixed;
+#welcome {
+  background: url("/img/Home/spring-small-compressed.jpg") no-repeat left top fixed;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  font-size: 28px; }
+  #welcome .cover {
+    background: black;
+    opacity: 0.4;
+    width: 100%;
     height: 100%;
-    background-size: cover;
-    position: relative;
-    font-size: 28px; }
-    #home-page-container #welcome .cover {
-      background: black;
-      opacity: 0.4;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      position: fixed; }
-    #home-page-container #welcome .cover {
-      background: white;
-      opacity: .85;
-      position: absolute; }
-    #home-page-container #welcome a {
-      color: inherit; }
-    #home-page-container #welcome .arrow {
-      position: absolute;
-      bottom: 15px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      font-size: 40px;
-      width: 35px;
-      cursor: pointer;
-      color: black;
-      opacity: .55;
-      z-index: 9; }
-    #home-page-container #welcome .arrow {
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg); }
-    #home-page-container #welcome .flex {
-      height: 100%;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      position: relative; }
-      #home-page-container #welcome .flex > * {
-        margin: 0 60px; }
-    #home-page-container #welcome .scrollbar-container {
-      max-width: 540px;
-      padding-top: 38px;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      #home-page-container #welcome .scrollbar-container .text {
-        max-height: 100%;
-        text-align: center;
-        color: black; }
-        #home-page-container #welcome .scrollbar-container .text h1 {
-          font-size: 77px;
-          margin-bottom: 37px; }
-        #home-page-container #welcome .scrollbar-container .text p {
-          margin-bottom: 31px; }
-        #home-page-container #welcome .scrollbar-container .text i {
-          font-weight: bold; }
-    #home-page-container #welcome .img-container {
-      margin-top: 37px; }
-      #home-page-container #welcome .img-container img {
-        width: 480px;
-        border-radius: 50%;
-        height: 480px; }
+    top: 0;
+    position: fixed; }
+  #welcome .cover {
+    background: white;
+    opacity: .85;
+    position: absolute; }
+  #welcome a {
+    color: inherit; }
+  #welcome .arrow {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 40px;
+    width: 35px;
+    cursor: pointer;
+    color: black;
+    opacity: .55;
+    z-index: 9; }
+  #welcome .arrow {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  #welcome .flex {
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative; }
+    #welcome .flex > * {
+      margin: 0 60px; }
+  #welcome .scrollbar-container {
+    max-width: 540px;
+    padding-top: 38px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (max-width: 1000px) {
+      #welcome .scrollbar-container {
+        margin: 0;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start; } }
+    #welcome .scrollbar-container .text {
+      max-height: 100%;
+      text-align: center;
+      color: black; }
+      #welcome .scrollbar-container .text h1 {
+        font-size: 77px;
+        margin-bottom: 37px; }
+        @media (max-width: 768px) {
+          #welcome .scrollbar-container .text h1 {
+            font-size: 40px; } }
+      #welcome .scrollbar-container .text p {
+        margin-bottom: 31px; }
+        @media (max-width: 768px) {
+          #welcome .scrollbar-container .text p {
+            font-size: 18px;
+            margin-bottom: 15px; } }
+      #welcome .scrollbar-container .text i {
+        font-weight: bold; }
+  #welcome .img-container {
+    margin-top: 37px; }
+    #welcome .img-container img {
+      width: 480px;
+      border-radius: 50%;
+      height: 480px; }
+    @media (max-width: 1000px) {
+      #welcome .img-container {
+        display: none; } }
 
 .services a {
   color: #41b920; }
@@ -1146,155 +1098,5 @@ ul {
   #about .scrollbar-container {
     top: 37px;
     height: calc(100% - 37px); }
-
-@media (max-width: 1185px) {
-  #home-page-container #welcome .scrollbar-container .text p {
-    font-size: 29px; } }
-
-@media (max-width: 1160px) {
-  #home-page-container #welcome .scrollbar-container .text p {
-    font-size: 29px; }
-  #home-page-container #welcome .img-container img {
-    width: 450px;
-    height: 450px; } }
-
-@media (max-width: 1150px) {
-  #home-page-container #welcome .scrollbar-container .text p {
-    font-size: 28px; } }
-
-@media (max-width: 1030px) {
-  #home-page-container #welcome .scrollbar-container .text p {
-    font-size: 27px; } }
-
-@media (max-width: 1020px) {
-  #home-page-container #welcome .flex > * {
-    margin: 0 59px; }
-  #home-page-container #welcome .scrollbar-container {
-    padding-top: 75px; }
-    #home-page-container #welcome .scrollbar-container .text p {
-      font-size: 27px; } }
-
-@media (max-width: 1005px) {
-  #home-page-container #welcome .scrollbar-container .text p {
-    font-size: 26px; } }
-
-@media (max-width: 980px) {
-  #home-page-container #welcome .flex > * {
-    margin: 0 58px; }
-  #home-page-container #welcome .scrollbar-container {
-    padding-top: 70px; }
-    #home-page-container #welcome .scrollbar-container .text p {
-      font-size: 26px; }
-  #home-page-container #welcome .img-container img {
-    width: 440px;
-    height: 440px; } }
-
-@media (max-width: 965px) {
-  #home-page-container #welcome .flex > * {
-    margin: 0 57px; }
-  #home-page-container #welcome .scrollbar-container {
-    padding-top: 70px; }
-    #home-page-container #welcome .scrollbar-container .text p {
-      font-size: 25px; } }
-
-@media (max-width: 940px) {
-  #home-page-container #welcome .flex > * {
-    margin: 0 57px; }
-  #home-page-container #welcome .scrollbar-container {
-    padding-top: 70px; }
-    #home-page-container #welcome .scrollbar-container .text h1 {
-      font-size: 70px;
-      margin-bottom: 26px; }
-    #home-page-container #welcome .scrollbar-container .text p {
-      font-size: 24px; } }
-
-@media (max-width: 930px) {
-  #home-page-container #welcome .flex > * {
-    margin: 0 57px; }
-  #home-page-container #welcome .scrollbar-container {
-    padding-top: 70px; }
-    #home-page-container #welcome .scrollbar-container .text h1 {
-      font-size: 70px;
-      margin-bottom: 26px; }
-    #home-page-container #welcome .scrollbar-container .text p {
-      font-size: 24px; }
-  #home-page-container #welcome .img-container img {
-    width: 420px;
-    height: 420px; } }
-
-@media (max-width: 905px) {
-  #home-page-container #welcome .flex > * {
-    margin: 0 55px; }
-  #home-page-container #welcome .scrollbar-container {
-    padding-top: 60px; }
-    #home-page-container #welcome .scrollbar-container .text h1 {
-      font-size: 60px;
-      margin-bottom: 22px; }
-    #home-page-container #welcome .scrollbar-container .text p {
-      font-size: 23px; }
-  #home-page-container #welcome .img-container img {
-    width: 400px;
-    height: 400px; } }
-
-@media (max-width: 830px) {
-  #home-page-container #welcome .flex > * {
-    margin: 0 50px; }
-  #home-page-container #welcome .scrollbar-container {
-    padding-top: 55px; }
-    #home-page-container #welcome .scrollbar-container .text h1 {
-      font-size: 60px;
-      margin-bottom: 22px; }
-    #home-page-container #welcome .scrollbar-container .text p {
-      font-size: 23px; }
-  #home-page-container #welcome .img-container img {
-    width: 380px;
-    height: 380px; } }
-
-@media (max-width: 780px) {
-  #home-page-container #welcome .scrollbar-container {
-    padding-top: 50px; }
-    #home-page-container #welcome .scrollbar-container .text h1 {
-      font-size: 58px;
-      margin-bottom: 20px; }
-    #home-page-container #welcome .scrollbar-container .text p {
-      font-size: 21px; }
-  #home-page-container #welcome .img-container img {
-    width: 360px;
-    height: 360px; } }
-
-@media (max-width: 735px) {
-  #home-page-container #welcome .scrollbar-container .text h1 {
-    font-size: 40px;
-    margin-bottom: 20px; }
-  #home-page-container #welcome .scrollbar-container .text p {
-    font-size: 19px; }
-  #home-page-container #welcome .img-container img {
-    width: 340px;
-    height: 340px; } }
-
-@media (max-width: 680px) {
-  #home-page-container #welcome .img-container img {
-    width: 300px;
-    height: 300px; } }
-
-@media (max-width: 600px) {
-  #home-page-container #welcome .scrollbar-container .text p {
-    font-size: 14px; }
-  #home-page-container #welcome .img-container img {
-    width: 200px;
-    height: 200px; } }
-
-@media (max-width: 500px) {
-  #home-page-container #welcome .img-container {
-    display: none; } }
-
-@media (max-height: 560px) {
-  #home-page-container #welcome .img-container img {
-    width: 300px;
-    height: 300px; } }
-
-@media (max-height: 345px) {
-  #home-page-container #welcome .img-container {
-    display: none; } }
 
 /*# sourceMappingURL=app.css.map */

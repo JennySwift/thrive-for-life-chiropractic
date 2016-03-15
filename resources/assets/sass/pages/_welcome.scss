@@ -1,0 +1,86 @@
+#welcome {
+    background: url('/img/Home/spring-small-compressed.jpg') no-repeat left top fixed;
+    @include backgroundImage;
+    @include cover;
+    .cover {
+        background: white;
+        opacity: .85;
+        position: absolute;
+    }
+    position: relative;
+    font-size: 28px;
+    a {
+        color: inherit;
+    }
+    @include arrow;
+    .arrow {
+        transform: rotate(180deg);
+    }
+    .flex {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        > * {
+            margin: 0 60px;
+        }
+    }
+    .scrollbar-container {
+        //padding-top: $navHeight;
+        max-width: 540px;
+        padding-top: 38px;
+        display: flex;
+        align-items: center;
+        @media (max-width: 1000px) {
+            margin: 0;
+            align-items: flex-start;
+        }
+        .text {
+            max-height: 100%;
+            text-align: center;
+            color: black;
+            h1 {
+                font-size: 77px;
+                margin-bottom: 37px;
+                @media (max-width: 768px) {
+                    font-size: 40px;
+                }
+            }
+            p {
+                margin-bottom: 31px;
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+            }
+            i {
+                font-weight: bold;
+            }
+        }
+    }
+    .img-container {
+        margin-top: $navHeight;
+        img {
+            width: 480px;
+            border-radius: 50%;
+            height: 480px;
+        }
+        @media (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    //@media (max-width: 768px) {
+    //    .scrollbar-container {
+    //        .text {
+    //            p {
+    //                font-size: 26px;
+    //            }
+    //        }
+    //        .img-container {
+    //            display: none;
+    //        }
+    //    }
+    //}
+}
