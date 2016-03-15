@@ -667,15 +667,9 @@ ul {
         align-items: center; }
         #home-page-container #home .text {
           display: block;
-          font-size: 60px;
-          color: white;
-          text-align: center; }
-          #home-page-container #home .text div:first-child {
-            font-family: "Annie Use Your Telescope";
-            margin-bottom: -21px; }
-          #home-page-container #home .text div:last-child {
-            font-family: "Nanum Pen Script";
-            font-size: 38px; } }
+          padding: 0 37px; }
+          #home-page-container #home .text img {
+            width: 100%; } }
     #home-page-container #home .cover {
       background: black;
       opacity: 0.4;

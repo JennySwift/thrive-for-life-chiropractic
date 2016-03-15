@@ -3,8 +3,9 @@
     <div id="home-page-container">
         <div id="home">
             <div class="text">
-                <div>thrive for life</div>
-                <div>CHIROPRACTIC</div>
+                <img src="/img/Home/thrive-for-life-text.png">
+                {{--<div>thrive for life</div>--}}
+                {{--<div>CHIROPRACTIC</div>--}}
             </div>
             <a href="#welcome">
                 {{--<i class="fa fa-chevron-circle-down"></i>--}}

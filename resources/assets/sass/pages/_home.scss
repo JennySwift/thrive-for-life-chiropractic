@@ -29,16 +29,9 @@
             align-items: center;
             .text {
                 display: block;
-                font-size: 60px;
-                color: white;
-                text-align: center;
-                div:first-child {
-                    font-family: "Annie Use Your Telescope";
-                    margin-bottom: -21px;
-                }
-                div:last-child {
-                    font-family: "Nanum Pen Script";
-                    font-size: 38px;
+                padding: 0 37px;
+                img {
+                    width: 100%;
                 }
             }
         }
