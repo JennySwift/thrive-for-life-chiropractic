@@ -869,6 +869,9 @@ ul {
       #government .text a:hover {
         text-decoration: none;
         border-bottom: 1px solid white; }
+  @media (max-width: 580px) {
+    #government .text {
+      padding-top: 54px; } }
 
 #hra {
   background: url("/img/HRA/tape-small.jpg") no-repeat center center;

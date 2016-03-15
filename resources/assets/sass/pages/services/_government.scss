@@ -22,4 +22,9 @@
         }
         @include link;
     }
+    @media (max-width: 580px) {
+        .text {
+            padding-top: 54px;
+        }
+    }
 }
