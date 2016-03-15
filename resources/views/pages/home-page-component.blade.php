@@ -2,6 +2,10 @@
 
     <div id="home-page-container">
         <div id="home">
+            <div class="text">
+                <div>thrive for life</div>
+                <div>CHIROPRACTIC</div>
+            </div>
             <a href="#welcome">
                 {{--<i class="fa fa-chevron-circle-down"></i>--}}
                 <span class="arrow fa fa-chevron-circle-down"></span>

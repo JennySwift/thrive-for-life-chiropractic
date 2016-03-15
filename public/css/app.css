@@ -650,9 +650,32 @@ ul {
     height: 100%;
     background-size: cover;
     position: relative; }
+    #home-page-container #home .text {
+      display: none; }
     @media (max-width: 405px) {
       #home-page-container #home {
-        background-size: 470px, cover, cover; } }
+        background: url("/img/Home/Layer 3.svg") no-repeat left top fixed, url("/img/Home/spring-small-compressed.jpg") no-repeat left top fixed;
+        background-size: cover, cover;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        #home-page-container #home .text {
+          display: block;
+          font-size: 60px;
+          color: white;
+          text-align: center; }
+          #home-page-container #home .text div:first-child {
+            font-family: "Annie Use Your Telescope";
+            margin-bottom: -21px; }
+          #home-page-container #home .text div:last-child {
+            font-family: "Nanum Pen Script";
+            font-size: 38px; } }
     #home-page-container #home .cover {
       background: black;
       opacity: 0.4;
@@ -697,14 +720,6 @@ ul {
       color: black;
       opacity: .55;
       z-index: 9; }
-    #home-page-container #home .text {
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: fixed;
-      width: 100%;
-      height: 100%; }
   #home-page-container #welcome {
     background: url("/img/Home/spring-small-compressed.jpg") no-repeat left top fixed;
     height: 100%;
