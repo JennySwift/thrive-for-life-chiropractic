@@ -764,8 +764,8 @@ ul {
     #welcome .flex > * {
       margin: 0 60px; }
   #welcome .scrollbar-container {
+    padding-top: 57px;
     max-width: 540px;
-    padding-top: 38px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -775,6 +775,8 @@ ul {
     @media (max-width: 1000px) {
       #welcome .scrollbar-container {
         margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
         -webkit-align-items: flex-start;
         -ms-flex-align: start;
         align-items: flex-start; } }
@@ -792,7 +794,7 @@ ul {
         margin-bottom: 31px; }
         @media (max-width: 1100px) {
           #welcome .scrollbar-container .text p {
-            font-size: 18px;
+            font-size: 14px;
             margin-bottom: 15px; } }
       #welcome .scrollbar-container .text i {
         font-weight: bold; }
@@ -810,8 +812,6 @@ ul {
       #welcome .img-container {
         display: none; } }
   @media (max-width: 768px) {
-    #welcome .scrollbar-container .text p {
-      font-size: 26px; }
     #welcome .scrollbar-container .img-container {
       display: none; } }
 
