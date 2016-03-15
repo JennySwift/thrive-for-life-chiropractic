@@ -1,7 +1,7 @@
 <script id="hra-page-template" type="x-template">
 
     <div id="hra" class="service">
-        <div class="gradient-cover"></div>
+        <div class="hra-gradient-cover"></div>
         <div class="text scrollbar-container">
             <h1>Health Risk Assessment</h1>
             <p>The Health Risk Assessment not only gives you a scientifically-validated rating of your current health

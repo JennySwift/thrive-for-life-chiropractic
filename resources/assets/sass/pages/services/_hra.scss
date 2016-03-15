@@ -2,9 +2,13 @@
     background: url('/img/HRA/tape-small.jpg') no-repeat center center;
     @include backgroundImage;
     @include text;
-    .gradient-cover {
-        opacity: 1;
-        background: linear-gradient(to left, transparent 25%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.9) 85%, rgba(255, 255, 255, 1) 95%);
+    .hra-gradient-cover {
+        //opacity: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        position: fixed;
+        background: linear-gradient(to left, rgba(255,255,255,0) 25%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.9) 85%, rgba(255, 255, 255, 1) 95%);
     }
     .text {
         color: black;
