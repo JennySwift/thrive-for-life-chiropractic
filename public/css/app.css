@@ -896,6 +896,9 @@ ul {
       text-align: left;
       font-size: 58px;
       margin-bottom: 28px; }
+  @media (max-width: 580px) {
+    #hra .text {
+      padding-top: 58px; } }
 
 #lifestyle {
   background: url("/img/Lifestyle/hiker-small-compressed.jpg") no-repeat left center;
