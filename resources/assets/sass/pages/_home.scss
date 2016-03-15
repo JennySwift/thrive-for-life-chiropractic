@@ -18,29 +18,29 @@
     #home {
         background: url('/img/Home/Layer 2.svg') no-repeat left top, url('/img/Home/Layer 3.svg') no-repeat left top fixed, url('/img/Home/spring-small-compressed.jpg') no-repeat left top fixed;
         @include backgroundImage;
-        //.text {
-        //    display: none;
-        //}
-        //@media (max-width: 405px) {
-        //    background: url('/img/Home/Layer 3.svg') no-repeat left top fixed, url('/img/Home/spring-small-compressed.jpg') no-repeat left top fixed;
-        //    background-size: cover, cover;
-        //    display: flex;
-        //    justify-content: center;
-        //    align-items: center;
-        //    .text {
-        //        display: block;
-        //        padding: 0 37px;
-        //        img {
-        //            width: 100%;
-        //        }
-        //    }
-        //}
-        //@include cover;
-        //@include animatedArrow;
-        //position: relative;
-        //a {
-        //    color: inherit;
-        //}
-        //@include arrow;
+        .text {
+            display: none;
+        }
+        @media (max-width: 405px) {
+            background: url('/img/Home/Layer 3.svg') no-repeat left top fixed, url('/img/Home/spring-small-compressed.jpg') no-repeat left top fixed;
+            background-size: cover, cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .text {
+                display: block;
+                padding: 0 37px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        @include cover;
+        @include animatedArrow;
+        position: relative;
+        a {
+            color: inherit;
+        }
+        @include arrow;
     }
 }
