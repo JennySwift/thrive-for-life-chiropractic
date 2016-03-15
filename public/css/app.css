@@ -1098,7 +1098,7 @@ ul {
     background: linear-gradient(to right, transparent 42%, rgba(0, 0, 0, 0.7) 53%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.9) 85%, black 95%); }
   #about .text {
     padding-top: 31px;
-    max-width: 700px;
+    max-width: 707px;
     max-height: 100%;
     color: white;
     position: absolute;
