@@ -13,9 +13,6 @@
         color: inherit;
     }
     @include arrow;
-    .arrow {
-        transform: rotate(180deg);
-    }
     .flex {
         height: 100%;
         display: flex;
