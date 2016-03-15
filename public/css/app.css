@@ -1086,7 +1086,10 @@ ul {
         #contact .text .details .flex .day-and-time-container div:first-child {
           width: 43px; }
       #contact .text li {
-        font-size: 14px; } }
+        font-size: 14px; }
+      #contact .text.collapsed {
+        bottom: 51px;
+        top: auto; } }
   @media (max-width: 390px) {
     #contact .text {
       bottom: 0;

@@ -149,6 +149,10 @@
             li {
                 font-size: 14px;
             }
+            &.collapsed {
+                bottom: 51px;
+                top: auto;
+            }
         }
     }
     @media (max-width: 390px) {
