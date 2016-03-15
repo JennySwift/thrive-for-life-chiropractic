@@ -108,9 +108,9 @@ ul {
   padding: 0; }
 
 #navbar {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
