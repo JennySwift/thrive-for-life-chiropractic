@@ -87,6 +87,11 @@
                     font-size: 24px;
                     margin-bottom: 24px;
                 }
+                @media (max-width: $breakpoint3) {
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
                 @media (max-width: $breakpoint1) {
                     font-size: 17px;
                 }
@@ -110,8 +115,11 @@
             }
         }
         @media (max-width: $breakpoint3) {
-            margin-bottom: 51px;
-            margin-top: 0;
+            margin-bottom: 68px;
+            margin-top: 12px;
+            img {
+                max-width: 380px;
+            }
         }
         @media (max-width: $breakpoint1) {
             display: none;

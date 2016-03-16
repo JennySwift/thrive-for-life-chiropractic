@@ -831,6 +831,9 @@ ul {
           #welcome .scrollbar-container .text p {
             font-size: 24px;
             margin-bottom: 24px; } }
+        @media (max-width: 1000px) {
+          #welcome .scrollbar-container .text p:last-child {
+            margin-bottom: 0; } }
         @media (max-width: 600px) {
           #welcome .scrollbar-container .text p {
             font-size: 17px; } }
@@ -848,8 +851,10 @@ ul {
           width: 400px; } }
     @media (max-width: 1000px) {
       #welcome .img-container {
-        margin-bottom: 51px;
-        margin-top: 0; } }
+        margin-bottom: 68px;
+        margin-top: 12px; }
+        #welcome .img-container img {
+          max-width: 380px; } }
     @media (max-width: 600px) {
       #welcome .img-container {
         display: none; } }
