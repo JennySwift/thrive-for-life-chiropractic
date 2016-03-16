@@ -20137,7 +20137,7 @@ $("#logo-lower").lettering();
 new Vue({
     el: 'body',
     data: {
-        path: '/services/government',
+        path: '/',
         showServicesTabs: false
     },
     methods: {
