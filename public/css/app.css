@@ -760,6 +760,11 @@ ul {
     position: relative; }
     #welcome .flex > * {
       margin: 0 60px; }
+    @media (max-width: 1000px) {
+      #welcome .flex {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
   #welcome .scrollbar-container {
     padding-top: 57px;
     max-width: 540px;
@@ -776,14 +781,18 @@ ul {
         padding-right: 20px;
         -webkit-align-items: flex-start;
         -ms-flex-align: start;
-        align-items: flex-start; } }
-    @media (max-width: 1000px) {
+        align-items: flex-start;
+        height: auto; } }
+    @media (max-width: 600px) {
+      #welcome .scrollbar-container {
+        height: 100%; } }
+    @media (max-width: 600px) {
       #welcome .scrollbar-container .big-screens {
         display: none; } }
     #welcome .scrollbar-container .small-screens {
       display: none;
       margin-bottom: 20px; }
-      @media (max-width: 1000px) {
+      @media (max-width: 600px) {
         #welcome .scrollbar-container .small-screens {
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -797,13 +806,13 @@ ul {
       #welcome .scrollbar-container .small-screens h1 {
         margin-right: 25px;
         margin-bottom: 0 !important; }
-        @media (max-width: 768px) {
+        @media (max-width: 1100px) {
           #welcome .scrollbar-container .small-screens h1 {
             margin-right: 15px; } }
       #welcome .scrollbar-container .small-screens img {
         width: 80px;
         border-radius: 50%; }
-        @media (max-width: 768px) {
+        @media (max-width: 1100px) {
           #welcome .scrollbar-container .small-screens img {
             width: 44px; } }
     #welcome .scrollbar-container .text {
@@ -813,7 +822,7 @@ ul {
       #welcome .scrollbar-container .text h1 {
         font-size: 77px;
         margin-bottom: 37px; }
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
           #welcome .scrollbar-container .text h1 {
             font-size: 40px; } }
       #welcome .scrollbar-container .text p {
@@ -822,7 +831,7 @@ ul {
           #welcome .scrollbar-container .text p {
             font-size: 24px;
             margin-bottom: 24px; } }
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
           #welcome .scrollbar-container .text p {
             font-size: 17px; } }
       #welcome .scrollbar-container .text i {
@@ -838,6 +847,10 @@ ul {
         #welcome .img-container img {
           width: 400px; } }
     @media (max-width: 1000px) {
+      #welcome .img-container {
+        margin-bottom: 51px;
+        margin-top: 0; } }
+    @media (max-width: 600px) {
       #welcome .img-container {
         display: none; } }
 
