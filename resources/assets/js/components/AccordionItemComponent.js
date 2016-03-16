@@ -32,7 +32,42 @@ var AccordionItem = Vue.component('accordion-item', {
         /**
          *
          */
+        generateCloneElement: function () {
+            //var width = $(this.$el).width();
+
+            //var accordionClone = this.accordion.clone();
+            //accordionClone.find('accordion-text').css({display: 'none'});
+            //var accordionTextClone = $(this.$el).find('.accordion-text').clone()
+            //    .css({height: 'auto', width: width, display: 'block'});
+            //accordionTextClone.appendTo(accordionClone);
+            //
+            //var height = accordionClone.height();
+
+            //var clone = $(this.$el).find('.accordion-text').clone()
+            //    .css({height: 'auto', width: width, display: 'block'})
+            //    .appendTo(this.accordion);
+
+            //var height = this.accordion.height();
+            console.log(height);
+            //accordionClone.remove();
+            //accordionTextClone.remove();
+            //clone.remove();
+        },
+
+        /**
+         *
+         */
+        calculateIfWindowIsTooShortForScrolling: function () {
+            if (this.aboutToShowText) {
+                this.generateCloneElement();
+            }
+        },
+
+        /**
+         *
+         */
         scroll: function () {
+            //this.calculateIfWindowIsTooShortForScrolling();
             // Doing this here rather than on page load so that on page load
             // there isn't extra scrolling space at the bottom when all items are collapsed
             //this.setAccordionHeight();
@@ -70,7 +105,10 @@ var AccordionItem = Vue.component('accordion-item', {
                 that.addAndRemoveExpandedClasses(heading);
 
                 if (that.autoScroll) {
-                    that.scroll();
+                    if ((that.maxWidthScreenForScrolling && $(window).width() <= that.maxWidthScreenForScrolling) || !that.maxWidthScreenForScrolling) {
+                        that.scroll();
+                    }
+
                 }
 
                 setTimeout(function () {
@@ -89,7 +127,8 @@ var AccordionItem = Vue.component('accordion-item', {
     },
     props: [
         'autoScroll',
-        'scrollTop'
+        'scrollTop',
+        'maxWidthScreenForScrolling'
     ],
     ready: function () {
         this.listen();

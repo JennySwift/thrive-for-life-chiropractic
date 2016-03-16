@@ -8,7 +8,7 @@
                 <h1>Government-Supported Services</h1>
 
                 <div class="accordion">
-                    <accordion-item inline-template auto-scroll="true" scroll-top=33>
+                    <accordion-item inline-template auto-scroll="true" scroll-top=33 max-width-screen-for-scrolling="320">
                         <div class="accordion-item">
                             <h5 class="accordion-heading">Chronic Disease Management (formerly Enhanced Primary Care)</h5>
                             <div v-slide="showText" class="accordion-text">
@@ -29,7 +29,7 @@
                         </div>
                     </accordion-item>
 
-                    <accordion-item inline-template auto-scroll="true" scroll-top="33">
+                    <accordion-item inline-template auto-scroll="true" scroll-top="33" max-width-screen-for-scrolling="320">
                         <div class="accordion-item">
                             <h5 class="accordion-heading">Department of Veterans’ Affairs</h5>
                             <div v-slide="showText" class="accordion-text">
@@ -51,7 +51,7 @@
                         </div>
                     </accordion-item>
 
-                    <accordion-item inline-template auto-scroll="true" scroll-top="33">
+                    <accordion-item inline-template auto-scroll="true" scroll-top="33" max-width-screen-for-scrolling="320">
                         <div class="accordion-item">
                             <h5 class="accordion-heading">Australian Defence Force Family Health</h5>
                             <div v-slide="showText" class="accordion-text">
