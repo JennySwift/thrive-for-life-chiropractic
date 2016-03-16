@@ -36,10 +36,10 @@ Vue.directive('slide', {
     },
     update: function (newValue, oldValue) {
         if (newValue) {
-            $(this.el).slideDown();
+            $(this.el).slideDown(1000);
         }
         else {
-            $(this.el).slideUp();
+            $(this.el).slideUp(1000);
         }
 
         // do something based on the updated value

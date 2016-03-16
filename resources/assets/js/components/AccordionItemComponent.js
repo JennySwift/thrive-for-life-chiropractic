@@ -3,6 +3,7 @@ var AccordionItem = Vue.component('accordion-item', {
     data: function () {
         return {
             showText: false,
+            aboutToShowText: false,
             accordion: ''
         };
     },
@@ -21,9 +22,9 @@ var AccordionItem = Vue.component('accordion-item', {
          * Remove underlines and underline the appropriate heading
          * @param heading
          */
-        setUnderlines: function (heading) {
+        addAndRemoveExpandedClasses: function (heading) {
             $('.expanded').removeClass('expanded');
-            if (this.showText) {
+            if (this.aboutToShowText) {
                 heading.addClass('expanded');
             }
         },
@@ -34,7 +35,7 @@ var AccordionItem = Vue.component('accordion-item', {
         scroll: function () {
             // Doing this here rather than on page load so that on page load
             // there isn't extra scrolling space at the bottom when all items are collapsed
-            this.setAccordionHeight();
+            //this.setAccordionHeight();
 
             if (!this.scrollTop) {
                 this.scrollTop = 13;
@@ -46,10 +47,9 @@ var AccordionItem = Vue.component('accordion-item', {
                 scrollTop = 0;
             }
 
-            setTimeout(function () {
-                $('.scrollbar-container').animate({scrollTop: scrollTop}, 700);
-
-            }, 100);
+            var currentScrollPosition = $('.scrollbar-container').position().top;
+            console.log(currentScrollPosition, scrollTop);
+            $('.scrollbar-container').animate({scrollTop: scrollTop}, 400);
         },
 
         /**
@@ -63,14 +63,17 @@ var AccordionItem = Vue.component('accordion-item', {
             heading.on('click', function (e) {
                 e.preventDefault();
 
-                $.event.trigger('closeItems', [that]);
-
-                that.showText = !that.showText;
-                that.setUnderlines(heading);
+                that.aboutToShowText = !that.showText;
+                that.addAndRemoveExpandedClasses(heading);
 
                 if (that.autoScroll) {
                     that.scroll();
                 }
+
+                setTimeout(function () {
+                    $.event.trigger('closeItems', [that]);
+                    that.showText = !that.showText;
+                }, 300);
             });
             
             $(document).on('closeItems', function (event, item) {
