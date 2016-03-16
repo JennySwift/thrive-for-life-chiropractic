@@ -652,7 +652,10 @@ ul {
     position: relative; }
     #home-page-container #home .text {
       display: none; }
-    @media (max-width: 405px) {
+      @media (max-width: 1000px) {
+        #home-page-container #home .text {
+          padding: 0 47px; } }
+    @media (max-width: 1000px) {
       #home-page-container #home {
         background: url("/img/Home/Layer 3.svg") no-repeat left top fixed, url("/img/Home/spring-small-compressed.jpg") no-repeat left top fixed;
         background-size: cover, cover;

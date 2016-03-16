@@ -20,8 +20,11 @@
         @include backgroundImage;
         .text {
             display: none;
+            @media (max-width: $breakpoint3) {
+                padding: 0 47px;
+            }
         }
-        @media (max-width: 405px) {
+        @media (max-width: $breakpoint3) {
             background: url('/img/Home/Layer 3.svg') no-repeat left top fixed, url('/img/Home/spring-small-compressed.jpg') no-repeat left top fixed;
             background-size: cover, cover;
             display: flex;
