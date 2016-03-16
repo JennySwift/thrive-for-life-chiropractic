@@ -855,9 +855,9 @@ ul {
     @media (max-width: 1000px) {
       #welcome .img-container {
         margin-bottom: 68px;
-        margin-top: 12px; }
+        margin-top: 23px; }
         #welcome .img-container img {
-          max-width: 380px; } }
+          max-width: 343px; } }
     @media (max-width: 600px) {
       #welcome .img-container {
         display: none; } }
