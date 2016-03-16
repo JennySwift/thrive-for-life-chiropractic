@@ -36,6 +36,7 @@ var AccordionItem = Vue.component('accordion-item', {
             // Doing this here rather than on page load so that on page load
             // there isn't extra scrolling space at the bottom when all items are collapsed
             //this.setAccordionHeight();
+            this.accordion.height(5000);
 
             if (!this.scrollTop) {
                 this.scrollTop = 13;
@@ -47,9 +48,11 @@ var AccordionItem = Vue.component('accordion-item', {
                 scrollTop = 0;
             }
 
-            //var currentScrollPosition = $('.scrollbar-container').position().top;
-
-            $('.scrollbar-container').animate({scrollTop: scrollTop}, 1000);
+            $('.scrollbar-container').animate({scrollTop: scrollTop}, 400);
+            var that = this;
+            setTimeout(function () {
+                that.accordion.css({height: 'auto'});
+            }, 2000);
         },
 
         /**
@@ -66,14 +69,15 @@ var AccordionItem = Vue.component('accordion-item', {
                 that.aboutToShowText = !that.showText;
                 that.addAndRemoveExpandedClasses(heading);
 
-                $.event.trigger('closeItems', [that]);
-                that.showText = !that.showText;
+                if (that.autoScroll) {
+                    that.scroll();
+                }
 
                 setTimeout(function () {
-                    if (that.autoScroll) {
-                        that.scroll();
-                    }
-                }, 1500);
+                    $.event.trigger('closeItems', [that]);
+                    that.showText = !that.showText;
+                }, 700);
+
             });
             
             $(document).on('closeItems', function (event, item) {

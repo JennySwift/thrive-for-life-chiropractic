@@ -24,7 +24,14 @@ var AboutPage = Vue.component('about-page', {
         'path'
     ],
     ready: function () {
-        this.listen();
-        HelpersRepository.scrollbars();
+        //this.listen();
+        //HelpersRepository.scrollbars();
+        //This is because for some reason, on the iPhone,
+        //unless the user clicks and drags the screen before using the accordion,
+        //the accordion is really jerky
+        setTimeout(function () {
+            $(body).mousedown().mousemove().mouseup();
+        }, 500);
+
     }
 });
