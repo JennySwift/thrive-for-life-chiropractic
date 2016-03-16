@@ -19757,7 +19757,11 @@ var AccordionItem = Vue.component('accordion-item', {
             // Doing this here rather than on page load so that on page load
             // there isn't extra scrolling space at the bottom when all items are collapsed
             this.setAccordionHeight();
-            var scrollTop = this.accordion.position().top - 13;
+
+            if (!this.scrollTop) {
+                this.scrollTop = 13;
+            }
+            var scrollTop = this.accordion.position().top - this.scrollTop;
 
             //If all items are collapsed, scroll to the top of the page
             if (this.accordion.find('.expanded').length == 0) {
@@ -19799,7 +19803,8 @@ var AccordionItem = Vue.component('accordion-item', {
         }
     },
     props: [
-        'autoScroll'
+        'autoScroll',
+        'scrollTop'
     ],
     ready: function () {
         this.listen();
@@ -19986,32 +19991,57 @@ var ServicesDropdownMenu = Vue.component('services-dropdown-menu', {
 //        $(el).stop()
 //    },
 //});
-Vue.transition('expand', {
-    css: false,
-    enter: function (el, done) {
-        var that = this;
-        var width = $(el).width();
+//Vue.transition('expand', {
+//    css: false,
+//    enter: function (el, done) {
+//        //var that = this;
+//        //var width = $(el).width();
+//        //
+//        //var clone = $(el).clone()
+//        //    .css({height: 'auto', width: width, color: 'red'})
+//        //    .appendTo($(el).closest('.text'));
+//        //
+//        //var height = clone.height();
+//        //clone.remove();
+//        //
+//        //$(el).animate({
+//        //    height: height
+//        //}, 1000, done);
+//        //$(el).slideDown(1000, done);
+//    },
+//    enterCancelled: function (el) {
+//        $(el).stop()
+//    },
+//    leave: function (el, done) {
+//        //$(el).animate({ height: 0 }, 1000, done)
+//        //$(el).slideUp(1000, done);
+//    },
+//    leaveCancelled: function (el) {
+//        $(el).stop()
+//    },
+//});
 
-        var clone = $(el).clone()
-            .css({height: 'auto', width: width, color: 'red'})
-            .appendTo($(el).closest('.text'));
+Vue.directive('slide', {
+    bind: function () {
+        // do preparation work
+        // e.g. add event listeners or expensive stuff
+        // that needs to be run only once
+    },
+    update: function (newValue, oldValue) {
+        if (newValue) {
+            $(this.el).slideDown();
+        }
+        else {
+            $(this.el).slideUp();
+        }
 
-        var height = clone.height();
-        clone.remove();
-
-        $(el).animate({
-            height: height
-        }, 1000, done);
+        // do something based on the updated value
+        // this will also be called for the initial value
     },
-    enterCancelled: function (el) {
-        $(el).stop()
-    },
-    leave: function (el, done) {
-        $(el).animate({ height: 0 }, 1000, done)
-    },
-    leaveCancelled: function (el) {
-        $(el).stop()
-    },
+    unbind: function () {
+        // do clean up work
+        // e.g. remove event listeners added in bind()
+    }
 });
 Vue.transition('fade', {
     css: false,
@@ -20107,7 +20137,7 @@ $("#logo-lower").lettering();
 new Vue({
     el: 'body',
     data: {
-        path: '/',
+        path: '/services/government',
         showServicesTabs: false
     },
     methods: {

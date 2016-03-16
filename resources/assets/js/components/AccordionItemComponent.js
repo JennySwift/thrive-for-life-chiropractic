@@ -35,7 +35,11 @@ var AccordionItem = Vue.component('accordion-item', {
             // Doing this here rather than on page load so that on page load
             // there isn't extra scrolling space at the bottom when all items are collapsed
             this.setAccordionHeight();
-            var scrollTop = this.accordion.position().top - 13;
+
+            if (!this.scrollTop) {
+                this.scrollTop = 13;
+            }
+            var scrollTop = this.accordion.position().top - this.scrollTop;
 
             //If all items are collapsed, scroll to the top of the page
             if (this.accordion.find('.expanded').length == 0) {
@@ -77,7 +81,8 @@ var AccordionItem = Vue.component('accordion-item', {
         }
     },
     props: [
-        'autoScroll'
+        'autoScroll',
+        'scrollTop'
     ],
     ready: function () {
         this.listen();

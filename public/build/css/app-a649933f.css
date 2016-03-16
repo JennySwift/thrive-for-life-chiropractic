@@ -608,29 +608,18 @@ ul {
   position: fixed;
   background: linear-gradient(to right, transparent 45%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.7) 65%, rgba(0, 0, 0, 0.9) 90%); }
 
-.accordion .accordion-item {
-  margin: 34px 0;
-  position: relative; }
-  .accordion .accordion-item .expanded {
+.accordion .accordion-item .accordion-heading {
+  cursor: pointer;
+  font-size: 23px;
+  color: white;
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  display: inline-block; }
+  .accordion .accordion-item .accordion-heading:hover {
     text-decoration: underline; }
-  .accordion .accordion-item:last-child {
-    margin-bottom: 0; }
-  .accordion .accordion-item .accordion-heading {
-    cursor: pointer;
-    font-size: 23px;
-    color: white;
-    font-family: "Josefin Sans";
-    font-weight: bold;
-    display: inline-block; }
-    .accordion .accordion-item .accordion-heading:hover {
-      text-decoration: underline; }
-  .accordion .accordion-item h1, .accordion .accordion-item h2, .accordion .accordion-item h3, .accordion .accordion-item h4, .accordion .accordion-item h5 {
-    margin: 0; }
-  .accordion .accordion-item .accordion-text {
-    height: 0;
-    margin: 10px; }
-    .accordion .accordion-item .accordion-text.expand-transition p:last-child {
-      margin-bottom: 0; }
+
+.accordion .accordion-item .accordion-text {
+  display: none; }
 
 #preloaded-images {
   display: -webkit-flex;
