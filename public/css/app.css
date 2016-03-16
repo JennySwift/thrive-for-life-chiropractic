@@ -822,6 +822,9 @@ ul {
       #welcome .scrollbar-container .text h1 {
         font-size: 77px;
         margin-bottom: 37px; }
+        @media (max-width: 1000px) {
+          #welcome .scrollbar-container .text h1 {
+            margin-bottom: 20px; } }
         @media (max-width: 600px) {
           #welcome .scrollbar-container .text h1 {
             font-size: 40px; } }
