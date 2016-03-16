@@ -19575,7 +19575,10 @@ var GovernmentPage = Vue.component('government-page', {
         'path'
     ],
     ready: function () {
-
+        //This is because for some reason, on the iPhone,
+        //unless the user clicks and drags the screen before using the accordion,
+        //the accordion is really jerky
+        $(body).mousedown().mousemove().mouseup();
     }
 });
 
@@ -19769,9 +19772,9 @@ var AccordionItem = Vue.component('accordion-item', {
                 scrollTop = 0;
             }
 
-            var currentScrollPosition = $('.scrollbar-container').position().top;
-            console.log(currentScrollPosition, scrollTop);
-            $('.scrollbar-container').animate({scrollTop: scrollTop}, 400);
+            //var currentScrollPosition = $('.scrollbar-container').position().top;
+
+            $('.scrollbar-container').animate({scrollTop: scrollTop}, 1000);
         },
 
         /**
@@ -19788,14 +19791,14 @@ var AccordionItem = Vue.component('accordion-item', {
                 that.aboutToShowText = !that.showText;
                 that.addAndRemoveExpandedClasses(heading);
 
-                if (that.autoScroll) {
-                    that.scroll();
-                }
+                $.event.trigger('closeItems', [that]);
+                that.showText = !that.showText;
 
                 setTimeout(function () {
-                    $.event.trigger('closeItems', [that]);
-                    that.showText = !that.showText;
-                }, 300);
+                    if (that.autoScroll) {
+                        that.scroll();
+                    }
+                }, 1500);
             });
             
             $(document).on('closeItems', function (event, item) {
@@ -20140,7 +20143,7 @@ $("#logo-lower").lettering();
 new Vue({
     el: 'body',
     data: {
-        path: '/',
+        path: '/services/government',
         showServicesTabs: false
     },
     methods: {

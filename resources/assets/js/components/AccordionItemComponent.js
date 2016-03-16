@@ -47,9 +47,9 @@ var AccordionItem = Vue.component('accordion-item', {
                 scrollTop = 0;
             }
 
-            var currentScrollPosition = $('.scrollbar-container').position().top;
-            console.log(currentScrollPosition, scrollTop);
-            $('.scrollbar-container').animate({scrollTop: scrollTop}, 400);
+            //var currentScrollPosition = $('.scrollbar-container').position().top;
+
+            $('.scrollbar-container').animate({scrollTop: scrollTop}, 1000);
         },
 
         /**
@@ -66,14 +66,14 @@ var AccordionItem = Vue.component('accordion-item', {
                 that.aboutToShowText = !that.showText;
                 that.addAndRemoveExpandedClasses(heading);
 
-                if (that.autoScroll) {
-                    that.scroll();
-                }
+                $.event.trigger('closeItems', [that]);
+                that.showText = !that.showText;
 
                 setTimeout(function () {
-                    $.event.trigger('closeItems', [that]);
-                    that.showText = !that.showText;
-                }, 300);
+                    if (that.autoScroll) {
+                        that.scroll();
+                    }
+                }, 1500);
             });
             
             $(document).on('closeItems', function (event, item) {
