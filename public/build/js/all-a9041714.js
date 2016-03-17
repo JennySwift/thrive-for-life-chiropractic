@@ -19578,7 +19578,9 @@ var GovernmentPage = Vue.component('government-page', {
         //This is because for some reason, on the iPhone,
         //unless the user clicks and drags the screen before using the accordion,
         //the accordion is really jerky
-        $(body).mousedown().mousemove().mouseup();
+        setTimeout(function () {
+            $(body).mousedown().mousemove().mouseup();
+        }, 500);
     }
 });
 

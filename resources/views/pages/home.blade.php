@@ -35,7 +35,7 @@
     >
     </chiropractic-page>
     <government-page
-        v-show="path === '/services/government'"
+        v-if="path === '/services/government'"
         :path.sync="path"
         {{--transition="fade"--}}
     >
