@@ -73,6 +73,10 @@ var AccordionItem = Vue.component('accordion-item', {
                     return false;
                 }
             }
+            else {
+                //So that it scrolls to the top of the page if necessary, when all items are closed
+                return true;
+            }
         },
 
         /**
