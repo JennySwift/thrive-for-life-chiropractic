@@ -64,9 +64,11 @@ var AccordionItem = Vue.component('accordion-item', {
                 var predictedAccordionHeight = this.predictAccordionHeight();
 
                 //var predictedPageHeight = $(document).height() - this.accordion.height() + predictedAccordionHeight;
-                var predictedContentHeight = $(this.$el).closest('.scrollbar-content').height() - this.accordion.height() + predictedAccordionHeight;
+                var currentScrollbarContentHeight = this.getCurrentScrollbarContentHeight();
 
-                if (predictedContentHeight > $(this.$el).closest('.scrollbar-container').height()) {
+                var predictedPageContentHeight = currentScrollbarContentHeight - this.accordion.height() + predictedAccordionHeight;
+
+                if (predictedPageContentHeight > $(this.$el).closest('.scrollbar-container').height()) {
                     return true;
                 }
                 else {
@@ -77,6 +79,30 @@ var AccordionItem = Vue.component('accordion-item', {
                 //So that it scrolls to the top of the page if necessary, when all items are closed
                 return true;
             }
+        },
+
+        /**
+         * Clone the body so I can set its height to auto,
+         * in order to get the height of the contents,
+         * because the body height 100% was making the height of the content too short,
+         * messing up my calculation when trying to figure out if the content was tall enough to require scrolling
+         * @returns {*}
+         */
+        getCurrentScrollbarContentHeight: function () {
+            //So that I can find the correct accordion in the cloned body
+            this.accordion.addClass('current-accordion');
+            var clonedBody = $('body').clone()
+                .css({height: 'auto', background: 'pink'})
+                .addClass('appended-body')
+                .appendTo('body');
+
+            var currentScrollbarContent = clonedBody.find('.current-accordion').closest('.scrollbar-content');
+            var currentScrollbarContentHeight = currentScrollbarContent.height();
+
+            clonedBody.remove();
+            this.accordion.removeClass('current-accordion');
+
+            return currentScrollbarContentHeight;
         },
 
         /**
