@@ -29,37 +29,49 @@ var AccordionItem = Vue.component('accordion-item', {
             }
         },
 
-        /**
-         *
-         */
-        generateCloneElement: function () {
-            //var width = $(this.$el).width();
+        predictAccordionHeight: function () {
+            var accordionTextWidth = $(this.$el).width();
+            var clonedAccordion = this.accordion.clone()
+                .css({color: 'red', background: 'pink'})
+                .addClass('accordion-clone')
+                .appendTo('body');
 
-            //var accordionClone = this.accordion.clone();
-            //accordionClone.find('accordion-text').css({display: 'none'});
-            //var accordionTextClone = $(this.$el).find('.accordion-text').clone()
-            //    .css({height: 'auto', width: width, display: 'block'});
-            //accordionTextClone.appendTo(accordionClone);
-            //
-            //var height = accordionClone.height();
+            var clonedAccordionTexts = clonedAccordion.find('.accordion-text');
 
-            //var clone = $(this.$el).find('.accordion-text').clone()
-            //    .css({height: 'auto', width: width, display: 'block'})
-            //    .appendTo(this.accordion);
+            //This should give us the height of the accordion with all items collapsed
+            clonedAccordionTexts.css({display: 'none'});
 
-            //var height = this.accordion.height();
-            console.log(height);
-            //accordionClone.remove();
-            //accordionTextClone.remove();
-            //clone.remove();
+            if (this.aboutToShowText) {
+                var indexOfItem = $(this.$el).index();
+
+                //Add the accordion text with the expanded height to the item in the cloned accordion
+                var clonedText = $(this.$el).find('.accordion-text').clone()
+                    .css({height: 'auto', width: accordionTextWidth, display: 'block'})
+                    .appendTo(clonedAccordion.find('.accordion-item').eq(indexOfItem));
+            }
+
+            var predictedAccordionHeight = clonedAccordion.height();
+            clonedAccordion.remove();
+
+            return predictedAccordionHeight;
         },
 
         /**
          *
          */
-        calculateIfWindowIsTooShortForScrolling: function () {
+        isContentTallEnoughForScrolling: function () {
             if (this.aboutToShowText) {
-                this.generateCloneElement();
+                var predictedAccordionHeight = this.predictAccordionHeight();
+
+                //var predictedPageHeight = $(document).height() - this.accordion.height() + predictedAccordionHeight;
+                var predictedContentHeight = $(this.$el).closest('.scrollbar-content').height() - this.accordion.height() + predictedAccordionHeight;
+
+                if (predictedContentHeight > $(this.$el).closest('.scrollbar-container').height()) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
             }
         },
 
@@ -67,7 +79,6 @@ var AccordionItem = Vue.component('accordion-item', {
          *
          */
         scroll: function () {
-            //this.calculateIfWindowIsTooShortForScrolling();
             // Doing this here rather than on page load so that on page load
             // there isn't extra scrolling space at the bottom when all items are collapsed
             //this.setAccordionHeight();
@@ -104,10 +115,11 @@ var AccordionItem = Vue.component('accordion-item', {
                 that.aboutToShowText = !that.showText;
                 that.addAndRemoveExpandedClasses(heading);
 
-                if (that.autoScroll) {
-                    if ((that.maxWidthScreenForScrolling && $(window).width() <= that.maxWidthScreenForScrolling) || !that.maxWidthScreenForScrolling) {
-                        that.scroll();
-                    }
+                if (that.autoScroll && that.isContentTallEnoughForScrolling()) {
+                    that.scroll();
+                    //if ((that.maxWidthScreenForScrolling && $(window).width() <= that.maxWidthScreenForScrolling) || !that.maxWidthScreenForScrolling) {
+                    //    that.scroll();
+                    //}
 
                 }
 
