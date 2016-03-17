@@ -19829,10 +19829,12 @@ var AccordionItem = Vue.component('accordion-item', {
                 .appendTo('body');
 
             var currentScrollbarContent = clonedBody.find('.current-accordion').closest('.scrollbar-content');
+            currentScrollbarContent.css({position: 'relative'});
             var currentScrollbarContentHeight = currentScrollbarContent.height();
 
             clonedBody.remove();
             this.accordion.removeClass('current-accordion');
+            console.log(currentScrollbarContentHeight);
 
             return currentScrollbarContentHeight;
         },

@@ -19822,19 +19822,24 @@ var AccordionItem = Vue.component('accordion-item', {
          */
         getCurrentScrollbarContentHeight: function () {
             //So that I can find the correct accordion in the cloned body
-            this.accordion.addClass('current-accordion');
-            var clonedBody = $('body').clone()
-                .css({height: 'auto', background: 'pink'})
-                .addClass('appended-body')
-                .appendTo('body');
+            //this.accordion.addClass('current-accordion');
+            //var clonedBody = $('body').clone()
+            //    .css({height: 'auto', background: 'pink'})
+            //    .addClass('appended-body')
+            //    .appendTo('body');
+            //
+            //var currentScrollbarContent = clonedBody.find('.current-accordion').closest('.scrollbar-content');
+            //var currentScrollbarContentHeight = currentScrollbarContent.height();
+            //
+            //clonedBody.remove();
+            //this.accordion.removeClass('current-accordion');
 
-            var currentScrollbarContent = clonedBody.find('.current-accordion').closest('.scrollbar-content');
-            currentScrollbarContent.css({position: 'relative'});
-            var currentScrollbarContentHeight = currentScrollbarContent.height();
-
-            clonedBody.remove();
-            this.accordion.removeClass('current-accordion');
-            console.log(currentScrollbarContentHeight);
+            $('body').css({position: 'fixed', height: 'auto'});
+            //So the background image isn't wrecked up with the body height is changed
+            $('#about').css({position: 'fixed'});
+            var currentScrollbarContentHeight = $(this.$el).closest('.scrollbar-content').height();
+            $('body').css({position: 'relative', height: '100%'});
+            $('#about').css({position: 'relative'});
 
             return currentScrollbarContentHeight;
         },
