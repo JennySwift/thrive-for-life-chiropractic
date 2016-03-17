@@ -19780,8 +19780,6 @@ var AccordionItem = Vue.component('accordion-item', {
                 var clonedText = $(this.$el).find('.accordion-text').clone()
                     .css({height: 'auto', width: accordionTextWidth, display: 'block'})
                     .appendTo(clonedAccordion.find('.accordion-item').eq(indexOfItem));
-
-                console.log('cloned text height: ' + clonedText.height());
             }
 
             var predictedAccordionHeight = clonedAccordion.height();
