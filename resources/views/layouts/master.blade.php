@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Thrive for Life Chiropractic</title>
+    <title>Thrive for Life Chiropractic | Natural Health Care | Hurstville, Sydney | Dr Peter Swift</title>
     @include('templates.head-links')
 </head>
 
