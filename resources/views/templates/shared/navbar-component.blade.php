@@ -26,6 +26,16 @@
                 </a>
             </li>
 
+            <li v-bind:class="{'current-page': path === '/welcome'}">
+                <a
+                        {{--v-link="{path: '/'}"--}}
+                        v-on:click="goToPage('/welcome')"
+                        href="#"
+                >
+                    Welcome
+                </a>
+            </li>
+
             @include('templates.header.services')
 
             <li

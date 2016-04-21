@@ -8,6 +8,12 @@
     >
     </home-page>
 
+    <welcome-page
+            v-show="path === '/welcome'"
+            {{--transition="fade"--}}
+    >
+    </welcome-page>
+
     <about-page
         v-if="path === '/about'"
         :path.sync="path"

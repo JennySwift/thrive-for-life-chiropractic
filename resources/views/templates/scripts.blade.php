@@ -1,5 +1,6 @@
 
 @include('pages.home-page-component')
+@include('pages.welcome-page-component')
 @include('pages.about-page-component')
 @include('pages.contact-page-component')
 @include('pages.privacy-policy-component')
