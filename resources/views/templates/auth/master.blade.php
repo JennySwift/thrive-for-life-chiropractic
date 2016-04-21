@@ -23,7 +23,7 @@
         @show
     </div>
 
-    @include('templates/real-footer')
+    @include('templates.shared.footer-component')
 
 </body>
 

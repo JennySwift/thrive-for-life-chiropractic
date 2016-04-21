@@ -59,6 +59,8 @@
     >
     </rnr-page>
 
+    <privacy-policy></privacy-policy>
+
     {{--<router-view></router-view>--}}
 
 @stop

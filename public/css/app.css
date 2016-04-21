@@ -22,6 +22,14 @@
   -webkit-animation: slideOutLeft 1s, fadeOutLeft 1s;
   animation: slideOutLeft 1s, fadeOutLeft 1s; }
 
+.popup-inner-transition {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.popup-outer-transition {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
 html, body {
   max-width: 100%;
   margin: 0; }
@@ -44,6 +52,32 @@ html, body {
 
 body .main {
   height: 100%; }
+
+body footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 11px;
+  height: 28px;
+  position: fixed;
+  margin-top: -28px; }
+  body footer li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    body footer li a {
+      color: rgba(255, 255, 255, 0.6); }
+      body footer li a:hover {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none; }
 
 button {
   background: #fff;
@@ -259,20 +293,47 @@ ul {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 999; }
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .popup-outer .popup-inner {
-    position: relative;
     border-radius: 5px;
-    margin-top: 10%;
     background: white;
-    overflow: scroll;
-    margin-left: auto;
-    margin-right: auto; }
-    .popup-outer .popup-inner .close-modal {
-      position: absolute;
-      bottom: 10px;
-      right: 10px; }
+    max-height: calc(100% - 118px);
+    padding: 25px;
+    margin: 0 30px; }
+    .popup-outer .popup-inner:not(.scrollbar-container) {
+      overflow: scroll; }
+    .popup-outer .popup-inner .popup-title {
+      margin-bottom: 30px;
+      margin-top: 0; }
+    .popup-outer .popup-inner .buttons > div {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 30px; }
+      .popup-outer .popup-inner .buttons > div button {
+        margin: 0 5px; }
+    .popup-outer .popup-inner .top-btns {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-bottom: 30px; }
 
 @media all and (min-width: 680px) {
   .popup-inner {
@@ -1211,5 +1272,9 @@ ul {
   #about .scrollbar-container {
     top: 37px;
     height: calc(100% - 37px); }
+
+#privacy-policy-popup ul {
+  margin-bottom: 10px;
+  padding-left: 24px; }
 
 /*# sourceMappingURL=app.css.map */

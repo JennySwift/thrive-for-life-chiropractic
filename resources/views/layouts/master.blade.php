@@ -30,4 +30,10 @@
 
 </div>
 
-@include('templates/footer')
+<footer-component></footer-component>
+
+
+@include('templates.scripts')
+
+</body>
+</html>
