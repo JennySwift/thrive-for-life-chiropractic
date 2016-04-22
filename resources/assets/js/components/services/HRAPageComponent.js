@@ -2,7 +2,7 @@ var HRAPage = Vue.component('hra-page', {
     template: '#hra-page-template',
     data: function () {
         return {
-            //path: this.$route.path
+            showContent: false
         };
     },
     components: {},
@@ -19,5 +19,6 @@ var HRAPage = Vue.component('hra-page', {
     ],
     ready: function () {
         HelpersRepository.scrollbars();
+        HelpersRepository.showContent(this);
     }
 });

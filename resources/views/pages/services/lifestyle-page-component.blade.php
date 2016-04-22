@@ -1,6 +1,11 @@
 <script id="lifestyle-page-template" type="x-template">
 
-    <div id="lifestyle" class="service">
+    <div
+        id="lifestyle"
+        v-show="showContent"
+        transition="fade"
+        class="animated service"
+    >
         <div class="cover"></div>
         <div class="text scrollbar-container">
             <h1>Health-Promoting Lifestyle Coaching</h1>

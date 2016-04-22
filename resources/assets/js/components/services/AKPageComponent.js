@@ -3,6 +3,7 @@ var AKPage = Vue.component('ak-page', {
     data: function () {
         return {
             //path: this.$route.path
+            showContent: false
         };
     },
     components: {},
@@ -18,6 +19,6 @@ var AKPage = Vue.component('ak-page', {
         'path'
     ],
     ready: function () {
-
+        HelpersRepository.showContent(this);
     }
 });

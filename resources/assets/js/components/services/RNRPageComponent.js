@@ -2,7 +2,7 @@ var RNRPage = Vue.component('rnr-page', {
     template: '#rnr-page-template',
     data: function () {
         return {
-            //path: this.$route.path
+            showContent: false
         };
     },
     components: {},
@@ -19,5 +19,6 @@ var RNRPage = Vue.component('rnr-page', {
     ],
     ready: function () {
         HelpersRepository.scrollbars();
+        HelpersRepository.showContent(this);
     }
 });

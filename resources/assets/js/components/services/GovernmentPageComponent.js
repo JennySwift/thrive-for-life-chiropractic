@@ -25,9 +25,6 @@ var GovernmentPage = Vue.component('government-page', {
             $(body).mousedown().mousemove().mouseup();
         }, 500);
 
-        var that = this;
-        setTimeout(function () {
-            that.showContent = true;
-        }, 500);
+        HelpersRepository.showContent(this);
     }
 });

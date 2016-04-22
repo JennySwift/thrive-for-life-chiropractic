@@ -695,8 +695,9 @@ ul {
 #home-page {
   height: 100%;
   background-size: cover;
-  background: url("/img/Home/text.svg") no-repeat left top, url("/img/Home/cover.svg") no-repeat left top, url("/img/Home/spring-small-compressed.jpg") no-repeat left top;
   position: relative; }
+  #home-page .cover {
+    display: none; }
   #home-page .text {
     display: none; }
     @media (max-width: 1000px) {
@@ -704,7 +705,7 @@ ul {
         padding: 0 47px; } }
   @media (max-width: 1000px) {
     #home-page {
-      background: url("/img/Home/cover.svg") no-repeat left top, url("/img/Home/spring-small-compressed.jpg") no-repeat left top;
+      background: url("/img/Home/spring-small-compressed.jpg") no-repeat left top;
       background-size: cover, cover;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -715,18 +716,20 @@ ul {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center; }
+      #home-page .cover {
+        background: black;
+        opacity: 0.4;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        position: fixed; }
+      #home-page .cover {
+        opacity: .3; }
       #home-page .text {
         display: block;
         padding: 0 37px; }
         #home-page .text img {
           width: 100%; } }
-  #home-page .cover {
-    background: black;
-    opacity: 0.4;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    position: fixed; }
   #home-page a {
     color: inherit; }
 

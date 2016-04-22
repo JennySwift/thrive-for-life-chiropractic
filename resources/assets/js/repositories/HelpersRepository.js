@@ -17,5 +17,15 @@ var HelpersRepository = {
             that.showPopup = false;
             // router.go(routeToGoTo);
         }
+    },
+
+    /**
+     * 
+     * @param that
+     */
+    showContent: function (that) {
+        setTimeout(function () {
+            that.showContent = true;
+        }, 500);
     }
 };

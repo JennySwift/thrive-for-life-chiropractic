@@ -4,7 +4,8 @@ var ChiropracticPage = Vue.component('chiropractic-page', {
         return {
             //path: this.$route.path,
             sliderStep: 1,
-            transitionTime: 300
+            transitionTime: 300,
+            showContent: false
         };
     },
     components: {},
@@ -21,5 +22,6 @@ var ChiropracticPage = Vue.component('chiropractic-page', {
     ],
     ready: function () {
         HelpersRepository.scrollbars();
+        HelpersRepository.showContent(this);
     }
 });

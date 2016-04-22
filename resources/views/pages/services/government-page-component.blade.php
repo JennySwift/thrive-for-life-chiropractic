@@ -2,7 +2,7 @@
 
     <div
         id="government"
-        v-if="showContent"
+        v-show="showContent"
         class="service animated"
         transition="fade"
     >

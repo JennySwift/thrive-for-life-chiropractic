@@ -1,29 +1,36 @@
 #home-page {
-        @include backgroundImage;
-        .text {
-            display: none;
-            @media (max-width: $breakpoint3) {
-                padding: 0 47px;
-            }
-        }
-        @media (max-width: $breakpoint3) {
-            background: url('/img/Home/cover.svg') no-repeat left top, url('/img/Home/spring-small-compressed.jpg') no-repeat left top;
-            background-size: cover, cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .text {
-                display: block;
-                padding: 0 37px;
-                img {
-                    width: 100%;
-                }
-            }
-        }
-        @include cover;
-        a {
-            color: inherit;
-        }
-    background: url('/img/Home/text.svg') no-repeat left top, url('/img/Home/cover.svg') no-repeat left top, url('/img/Home/spring-small-compressed.jpg') no-repeat left top;
+    //background: url('/img/Home/spring-small-compressed.jpg') no-repeat left top;
+    //background: url('/img/Home/text.svg') no-repeat left top, url('/img/Home/cover.svg') no-repeat left top, url('/img/Home/spring-small-compressed.jpg') no-repeat left top;
+    @include backgroundImage;
     position: relative;
+    .cover {
+        display: none;
+    }
+    .text {
+        display: none;
+        @media (max-width: $breakpoint3) {
+            padding: 0 47px;
+        }
+    }
+    @media (max-width: $breakpoint3) {
+        @include cover;
+        .cover {
+            opacity: .3;
+        }
+        background: url('/img/Home/spring-small-compressed.jpg') no-repeat left top;
+        background-size: cover, cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text {
+            display: block;
+            padding: 0 37px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    a {
+        color: inherit;
+    }
 }

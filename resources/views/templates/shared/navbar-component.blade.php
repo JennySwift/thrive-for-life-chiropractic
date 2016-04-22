@@ -20,7 +20,7 @@
                 <a
                     v-link="{path: '/'}"
                     {{--v-on:click="goToPage('/')"--}}
-                    href="#"
+                    {{--href="#"--}}
                 >
                     Home
                 </a>
@@ -30,7 +30,7 @@
                 <a
                         v-link="{path: '/welcome'}"
                         {{--v-on:click="goToPage('/welcome')"--}}
-                        href="#"
+                        {{--href="#"--}}
                 >
                     Welcome
                 </a>
@@ -54,7 +54,7 @@
                 <a
                     v-link="{path: '/contact'}"
                     {{--v-on:click="goToPage('/contact')"--}}
-                    href="#"
+                    {{--href="#"--}}
                 >
                     Contact
                 </a>

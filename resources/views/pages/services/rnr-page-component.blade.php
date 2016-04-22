@@ -1,6 +1,11 @@
 <script id="rnr-page-template" type="x-template">
 
-    <div id="rnr" class="service">
+    <div
+        id="rnr"
+        v-show="showContent"
+        transition="fade"
+        class="animated service"
+    >
         <div class="cover"></div>
         <div class="text scrollbar-container">
             <h1>Retained Neonatal Reflexes</h1>

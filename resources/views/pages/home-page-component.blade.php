@@ -6,6 +6,7 @@
         transition="fade"
         class="animated"
     >
+        <div class="cover"></div>
         <div class="text">
             <img src="/img/Home/thrive-for-life-text.png">
         </div>

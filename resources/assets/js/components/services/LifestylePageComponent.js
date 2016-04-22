@@ -2,7 +2,7 @@ var LifestylePage = Vue.component('lifestyle-page', {
     template: '#lifestyle-page-template',
     data: function () {
         return {
-            //path: this.$route.path
+            showContent: false
         };
     },
     components: {},
@@ -18,6 +18,6 @@ var LifestylePage = Vue.component('lifestyle-page', {
         'path'
     ],
     ready: function () {
-
+        HelpersRepository.showContent(this);
     }
 });

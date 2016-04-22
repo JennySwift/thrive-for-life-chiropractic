@@ -20127,6 +20127,16 @@ var HelpersRepository = {
             that.showPopup = false;
             // router.go(routeToGoTo);
         }
+    },
+
+    /**
+     * 
+     * @param that
+     */
+    showContent: function (that) {
+        setTimeout(function () {
+            that.showContent = true;
+        }, 500);
     }
 };
 var AKPage = Vue.component('ak-page', {
@@ -20134,6 +20144,7 @@ var AKPage = Vue.component('ak-page', {
     data: function () {
         return {
             //path: this.$route.path
+            showContent: false
         };
     },
     components: {},
@@ -20149,7 +20160,7 @@ var AKPage = Vue.component('ak-page', {
         'path'
     ],
     ready: function () {
-
+        HelpersRepository.showContent(this);
     }
 });
 
@@ -20159,7 +20170,8 @@ var ChiropracticPage = Vue.component('chiropractic-page', {
         return {
             //path: this.$route.path,
             sliderStep: 1,
-            transitionTime: 300
+            transitionTime: 300,
+            showContent: false
         };
     },
     components: {},
@@ -20176,6 +20188,7 @@ var ChiropracticPage = Vue.component('chiropractic-page', {
     ],
     ready: function () {
         HelpersRepository.scrollbars();
+        HelpersRepository.showContent(this);
     }
 });
 
@@ -20206,10 +20219,7 @@ var GovernmentPage = Vue.component('government-page', {
             $(body).mousedown().mousemove().mouseup();
         }, 500);
 
-        var that = this;
-        setTimeout(function () {
-            that.showContent = true;
-        }, 500);
+        HelpersRepository.showContent(this);
     }
 });
 
@@ -20217,7 +20227,7 @@ var HRAPage = Vue.component('hra-page', {
     template: '#hra-page-template',
     data: function () {
         return {
-            //path: this.$route.path
+            showContent: false
         };
     },
     components: {},
@@ -20234,6 +20244,7 @@ var HRAPage = Vue.component('hra-page', {
     ],
     ready: function () {
         HelpersRepository.scrollbars();
+        HelpersRepository.showContent(this);
     }
 });
 
@@ -20241,7 +20252,7 @@ var LifestylePage = Vue.component('lifestyle-page', {
     template: '#lifestyle-page-template',
     data: function () {
         return {
-            //path: this.$route.path
+            showContent: false
         };
     },
     components: {},
@@ -20257,7 +20268,7 @@ var LifestylePage = Vue.component('lifestyle-page', {
         'path'
     ],
     ready: function () {
-
+        HelpersRepository.showContent(this);
     }
 });
 
@@ -20265,7 +20276,7 @@ var RNRPage = Vue.component('rnr-page', {
     template: '#rnr-page-template',
     data: function () {
         return {
-            //path: this.$route.path
+            showContent: false
         };
     },
     components: {},
@@ -20282,6 +20293,7 @@ var RNRPage = Vue.component('rnr-page', {
     ],
     ready: function () {
         HelpersRepository.scrollbars();
+        HelpersRepository.showContent(this);
     }
 });
 
@@ -20294,16 +20306,6 @@ var ServicesTabs = Vue.component('services-tabs', {
     },
     components: {},
     methods: {
-
-        ///**
-        // *
-        // */
-        //listen: function () {
-        //    var that = this;
-        //    $(document).on('toggle-services-tabs', function (event) {
-        //        that.showServicesTabs = !that.showServicesTabs;
-        //    });
-        //},
 
         /**
          *
@@ -20319,49 +20321,7 @@ var ServicesTabs = Vue.component('services-tabs', {
         'showServicesTabs'
     ],
     ready: function () {
-        //this.listen();
-    }
-});
-
-var AboutPage = Vue.component('about-page', {
-    template: '#about-page-template',
-    data: function () {
-        return {
-            showContent: false
-        };
-    },
-    components: {},
-    methods: {
-
-        /**
-         *
-         */
-        listen: function () {
-            var that = this;
-
-            //To stop Firefox going to the user's previous scroll position on page refresh
-            $(window).on('unload', function() {
-                $('.scrollbar-container').scrollTop(0);
-            });
-        }
-    },
-    props: [
-        'path'
-    ],
-    ready: function () {
-        //this.listen();
-        //HelpersRepository.scrollbars();
-        //This is because for some reason, on the iPhone,
-        //unless the user clicks and drags the screen before using the accordion,
-        //the accordion is really jerky
-        setTimeout(function () {
-            $(body).mousedown().mousemove().mouseup();
-        }, 500);
-
-        var that = this;
-        setTimeout(function () {
-            that.showContent = true;
-        }, 100);
+        
     }
 });
 
@@ -20546,42 +20506,6 @@ var AccordionItem = Vue.component('accordion-item', {
     }
 });
 
-var ContactPage = Vue.component('contact-page', {
-    template: '#contact-page-template',
-    data: function () {
-        return {
-            showContactDetails: true,
-            boxHeight: 'auto',
-            boxWidth: 'auto'
-        };
-    },
-    components: {},
-    //watch: {
-    //    'showContactDetails': function (val) {
-    //        if (!val) {
-    //            this.boxHeight = 0;
-    //            this.boxWidth = 0;
-    //        }
-    //    }
-    //},
-    methods: {
-
-        /**
-         * For the transition, because transitioning to auto height doesn't work
-         */
-        setDetailsDimensions: function () {
-            this.boxHeight = $('#contact .text').height();
-            this.boxWidth = $('#contact .text').width();
-        }
-    },
-    props: [
-        //data to be received from parent
-    ],
-    ready: function () {
-        this.setDetailsDimensions();
-    }
-});
-
 var Footer = Vue.component('footer-component', {
     template: '#footer-template',
     data: function () {
@@ -20603,63 +20527,6 @@ var Footer = Vue.component('footer-component', {
         //data to be received from parent
     ],
     ready: function () {
-
-    }
-});
-
-var HomePage = Vue.component('home-page', {
-    template: '#home-page-template',
-    data: function () {
-        return {
-            showContent: false
-        };
-    },
-    components: {},
-    route: {
-        // data: function (transition) {
-        //     var that = this;
-        //     this.showContent = false;
-        //     setTimeout(function () {
-        //         that.showContent = true;
-        //     }, 5000);
-        // }
-    },
-    methods: {
-
-        /**
-         *
-         */
-        // listen: function () {
-        //     $("#home a").on("click",function(e){
-        //         e.preventDefault();
-        //         var scrollTop = $("body").height();
-        //         setTimeout(function () {
-        //             $('html,body').animate({scrollTop: scrollTop}, 700);
-        //         }, 100);
-        //
-        //     });
-        //
-        //     $("#welcome a").on("click",function(e){
-        //         e.preventDefault();
-        //         var scrollTop = $("body").height();
-        //         $('html,body').animate({scrollTop: scrollTop - 1}, 1);
-        //         setTimeout(function () {
-        //             $('html,body').animate({scrollTop: 0}, 700);
-        //         }, 100);
-        //     });
-        // }
-    },
-    props: [
-        //data to be received from parent
-    ],
-    ready: function () {
-        HelpersRepository.scrollbars();
-        // this.listen();
-        
-        var that = this;
-        setTimeout(function () {
-            that.showContent = true;
-        }, 1000);
 
     }
 });
@@ -20735,6 +20602,169 @@ var Popup = Vue.component('popup', {
     }
 });
 
+var ServicesDropdownMenu = Vue.component('services-dropdown-menu', {
+    template: '#services-dropdown-menu-template',
+    data: function () {
+        return {
+
+        };
+    },
+    components: {},
+    methods: {
+
+        /**
+         *
+         * @param path
+         */
+        goToPage: function (path) {
+            this.path = path;
+            this.showServicesTabs = false;
+        }
+    },
+    props: [
+        'path',
+        'showServicesTabs'
+    ],
+    ready: function () {
+
+    }
+});
+
+var AboutPage = Vue.component('about-page', {
+    template: '#about-page-template',
+    data: function () {
+        return {
+            showContent: false
+        };
+    },
+    components: {},
+    methods: {
+
+        /**
+         *
+         */
+        listen: function () {
+            var that = this;
+
+            //To stop Firefox going to the user's previous scroll position on page refresh
+            $(window).on('unload', function() {
+                $('.scrollbar-container').scrollTop(0);
+            });
+        }
+    },
+    props: [
+        'path'
+    ],
+    ready: function () {
+        //this.listen();
+        //HelpersRepository.scrollbars();
+        //This is because for some reason, on the iPhone,
+        //unless the user clicks and drags the screen before using the accordion,
+        //the accordion is really jerky
+        setTimeout(function () {
+            $(body).mousedown().mousemove().mouseup();
+        }, 500);
+
+        var that = this;
+        setTimeout(function () {
+            that.showContent = true;
+        }, 100);
+    }
+});
+
+var ContactPage = Vue.component('contact-page', {
+    template: '#contact-page-template',
+    data: function () {
+        return {
+            showContactDetails: true,
+            boxHeight: 'auto',
+            boxWidth: 'auto'
+        };
+    },
+    components: {},
+    //watch: {
+    //    'showContactDetails': function (val) {
+    //        if (!val) {
+    //            this.boxHeight = 0;
+    //            this.boxWidth = 0;
+    //        }
+    //    }
+    //},
+    methods: {
+
+        /**
+         * For the transition, because transitioning to auto height doesn't work
+         */
+        setDetailsDimensions: function () {
+            this.boxHeight = $('#contact .text').height();
+            this.boxWidth = $('#contact .text').width();
+        }
+    },
+    props: [
+        //data to be received from parent
+    ],
+    ready: function () {
+        this.setDetailsDimensions();
+    }
+});
+
+var HomePage = Vue.component('home-page', {
+    template: '#home-page-template',
+    data: function () {
+        return {
+            showContent: false
+        };
+    },
+    components: {},
+    route: {
+        // data: function (transition) {
+        //     var that = this;
+        //     this.showContent = false;
+        //     setTimeout(function () {
+        //         that.showContent = true;
+        //     }, 5000);
+        // }
+    },
+    methods: {
+
+        /**
+         *
+         */
+        // listen: function () {
+        //     $("#home a").on("click",function(e){
+        //         e.preventDefault();
+        //         var scrollTop = $("body").height();
+        //         setTimeout(function () {
+        //             $('html,body').animate({scrollTop: scrollTop}, 700);
+        //         }, 100);
+        //
+        //     });
+        //
+        //     $("#welcome a").on("click",function(e){
+        //         e.preventDefault();
+        //         var scrollTop = $("body").height();
+        //         $('html,body').animate({scrollTop: scrollTop - 1}, 1);
+        //         setTimeout(function () {
+        //             $('html,body').animate({scrollTop: 0}, 700);
+        //         }, 100);
+        //     });
+        // }
+    },
+    props: [
+        //data to be received from parent
+    ],
+    ready: function () {
+        HelpersRepository.scrollbars();
+        // this.listen();
+        
+        var that = this;
+        setTimeout(function () {
+            that.showContent = true;
+        }, 1000);
+
+    }
+});
+
 var PrivacyPolicy = Vue.component('privacy-policy', {
     template: '#privacy-policy-template',
     data: function () {
@@ -20762,34 +20792,6 @@ var PrivacyPolicy = Vue.component('privacy-policy', {
     ready: function () {
         this.listen();
         //HelpersRepository.scrollbars();
-    }
-});
-
-var ServicesDropdownMenu = Vue.component('services-dropdown-menu', {
-    template: '#services-dropdown-menu-template',
-    data: function () {
-        return {
-
-        };
-    },
-    components: {},
-    methods: {
-
-        /**
-         *
-         * @param path
-         */
-        goToPage: function (path) {
-            this.path = path;
-            this.showServicesTabs = false;
-        }
-    },
-    props: [
-        'path',
-        'showServicesTabs'
-    ],
-    ready: function () {
-
     }
 });
 

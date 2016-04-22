@@ -1,6 +1,11 @@
 <script id="hra-page-template" type="x-template">
 
-    <div id="hra" class="service">
+    <div
+        id="hra"
+        v-show="showContent"
+        transition="fade"
+        class="animated service"
+    >
         <div class="hra-gradient-cover"></div>
         <div class="text scrollbar-container">
             <h1>Health Risk Assessment</h1>

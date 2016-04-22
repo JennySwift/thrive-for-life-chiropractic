@@ -1,6 +1,11 @@
 <script id="ak-page-template" type="x-template">
 
-    <div id="ak" class="service">
+    <div
+        id="ak"
+        v-show="showContent"
+        transition="fade"
+        class="animated service"
+    >
         <div class="cover"></div>
         <div class="text scrollbar-container">
             <h1>Applied Kinesiology</h1>

@@ -14,9 +14,9 @@
         >
             <div class="tab-inner">
                 <a
-                        {{--v-link="{path: '/services/chiropractic'}"--}}
-                        v-on:click="goToPage('/services/chiropractic')"
-                        href="#"
+                        v-link="{path: '/services/chiropractic'}"
+                        {{--v-on:click="goToPage('/services/chiropractic')"--}}
+                        {{--href="#"--}}
                 >
                     Chiropractic
                 </a>
@@ -29,9 +29,9 @@
         >
             <div class="tab-inner">
                 <a
-                        {{--v-link="{path: '/services/ak'}"--}}
-                        v-on:click="goToPage('/services/ak')"
-                        href="#"
+                        v-link="{path: '/services/ak'}"
+                        {{--v-on:click="goToPage('/services/ak')"--}}
+                        {{--href="#"--}}
                 >
                     Applied Kinesiology
                 </a>
@@ -44,9 +44,9 @@
         >
             <div class="tab-inner">
                 <a
-                        {{--v-link="{path: '/services/rnr'}"--}}
-                        v-on:click="goToPage('/services/rnr')"
-                        href="#"
+                        v-link="{path: '/services/rnr'}"
+                        {{--v-on:click="goToPage('/services/rnr')"--}}
+                        {{--href="#"--}}
                 >
                     Retained Neonatal Reflexes
                 </a>
@@ -59,9 +59,9 @@
         >
             <div class="tab-inner">
                 <a
-                        {{--v-link="{path: '/services/lifestyle'}"--}}
-                        v-on:click="goToPage('/services/lifestyle')"
-                        href="#"
+                        v-link="{path: '/services/lifestyle'}"
+                        {{--v-on:click="goToPage('/services/lifestyle')"--}}
+                        {{--href="#"--}}
                 >
                     Lifestyle Coaching
                 </a>
@@ -75,9 +75,9 @@
         >
             <div class="tab-inner">
                 <a
-                        {{--v-link="{path: '/services/hra'}"--}}
-                        v-on:click="goToPage('/services/hra')"
-                        href="#"
+                        v-link="{path: '/services/hra'}"
+                        {{--v-on:click="goToPage('/services/hra')"--}}
+                        {{--href="#"--}}
                 >
                     Health Risk Assessment
                 </a>
@@ -87,9 +87,9 @@
         <li v-bind:class="{'current-tab': path === '/services/government'}" class="tab">
             <div class="tab-inner">
                 <a
-                        {{--v-link="{path: '/services/government'}"--}}
-                        v-on:click="goToPage('/services/government')"
-                        href="#"
+                        v-link="{path: '/services/government'}"
+                        {{--v-on:click="goToPage('/services/government')"--}}
+                        {{--href="#"--}}
                 >
                     Government-Supported
                 </a>

@@ -8,16 +8,6 @@ var ServicesTabs = Vue.component('services-tabs', {
     components: {},
     methods: {
 
-        ///**
-        // *
-        // */
-        //listen: function () {
-        //    var that = this;
-        //    $(document).on('toggle-services-tabs', function (event) {
-        //        that.showServicesTabs = !that.showServicesTabs;
-        //    });
-        //},
-
         /**
          *
          * @param response
@@ -32,6 +22,6 @@ var ServicesTabs = Vue.component('services-tabs', {
         'showServicesTabs'
     ],
     ready: function () {
-        //this.listen();
+        
     }
 });

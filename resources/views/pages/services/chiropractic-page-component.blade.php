@@ -1,6 +1,11 @@
 <script id="chiropractic-page-template" type="x-template">
 
-    <div id="chiropractic" class="service">
+    <div
+        id="chiropractic"
+        v-show="showContent"
+        transition="fade"
+        class="animated service"
+    >
         <div class="cover"></div>
         <div class="text scrollbar-container">
             <h1>Chiropractic</h1>
