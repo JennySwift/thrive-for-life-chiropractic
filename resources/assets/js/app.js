@@ -43,6 +43,9 @@ var App = Vue.component('app', {
             });
         }
     },
+    ready: function () {
+        HelpersRepository.scrollbars();
+    }
 });
 //
 var router = new VueRouter({

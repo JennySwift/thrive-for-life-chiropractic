@@ -682,15 +682,15 @@ ul {
   -webkit-animation-duration: 1s;
   animation-duration: 1s; }
 
-.fade-transition {
+.fade-transition.fadeIn {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
   -webkit-animation-duration: 1s;
   animation-duration: 1s; }
-  .fade-transition.fadeIn {
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s; }
-  .fade-transition.fadeOut {
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s; }
+
+.fade-transition.fadeOut {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s; }
 
 #home-page {
   height: 100%;

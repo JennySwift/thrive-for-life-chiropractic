@@ -6,9 +6,9 @@
 }
 
 .fade-transition {
-    animation-duration: 1s;
     &.fadeIn {
         animation-delay: .5s;
+        animation-duration: 1s;
     }
     &.fadeOut {
         animation-duration: .5s;

@@ -20814,6 +20814,7 @@ var WelcomePage = Vue.component('welcome-page', {
         'path'
     ],
     ready: function () {
+        HelpersRepository.scrollbars();
         var that = this;
         setTimeout(function () {
             that.showContent = true;
@@ -20982,6 +20983,9 @@ var App = Vue.component('app', {
             });
         }
     },
+    ready: function () {
+        HelpersRepository.scrollbars();
+    }
 });
 //
 var router = new VueRouter({
