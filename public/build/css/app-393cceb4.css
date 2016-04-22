@@ -729,10 +729,12 @@ ul {
         top: 0;
         position: fixed; }
       #home-page .cover {
-        opacity: .3; }
+        opacity: .3;
+        display: block; }
       #home-page .text {
         display: block;
-        padding: 0 37px; }
+        padding: 0 37px;
+        z-index: 9; }
         #home-page .text img {
           width: 100%; } }
   #home-page a {
