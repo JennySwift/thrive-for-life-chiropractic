@@ -697,6 +697,7 @@ ul {
   animation-duration: .5s; }
 
 #home-page {
+  background: url("/img/Home/text.svg") no-repeat left top, url("/img/Home/cover.svg") no-repeat left top, url("/img/Home/spring-small-compressed.jpg") no-repeat left top;
   height: 100%;
   background-size: cover;
   position: relative; }

@@ -33,9 +33,6 @@ var AboutPage = Vue.component('about-page', {
             $(body).mousedown().mousemove().mouseup();
         }, 500);
 
-        var that = this;
-        setTimeout(function () {
-            that.showContent = true;
-        }, 100);
+        HelpersRepository.showContent(this);
     }
 });

@@ -20,9 +20,6 @@ var WelcomePage = Vue.component('welcome-page', {
     ],
     ready: function () {
         HelpersRepository.scrollbars();
-        var that = this;
-        setTimeout(function () {
-            that.showContent = true;
-        }, 1000);
+        HelpersRepository.showContent(this);
     }
 });

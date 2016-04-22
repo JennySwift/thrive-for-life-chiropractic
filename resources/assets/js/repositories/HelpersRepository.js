@@ -25,7 +25,7 @@ var HelpersRepository = {
      * @param time
      */
     showContent: function (that, time) {
-        time = time || 500;
+        time = time || 0;
         setTimeout(function () {
             that.showContent = true;
         }, time);

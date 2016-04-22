@@ -20135,7 +20135,7 @@ var HelpersRepository = {
      * @param time
      */
     showContent: function (that, time) {
-        time = time || 500;
+        time = time || 0;
         setTimeout(function () {
             that.showContent = true;
         }, time);
@@ -20671,10 +20671,7 @@ var AboutPage = Vue.component('about-page', {
             $(body).mousedown().mousemove().mouseup();
         }, 500);
 
-        var that = this;
-        setTimeout(function () {
-            that.showContent = true;
-        }, 100);
+        HelpersRepository.showContent(this);
     }
 });
 
@@ -20752,41 +20749,13 @@ var HomePage = Vue.component('home-page', {
     },
     methods: {
 
-        /**
-         *
-         */
-        // listen: function () {
-        //     $("#home a").on("click",function(e){
-        //         e.preventDefault();
-        //         var scrollTop = $("body").height();
-        //         setTimeout(function () {
-        //             $('html,body').animate({scrollTop: scrollTop}, 700);
-        //         }, 100);
-        //
-        //     });
-        //
-        //     $("#welcome a").on("click",function(e){
-        //         e.preventDefault();
-        //         var scrollTop = $("body").height();
-        //         $('html,body').animate({scrollTop: scrollTop - 1}, 1);
-        //         setTimeout(function () {
-        //             $('html,body').animate({scrollTop: 0}, 700);
-        //         }, 100);
-        //     });
-        // }
     },
     props: [
         //data to be received from parent
     ],
     ready: function () {
         HelpersRepository.scrollbars();
-        // this.listen();
-        
-        var that = this;
-        setTimeout(function () {
-            that.showContent = true;
-        }, 1000);
-
+        HelpersRepository.showContent(this);
     }
 });
 
@@ -20842,10 +20811,7 @@ var WelcomePage = Vue.component('welcome-page', {
     ],
     ready: function () {
         HelpersRepository.scrollbars();
-        var that = this;
-        setTimeout(function () {
-            that.showContent = true;
-        }, 1000);
+        HelpersRepository.showContent(this);
     }
 });
 
