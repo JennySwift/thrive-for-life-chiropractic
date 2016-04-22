@@ -20,12 +20,14 @@ var HelpersRepository = {
     },
 
     /**
-     * 
+     *
      * @param that
+     * @param time
      */
-    showContent: function (that) {
+    showContent: function (that, time) {
+        time = time || 500;
         setTimeout(function () {
             that.showContent = true;
-        }, 500);
+        }, time);
     }
 };

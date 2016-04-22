@@ -1057,6 +1057,10 @@ ul {
 #contact {
   position: relative;
   height: 100%; }
+  #contact .cover {
+    opacity: 1;
+    z-index: 9;
+    background: white; }
   #contact .map {
     height: 100%;
     padding-top: 37px; }

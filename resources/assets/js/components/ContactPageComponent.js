@@ -4,8 +4,19 @@ var ContactPage = Vue.component('contact-page', {
         return {
             showContactDetails: true,
             boxHeight: 'auto',
-            boxWidth: 'auto'
+            boxWidth: 'auto',
+            showContent: false,
+            showCover: true
         };
+    },
+    route: {
+        activate: function () {
+            var that = this;
+            this.showCover = true;
+            setTimeout(function () {
+                that.showCover = false
+            }, 2000);
+        }
     },
     components: {},
     //watch: {
@@ -31,5 +42,13 @@ var ContactPage = Vue.component('contact-page', {
     ],
     ready: function () {
         this.setDetailsDimensions();
+        var that = this;
+        $('iframe').load(function () {
+            HelpersRepository.showContent(that, 500);
+        })
+        setTimeout(function () {
+            that.showCover = false
+        }, 2000);
+
     }
 });
