@@ -34,6 +34,9 @@ body footer {
   height: 28px;
   position: fixed;
   margin-top: -28px; }
+  body footer.contact-page-footer {
+    background: black;
+    opacity: .9; }
   body footer li {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1062,7 +1065,7 @@ ul {
     z-index: 9;
     background: white; }
   #contact .map {
-    height: 100%;
+    height: calc(100% - 28px);
     padding-top: 37px; }
     #contact .map iframe {
       width: 100%;
@@ -1074,7 +1077,7 @@ ul {
     padding: 10px 0 0;
     color: white;
     position: absolute;
-    bottom: 50px;
+    bottom: 69px;
     left: 0;
     right: 0;
     margin: auto;
@@ -1176,7 +1179,7 @@ ul {
   @media (max-width: 490px) {
     #contact .text {
       height: 229px;
-      bottom: 90px; }
+      bottom: 116px; }
       #contact .text h1 {
         margin-bottom: 14px; }
       #contact .text .details .flex {

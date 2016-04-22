@@ -14,7 +14,7 @@
 <div id=@yield('id', 'nothing') class="main">
 
     <navbar
-        :path.sync="path"
+        {{--:path.sync="path"--}}
         :show-services-tabs.sync="showServicesTabs"
     >
     </navbar>

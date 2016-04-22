@@ -6,6 +6,11 @@ var Footer = Vue.component('footer-component', {
         };
     },
     components: {},
+    computed: {
+        path: function () {
+          return this.$route.path;
+        }
+    },
     methods: {
 
         /**

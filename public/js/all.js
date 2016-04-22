@@ -20516,6 +20516,11 @@ var Footer = Vue.component('footer-component', {
         };
     },
     components: {},
+    computed: {
+        path: function () {
+          return this.$route.path;
+        }
+    },
     methods: {
 
         /**
@@ -20541,9 +20546,9 @@ var Navbar = Vue.component('navbar', {
         };
     },
     components: {},
-    watch: {
-        '$route': function (val) {
-            this.path = val.path;
+    computed: {
+        path: function () {
+          return this.$route.path;
         }
     },
     methods: {
@@ -20568,7 +20573,6 @@ var Navbar = Vue.component('navbar', {
         }
     },
     props: [
-        'path',
         'showServicesTabs'
     ],
     ready: function () {

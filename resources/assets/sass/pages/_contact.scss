@@ -14,7 +14,8 @@
         background: white;
     }
     .map {
-        height: 100%;
+        //28px is footer height
+        height: calc(100% - 28px);
         padding-top: 37px;
         iframe {
             width: 100%;
@@ -28,7 +29,7 @@
         padding: 10px 0 0;
         color: white;
         position: absolute;
-        bottom: 50px;
+        bottom: 69px;
         left: 0;
         right: 0;
         margin: auto;
@@ -136,7 +137,7 @@
     @media (max-width: 490px) {
         .text {
             height: 229px;
-            bottom: 90px;
+            bottom: 116px;
             h1 {
                 margin-bottom: 14px;
             }
