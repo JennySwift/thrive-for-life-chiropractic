@@ -21,7 +21,13 @@
                 <li>search terms that led to a visit</li>
             </ul>
             <p>My purpose in using Google Analytics to collect this information is to improve my website and provide you with a better browsing experience. Rest assured, I respect your privacy and none of the information collected is personally identifiable.</p>
-            <p>If you would like more information please visit <a href="https://support.google.com/analytics/answer/6004245">Google Analytics</a>.</p>
+            <p>If you would like more information please visit
+                <a
+                    href="https://support.google.com/analytics/answer/6004245"
+                    target="_blank"
+                >
+                    Google Analytics</a>
+                .</p>
 
             <h2>Cookies</h2>
             <p>My policy on cookies is, "Don't eat too many!" ;) Sorry, I couldn't help myself...</p>
@@ -30,7 +36,13 @@
             <h2>Complaints</h2>
             <p>If you have any complaints or if you believe your privacy has been breached, please <a href="mailto:peter.c.swift@gmail.com">email me</a> and provide details of the incident so it can be investigated.</p>
             <p>If you wish to have the matter considered externally you can contact the Office of the Australian Information Commissioner
-                <a href="https://www.oaic.gov.au/about-us/contact-us">here</a>.</p>
+                <a
+                    href="https://www.oaic.gov.au/about-us/contact-us"
+                    target="_blank"
+                >
+                    here
+                </a>.
+            </p>
 
             <h2>Updates</h2>
             <p>Please note that this Privacy Policy may be updated from time to time and that by continuing to use thriveforlifechiropractic.com.au you are agreeing to these updates.</p>
