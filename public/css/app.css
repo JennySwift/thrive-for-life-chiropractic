@@ -205,7 +205,8 @@ ul {
     opacity: .9; }
   @media (max-width: 425px) {
     #navbar li {
-      min-width: 65px !important; } }
+      min-width: 43px !important;
+      font-size: 15px; } }
   @media (max-width: 265px) {
     #navbar {
       font-size: 14px; } }
