@@ -16,6 +16,7 @@
                 <a
                         v-link="{path: '/services/chiropractic'}"
                         {{--v-on:click="goToPage('/services/chiropractic')"--}}
+                        v-on:click="showServicesTabs = false"
                         {{--href="#"--}}
                 >
                     Chiropractic
@@ -31,6 +32,7 @@
                 <a
                         v-link="{path: '/services/ak'}"
                         {{--v-on:click="goToPage('/services/ak')"--}}
+                        v-on:click="showServicesTabs = false"
                         {{--href="#"--}}
                 >
                     Applied Kinesiology
@@ -46,6 +48,7 @@
                 <a
                         v-link="{path: '/services/rnr'}"
                         {{--v-on:click="goToPage('/services/rnr')"--}}
+                        v-on:click="showServicesTabs = false"
                         {{--href="#"--}}
                 >
                     Retained Neonatal Reflexes
@@ -61,6 +64,7 @@
                 <a
                         v-link="{path: '/services/lifestyle'}"
                         {{--v-on:click="goToPage('/services/lifestyle')"--}}
+                        v-on:click="showServicesTabs = false"
                         {{--href="#"--}}
                 >
                     Lifestyle Coaching
@@ -77,6 +81,7 @@
                 <a
                         v-link="{path: '/services/hra'}"
                         {{--v-on:click="goToPage('/services/hra')"--}}
+                        v-on:click="showServicesTabs = false"
                         {{--href="#"--}}
                 >
                     Health Risk Assessment
@@ -89,6 +94,7 @@
                 <a
                         v-link="{path: '/services/government'}"
                         {{--v-on:click="goToPage('/services/government')"--}}
+                        v-on:click="showServicesTabs = false"
                         {{--href="#"--}}
                 >
                     Government-Supported

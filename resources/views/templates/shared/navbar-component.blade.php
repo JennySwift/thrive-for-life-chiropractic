@@ -20,6 +20,7 @@
                 <a
                     v-link="{path: '/'}"
                     {{--v-on:click="goToPage('/')"--}}
+                        v-on:click="showServicesTabs = false"
                     {{--href="#"--}}
                 >
                     Home
@@ -30,6 +31,7 @@
                 <a
                         v-link="{path: '/welcome'}"
                         {{--v-on:click="goToPage('/welcome')"--}}
+                        v-on:click="showServicesTabs = false"
                         {{--href="#"--}}
                 >
                     Welcome
@@ -44,6 +46,7 @@
                 <a
                     v-link="{path: '/about'}"
                     {{--v-on:click="goToPage('/about')"--}}
+                    v-on:click="showServicesTabs = false"
                     {{--href="#"--}}
                 >
                     About
@@ -54,6 +57,7 @@
                 <a
                     v-link="{path: '/contact'}"
                     {{--v-on:click="goToPage('/contact')"--}}
+                    v-on:click="showServicesTabs = false"
                     {{--href="#"--}}
                 >
                     Contact
