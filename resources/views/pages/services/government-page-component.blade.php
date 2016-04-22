@@ -1,6 +1,11 @@
 <script id="government-page-template" type="x-template">
 
-    <div id="government" class="service">
+    <div
+        id="government"
+        v-if="showContent"
+        class="service animated"
+        transition="fade"
+    >
         <div class="cover"></div>
 
         <div class="scrollbar-container">

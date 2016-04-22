@@ -1,6 +1,11 @@
 <script id="about-page-template" type="x-template">
 
-    <div id="about">
+    <div
+        id="about"
+        v-show="showContent"
+        transition="fade"
+        class="animated"
+    >
 
         <div class="gradient-cover"></div>
         <div class="scrollbar-container">

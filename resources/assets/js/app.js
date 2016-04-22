@@ -25,56 +25,12 @@ $("#logo-lower").lettering();
 //    });
 //});
 
-//var App = Vue.component('app', {
-//
-//});
-//
-//var router = new VueRouter({
-//    hashbang: false
-//});
-//
-//router.map({
-//    '/': {
-//        component: HomePage
-//    },
-//    '/home': {
-//        component: HomePage,
-//    },
-//    '/about': {
-//        component: AboutPage
-//    },
-//    '/contact': {
-//        component: ContactPage
-//    },
-//    //Services
-//    '/services/ak': {
-//        component: AKPage
-//    },
-//    '/services/chiropractic': {
-//        component: ChiropracticPage
-//    },
-//    '/services/government': {
-//        component: GovernmentPage
-//    },
-//    '/services/hra': {
-//        component: HRAPage
-//    },
-//    '/services/lifestyle': {
-//        component: LifestylePage
-//    },
-//    '/services/rnr': {
-//        component: RNRPage
-//    }
-//
-//});
-//
-//router.start(App, 'body');
-
-new Vue({
-    el: 'body',
-    data: {
-        path: '/',
-        showServicesTabs: false
+var App = Vue.component('app', {
+    data: function () {
+        return {
+            path: '/',
+            showServicesTabs: false
+        };
     },
     methods: {
         /**
@@ -87,11 +43,49 @@ new Vue({
             });
         }
     },
-    events: {
-
-    },
-    ready: function () {
-        this.listen();
-    }
 });
+//
+var router = new VueRouter({
+   hashbang: false
+});
+//
+router.map({
+   '/': {
+       component: HomePage
+   },
+   '/home': {
+       component: HomePage,
+   },
+    '/welcome': {
+        component: WelcomePage,
+    },
+   '/about': {
+       component: AboutPage
+   },
+   '/contact': {
+       component: ContactPage
+   },
+   //Services
+   '/services/ak': {
+       component: AKPage
+   },
+   '/services/chiropractic': {
+       component: ChiropracticPage
+   },
+   '/services/government': {
+       component: GovernmentPage
+   },
+   '/services/hra': {
+       component: HRAPage
+   },
+   '/services/lifestyle': {
+       component: LifestylePage
+   },
+   '/services/rnr': {
+       component: RNRPage
+   }
+
+});
+
+router.start(App, 'body');
 

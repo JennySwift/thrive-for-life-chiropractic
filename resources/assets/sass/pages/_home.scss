@@ -1,22 +1,4 @@
-@include cover;
-@include gradientCover;
-@include accordion;
-
-#preloaded-images {
-    display: flex;
-    position: absolute;
-    height: 0;
-    width: 0;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-#home-page-container {
-    height: 100%;
-    #home {
-        background: url('/img/Home/Layer 2.svg') no-repeat left top, url('/img/Home/Layer 3.svg') no-repeat left top fixed, url('/img/Home/spring-small-compressed.jpg') no-repeat left top fixed;
+#home-page {
         @include backgroundImage;
         .text {
             display: none;
@@ -25,7 +7,7 @@
             }
         }
         @media (max-width: $breakpoint3) {
-            background: url('/img/Home/Layer 3.svg') no-repeat left top fixed, url('/img/Home/spring-small-compressed.jpg') no-repeat left top fixed;
+            background: url('/img/Home/cover.svg') no-repeat left top, url('/img/Home/spring-small-compressed.jpg') no-repeat left top;
             background-size: cover, cover;
             display: flex;
             justify-content: center;
@@ -39,11 +21,9 @@
             }
         }
         @include cover;
-        @include animatedArrow;
-        position: relative;
         a {
             color: inherit;
         }
-        @include arrow;
-    }
+    background: url('/img/Home/text.svg') no-repeat left top, url('/img/Home/cover.svg') no-repeat left top, url('/img/Home/spring-small-compressed.jpg') no-repeat left top;
+    position: relative;
 }

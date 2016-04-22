@@ -18,8 +18,8 @@
 
             <li v-bind:class="{'current-page': path === '/'}">
                 <a
-                    {{--v-link="{path: '/'}"--}}
-                    v-on:click="goToPage('/')"
+                    v-link="{path: '/'}"
+                    {{--v-on:click="goToPage('/')"--}}
                     href="#"
                 >
                     Home
@@ -28,8 +28,8 @@
 
             <li v-bind:class="{'current-page': path === '/welcome'}">
                 <a
-                        {{--v-link="{path: '/'}"--}}
-                        v-on:click="goToPage('/welcome')"
+                        v-link="{path: '/welcome'}"
+                        {{--v-on:click="goToPage('/welcome')"--}}
                         href="#"
                 >
                     Welcome
@@ -42,9 +42,9 @@
                 v-bind:class="{'current-page': path === '/about'}"
             >
                 <a
-                    {{--v-link="{path: '/about'}"--}}
-                    v-on:click="goToPage('/about')"
-                    href="#"
+                    v-link="{path: '/about'}"
+                    {{--v-on:click="goToPage('/about')"--}}
+                    {{--href="#"--}}
                 >
                     About
                 </a>
@@ -52,8 +52,8 @@
 
             <li v-bind:class="{'current-page': path === '/contact'}">
                 <a
-                    {{--v-link="{path: '/contact'}"--}}
-                    v-on:click="goToPage('/contact')"
+                    v-link="{path: '/contact'}"
+                    {{--v-on:click="goToPage('/contact')"--}}
                     href="#"
                 >
                     Contact

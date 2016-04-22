@@ -1,6 +1,11 @@
 <script id="welcome-page-template" type="x-template">
 
-    <div id="welcome">
+    <div
+        id="welcome-page"
+        v-show="showContent"
+        transition="fade"
+        class="animated"
+    >
         <div class="cover"></div>
         <div class="flex">
             <div class="scrollbar-container">

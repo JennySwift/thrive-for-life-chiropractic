@@ -1,5 +1,4 @@
-
-@import 'extends';
+@import 'mixins';
 @import 'img';
 @import 'nav';
 @import 'messages';
@@ -12,3 +11,7 @@
 @import 'services-tabs';
 @import 'scrollbars';
 @import 'accordion';
+
+@include cover;
+@include gradientCover;
+@include accordion;

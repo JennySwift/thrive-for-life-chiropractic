@@ -20183,7 +20183,7 @@ var GovernmentPage = Vue.component('government-page', {
     template: '#government-page-template',
     data: function () {
         return {
-            //path: this.$route.path
+            showContent: false
         };
     },
     components: {},
@@ -20204,6 +20204,11 @@ var GovernmentPage = Vue.component('government-page', {
         //the accordion is really jerky
         setTimeout(function () {
             $(body).mousedown().mousemove().mouseup();
+        }, 500);
+
+        var that = this;
+        setTimeout(function () {
+            that.showContent = true;
         }, 500);
     }
 });
@@ -20322,7 +20327,7 @@ var AboutPage = Vue.component('about-page', {
     template: '#about-page-template',
     data: function () {
         return {
-
+            showContent: false
         };
     },
     components: {},
@@ -20353,6 +20358,10 @@ var AboutPage = Vue.component('about-page', {
             $(body).mousedown().mousemove().mouseup();
         }, 500);
 
+        var that = this;
+        setTimeout(function () {
+            that.showContent = true;
+        }, 100);
     }
 });
 
@@ -20602,10 +20611,19 @@ var HomePage = Vue.component('home-page', {
     template: '#home-page-template',
     data: function () {
         return {
-
+            showContent: false
         };
     },
     components: {},
+    route: {
+        // data: function (transition) {
+        //     var that = this;
+        //     this.showContent = false;
+        //     setTimeout(function () {
+        //         that.showContent = true;
+        //     }, 5000);
+        // }
+    },
     methods: {
 
         /**
@@ -20637,6 +20655,12 @@ var HomePage = Vue.component('home-page', {
     ready: function () {
         HelpersRepository.scrollbars();
         // this.listen();
+        
+        var that = this;
+        setTimeout(function () {
+            that.showContent = true;
+        }, 1000);
+
     }
 });
 
@@ -20773,18 +20797,27 @@ var WelcomePage = Vue.component('welcome-page', {
     template: '#welcome-page-template',
     data: function () {
         return {
-
+            showContent: false
         };
     },
     components: {},
+    route: {
+        data: function (transition) {
+
+
+        }
+    },
     methods: {
 
     },
     props: [
-        //data to be received from parent
+        'path'
     ],
     ready: function () {
-
+        var that = this;
+        setTimeout(function () {
+            that.showContent = true;
+        }, 1000);
     }
 });
 
@@ -20871,24 +20904,29 @@ Vue.directive('slide', {
         // e.g. remove event listeners added in bind()
     }
 });
-Vue.transition('fade', {
-    css: false,
-    enter: function (el, done) {
-        var that = this;
-        setTimeout(function () {
-            $(el).animate({ opacity: 1 }, that._data.transitionTime, done)
-        }, this._data.transitionTime);
+// Vue.transition('fade', {
+//     css: false,
+//     enter: function (el, done) {
+//         var that = this;
+//         setTimeout(function () {
+//             $(el).animate({ opacity: 1 }, that._data.transitionTime, done)
+//         }, this._data.transitionTime);
+//
+//     },
+//     enterCancelled: function (el) {
+//         $(el).stop()
+//     },
+//     leave: function (el, done) {
+//         $(el).animate({ opacity: 0 }, this._data.transitionTime, done)
+//     },
+//     leaveCancelled: function (el) {
+//         $(el).stop()
+//     }
+// });
 
-    },
-    enterCancelled: function (el) {
-        $(el).stop()
-    },
-    leave: function (el, done) {
-        $(el).animate({ opacity: 0 }, this._data.transitionTime, done)
-    },
-    leaveCancelled: function (el) {
-        $(el).stop()
-    }
+Vue.transition('fade', {
+    enterClass: 'fadeIn',
+    leaveClass: 'fadeOut'
 });
 Vue.transition('popup-inner', {
     enterClass: 'zoomIn',
@@ -20926,56 +20964,12 @@ $("#logo-lower").lettering();
 //    });
 //});
 
-//var App = Vue.component('app', {
-//
-//});
-//
-//var router = new VueRouter({
-//    hashbang: false
-//});
-//
-//router.map({
-//    '/': {
-//        component: HomePage
-//    },
-//    '/home': {
-//        component: HomePage,
-//    },
-//    '/about': {
-//        component: AboutPage
-//    },
-//    '/contact': {
-//        component: ContactPage
-//    },
-//    //Services
-//    '/services/ak': {
-//        component: AKPage
-//    },
-//    '/services/chiropractic': {
-//        component: ChiropracticPage
-//    },
-//    '/services/government': {
-//        component: GovernmentPage
-//    },
-//    '/services/hra': {
-//        component: HRAPage
-//    },
-//    '/services/lifestyle': {
-//        component: LifestylePage
-//    },
-//    '/services/rnr': {
-//        component: RNRPage
-//    }
-//
-//});
-//
-//router.start(App, 'body');
-
-new Vue({
-    el: 'body',
-    data: {
-        path: '/',
-        showServicesTabs: false
+var App = Vue.component('app', {
+    data: function () {
+        return {
+            path: '/',
+            showServicesTabs: false
+        };
     },
     methods: {
         /**
@@ -20988,13 +20982,51 @@ new Vue({
             });
         }
     },
-    events: {
-
-    },
-    ready: function () {
-        this.listen();
-    }
 });
+//
+var router = new VueRouter({
+   hashbang: false
+});
+//
+router.map({
+   '/': {
+       component: HomePage
+   },
+   '/home': {
+       component: HomePage,
+   },
+    '/welcome': {
+        component: WelcomePage,
+    },
+   '/about': {
+       component: AboutPage
+   },
+   '/contact': {
+       component: ContactPage
+   },
+   //Services
+   '/services/ak': {
+       component: AKPage
+   },
+   '/services/chiropractic': {
+       component: ChiropracticPage
+   },
+   '/services/government': {
+       component: GovernmentPage
+   },
+   '/services/hra': {
+       component: HRAPage
+   },
+   '/services/lifestyle': {
+       component: LifestylePage
+   },
+   '/services/rnr': {
+       component: RNRPage
+   }
+
+});
+
+router.start(App, 'body');
 
 
 //# sourceMappingURL=all.js.map

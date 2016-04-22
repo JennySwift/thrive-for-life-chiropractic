@@ -4,3 +4,18 @@
 .popup-outer-transition {
     animation-duration: 1s;
 }
+
+.fade-transition {
+    animation-duration: 1s;
+    &.fadeIn {
+        animation-delay: .5s;
+    }
+    &.fadeOut {
+        animation-duration: .5s;
+    }
+}
+//.fade-leave {
+//    animation-duration: .5s;
+//}
+//.fade-enter {
+//    animation-delay: 2s;

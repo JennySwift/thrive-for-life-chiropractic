@@ -1,10 +1,8 @@
 
-@import "colors";
-@import "variables";
-@import "mixins";
-@import "transitions/index";
+@import "variables/index";
 @import "base/index";
-@import "modules/index";
+@import "shared/index";
+@import "transitions/index";
 @import "pages/index";
 @import "media-queries/index";
 

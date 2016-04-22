@@ -1,5 +1,6 @@
-#welcome {
-    background: url('/img/Home/spring-small-compressed.jpg') no-repeat left top fixed;
+
+#welcome-page {
+    background: url('/img/Home/spring-small-compressed.jpg') no-repeat left top;
     @include backgroundImage;
     @include cover;
     .cover {
@@ -12,7 +13,6 @@
     a {
         color: inherit;
     }
-    @include arrow;
     .flex {
         height: 100%;
         display: flex;
@@ -109,12 +109,10 @@
         img {
             width: 480px;
             border-radius: 50%;
-            //height: 480px;
             height: auto;
             max-width: 100%;
             @media (max-width: $breakpoint4) {
                 width: 400px;
-                //height: 400px;
             }
         }
         @media (max-width: $breakpoint3) {

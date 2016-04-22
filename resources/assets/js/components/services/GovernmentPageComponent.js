@@ -2,7 +2,7 @@ var GovernmentPage = Vue.component('government-page', {
     template: '#government-page-template',
     data: function () {
         return {
-            //path: this.$route.path
+            showContent: false
         };
     },
     components: {},
@@ -23,6 +23,11 @@ var GovernmentPage = Vue.component('government-page', {
         //the accordion is really jerky
         setTimeout(function () {
             $(body).mousedown().mousemove().mouseup();
+        }, 500);
+
+        var that = this;
+        setTimeout(function () {
+            that.showContent = true;
         }, 500);
     }
 });

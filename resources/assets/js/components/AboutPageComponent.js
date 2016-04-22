@@ -2,7 +2,7 @@ var AboutPage = Vue.component('about-page', {
     template: '#about-page-template',
     data: function () {
         return {
-
+            showContent: false
         };
     },
     components: {},
@@ -33,5 +33,9 @@ var AboutPage = Vue.component('about-page', {
             $(body).mousedown().mousemove().mouseup();
         }, 500);
 
+        var that = this;
+        setTimeout(function () {
+            that.showContent = true;
+        }, 100);
     }
 });

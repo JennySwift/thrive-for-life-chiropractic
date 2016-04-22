@@ -2,10 +2,19 @@ var HomePage = Vue.component('home-page', {
     template: '#home-page-template',
     data: function () {
         return {
-
+            showContent: false
         };
     },
     components: {},
+    route: {
+        // data: function (transition) {
+        //     var that = this;
+        //     this.showContent = false;
+        //     setTimeout(function () {
+        //         that.showContent = true;
+        //     }, 5000);
+        // }
+    },
     methods: {
 
         /**
@@ -37,5 +46,11 @@ var HomePage = Vue.component('home-page', {
     ready: function () {
         HelpersRepository.scrollbars();
         // this.listen();
+        
+        var that = this;
+        setTimeout(function () {
+            that.showContent = true;
+        }, 1000);
+
     }
 });
