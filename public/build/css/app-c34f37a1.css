@@ -698,14 +698,14 @@ ul {
   animation-duration: 1s; }
 
 .fade-transition.fadeIn {
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s;
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
   -webkit-animation-duration: 1s;
   animation-duration: 1s; }
 
 .fade-transition.fadeOut {
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s; }
+  -webkit-animation-duration: .1s;
+  animation-duration: .1s; }
 
 #home-page {
   background: url("/img/Home/text.svg") no-repeat left top, url("/img/Home/cover.svg") no-repeat left top, url("/img/Home/spring-small-compressed.jpg") no-repeat left top;
@@ -798,6 +798,7 @@ ul {
         -ms-flex-direction: column;
         flex-direction: column; } }
   #welcome-page .scrollbar-container {
+    padding-top: 57px;
     max-width: 540px;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -873,23 +874,25 @@ ul {
             font-size: 17px; } }
       #welcome-page .scrollbar-container .text i {
         font-weight: bold; }
-  #welcome-page .img-container img {
-    width: 480px;
-    border-radius: 50%;
-    height: auto;
-    max-width: 100%; }
-    @media (max-width: 1100px) {
-      #welcome-page .img-container img {
-        width: 400px; } }
-  @media (max-width: 1000px) {
-    #welcome-page .img-container {
-      margin-bottom: 68px;
-      margin-top: 23px; }
-      #welcome-page .img-container img {
-        max-width: 343px; } }
-  @media (max-width: 600px) {
-    #welcome-page .img-container {
-      display: none; } }
+  #welcome-page .img-container {
+    margin-top: 37px; }
+    #welcome-page .img-container img {
+      width: 480px;
+      border-radius: 50%;
+      height: auto;
+      max-width: 100%; }
+      @media (max-width: 1100px) {
+        #welcome-page .img-container img {
+          width: 400px; } }
+    @media (max-width: 1000px) {
+      #welcome-page .img-container {
+        margin-bottom: 68px;
+        margin-top: 23px; }
+        #welcome-page .img-container img {
+          max-width: 343px; } }
+    @media (max-width: 600px) {
+      #welcome-page .img-container {
+        display: none; } }
 
 .services a {
   color: #41b920; }

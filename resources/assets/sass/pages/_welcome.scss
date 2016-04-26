@@ -28,7 +28,7 @@
         }
     }
     .scrollbar-container {
-        padding-top: $navHeight + 20px;
+        //padding-top: $navHeight + 20px;
         max-width: 540px;
         display: flex;
         align-items: center;
@@ -105,7 +105,7 @@
         }
     }
     .img-container {
-        margin-top: $navHeight;
+        //margin-top: $navHeight;
         img {
             width: 480px;
             border-radius: 50%;
