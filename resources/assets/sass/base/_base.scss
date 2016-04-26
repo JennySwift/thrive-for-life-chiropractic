@@ -49,12 +49,20 @@ body {
         li {
             display: flex;
             align-items: center;
+			font-size: 15px;
 			a {
 				color: rgba(255,255,255, .6);
-				font-size: 15px;
 				&:hover {
 					color: rgba(255,255,255, .9);
 					text-decoration: none;
+				}
+			}
+			.copyright {
+				display: flex;
+				align-items: center;
+				.fa-copyright {
+					margin-right: 5px;
+					font-size: 14px;
 				}
 			}
         }

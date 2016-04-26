@@ -43,13 +43,23 @@ body footer {
     display: flex;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    font-size: 15px; }
     body footer li a {
-      color: rgba(255, 255, 255, 0.6);
-      font-size: 15px; }
+      color: rgba(255, 255, 255, 0.6); }
       body footer li a:hover {
         color: rgba(255, 255, 255, 0.9);
         text-decoration: none; }
+    body footer li .copyright {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      body footer li .copyright .fa-copyright {
+        margin-right: 5px;
+        font-size: 14px; }
 
 button {
   background: #fff;
