@@ -1253,8 +1253,23 @@ ul {
     top: 37px;
     height: calc(100% - 37px); }
 
-#privacy-policy-popup ul {
-  margin-bottom: 10px;
-  padding-left: 24px; }
+#privacy-policy-popup {
+  max-width: 700px; }
+  #privacy-policy-popup ul {
+    margin-bottom: 10px;
+    padding-left: 24px; }
+  #privacy-policy-popup h1 {
+    font-size: 50px;
+    margin-bottom: 30px; }
+  #privacy-policy-popup h2 {
+    font-family: "Josefin Sans";
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  #privacy-policy-popup .last-update {
+    margin-bottom: 50px; }
+  #privacy-policy-popup .sincerely {
+    font-style: italic; }
 
 /*# sourceMappingURL=app.css.map */
