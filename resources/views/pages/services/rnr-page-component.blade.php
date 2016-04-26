@@ -18,8 +18,7 @@
                     href="http://www.retainedneonatalreflexes.com.au/reflexes-explained/"
                     target="_blank"
                 >
-                    here
-                </a>.
+                    here</a>.
             </p>
         </div>
     </div>
