@@ -45,7 +45,8 @@ body footer {
     -ms-flex-align: center;
     align-items: center; }
     body footer li a {
-      color: rgba(255, 255, 255, 0.6); }
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 15px; }
       body footer li a:hover {
         color: rgba(255, 255, 255, 0.9);
         text-decoration: none; }

@@ -28,6 +28,9 @@ body footer {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   padding: 11px;
@@ -45,8 +48,7 @@ body footer {
     -ms-flex-align: center;
     align-items: center; }
     body footer li a {
-      color: rgba(255, 255, 255, 0.6);
-      font-size: 15px; }
+      color: rgba(255, 255, 255, 0.6); }
       body footer li a:hover {
         color: rgba(255, 255, 255, 0.9);
         text-decoration: none; }
