@@ -6,7 +6,7 @@
         </li>
 
         <li>
-            <a href="#" v-on:click="showPrivacyPolicyPopup()">Privacy Policy</a>
+            <a v-on:click="showPrivacyPolicyPopup()">Privacy Policy</a>
         </li>
     </footer>
 

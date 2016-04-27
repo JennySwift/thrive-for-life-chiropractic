@@ -51,7 +51,8 @@ body footer {
       padding-top: 3px; }
       body footer li a:hover {
         color: rgba(255, 255, 255, 0.9);
-        text-decoration: none; }
+        text-decoration: none;
+        cursor: pointer; }
     body footer li .copyright {
       display: -webkit-flex;
       display: -ms-flexbox;
