@@ -38,8 +38,6 @@ body {
         justify-content: space-around;
 		background: rgba(0,0,0, .6);
 		width: 100%;
-        padding: 11px;
-        height: $footerHeight;
         position: fixed;
         margin-top: -28px;
 		&.contact-page-footer {
@@ -47,11 +45,15 @@ body {
 			opacity: .9;
 		}
         li {
+			height: $footerHeight;
             display: flex;
             align-items: center;
 			font-size: 15px;
+			color: rgba(255,255,255, .6);
+			padding: 3px;
 			a {
 				color: rgba(255,255,255, .6);
+				padding-top: 3px;
 				&:hover {
 					color: rgba(255,255,255, .9);
 					text-decoration: none;
@@ -63,6 +65,9 @@ body {
 				.fa-copyright {
 					margin-right: 5px;
 					font-size: 14px;
+				}
+				span {
+					padding-top: 3px;
 				}
 			}
         }
