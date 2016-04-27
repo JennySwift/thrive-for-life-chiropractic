@@ -1256,7 +1256,7 @@ ul {
         margin-left: 0; } }
   #about .scrollbar-container {
     top: 37px;
-    height: calc(100% - 37px); }
+    height: calc(100% - 65px); }
 
 #privacy-policy-popup {
   max-width: 700px; }
