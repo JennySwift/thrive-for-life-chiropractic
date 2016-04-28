@@ -19,28 +19,60 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        > * {
-            margin: 0 60px;
+        @media (min-width: $breakpoint1) {
+            > * {
+                margin: 0 60px;
+            }
         }
+        @media (max-width: $breakpoint1) {
+            padding-top: 20px;
+        }
+
         @media (max-width: $breakpoint3) {
             flex-direction: column;
 
         }
     }
+    .text-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        @media (max-width: $breakpoint3) {
+            //margin-top: $navHeight;
+        }
+    }
     .scrollbar-container {
-        //padding-top: $navHeight + 20px;
         max-width: 540px;
         display: flex;
         align-items: center;
+        .mCSB_draggerContainer {
+            .mCSB_dragger {
+                .mCSB_dragger_bar {
+                    //background: white;
+                }
+            }
+        }
+        //To stop text overlapping the navbar and the footer
+        //top: 37px;
+        height: calc(100% - 65px);
+        @media (min-width: $breakpoint3) {
+            max-height: 550px;
+            //.mCSB_outside {
+            //    display: flex;
+            //    align-items: center;
+            //}
+        }
         @media (max-width: $breakpoint3) {
             margin: 0;
             padding-left: 20px;
             padding-right: 20px;
             align-items: flex-start;
             height: auto;
+            padding-top: $navHeight;
         }
         @media (max-width: $breakpoint1) {
             height: 100%;
+            //padding-top: $navHeight + 20px;
         }
         .big-screens {
             @media (max-width: $breakpoint1) {

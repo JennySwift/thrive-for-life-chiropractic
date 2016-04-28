@@ -21,8 +21,6 @@ var Popup = Vue.component('popup', {
             console.log(popupOuterHeight);
             popupInnerHeight = popupInnerHeight.replace(' + 100%', '').replace('-', '').replace('px', '').replace('calc(', '').replace(')', '');
             popupInnerHeight = parseInt(popupOuterHeight, 10) - parseInt(popupInnerHeight, 10);
-            console.log(popupInnerHeight);
-            console.log(popupInnerHeight-100);
             $(this.$el).find('.content').css({'max-height': popupInnerHeight-160 + 'px'});
         }
 
