@@ -27,8 +27,7 @@
                                         href="http://www.health.gov.au/internet/main/publishing.nsf/Content/health-medicare-allied-health-brochure.htm"
                                         target="_blank"
                                     >
-                                        here
-                                    </a>.
+                                        here</a>.
                                 </p>
                             </div>
                         </div>
@@ -49,8 +48,7 @@
                                         href="http://factsheets.dva.gov.au/factsheets/documents/HSV13%20Chiropractic%20Services.htm"
                                         target="_blank"
                                     >
-                                        here
-                                    </a>.
+                                        here</a>.
                                 </p>
                             </div>
                         </div>
@@ -70,8 +68,7 @@
                                         href="http://www.defence.gov.au/Health/SHC/DependantHealthcare/default.asp"
                                         target="_blank"
                                     >
-                                        here
-                                    </a>.
+                                        here</a>.
                                 </p>
                             </div>
                         </div>

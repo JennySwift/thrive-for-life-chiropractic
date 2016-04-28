@@ -30,8 +30,8 @@
                     href="https://support.google.com/analytics/answer/6004245"
                     target="_blank"
                 >
-                    Google Analytics</a>
-                .</p>
+                    Google Analytics</a>.
+            </p>
 
             <h2>Cookies</h2>
             <p>My policy on cookies is, "Don't eat too many!" <img class="emoticon" src="/img/emoticons/winking.png"> Sorry, I couldn't help myself...</p>
