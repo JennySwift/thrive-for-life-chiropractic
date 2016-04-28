@@ -13,7 +13,8 @@ a:focus {
 body {
   color: #777;
   font-size: 18px;
-  font-family: 'Josefin Sans'; }
+  font-family: 'Josefin Sans';
+  background: black; }
 
 html, body {
   height: 100%; }
