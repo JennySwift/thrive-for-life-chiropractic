@@ -3,11 +3,11 @@ var HelpersRepository = {
     /**
      *
      */
-    // scrollbars: function () {
-        // [].forEach.call(document.querySelectorAll('.scrollbar-container'), function (el) {
-        //     Ps.initialize(el);
-        // });
-    // },
+    psScrollbars: function () {
+        [].forEach.call(document.querySelectorAll('.ps-scrollbar-container'), function (el) {
+            Ps.initialize(el);
+        });
+    },
 
     /**
      *

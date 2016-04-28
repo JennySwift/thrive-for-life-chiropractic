@@ -11,7 +11,7 @@
 
 <body>
 
-<div id=@yield('id', 'nothing') class="main">
+<div class="main">
 
     <navbar
         {{--:path.sync="path"--}}

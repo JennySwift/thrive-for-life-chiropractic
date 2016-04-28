@@ -20113,11 +20113,11 @@ var HelpersRepository = {
     /**
      *
      */
-    // scrollbars: function () {
-        // [].forEach.call(document.querySelectorAll('.scrollbar-container'), function (el) {
-        //     Ps.initialize(el);
-        // });
-    // },
+    psScrollbars: function () {
+        [].forEach.call(document.querySelectorAll('.ps-scrollbar-container'), function (el) {
+            Ps.initialize(el);
+        });
+    },
 
     /**
      *
@@ -20171,6 +20171,9 @@ var AKPage = Vue.component('ak-page', {
         };
     },
     components: {},
+    route: {
+        
+    },
     //watch: {
     //    '$route': function (val) {
     //        this.path = val.path;
@@ -20184,6 +20187,7 @@ var AKPage = Vue.component('ak-page', {
     ],
     ready: function () {
         HelpersRepository.showContent(this);
+        // HelpersRepository.scrollbars();
     }
 });
 
@@ -21008,6 +21012,7 @@ var App = Vue.component('app', {
     },
     ready: function () {
         HelpersRepository.scrollbars();
+        HelpersRepository.psScrollbars();
     }
 });
 //

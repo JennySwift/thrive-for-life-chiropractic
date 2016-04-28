@@ -45,6 +45,7 @@ var App = Vue.component('app', {
     },
     ready: function () {
         HelpersRepository.scrollbars();
+        HelpersRepository.psScrollbars();
     }
 });
 //
