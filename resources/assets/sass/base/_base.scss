@@ -42,6 +42,9 @@ body {
 		width: 100%;
         position: fixed;
         margin-top: -28px;
+		> * {
+			min-width: 85px;
+		}
 		&.contact-page-footer {
 			background: black;
 			opacity: .9;
@@ -49,6 +52,9 @@ body {
         li {
 			height: $footerHeight;
 			margin: 0 10px;
+			@media (max-width: $breakpointSmall) {
+			    margin: 0 2px;
+			}
             display: flex;
             align-items: center;
 			font-size: 15px;

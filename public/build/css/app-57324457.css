@@ -34,6 +34,8 @@ body footer {
   width: 100%;
   position: fixed;
   margin-top: -28px; }
+  body footer > * {
+    min-width: 85px; }
   body footer.contact-page-footer {
     background: black;
     opacity: .9; }
@@ -49,6 +51,9 @@ body footer {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.6);
     padding: 3px; }
+    @media (max-width: 320px) {
+      body footer li {
+        margin: 0 2px; } }
     body footer li a {
       color: rgba(255, 255, 255, 0.6);
       padding-top: 3px; }
