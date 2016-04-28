@@ -9,7 +9,7 @@
 
         <div class="gradient-cover"></div>
         <div class="scrollbar-container">
-            <div class="text">
+            <div class="text scrollbar-content">
                 <h1>Meet Pete</h1>
 
                 <p>
