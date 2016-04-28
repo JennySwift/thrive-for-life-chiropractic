@@ -20246,8 +20246,8 @@ var GovernmentPage = Vue.component('government-page', {
             $(body).mousedown().mousemove().mouseup();
         }, 500);
 
-        HelpersRepository.showContent(this);
         HelpersRepository.scrollbars();
+        HelpersRepository.showContent(this);
     }
 });
 

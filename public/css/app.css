@@ -961,17 +961,23 @@ ul {
 #government {
   background: url("/img/Government/meadow-small-compressed.jpg") no-repeat center center;
   height: 100%;
-  background-size: cover; }
-  #government .text {
-    padding: 68px 40px 40px 40px;
-    position: relative; }
+  background-size: cover;
+  height: 100%;
+  position: relative; }
   #government .cover {
     opacity: .3; }
   #government .text {
+    padding: 68px 40px 40px 40px;
+    position: relative; }
+  #government .gradient-cover {
+    background: linear-gradient(to right, transparent 42%, rgba(0, 0, 0, 0.7) 53%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.9) 85%, black 95%); }
+  #government .text {
+    padding: 98px 40px 0 40px;
     max-width: 740px;
+    max-height: 100%;
     color: white;
     font-size: 20px;
-    padding: 98px 40px 0 40px; }
+    text-align: left; }
     #government .text p:not(:last-child) {
       margin-bottom: 26px; }
     #government .text h1, #government .text h5 {
@@ -984,6 +990,11 @@ ul {
       #government .text a:hover {
         text-decoration: none;
         border-bottom: 1px solid white; }
+  #government .scrollbar-container {
+    top: 37px;
+    height: calc(100% - 65px); }
+    #government .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+      background: white; }
   @media (max-width: 580px) {
     #government .text {
       padding-top: 54px; } }
