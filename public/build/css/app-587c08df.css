@@ -656,6 +656,9 @@ ul {
   position: fixed;
   background: linear-gradient(to right, transparent 45%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.7) 65%, rgba(0, 0, 0, 0.9) 90%); }
 
+.accordion .accordion-item .expanded {
+  text-decoration: underline; }
+
 .accordion .accordion-item .accordion-heading {
   cursor: pointer;
   font-size: 23px;
