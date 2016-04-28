@@ -179,5 +179,6 @@ var AccordionItem = Vue.component('accordion-item', {
     ],
     ready: function () {
         this.listen();
+        $('.expanded').removeClass('expanded');
     }
 });
