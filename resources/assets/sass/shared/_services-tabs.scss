@@ -43,6 +43,9 @@
         }
         a {
             color: rgba(255,255,255, .6);
+            &.current-tab {
+                text-decoration: underline;
+            }
         }
         &:hover {
             a {

@@ -630,6 +630,8 @@ ul {
       justify-content: center; }
     .tabs .tab a {
       color: rgba(255, 255, 255, 0.6); }
+      .tabs .tab a.current-tab {
+        text-decoration: underline; }
     .tabs .tab:hover a {
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none; }

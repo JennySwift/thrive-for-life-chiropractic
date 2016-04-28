@@ -20333,6 +20333,11 @@ var ServicesTabs = Vue.component('services-tabs', {
         };
     },
     components: {},
+    computed: {
+        'path': function () {
+            return this.$route.path;
+        }
+    },
     methods: {
 
         /**
