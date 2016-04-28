@@ -15,6 +15,17 @@ var Popup = Vue.component('popup', {
             HelpersRepository.closePopup($event, this, this.redirectTo);
         },
 
+        setContentHeight: function () {
+            var popupInnerHeight = $(this.$el).find('.popup-inner').css('max-height');
+            popupOuterHeight = $(this.$el).css('height');
+            console.log(popupOuterHeight);
+            popupInnerHeight = popupInnerHeight.replace(' + 100%', '').replace('-', '').replace('px', '').replace('calc(', '').replace(')', '');
+            popupInnerHeight = parseInt(popupOuterHeight, 10) - parseInt(popupInnerHeight, 10);
+            console.log(popupInnerHeight);
+            console.log(popupInnerHeight-100);
+            $(this.$el).find('.content').css({'max-height': popupInnerHeight-160 + 'px'});
+        }
+
     },
     props: [
         'showPopup',
@@ -23,5 +34,6 @@ var Popup = Vue.component('popup', {
     ],
     ready: function () {
         HelpersRepository.scrollbars();
+        this.setContentHeight();
     }
 });

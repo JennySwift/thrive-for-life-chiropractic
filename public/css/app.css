@@ -299,11 +299,15 @@ ul {
     max-height: calc(100% - 118px);
     padding: 25px;
     margin: 0 30px; }
-    .popup-outer .popup-inner:not(.scrollbar-container) {
-      overflow: scroll; }
     .popup-outer .popup-inner .popup-title {
       margin-bottom: 30px;
       margin-top: 0; }
+    .popup-outer .popup-inner .header {
+      height: 84px; }
+      .popup-outer .popup-inner .header .fa-times {
+        cursor: pointer; }
+    .popup-outer .popup-inner .content {
+      margin-top: 28px; }
     .popup-outer .popup-inner .buttons > div {
       display: -webkit-flex;
       display: -ms-flexbox;

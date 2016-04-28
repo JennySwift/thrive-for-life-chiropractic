@@ -6,8 +6,8 @@
         id="privacy-policy-popup"
         :redirect-to="redirectTo"
     >
-        <div slot="content">
 
+        <div slot="header">
             <i
                     v-on:click="showPopup = false"
                     class="fa fa-times"
@@ -15,6 +15,9 @@
             </i>
 
             <h1>Privacy Policy</h1>
+        </div>
+
+        <div slot="content">
 
             <p>Just like I want you to feel safe and comfortable in my clinic, I want you to feel safe and comfortable on my website too. If you have any questions or concerns about my Privacy Policy, please feel free to
                 <a href="mailto:peter.c.swift@gmail.com">email me</a>.</p>
@@ -57,15 +60,6 @@
             </p>
         </div>
 
-        <div slot="buttons">
-            <button
-                    v-on:click="showPopup = false"
-                    {{--v-link="{path: redirectTo}"--}}
-                    class="btn btn-default"
-                >
-                    Close
-                </button>
-        </div>
     </popup>
 
 </div>

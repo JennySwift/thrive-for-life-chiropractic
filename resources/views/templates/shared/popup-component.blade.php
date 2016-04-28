@@ -11,10 +11,14 @@
                 v-show="showPopup"
                 transition="popup-inner"
                 :id="id"
-                class="popup-inner scrollbar-container animate"
+                class="popup-inner animate"
         >
 
-            <div class="content">
+            <div class="header">
+                <slot name="header"></slot>
+            </div>
+
+            <div class="content scrollbar-container">
                 <slot name="content"></slot>
             </div>
 
