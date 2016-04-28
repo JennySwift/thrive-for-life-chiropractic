@@ -31,7 +31,7 @@
                 .</p>
 
             <h2>Cookies</h2>
-            <p>My policy on cookies is, "Don't eat too many!" ;) Sorry, I couldn't help myself...</p>
+            <p>My policy on cookies is, "Don't eat too many!" <img class="emoticon" src="/img/emoticons/winking.png"> Sorry, I couldn't help myself...</p>
             <p>This site uses cookies, which, in the context of internet privacy, are not edible. They are small text files that are placed on your machine to help the site provide a better user experience. In general, cookies are used to retain user preferences, store information for things like shopping carts, and provide <i>anonymised</i> tracking data to third party applications like Google Analytics. As a rule, cookies will make your browsing experience better, however if you would prefer to disable them you can do so through your browser options.</p>
 
             <h2>Complaints</h2>

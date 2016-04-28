@@ -1302,5 +1302,8 @@ ul {
     margin-bottom: 50px; }
   #privacy-policy-popup .sincerely {
     font-style: italic; }
+  #privacy-policy-popup .emoticon {
+    height: 18px;
+    margin-bottom: 4px; }
 
 /*# sourceMappingURL=app.css.map */
