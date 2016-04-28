@@ -9,6 +9,7 @@
 
         <div class="gradient-cover"></div>
         <div class="scrollbar-container">
+            {{--.scrollbar-content needed for accordion functionality--}}
             <div class="text scrollbar-content">
                 <h1>Meet Pete</h1>
 
