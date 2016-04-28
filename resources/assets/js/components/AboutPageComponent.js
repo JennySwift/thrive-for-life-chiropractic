@@ -16,7 +16,8 @@ var AboutPage = Vue.component('about-page', {
 
             //To stop Firefox going to the user's previous scroll position on page refresh
             $(window).on('unload', function() {
-                $('.scrollbar-container').scrollTop(0);
+                // $('.scrollbar-container').scrollTop(0);
+                $('.scrollbar-container').mCustomScrollbar('scrollTo', 'top');
             });
         }
     },

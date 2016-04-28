@@ -636,10 +636,8 @@ ul {
     .tabs {
       display: none; } }
 
-.scrollbar-container {
-  position: relative;
-  height: 100%;
-  overflow: auto; }
+.scrollbar-container .mCSB_draggerContainer .mCSB_dragger {
+  height: 70px !important; }
 
 .cover {
   background: black;
@@ -1219,6 +1217,7 @@ ul {
   background: url("/img/About/about-quality5.jpg") no-repeat center center;
   height: 100%;
   background-size: cover;
+  height: 100%;
   position: relative; }
   #about .text {
     padding: 68px 40px 40px 40px;
@@ -1230,8 +1229,6 @@ ul {
     max-width: 707px;
     max-height: 100%;
     color: white;
-    position: absolute;
-    right: 40px;
     font-size: 20px;
     text-align: center; }
     #about .text p:not(:last-child) {
@@ -1257,6 +1254,18 @@ ul {
   #about .scrollbar-container {
     top: 37px;
     height: calc(100% - 65px); }
+    #about .scrollbar-container .mCSB_container {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+      align-items: flex-end; }
+    #about .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+      background: white; }
 
 #privacy-policy-popup {
   max-width: 700px; }

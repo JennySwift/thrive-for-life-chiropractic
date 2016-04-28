@@ -9,7 +9,7 @@
     @include('templates.head-links')
 </head>
 
-<body class="scrollbar-container">
+<body>
 
 <div id=@yield('id', 'nothing') class="main">
 

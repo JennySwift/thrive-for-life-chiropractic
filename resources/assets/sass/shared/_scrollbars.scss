@@ -1,10 +1,19 @@
+//.scrollbar-container {
+//    position:relative;
+//    height: 100%;
+//    overflow: auto;
+//}
+
 .scrollbar-container {
-    position:relative;
-    //width: 600px;
-    height: 100%;
-    overflow: auto;
-    .scrollbar-content {
-        //width: 1280px;
-        //height: 720px;
+    //position:relative;
+    //height: 100%;
+    .mCSB_draggerContainer {
+        .mCSB_dragger {
+            height: 70px !important;
+            .mCSB_dragger_bar {
+                //background: red;
+            }
+        }
     }
+
 }

@@ -26,5 +26,6 @@ var GovernmentPage = Vue.component('government-page', {
         }, 500);
 
         HelpersRepository.showContent(this);
+        HelpersRepository.scrollbars();
     }
 });

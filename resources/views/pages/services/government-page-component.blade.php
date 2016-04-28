@@ -3,7 +3,7 @@
     <div
         id="government"
         v-show="showContent"
-        class="service animated"
+        class="service animated scrollbar-container"
         transition="fade"
     >
         <div class="cover"></div>

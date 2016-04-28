@@ -20113,9 +20113,30 @@ var HelpersRepository = {
     /**
      *
      */
+    // scrollbars: function () {
+        // [].forEach.call(document.querySelectorAll('.scrollbar-container'), function (el) {
+        //     Ps.initialize(el);
+        // });
+    // },
+
+    /**
+     *
+     */
     scrollbars: function () {
-        [].forEach.call(document.querySelectorAll('.scrollbar-container'), function (el) {
-            Ps.initialize(el);
+        var containers = $('.scrollbar-container');
+        $(containers).each(function () {
+            var container = $(this);
+            var height = container.css('height');
+            var maxHeight = container.css('max-height');
+            if (!height && !maxHeight) {
+                container.height('100%');
+            }
+            if (container.css('position') == 'static') {
+                container.css({position: 'relative'});
+            }
+            container.mCustomScrollbar({
+                theme: 'minimal-dark'
+            });
         });
     },
 
@@ -20222,6 +20243,7 @@ var GovernmentPage = Vue.component('government-page', {
         }, 500);
 
         HelpersRepository.showContent(this);
+        HelpersRepository.scrollbars();
     }
 });
 
@@ -20455,7 +20477,10 @@ var AccordionItem = Vue.component('accordion-item', {
                 scrollTop = 0;
             }
 
-            $('.scrollbar-container').animate({scrollTop: scrollTop}, 400);
+            // $('.scrollbar-container').animate({scrollTop: scrollTop}, 400);
+            $('.scrollbar-container').mCustomScrollbar('scrollTo', scrollTop, {
+                scrollInertia: 400
+            });
             var that = this;
             setTimeout(function () {
                 that.accordion.css({height: 'auto'});
@@ -20654,7 +20679,8 @@ var AboutPage = Vue.component('about-page', {
 
             //To stop Firefox going to the user's previous scroll position on page refresh
             $(window).on('unload', function() {
-                $('.scrollbar-container').scrollTop(0);
+                // $('.scrollbar-container').scrollTop(0);
+                $('.scrollbar-container').mCustomScrollbar('scrollTo', 'top');
             });
         }
     },
@@ -20785,6 +20811,10 @@ var PrivacyPolicy = Vue.component('privacy-policy', {
     ],
     ready: function () {
         this.listen();
+        // $('.scrollbar-container').mCustomScrollbar({
+        //     // theme: 'minimal-dark'
+        // });
+        // $('#privacy-policy-popup .scrollbar-container').mCustomScrollbar('scrollTo', 'top');
         //HelpersRepository.scrollbars();
     }
 });

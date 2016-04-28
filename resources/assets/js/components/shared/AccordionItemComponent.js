@@ -126,7 +126,10 @@ var AccordionItem = Vue.component('accordion-item', {
                 scrollTop = 0;
             }
 
-            $('.scrollbar-container').animate({scrollTop: scrollTop}, 400);
+            // $('.scrollbar-container').animate({scrollTop: scrollTop}, 400);
+            $('.scrollbar-container').mCustomScrollbar('scrollTo', scrollTop, {
+                scrollInertia: 400
+            });
             var that = this;
             setTimeout(function () {
                 that.accordion.css({height: 'auto'});

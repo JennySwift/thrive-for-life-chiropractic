@@ -24,6 +24,10 @@ var PrivacyPolicy = Vue.component('privacy-policy', {
     ],
     ready: function () {
         this.listen();
+        // $('.scrollbar-container').mCustomScrollbar({
+        //     // theme: 'minimal-dark'
+        // });
+        // $('#privacy-policy-popup .scrollbar-container').mCustomScrollbar('scrollTo', 'top');
         //HelpersRepository.scrollbars();
     }
 });
