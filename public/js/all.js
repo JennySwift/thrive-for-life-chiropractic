@@ -20162,6 +20162,203 @@ var HelpersRepository = {
         }, time);
     }
 };
+var AKPage = Vue.component('ak-page', {
+    template: '#ak-page-template',
+    data: function () {
+        return {
+            //path: this.$route.path
+            showContent: false
+        };
+    },
+    components: {},
+    route: {
+
+    },
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
+    methods: {
+
+    },
+    props: [
+        'path'
+    ],
+    ready: function () {
+        HelpersRepository.showContent(this);
+        HelpersRepository.scrollbars();
+    }
+});
+
+var ChiropracticPage = Vue.component('chiropractic-page', {
+    template: '#chiropractic-page-template',
+    data: function () {
+        return {
+            //path: this.$route.path,
+            sliderStep: 1,
+            transitionTime: 300,
+            showContent: false
+        };
+    },
+    components: {},
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
+    methods: {
+
+    },
+    props: [
+        'path'
+    ],
+    ready: function () {
+        HelpersRepository.scrollbars();
+        HelpersRepository.showContent(this);
+    }
+});
+
+var GovernmentPage = Vue.component('government-page', {
+    template: '#government-page-template',
+    data: function () {
+        return {
+            showContent: false
+        };
+    },
+    components: {},
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
+    methods: {
+
+    },
+    props: [
+        'path'
+    ],
+    ready: function () {
+        //This is because for some reason, on the iPhone,
+        //unless the user clicks and drags the screen before using the accordion,
+        //the accordion is really jerky
+        setTimeout(function () {
+            $(body).mousedown().mousemove().mouseup();
+        }, 500);
+
+        HelpersRepository.scrollbars();
+        HelpersRepository.showContent(this);
+    }
+});
+
+var HRAPage = Vue.component('hra-page', {
+    template: '#hra-page-template',
+    data: function () {
+        return {
+            showContent: false
+        };
+    },
+    components: {},
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
+    methods: {
+
+    },
+    props: [
+        'path'
+    ],
+    ready: function () {
+        HelpersRepository.scrollbars();
+        HelpersRepository.showContent(this);
+    }
+});
+
+var LifestylePage = Vue.component('lifestyle-page', {
+    template: '#lifestyle-page-template',
+    data: function () {
+        return {
+            showContent: false
+        };
+    },
+    components: {},
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
+    methods: {
+
+    },
+    props: [
+        'path'
+    ],
+    ready: function () {
+        HelpersRepository.showContent(this);
+        HelpersRepository.scrollbars();
+    }
+});
+
+var RNRPage = Vue.component('rnr-page', {
+    template: '#rnr-page-template',
+    data: function () {
+        return {
+            showContent: false
+        };
+    },
+    components: {},
+    //watch: {
+    //    '$route': function (val) {
+    //        this.path = val.path;
+    //    }
+    //},
+    methods: {
+
+    },
+    props: [
+        'path'
+    ],
+    ready: function () {
+        HelpersRepository.scrollbars();
+        HelpersRepository.showContent(this);
+    }
+});
+
+var ServicesTabs = Vue.component('services-tabs', {
+    template: '#services-tabs-template',
+    data: function () {
+        return {
+
+        };
+    },
+    components: {},
+    computed: {
+        'path': function () {
+            return this.$route.path;
+        }
+    },
+    methods: {
+
+        /**
+         *
+         * @param response
+         */
+        handleResponseError: function (response) {
+            this.$broadcast('response-error', response);
+            this.showLoading = false;
+        }
+    },
+    props: [
+        'path',
+        'showServicesTabs'
+    ],
+    ready: function () {
+        
+    }
+});
+
 var AccordionItem = Vue.component('accordion-item', {
     //template: '#accordion-item-template',
     data: function () {
@@ -20482,202 +20679,6 @@ var ServicesDropdownMenu = Vue.component('services-dropdown-menu', {
     ],
     ready: function () {
 
-    }
-});
-
-var AKPage = Vue.component('ak-page', {
-    template: '#ak-page-template',
-    data: function () {
-        return {
-            //path: this.$route.path
-            showContent: false
-        };
-    },
-    components: {},
-    route: {
-        
-    },
-    //watch: {
-    //    '$route': function (val) {
-    //        this.path = val.path;
-    //    }
-    //},
-    methods: {
-
-    },
-    props: [
-        'path'
-    ],
-    ready: function () {
-        HelpersRepository.showContent(this);
-        // HelpersRepository.scrollbars();
-    }
-});
-
-var ChiropracticPage = Vue.component('chiropractic-page', {
-    template: '#chiropractic-page-template',
-    data: function () {
-        return {
-            //path: this.$route.path,
-            sliderStep: 1,
-            transitionTime: 300,
-            showContent: false
-        };
-    },
-    components: {},
-    //watch: {
-    //    '$route': function (val) {
-    //        this.path = val.path;
-    //    }
-    //},
-    methods: {
-
-    },
-    props: [
-        'path'
-    ],
-    ready: function () {
-        HelpersRepository.scrollbars();
-        HelpersRepository.showContent(this);
-    }
-});
-
-var GovernmentPage = Vue.component('government-page', {
-    template: '#government-page-template',
-    data: function () {
-        return {
-            showContent: false
-        };
-    },
-    components: {},
-    //watch: {
-    //    '$route': function (val) {
-    //        this.path = val.path;
-    //    }
-    //},
-    methods: {
-
-    },
-    props: [
-        'path'
-    ],
-    ready: function () {
-        //This is because for some reason, on the iPhone,
-        //unless the user clicks and drags the screen before using the accordion,
-        //the accordion is really jerky
-        setTimeout(function () {
-            $(body).mousedown().mousemove().mouseup();
-        }, 500);
-
-        HelpersRepository.scrollbars();
-        HelpersRepository.showContent(this);
-    }
-});
-
-var HRAPage = Vue.component('hra-page', {
-    template: '#hra-page-template',
-    data: function () {
-        return {
-            showContent: false
-        };
-    },
-    components: {},
-    //watch: {
-    //    '$route': function (val) {
-    //        this.path = val.path;
-    //    }
-    //},
-    methods: {
-
-    },
-    props: [
-        'path'
-    ],
-    ready: function () {
-        HelpersRepository.scrollbars();
-        HelpersRepository.showContent(this);
-    }
-});
-
-var LifestylePage = Vue.component('lifestyle-page', {
-    template: '#lifestyle-page-template',
-    data: function () {
-        return {
-            showContent: false
-        };
-    },
-    components: {},
-    //watch: {
-    //    '$route': function (val) {
-    //        this.path = val.path;
-    //    }
-    //},
-    methods: {
-
-    },
-    props: [
-        'path'
-    ],
-    ready: function () {
-        HelpersRepository.showContent(this);
-    }
-});
-
-var RNRPage = Vue.component('rnr-page', {
-    template: '#rnr-page-template',
-    data: function () {
-        return {
-            showContent: false
-        };
-    },
-    components: {},
-    //watch: {
-    //    '$route': function (val) {
-    //        this.path = val.path;
-    //    }
-    //},
-    methods: {
-
-    },
-    props: [
-        'path'
-    ],
-    ready: function () {
-        HelpersRepository.scrollbars();
-        HelpersRepository.showContent(this);
-    }
-});
-
-var ServicesTabs = Vue.component('services-tabs', {
-    template: '#services-tabs-template',
-    data: function () {
-        return {
-
-        };
-    },
-    components: {},
-    computed: {
-        'path': function () {
-            return this.$route.path;
-        }
-    },
-    methods: {
-
-        /**
-         *
-         * @param response
-         */
-        handleResponseError: function (response) {
-            this.$broadcast('response-error', response);
-            this.showLoading = false;
-        }
-    },
-    props: [
-        'path',
-        'showServicesTabs'
-    ],
-    ready: function () {
-        
     }
 });
 

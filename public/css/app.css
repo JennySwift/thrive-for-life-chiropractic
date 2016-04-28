@@ -956,6 +956,8 @@ ul {
       padding-top: 94px;
       left: 0;
       height: 100%; } }
+  #ak .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+    background: white; }
 
 #chiropractic {
   background: url("/img/Chiropractic/balance-compressed.jpg") no-repeat center center;
@@ -1080,6 +1082,10 @@ ul {
   @media (max-width: 920px) {
     #lifestyle .text {
       padding-top: 58px; } }
+  #lifestyle .scrollbar-container {
+    height: 100%; }
+    #lifestyle .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+      background: white; }
 
 #rnr {
   background: url("/img/RNR/child-small-compressed.jpg") no-repeat right center;
@@ -1110,6 +1116,10 @@ ul {
       position: relative; }
     #rnr .text {
       padding-top: 58px; } }
+  #rnr .scrollbar-container {
+    height: 100%; }
+    #rnr .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+      background: white; }
 
 #contact {
   position: relative;

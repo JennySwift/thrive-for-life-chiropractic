@@ -8,7 +8,7 @@ var AKPage = Vue.component('ak-page', {
     },
     components: {},
     route: {
-        
+
     },
     //watch: {
     //    '$route': function (val) {
@@ -23,6 +23,6 @@ var AKPage = Vue.component('ak-page', {
     ],
     ready: function () {
         HelpersRepository.showContent(this);
-        // HelpersRepository.scrollbars();
+        HelpersRepository.scrollbars();
     }
 });

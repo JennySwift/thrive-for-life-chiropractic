@@ -19,5 +19,6 @@ var LifestylePage = Vue.component('lifestyle-page', {
     ],
     ready: function () {
         HelpersRepository.showContent(this);
+        HelpersRepository.scrollbars();
     }
 });
