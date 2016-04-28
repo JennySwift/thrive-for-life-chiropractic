@@ -27,9 +27,9 @@ body footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   position: fixed;
@@ -39,6 +39,7 @@ body footer {
     opacity: .9; }
   body footer li {
     height: 28px;
+    margin: 0 10px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;

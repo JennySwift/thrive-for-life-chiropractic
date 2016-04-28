@@ -37,7 +37,7 @@ body {
     }
     footer {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 		background: rgba(0,0,0, .6);
 		width: 100%;
         position: fixed;
@@ -48,6 +48,7 @@ body {
 		}
         li {
 			height: $footerHeight;
+			margin: 0 10px;
             display: flex;
             align-items: center;
 			font-size: 15px;
