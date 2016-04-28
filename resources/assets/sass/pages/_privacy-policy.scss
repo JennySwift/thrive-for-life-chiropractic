@@ -7,6 +7,9 @@
     h1 {
         font-size: 50px;
         margin-bottom: 30px;
+        @media (max-width: $breakpoint1) {
+            font-size: 45px;
+        }
     }
     h2 {
         font-family: "Josefin Sans";

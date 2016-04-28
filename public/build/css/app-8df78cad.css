@@ -1296,6 +1296,9 @@ ul {
   #privacy-policy-popup h1 {
     font-size: 50px;
     margin-bottom: 30px; }
+    @media (max-width: 600px) {
+      #privacy-policy-popup h1 {
+        font-size: 45px; } }
   #privacy-policy-popup h2 {
     font-family: "Josefin Sans";
     text-align: left;
