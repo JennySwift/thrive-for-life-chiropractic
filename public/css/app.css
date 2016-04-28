@@ -1340,5 +1340,7 @@ ul {
   #privacy-policy-popup .emoticon {
     height: 18px;
     margin-bottom: 4px; }
+  #privacy-policy-popup .scrollbar-container .mCSB_draggerContainer {
+    right: -50px; }
 
 /*# sourceMappingURL=app.css.map */
