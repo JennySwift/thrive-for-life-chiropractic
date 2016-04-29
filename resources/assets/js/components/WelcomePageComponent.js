@@ -23,7 +23,7 @@ var WelcomePage = Vue.component('welcome-page', {
                 $(this.$el).find('.scrollbar-container').css({'max-height': height});
             }
             else {
-                $(this.$el).find('.scrollbar-container').css({'max-height': 550 + 'px'});
+                $(this.$el).find('.scrollbar-container').css({'max-height': 555 + 'px'});
             }
             console.log(height);
         },

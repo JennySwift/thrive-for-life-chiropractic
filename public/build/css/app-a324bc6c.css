@@ -840,7 +840,7 @@ ul {
     height: calc(100% - 65px); }
     @media (min-width: 1000px) {
       #welcome-page .scrollbar-container {
-        max-height: 550px; } }
+        max-height: 555px; } }
     @media (max-width: 1000px) {
       #welcome-page .scrollbar-container {
         margin: 0;
