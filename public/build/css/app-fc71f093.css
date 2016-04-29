@@ -41,7 +41,7 @@ body footer {
     opacity: .9; }
   body footer li {
     height: 28px;
-    margin: 0 10px;
+    margin: 0 5%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -51,9 +51,9 @@ body footer {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.6);
     padding: 3px; }
-    @media (max-width: 320px) {
+    @media (max-width: 600px) {
       body footer li {
-        margin: 0 2px; } }
+        margin: 0 1%; } }
     body footer li a {
       color: rgba(255, 255, 255, 0.6);
       padding-top: 3px; }

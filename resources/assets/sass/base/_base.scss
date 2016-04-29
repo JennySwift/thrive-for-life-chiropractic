@@ -51,9 +51,9 @@ body {
 		}
         li {
 			height: $footerHeight;
-			margin: 0 10px;
-			@media (max-width: $breakpointSmall) {
-			    margin: 0 2px;
+			margin: 0 5%;
+			@media (max-width: $breakpoint1) {
+			    margin: 0 1%;
 			}
             display: flex;
             align-items: center;
