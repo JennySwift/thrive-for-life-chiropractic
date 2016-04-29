@@ -1,0 +1,11 @@
+@mixin scrollbarContainer($colour: black) {
+    .scrollbar-container {
+        .mCSB_draggerContainer {
+            .mCSB_dragger {
+                .mCSB_dragger_bar {
+                    background: $colour;
+                }
+            }
+        }
+    }
+}

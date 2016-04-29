@@ -451,31 +451,6 @@ ul {
 .font-size-md {
   font-size: 20px; }
 
-.min-width-md {
-  min-width: 40px; }
-
-.max-width-sm {
-  max-width: 20px; }
-
-.max-width-md {
-  max-width: 40px; }
-
-.max-width-lg {
-  max-width: 80px; }
-
-.width-100 {
-  width: 100%; }
-
-.height-100 {
-  height: 100%; }
-
-.relative {
-  position: relative; }
-
-.absolute-right {
-  position: absolute;
-  right: 0; }
-
 .my-btn-dropdown {
   width: 124px; }
   .my-btn-dropdown button {
@@ -516,36 +491,6 @@ ul {
   -webkit-flex-basis: 135px;
   -ms-flex-preferred-size: 135px;
   flex-basis: 135px; }
-
-.flex-parent {
-  display: -ms-flexbox;
-  display: flex;
-  display: -webkit-flex; }
-
-.flex-grow-1 {
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-grow: 1; }
-
-.flex-grow-2 {
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-  -webkit-flex-grow: 2; }
-
-.flex-basis-xs {
-  -ms-flex-preferred-size: 20px;
-  flex-basis: 20px;
-  -webkit-flex-basis: 20px; }
-
-.flex-basis-sm {
-  -ms-flex-preferred-size: 40px;
-  flex-basis: 40px;
-  -webkit-flex-basis: 40px; }
-
-.flex-basis-md {
-  -ms-flex-preferred-size: 80px;
-  flex-basis: 80px;
-  -webkit-flex-basis: 80px; }
 
 #logo {
   text-align: center;
@@ -786,16 +731,12 @@ ul {
   position: relative;
   font-size: 28px; }
   #welcome-page .cover {
-    background: black;
-    opacity: 0.4;
+    background: white;
+    opacity: 0.85;
     width: 100%;
     height: 100%;
     top: 0;
     position: fixed; }
-  #welcome-page .cover {
-    background: white;
-    opacity: .85;
-    position: absolute; }
   #welcome-page a {
     color: inherit; }
   #welcome-page .flex {
@@ -1025,11 +966,11 @@ ul {
       #government .text a:hover {
         text-decoration: none;
         border-bottom: 1px solid white; }
+  #government .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+    background: white; }
   #government .scrollbar-container {
     top: 37px;
     height: calc(100% - 65px); }
-    #government .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
-      background: white; }
   @media (max-width: 580px) {
     #government .text {
       padding-top: 54px; } }
@@ -1088,10 +1029,10 @@ ul {
   @media (max-width: 920px) {
     #lifestyle .text {
       padding-top: 58px; } }
+  #lifestyle .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+    background: white; }
   #lifestyle .scrollbar-container {
     height: 100%; }
-    #lifestyle .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
-      background: white; }
 
 #rnr {
   background: url("/img/RNR/child-small-compressed.jpg") no-repeat right center;
@@ -1122,10 +1063,10 @@ ul {
       position: relative; }
     #rnr .text {
       padding-top: 58px; } }
+  #rnr .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+    background: white; }
   #rnr .scrollbar-container {
     height: 100%; }
-    #rnr .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
-      background: white; }
 
 #contact {
   position: relative;

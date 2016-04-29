@@ -1,14 +1,9 @@
 @mixin accordion {
     .accordion {
         .accordion-item {
-    //        margin: 34px 0;
-    //        position: relative;
             .expanded {
                 text-decoration: underline;
             }
-    //        &:last-child {
-    //            margin-bottom: 0;
-    //        }
             .accordion-heading {
                 cursor: pointer;
                 font-size: 23px;
@@ -20,21 +15,8 @@
                     text-decoration: underline;
                 }
             }
-    //        h1,h2,h3,h4,h5 {
-    //            //So the transition isn't jerky
-    //            margin: 0;
-    //        }
             .accordion-text {
                 display: none;
-    //            height: 0;
-    //            margin: 10px;
-    //            &.expand-transition {
-    //                p {
-    //                    &:last-child {
-    //                        margin-bottom: 0;
-    //                    }
-    //                }
-    //            }
             }
         }
     }

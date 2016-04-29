@@ -2,12 +2,7 @@
 #welcome-page {
     background: url('/img/Home/spring-small-compressed.jpg') no-repeat left top;
     @include backgroundImage;
-    @include cover;
-    .cover {
-        background: white;
-        opacity: .85;
-        position: absolute;
-    }
+    @include cover(white, .85);
     position: relative;
     font-size: 28px;
     a {
@@ -37,9 +32,6 @@
         height: 100%;
         display: flex;
         align-items: center;
-        @media (max-width: $breakpoint3) {
-            //margin-top: $navHeight;
-        }
     }
     .scrollbar-container {
         max-width: 540px;
@@ -52,15 +44,9 @@
                 }
             }
         }
-        //To stop text overlapping the navbar and the footer
-        //top: 37px;
         height: calc(100% - 65px);
         @media (min-width: $breakpoint3) {
             max-height: 555px;
-            //.mCSB_outside {
-            //    display: flex;
-            //    align-items: center;
-            //}
         }
         @media (max-width: $breakpoint3) {
             margin: 0;
@@ -72,7 +58,6 @@
         }
         @media (max-width: $breakpoint1) {
             height: 100%;
-            //padding-top: $navHeight + 20px;
         }
         .big-screens {
             @media (max-width: $breakpoint1) {
@@ -137,7 +122,6 @@
         }
     }
     .img-container {
-        //margin-top: $navHeight;
         img {
             width: 480px;
             border-radius: 50%;

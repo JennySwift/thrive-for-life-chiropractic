@@ -24,9 +24,6 @@
             //Needed for the transition to work nicely,
             //so one doesn't appear below the other during the transition
             position: absolute;
-            //&:not(:first-child) {
-            //    opacity: 0;
-            //}
         }
     }
     @media (max-width: 675px) {

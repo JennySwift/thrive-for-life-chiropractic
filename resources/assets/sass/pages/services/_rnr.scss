@@ -41,16 +41,9 @@
             padding-top: 58px;
         }
     }
+
+    @include scrollbarContainer(white);
     .scrollbar-container {
-        .mCSB_draggerContainer {
-            .mCSB_dragger {
-                .mCSB_dragger_bar {
-                    background: white;
-                }
-            }
-        }
-        //To stop text overlapping the navbar and the footer
-        //top: 37px;
         height: 100%;
     }
 }

@@ -2,40 +2,21 @@
     text-align: center;
     font-family: 'avenir next condensed';
     margin-top: 30px;
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: center;
-//    align-items: center;
     font-size: 100px;
-//    > * {
-//        width: 596px;
-//    }
     #logo-upper {
-//        background: lightblue;
         color: $base;
         text-shadow: 3px 3px 5px #bcbcbc;
         .word1, .word3 {
             font-weight: 900;
         }
-////        display: flex;
-////        span {
-////            flex-grow: 1;
-////            text-align: center;
-////        }
     }
     #logo-lower {
         visibility: hidden;
-//        background: pink;
-////        display: flex;
         margin-top: -25px;
         font-size: 34px;
         color: #777;
         span:not(:last-child) {
             margin-right: 35px;
         }
-////        span {
-////            flex-grow: 1;
-////            text-align: center;
-////        }
     }
 }
