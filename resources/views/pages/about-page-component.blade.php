@@ -36,7 +36,7 @@
 
                     <accordion-item inline-template auto-scroll="true">
                         <div class="accordion-item">
-                            <h5 class="accordion-heading">Why chiropractic?</h5>
+                            <h5 class="accordion-heading">Why Chiropractic?</h5>
                             <div v-slide="showText" class="accordion-text about-accordion-two">
                                 <p>I can't think of any aspect of life that isn't impacted by how well you feel. Chiropractic provides me with the means and opportunity to have a positive impact on people’s lives by helping them be well. This is both a privilege and a joy.</p>
                                 <p>Chiropractic also fits perfectly into my natural, holistic approach to health care and allows me to provide a service that is congruent with my principles, values and beliefs.</p>

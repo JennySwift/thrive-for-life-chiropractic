@@ -17,7 +17,7 @@
             //overflow: scroll;
         }
         max-height: calc(100% - 118px);
-        padding: 5px 25px 25px 25px;
+        padding: 20px 25px 25px 25px;
         margin: 0 30px;
         .popup-title {
             margin-bottom: 30px;
@@ -29,12 +29,16 @@
         //    background: white;
         //    position: fixed;
             height: 84px;
+            position: relative;
             .fa-times {
                 cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
         }
         .content {
-            margin-top: 28px;
+            margin-top: 10px;
         }
         .buttons {
             > div {

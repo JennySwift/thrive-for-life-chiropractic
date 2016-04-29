@@ -41,7 +41,7 @@ body footer {
     opacity: .9; }
   body footer li {
     height: 28px;
-    margin: 0 5%;
+    margin: 0 2%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -304,17 +304,21 @@ ul {
     border-radius: 5px;
     background: white;
     max-height: calc(100% - 118px);
-    padding: 5px 25px 25px 25px;
+    padding: 20px 25px 25px 25px;
     margin: 0 30px; }
     .popup-outer .popup-inner .popup-title {
       margin-bottom: 30px;
       margin-top: 0; }
     .popup-outer .popup-inner .header {
-      height: 84px; }
+      height: 84px;
+      position: relative; }
       .popup-outer .popup-inner .header .fa-times {
-        cursor: pointer; }
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0; }
     .popup-outer .popup-inner .content {
-      margin-top: 28px; }
+      margin-top: 10px; }
     .popup-outer .popup-inner .buttons > div {
       display: -webkit-flex;
       display: -ms-flexbox;
