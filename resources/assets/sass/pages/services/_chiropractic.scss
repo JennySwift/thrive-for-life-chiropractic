@@ -2,9 +2,8 @@
     background: url('/img/Chiropractic/balance-compressed.jpg') no-repeat center center;
     @include backgroundImage;
     @include text;
-    .cover {
-        opacity: .3;
-    }
+    @include cover(black, .3);
+
     .text {
         color: white;
         height: auto;

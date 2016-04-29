@@ -4,14 +4,11 @@
 }
 
 #contact {
-    //background: url('/img/Contact/map.jpg') no-repeat center center;
-    //@include backgroundImage;
     position: relative;
     height: 100%;
+    @include cover(white, 1);
     .cover {
-        opacity: 1;
         z-index: 9;
-        background: white;
     }
     .map {
         //28px is footer height
@@ -75,20 +72,9 @@
             cursor: pointer;
         }
         .details {
-            //@include contactBoxTransition;
             height: 201px;
             width: 392px;
             opacity: 1;
-            //&.contact-details-enter {
-            //    height: 0;
-            //    opacity: 0;
-            //    width: 0;
-            //}
-            //&.contact-details-leave {
-            //    height: 0;
-            //    opacity: 0;
-            //    width: 0;
-            //}
             .flex {
                 display: flex;
                 justify-content: space-around;
@@ -142,7 +128,6 @@
                 margin-bottom: 14px;
             }
             .details {
-                //height: 148px;
                 .flex {
                     justify-content: center;
                     .day-and-time-container {

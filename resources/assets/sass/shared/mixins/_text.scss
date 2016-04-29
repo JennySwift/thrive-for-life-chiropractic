@@ -1,7 +1,10 @@
-@mixin text {
+@mixin text($paddingTop: 68px, $paddingRight: 40px, $paddingBottom: 40px, $paddingLeft: 40px) {
     .text {
-        padding: 68px 40px 40px 40px;
-        ////So it appears above the black cover
+        padding-top: $paddingTop;
+        padding-right: $paddingRight;
+        padding-bottom: $paddingBottom;
+        padding-left: $paddingLeft;
+        //So it appears above the black cover
         position: relative;
     }
 }

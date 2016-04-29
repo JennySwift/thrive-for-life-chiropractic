@@ -2,9 +2,9 @@
     background: url('/img/RNR/child-small-compressed.jpg') no-repeat right center;
     @include backgroundImage;
     @include text;
-    .cover {
-        opacity: .45;
-    }
+    @include scrollbarContainer(white);
+    @include cover(black, .45);
+
     .text {
         max-width: 750px;
         color: white;
@@ -17,18 +17,6 @@
                 color: white;
             }
         }
-        //color: black;
-        //height: 100%;
-        //max-width: 700px;
-        ////margin-top: 18px;
-        //padding: 58px;
-        //padding-top: 76px;
-        //p {
-        //    font-size: 20px;
-        //    &:not(:last-child) {
-        //        margin-bottom: 26px;
-        //    }
-        //}
         h1 {
             text-align: left;
             font-size: 56px;
@@ -42,7 +30,6 @@
         }
     }
 
-    @include scrollbarContainer(white);
     .scrollbar-container {
         height: 100%;
     }

@@ -3,7 +3,7 @@
     background: url('/img/Home/spring-small-compressed.jpg') no-repeat left top;
     @include backgroundImage;
     @include cover(white, .85);
-    position: relative;
+    
     font-size: 28px;
     a {
         color: inherit;

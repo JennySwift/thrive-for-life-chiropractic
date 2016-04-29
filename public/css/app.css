@@ -606,14 +606,6 @@ ul {
   top: 0;
   position: fixed; }
 
-.gradient-cover {
-  opacity: 0.9;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  position: fixed;
-  background: linear-gradient(to right, transparent 45%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.7) 65%, rgba(0, 0, 0, 0.9) 90%); }
-
 .accordion .accordion-item .expanded {
   text-decoration: underline; }
 
@@ -883,6 +875,8 @@ ul {
   height: 100%;
   background-size: cover;
   position: relative; }
+  #ak .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+    background: white; }
   #ak .text {
     max-width: 680px;
     position: absolute;
@@ -897,24 +891,34 @@ ul {
       font-size: 60px; }
   @media (max-width: 320px) {
     #ak .text {
-      padding: 68px 40px 40px 40px;
+      padding-top: 68px;
+      padding-right: 40px;
+      padding-bottom: 40px;
+      padding-left: 40px;
       position: relative; }
     #ak .text {
       padding-top: 94px;
       left: 0;
       height: 100%; } }
-  #ak .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
-    background: white; }
 
 #chiropractic {
   background: url("/img/Chiropractic/balance-compressed.jpg") no-repeat center center;
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   #chiropractic .text {
-    padding: 68px 40px 40px 40px;
+    padding-top: 68px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
     position: relative; }
   #chiropractic .cover {
-    opacity: .3; }
+    background: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed; }
   #chiropractic .text {
     color: white;
     height: auto;
@@ -938,17 +942,23 @@ ul {
   background: url("/img/Government/meadow-small-compressed.jpg") no-repeat center center;
   height: 100%;
   background-size: cover;
-  height: 100%;
   position: relative; }
-  #government .cover {
-    opacity: .3; }
   #government .text {
-    padding: 68px 40px 40px 40px;
+    padding-top: 98px;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 40px;
     position: relative; }
-  #government .gradient-cover {
-    background: linear-gradient(to right, transparent 42%, rgba(0, 0, 0, 0.7) 53%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.9) 85%, black 95%); }
+  #government .cover {
+    background: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed; }
+  #government .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+    background: white; }
   #government .text {
-    padding: 98px 40px 0 40px;
     max-width: 740px;
     max-height: 100%;
     color: white;
@@ -966,8 +976,6 @@ ul {
       #government .text a:hover {
         text-decoration: none;
         border-bottom: 1px solid white; }
-  #government .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
-    background: white; }
   #government .scrollbar-container {
     top: 37px;
     height: calc(100% - 65px); }
@@ -978,9 +986,13 @@ ul {
 #hra {
   background: url("/img/HRA/tape-small.jpg") no-repeat center center;
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   #hra .text {
-    padding: 68px 40px 40px 40px;
+    padding-top: 68px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
     position: relative; }
   #hra .hra-gradient-cover {
     width: 100%;
@@ -1008,10 +1020,16 @@ ul {
 #lifestyle {
   background: url("/img/Lifestyle/hiker-small-compressed.jpg") no-repeat left center;
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   #lifestyle .text {
-    padding: 68px 40px 40px 40px;
+    padding-top: 68px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
     position: relative; }
+  #lifestyle .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+    background: white; }
   #lifestyle .cover {
     opacity: .5; }
   #lifestyle .text {
@@ -1029,20 +1047,29 @@ ul {
   @media (max-width: 920px) {
     #lifestyle .text {
       padding-top: 58px; } }
-  #lifestyle .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
-    background: white; }
   #lifestyle .scrollbar-container {
     height: 100%; }
 
 #rnr {
   background: url("/img/RNR/child-small-compressed.jpg") no-repeat right center;
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   #rnr .text {
-    padding: 68px 40px 40px 40px;
+    padding-top: 68px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
     position: relative; }
+  #rnr .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+    background: white; }
   #rnr .cover {
-    opacity: .45; }
+    background: black;
+    opacity: 0.45;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed; }
   #rnr .text {
     max-width: 750px;
     color: white;
@@ -1059,12 +1086,13 @@ ul {
       margin-bottom: 24px; }
   @media (max-width: 920px) {
     #rnr .text {
-      padding: 68px 40px 40px 40px;
+      padding-top: 68px;
+      padding-right: 40px;
+      padding-bottom: 40px;
+      padding-left: 40px;
       position: relative; }
     #rnr .text {
       padding-top: 58px; } }
-  #rnr .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
-    background: white; }
   #rnr .scrollbar-container {
     height: 100%; }
 
@@ -1072,9 +1100,14 @@ ul {
   position: relative;
   height: 100%; }
   #contact .cover {
+    background: white;
     opacity: 1;
-    z-index: 9;
-    background: white; }
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed; }
+  #contact .cover {
+    z-index: 9; }
   #contact .map {
     height: calc(100% - 28px);
     padding-top: 37px; }
@@ -1213,13 +1246,22 @@ ul {
   background: url("/img/About/about-quality5.jpg") no-repeat center center;
   height: 100%;
   background-size: cover;
-  height: 100%;
   position: relative; }
   #about .text {
-    padding: 68px 40px 40px 40px;
+    padding-top: 68px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
     position: relative; }
-  #about .gradient-cover {
+  #about .cover {
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
     background: linear-gradient(to right, transparent 42%, rgba(0, 0, 0, 0.7) 53%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.9) 85%, black 95%); }
+  #about .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
+    background: white; }
   #about .text {
     padding-top: 31px;
     max-width: 707px;
@@ -1239,7 +1281,10 @@ ul {
         border-bottom: 1px solid white; }
   @media (max-width: 320px) {
     #about .text {
-      padding: 68px 40px 40px 40px;
+      padding-top: 68px;
+      padding-right: 40px;
+      padding-bottom: 40px;
+      padding-left: 40px;
       position: relative; }
     #about .text {
       padding-top: 19px;
@@ -1260,8 +1305,6 @@ ul {
       -webkit-align-items: flex-end;
       -ms-flex-align: end;
       align-items: flex-end; }
-    #about .scrollbar-container .mCSB_draggerContainer .mCSB_dragger .mCSB_dragger_bar {
-      background: white; }
 
 #privacy-policy-popup {
   max-width: 700px; }

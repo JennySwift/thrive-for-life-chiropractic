@@ -2,6 +2,8 @@
     background: url('/img/Lifestyle/hiker-small-compressed.jpg') no-repeat left center;
     @include backgroundImage;
     @include text;
+    @include scrollbarContainer(white);
+
     .cover {
         opacity: .5;
     }
@@ -26,7 +28,7 @@
             padding-top: 58px;
         }
     }
-    @include scrollbarContainer(white);
+
     .scrollbar-container {
         height: 100%;
     }

@@ -1,7 +1,8 @@
 #ak {
     background: url('/img/AK/walk-small-compressed.jpg') no-repeat left bottom;
     @include backgroundImage;
-    position: relative;
+    @include scrollbarContainer(white);
+
     .text {
         max-width: 680px;
         position: absolute;
@@ -24,5 +25,4 @@
             height: 100%;
         }
     }
-    @include scrollbarContainer(white);
 }
