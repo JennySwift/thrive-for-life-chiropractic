@@ -721,7 +721,8 @@ ul {
   height: 100%;
   background-size: cover;
   position: relative;
-  font-size: 28px; }
+  font-size: 14px;
+  font-size: 3vmin; }
   #welcome-page .cover {
     background: white;
     opacity: 0.85;
@@ -742,124 +743,93 @@ ul {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    position: relative; }
-    @media (min-width: 600px) {
-      #welcome-page .flex > * {
-        margin: 0 60px; } }
-    @media (max-width: 600px) {
-      #welcome-page .flex {
-        padding-top: 20px; } }
-    @media (max-width: 1000px) {
-      #welcome-page .flex {
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column; } }
+    position: relative;
+    padding-top: 37px;
+    padding-bottom: 28px; }
+    #welcome-page .flex > * {
+      width: 50%;
+      text-align: center;
+      padding: 0 4%; }
   #welcome-page .text-container {
-    height: 100%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  #welcome-page .scrollbar-container {
     max-width: 540px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: calc(100% - 65px); }
-    @media (min-width: 1000px) {
-      #welcome-page .scrollbar-container {
-        max-height: 555px; } }
-    @media (max-width: 1000px) {
-      #welcome-page .scrollbar-container {
-        margin: 0;
-        padding-left: 20px;
-        padding-right: 20px;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        height: auto;
-        padding-top: 37px; } }
-    @media (max-width: 600px) {
-      #welcome-page .scrollbar-container {
-        height: 100%; } }
-    @media (max-width: 600px) {
-      #welcome-page .scrollbar-container .big-screens {
-        display: none; } }
-    #welcome-page .scrollbar-container .small-screens {
+    margin: 0;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: auto; }
+    #welcome-page .text-container .small-screens {
       display: none;
       margin-bottom: 20px; }
-      @media (max-width: 600px) {
-        #welcome-page .scrollbar-container .small-screens {
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-justify-content: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          -webkit-align-items: center;
-          -ms-flex-align: center;
-          align-items: center; } }
-      #welcome-page .scrollbar-container .small-screens h1 {
+      #welcome-page .text-container .small-screens h1 {
         margin-right: 25px;
         margin-bottom: 0 !important; }
-        @media (max-width: 1100px) {
-          #welcome-page .scrollbar-container .small-screens h1 {
-            margin-right: 15px; } }
-      #welcome-page .scrollbar-container .small-screens img {
+      #welcome-page .text-container .small-screens img {
         width: 80px;
         border-radius: 50%; }
-        @media (max-width: 1100px) {
-          #welcome-page .scrollbar-container .small-screens img {
-            width: 44px; } }
-    #welcome-page .scrollbar-container .text {
+    #welcome-page .text-container .text {
       max-height: 100%;
       text-align: center;
       color: black; }
-      #welcome-page .scrollbar-container .text h1 {
+      #welcome-page .text-container .text h1 {
         font-size: 77px;
+        font-size: 12vmin;
         margin-bottom: 37px; }
-        @media (max-width: 1000px) {
-          #welcome-page .scrollbar-container .text h1 {
-            margin-bottom: 20px; } }
-        @media (max-width: 600px) {
-          #welcome-page .scrollbar-container .text h1 {
-            font-size: 40px; } }
-      #welcome-page .scrollbar-container .text p {
+      #welcome-page .text-container .text p {
         margin-bottom: 31px; }
-        @media (max-width: 1100px) {
-          #welcome-page .scrollbar-container .text p {
-            font-size: 24px;
-            margin-bottom: 24px; } }
-        @media (max-width: 1000px) {
-          #welcome-page .scrollbar-container .text p:last-child {
-            margin-bottom: 0; } }
-        @media (max-width: 600px) {
-          #welcome-page .scrollbar-container .text p {
-            font-size: 17px; } }
-      #welcome-page .scrollbar-container .text i {
+      #welcome-page .text-container .text i {
         font-weight: bold; }
   #welcome-page .img-container img {
-    width: 480px;
+    width: 97%;
     border-radius: 50%;
     height: auto;
+    max-height: 100%;
     max-width: 100%; }
-    @media (max-width: 1100px) {
-      #welcome-page .img-container img {
-        width: 400px; } }
-  @media (max-width: 1000px) {
-    #welcome-page .img-container {
-      margin-bottom: 68px;
-      margin-top: 23px; }
-      #welcome-page .img-container img {
-        max-width: 343px; } }
+  @media (orientation: portrait) {
+    #welcome-page .flex {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #welcome-page .flex > * {
+        height: 50%;
+        width: 100%;
+        padding: 5% 20px; }
+      #welcome-page .flex .text-container {
+        max-width: none;
+        padding-top: 20px; }
+      #welcome-page .flex .img-container img {
+        width: auto; } }
+  @media (max-width: 600px) {
+    #welcome-page .text h1 {
+      font-size: 40px; }
+    #welcome-page .text p {
+      font-size: 17px; }
+    #welcome-page .text-container {
+      height: 100%; }
+      #welcome-page .text-container .big-screens {
+        display: none; }
+      #welcome-page .text-container .small-screens {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+    @media (max-width: 600px) and (max-width: 1100px) {
+      #welcome-page .text-container .small-screens h1 {
+        margin-right: 15px; }
+      #welcome-page .text-container .small-screens img {
+        width: 44px; } }
   @media (max-width: 600px) {
     #welcome-page .img-container {
-      display: none; } }
+      display: none; }
+    #welcome-page .flex > * {
+      margin: 0 60px; } }
 
 .services a {
   color: #41b920; }

@@ -20888,12 +20888,12 @@ var WelcomePage = Vue.component('welcome-page', {
         // HelpersRepository.psScrollbars();
         HelpersRepository.showContent(this);
 
-        var that = this;
-        setTimeout(function () {
-            that.setScrollbarContainerHeight();
-        }, 500);
-
-        this.listen();
+        // var that = this;
+        // setTimeout(function () {
+        //     that.setScrollbarContainerHeight();
+        // }, 500);
+        //
+        // this.listen();
     }
 });
 
