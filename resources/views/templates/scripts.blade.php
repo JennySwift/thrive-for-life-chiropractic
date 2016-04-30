@@ -21,4 +21,6 @@
 @include('templates.shared.popup-component')
 @include('templates.shared.footer-component')
 
+@include('templates.shared.analytics-tracking')
+
 <script type="text/javascript" src="{{ elixir("js/all.js") }}"></script>
