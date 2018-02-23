@@ -2,7 +2,7 @@
 
     <footer v-bind:class="{'contact-page-footer': path === '/contact'}">
         <li>
-            <div class="copyright"><i class="fa fa-copyright"></i> <span>2016 Thrive for Life Chiropractic</span></div>
+            <div class="copyright"><i class="fa fa-copyright"></i> <span><?php echo date("Y");?> Thrive for Life Chiropractic</span></div>
         </li>
 
         <li>
