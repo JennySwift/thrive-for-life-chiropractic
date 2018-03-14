@@ -80,9 +80,9 @@
                     </ul>
                 </div>
 
-                <div class="consultations-msg-container">
-                    <i class="consultations-msg">Consultations by appointment.</i>
-                </div>
+                {{--<div class="consultations-msg-container">--}}
+                    {{--<i class="consultations-msg">Consultations by appointment.</i>--}}
+                {{--</div>--}}
 
             </div>
         </div>
