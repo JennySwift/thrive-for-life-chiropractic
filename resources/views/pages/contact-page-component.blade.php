@@ -55,11 +55,11 @@
                     <ul>
                         <li class="day-and-time-container">
                             <div>Mon</div>
-                            <div>9am-6pm</div>
+                            <div>by appointment</div>
                         </li>
                         <li class="day-and-time-container">
                             <div>Tue</div>
-                            <div>10am-12pm</div>
+                            <div>by appointment</div>
                         </li>
                         <li class="day-and-time-container">
                             <div>Wed</div>
@@ -67,15 +67,15 @@
                         </li>
                         <li class="day-and-time-container">
                             <div>Thu</div>
-                            <div>9am-5pm</div>
+                            <div>by appointment</div>
                         </li>
                         <li class="day-and-time-container">
                             <div>Fri</div>
-                            <div>10:30am-6pm</div>
+                            <div>by appointment</div>
                         </li>
                         <li class="day-and-time-container">
                             <div>Sat</div>
-                            <div>9am-12pm</div>
+                            <div>by appointment</div>
                         </li>
                     </ul>
                 </div>
