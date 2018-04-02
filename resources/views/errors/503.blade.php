@@ -33,6 +33,7 @@
             .content {
                 text-align: center;
                 display: inline-block;
+                margin: 0 40px;
             }
 
             .title {
@@ -49,7 +50,7 @@
 
                     <p>Thanks for your interest in Thrive for Life Chiropractic.</p>
 
-                    <p>We’re thrilled you’ve found your way to our website, however it is currently receiving an upgrade, so we’re sorry to say that you won’t find much here at the moment. In the meantime, if you would like to know more or make an appointment, email <a href="mailto:peter.c.swift@gmail.com">peter.c.swift<i class="fa fa-at"></i>gmail.com</a> and we’ll be more than happy to help you out.</p>
+                    <p>We’re thrilled you’ve found your way to our website, however it is currently receiving an upgrade, so we’re sorry to say that you won’t find anything here at the moment. In the meantime, if you would like to know more or make an appointment, email <a href="mailto:peter.c.swift@gmail.com">peter.c.swift<i class="fa fa-at"></i>gmail.com</a> and we’ll be more than happy to help you out.</p>
                 </div>
             </div>
         </div>
