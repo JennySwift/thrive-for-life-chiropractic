@@ -1,95 +1,64 @@
 
-$("#logo-upper").textillate({
-    //loop: true,
-    autostart: true,
-    //initialDelay: 10,
-    in: { effect: 'fadeIn' }
-}).on('end.tlt', function () {
-    $("#logo-lower").addClass('rubberBand').css('visibility', 'visible');
-});
+/**
+ * First we will load all of this project's JavaScript dependencies which
+ * includes Vue and other libraries. It is a great starting point when
+ * building robust, powerful web applications using Vue and Laravel.
+ */
 
-$("#logo-lower").lettering();
-
-//$(function() {
-//    $('a[href*=#]:not([href=#])').click(function() {
-//        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//            var target = $(this.hash);
-//            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//            if (target.length) {
-//                $('html,body').animate({
-//                    scrollTop: target.offset().top
-//                }, 500);
-//                return false;
-//            }
-//        }
-//    });
-//});
-
-var App = Vue.component('app', {
-    data: function () {
-        return {
-            path: '/',
-            showServicesTabs: false
-        };
-    },
-    methods: {
-        /**
-         *
-         */
-        listen: function () {
-            var that = this;
-            $(document).on('toggle-services-tabs', function (event) {
-                that.showServicesTabs = !that.showServicesTabs;
-            });
-        }
-    },
-    ready: function () {
-        HelpersRepository.scrollbars();
-        HelpersRepository.psScrollbars();
-    }
-});
+// require('./bootstrap');
 //
-var router = new VueRouter({
-   hashbang: false
-});
+// window.Vue = require('vue');
+
+/**
+ * Next, we will create a fresh Vue application instance and attach it to
+ * the page. Then, you may begin adding components to this application
+ * or customize the JavaScript scaffolding to fit your unique needs.
+ */
+
+// Vue.component('example', require('./components/Example.vue'));
 //
-router.map({
-   '/': {
-       component: HomePage
-   },
-   '/home': {
-       component: HomePage,
-   },
-    '/welcome': {
-        component: WelcomePage,
-    },
-   '/about': {
-       component: AboutPage
-   },
-   '/contact': {
-       component: ContactPage
-   },
-   //Services
-   '/services/ak': {
-       component: AKPage
-   },
-   '/services/chiropractic': {
-       component: ChiropracticPage
-   },
-   '/services/government': {
-       component: GovernmentPage
-   },
-   '/services/hra': {
-       component: HRAPage
-   },
-   '/services/lifestyle': {
-       component: LifestylePage
-   },
-   '/services/rnr': {
-       component: RNRPage
-   }
+// const app = new Vue({
+//     el: '#app'
+// });
 
-});
 
-router.start(App, 'body');
+// End of default code
+
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+Vue.use(VueRouter);
+
+global.$ = require('jquery');
+global.jQuery = require('jquery');
+global._ = require('underscore');
+
+require('./components.js');
+
+import routes from './routes'
+
+const router = new VueRouter({
+    routes: routes,
+    hashbang: false
+})
+
+const app = new Vue({
+    router
+}).$mount('#app')
+
+// $("#logo-upper").textillate({
+//     //loop: true,
+//     autostart: true,
+//     //initialDelay: 10,
+//     in: { effect: 'fadeIn' }
+// }).on('end.tlt', function () {
+//     $("#logo-lower").addClass('rubberBand').css('visibility', 'visible');
+// });
+//
+// $("#logo-lower").lettering();
+
+
+//Todo: put this code back in somewhere
+//         HelpersRepository.scrollbars();
+//         HelpersRepository.psScrollbars();
+
 

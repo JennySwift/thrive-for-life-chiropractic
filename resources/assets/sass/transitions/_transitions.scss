@@ -5,17 +5,22 @@
     animation-duration: 1s;
 }
 
-.fade-transition {
-    &.fadeIn {
-        animation-delay: .5s;
-        animation-duration: 1s;
-    }
-    &.fadeOut {
-        animation-duration: .5s;
-    }
-}
-//.fade-leave {
-//    animation-duration: .5s;
+//.fade-transition {
+//    &.fadeIn {
+//        animation-delay: .5s;
+//        animation-duration: 1s;
+//    }
+//    &.fadeOut {
+//        animation-duration: .5s;
+//    }
 //}
-//.fade-enter {
-//    animation-delay: 2s;
+
+
+//Test code
+.fade-enter-active {
+    animation: fadeIn 5s;
+    animation-delay: .5s;
+}
+.fade-leave-active {
+    animation: fadeOut .5s;
+}
