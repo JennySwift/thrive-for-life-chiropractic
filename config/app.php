@@ -176,7 +176,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Laracasts\Utilities\JavaScript\JavascriptServiceProvider::class
+        Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class
 
     ],
 
