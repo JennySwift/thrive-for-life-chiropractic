@@ -12,4 +12,8 @@
 */
 
 Route::get('/', 'PagesController@home');
-Route::get('/survey', 'PagesController@survey');
+Route::get('/survey', 'HomeController@survey');
+
+Auth::routes();
+
+//Route::get('/home', 'HomeController@index')->name('home');
