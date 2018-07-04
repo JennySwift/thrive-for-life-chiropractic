@@ -58,7 +58,7 @@ const app = new Vue({
 
 
 //Todo: put this code back in somewhere
-//         HelpersRepository.scrollbars();
-//         HelpersRepository.psScrollbars();
+//         Helpers.scrollbars();
+//         Helpers.psScrollbars();
 
 

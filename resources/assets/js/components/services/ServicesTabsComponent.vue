@@ -63,7 +63,7 @@
 </template>
 
 <script>
-    import helpers from '../../repositories/HelpersRepository'
+    import helpers from '../../repositories/Helpers'
     import store from '../../repositories/Store'
     export default {
         data: function () {

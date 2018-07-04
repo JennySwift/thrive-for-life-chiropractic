@@ -9,8 +9,8 @@ import Framework7Styles from 'framework7/dist/css/framework7.css';
 // import 'framework7-icons';
 Vue.use(Framework7Vue, Framework7)
 
-// import store from './lists/src/repositories/Store'
-// import helpers from './lists/src/repositories/Helpers'
+import store from './repositories/Store'
+import helpers from './repositories/Helpers'
 // import filters from './lists/src/repositories/Filters'
 import routes from './survey-routes'
 
@@ -19,8 +19,8 @@ window.Event = new Vue();
 require('./components');
 // require('./config.js');
 
-// global.store = store;
-// global.helpers = helpers;
+global.store = store;
+global.helpers = helpers;
 // global.filters = filters;
 
 

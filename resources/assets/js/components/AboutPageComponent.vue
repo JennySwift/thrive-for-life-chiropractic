@@ -75,7 +75,7 @@
 </template>
 
 <script>
-    import helpers from '../repositories/HelpersRepository'
+    import helpers from '../repositories/Helpers'
     export default {
         data: function () {
             return {

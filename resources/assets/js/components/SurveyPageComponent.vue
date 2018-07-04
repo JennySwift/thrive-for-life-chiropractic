@@ -11,7 +11,9 @@
         <f7-list contacts-list>
             <f7-list-group>
                 <f7-list-item
-                    title="hi"
+                    v-for="survey in shared.surveys"
+                    :title="survey.name"
+                    :key="survey.id"
                 >
                 </f7-list-item>
             </f7-list-group>
@@ -24,8 +26,26 @@
     export default {
         data: function () {
             return {
+                shared: store.state
             };
         },
+        methods: {
+            /**
+            *
+            */
+            getSurveys: function () {
+                helpers.get({
+                    url: '/api/surveys',
+                    storeProperty: 'surveys',
+                    callback: function (response) {
+
+                    }.bind(this)
+                });
+            }
+        },
+        mounted: function () {
+            this.getSurveys();
+        }
 
     }
 </script>
