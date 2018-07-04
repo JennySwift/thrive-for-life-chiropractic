@@ -49,6 +49,10 @@
             <router-link to="/contact" v-on:click="hideServicesTabs()">Contact</router-link>
         </li>
 
+        <li v-bind:class="{'current-page': shared.path === '/survey'}">
+            <a href="/survey" v-on:click="hideServicesTabs()">Survey</a>
+        </li>
+
     </ul>
 </template>
 

@@ -31,6 +31,11 @@ class PagesController extends Controller
         return view('pages/home');
     }
 
+    public function survey()
+    {
+        return view('pages/survey');
+    }
+
     /**
      * @return \Illuminate\View\View
      */
