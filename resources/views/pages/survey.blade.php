@@ -4,35 +4,27 @@
 
 <body>
 
-<div id="app">
-    <ul
-            class="navbar"
-            style="z-index:1000"
-    >
+<div id="survey-app">
+    <f7-statusbar></f7-statusbar>
 
-        <li>
-            <a href="/">Home</a>
-        </li>
-    </ul>
-    
-    <div class="main">
+    {{--<ul--}}
+            {{--class="navbar"--}}
+            {{--style="z-index:1000"--}}
+    {{-->--}}
 
-        <privacy-policy></privacy-policy>
+        {{--<li>--}}
+            {{--<a href="/">Home</a>--}}
+        {{--</li>--}}
+    {{--</ul>--}}
 
-        <h1>Survey</h1>
+    <f7-view id="main-view" main>
+        <survey-page></survey-page>
+    </f7-view>
 
-        {{--<router-view--}}
-        {{--class="scrollbar-container"--}}
-        {{-->--}}
-        {{--</router-view>--}}
-
-    </div>
-
-    <footer-component></footer-component>
 
 </div>
 
-@include('templates.scripts')
+<script type="text/javascript" src="{{ elixir("js/survey.js") }}"></script>
 
 </body>
 </html>

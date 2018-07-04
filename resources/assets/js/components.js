@@ -6,6 +6,7 @@ import NavbarComponent from './components/shared/NavbarComponent.vue'
 import PopupComponent from './components/shared/PopupComponent.vue'
 import ServicesTabsComponent from './components/services/ServicesTabsComponent.vue'
 import PrivacyPolicyComponent from './components/PrivacyPolicyComponent.vue'
+import SurveyPageComponent from './components/SurveyPageComponent.vue'
 
 //Directives
 import SlideDirective from './directives/SlideDirective.vue'
@@ -23,6 +24,7 @@ Vue.component('navbar', NavbarComponent);
 Vue.component('popup', PopupComponent);
 Vue.component('services-tabs', ServicesTabsComponent);
 Vue.component('privacy-policy', PrivacyPolicyComponent);
+Vue.component('survey-page', SurveyPageComponent);
 
 //Directives
 Vue.directive('slide', SlideDirective);
