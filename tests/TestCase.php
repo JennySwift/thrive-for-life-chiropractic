@@ -70,4 +70,12 @@ abstract class TestCase extends BaseTestCase
     {
         $this->assertEquals(Response::HTTP_OK, $response->getStatusCode());
     }
+    /**
+     *
+     * @param $response
+     */
+    protected function assertResponseCreated($response)
+    {
+        $this->assertEquals(Response::HTTP_CREATED, $response->getStatusCode());
+    }
 }

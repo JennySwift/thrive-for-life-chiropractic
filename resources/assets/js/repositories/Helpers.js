@@ -50,13 +50,13 @@ export default {
     },
 
     toast: function (message, type) {
-        // var toast = app.f7.toast.create({
-        //     text: message,
-        //     position: 'top',
-        //     closeTimeout: 1500,
-        //     cssClass: 'color-theme-green'
-        //     // icon: '<i class="f7-icons">check_round_fill</i>'
-        // }).open();
+        var toast = app.$f7.toast.create({
+            text: message,
+            position: 'top',
+            closeTimeout: 1500,
+            cssClass: 'color-theme-green'
+            // icon: '<i class="f7-icons">check_round_fill</i>'
+        }).open();
     },
 
     notify: function (error) {

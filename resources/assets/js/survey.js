@@ -27,14 +27,14 @@ global.helpers = helpers;
 const bus = new Vue();
 Vue.prototype.$bus = bus;
 
-const app = new Vue({
+global.app = new Vue({
     el: '#survey-app',
     mounted: function () {
 
     },
     framework7: {
         root: '#survey-app',
-        // id: 'lists-app',
+        id: 'thrive-for-life-chiropractic',
         name: 'Thrive For Life Chiropractic',
         theme: 'ios',
         routes: routes,

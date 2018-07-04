@@ -32,4 +32,26 @@ class SurveysTest extends TestCase
 
         $this->assertResponseOk($response);
     }
+
+    /**
+     * @test
+     */
+    public function it_can_create_a_survey()
+    {
+        $this->logInUser();
+
+        $survey = [
+            'name' => 'koala'
+        ];
+
+        $response = $this->call('POST', $this->url, $survey);
+        $content = $this->getContent($response);
+        // dd($content);
+
+        $this->checkSurveyKeysExist($content);
+
+        $this->assertEquals('koala', $content['name']);
+
+        $this->assertResponseCreated($response);
+    }
 }
