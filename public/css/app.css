@@ -14983,7 +14983,7 @@ ul {
   padding: 0;
 }
 
-#navbar {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15000,12 +15000,12 @@ ul {
   font-family: 'Josefin Sans';
 }
 
-#navbar img.logo {
+.navbar img.logo {
   height: 20px;
   width: 15px;
 }
 
-#navbar > li {
+.navbar > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15020,43 +15020,43 @@ ul {
   min-width: 80px;
 }
 
-#navbar > li:not(:first-child) {
+.navbar > li:not(:first-child) {
   min-width: 120px;
 }
 
-#navbar > li > a {
+.navbar > li > a {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   color: rgba(255, 255, 255, 0.6);
   padding-top: 3px;
 }
 
-#navbar > li:hover > a {
+.navbar > li:hover > a {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
 }
 
-#navbar > li.services a:focus {
+.navbar > li.services a:focus {
   outline: none;
   text-decoration: none;
 }
 
-#navbar > li.services a:first-child {
+.navbar > li.services a:first-child {
   padding-right: 2px;
 }
 
-#navbar > li.services a.arrow-container {
+.navbar > li.services a.arrow-container {
   margin-bottom: 2px;
   padding-left: 2px;
 }
 
-#navbar > li.services a.arrow-container .fa-chevron-down,
-#navbar > li.services a.arrow-container .fa-chevron-up {
+.navbar > li.services a.arrow-container .fa-chevron-down,
+.navbar > li.services a.arrow-container .fa-chevron-up {
   font-size: 9px;
 }
 
-#navbar > li.services #services-dropdown-menu {
+.navbar > li.services #services-dropdown-menu {
   background: rgba(64, 64, 64, 0.9);
   white-space: nowrap;
   position: absolute;
@@ -15068,38 +15068,38 @@ ul {
   border-radius: 4px;
 }
 
-#navbar > li.services #services-dropdown-menu.contact-page-services-dropdown-menu {
+.navbar > li.services #services-dropdown-menu.contact-page-services-dropdown-menu {
   background: rgba(64, 64, 64, 0.9);
 }
 
-#navbar > li.services #services-dropdown-menu .tab {
+.navbar > li.services #services-dropdown-menu .tab {
   padding: 3px 11px;
 }
 
-#navbar > li.services #services-dropdown-menu a {
+.navbar > li.services #services-dropdown-menu a {
   color: white;
   font-weight: normal;
 }
 
-#navbar > li.services #services-dropdown-menu .current-tab a {
+.navbar > li.services #services-dropdown-menu .current-tab a {
   text-decoration: underline !important;
   color: rgba(255, 255, 255, 0.9);
 }
 
-#navbar > li.current-page > a {
+.navbar > li.current-page > a {
   text-decoration: underline !important;
   color: rgba(255, 255, 255, 0.9);
 }
 
-#navbar a {
+.navbar a {
   font-weight: bold;
 }
 
-#navbar .gravatar-li {
+.navbar .gravatar-li {
   min-width: 160px;
 }
 
-#navbar .gravatar-li .gravatar-container {
+.navbar .gravatar-li .gravatar-container {
   margin-left: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15109,37 +15109,37 @@ ul {
           align-items: center;
 }
 
-#navbar .gravatar-li .gravatar-container .gravatar {
+.navbar .gravatar-li .gravatar-container .gravatar {
   border-radius: 8px;
   height: 32px;
 }
 
-#navbar.contact-page-nav {
+.navbar.contact-page-nav {
   background: black;
   opacity: .9;
 }
 
 @media (max-width: 425px) {
-  #navbar li {
+  .navbar li {
     min-width: 43px !important;
     font-size: 15px;
   }
 }
 
 @media (max-width: 265px) {
-  #navbar {
+  .navbar {
     font-size: 14px;
   }
 }
 
 @media (max-width: 945px) {
-  #navbar #services-tabs {
+  .navbar #services-tabs {
     display: none;
   }
 }
 
 @media (min-width: 945px) {
-  #navbar #services-dropdown-menu {
+  .navbar #services-dropdown-menu {
     display: none;
   }
 }

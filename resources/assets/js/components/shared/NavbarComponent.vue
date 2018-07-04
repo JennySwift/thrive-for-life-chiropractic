@@ -2,6 +2,7 @@
     <ul
         v-bind:class="{'contact-page-nav': shared.path === '/contact'}"
         id="navbar"
+        class="navbar"
         style="z-index:1000"
     >
 

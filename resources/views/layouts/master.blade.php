@@ -1,13 +1,12 @@
 <html lang="en" class="">
 
-@include('templates.head');
+@include('templates.head')
 
 <body>
 
 <div id="app">
+    <navbar></navbar>
     <div class="main">
-
-        <navbar></navbar>
 
         <services-tabs></services-tabs>
 

@@ -1,13 +1,38 @@
-@extends('layouts.master')
+<html lang="en" class="">
 
-@section('page-content')
-    <privacy-policy></privacy-policy>
+@include('templates.head')
 
-    <h1>Survey</h1>
+<body>
 
-    {{--<router-view--}}
-            {{--class="scrollbar-container"--}}
-    {{-->--}}
-    {{--</router-view>--}}
+<div id="app">
+    <ul
+            class="navbar"
+            style="z-index:1000"
+    >
 
-@stop
+        <li>
+            <a href="/">Home</a>
+        </li>
+    </ul>
+    
+    <div class="main">
+
+        <privacy-policy></privacy-policy>
+
+        <h1>Survey</h1>
+
+        {{--<router-view--}}
+        {{--class="scrollbar-container"--}}
+        {{-->--}}
+        {{--</router-view>--}}
+
+    </div>
+
+    <footer-component></footer-component>
+
+</div>
+
+@include('templates.scripts')
+
+</body>
+</html>

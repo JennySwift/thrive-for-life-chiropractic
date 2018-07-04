@@ -30688,6 +30688,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -35947,6 +35948,7 @@ var render = function() {
   return _c(
     "ul",
     {
+      staticClass: "navbar",
       class: { "contact-page-nav": _vm.shared.path === "/contact" },
       staticStyle: { "z-index": "1000" },
       attrs: { id: "navbar" }
