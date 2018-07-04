@@ -12,9 +12,7 @@
             {{--style="z-index:1000"--}}
     {{-->--}}
 
-        {{--<li>--}}
-            {{--<a href="/">Home</a>--}}
-        {{--</li>--}}
+
     {{--</ul>--}}
 
     <f7-view id="main-view" main>
