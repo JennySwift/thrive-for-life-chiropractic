@@ -16,19 +16,3 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .sourceMaps()
     .version()
    .sass('resources/assets/sass/app.scss', 'public/css');
-
-// mix.sass('style.scss');
-//
-// mix.scripts([
-//     'plugins/*.js',
-//     'config.js',
-//     //'helpers.js',
-//     'repositories/**/*.js',
-//     'components/**/*.js',
-//     'transitions/**/*.js',
-//     'app.js',
-//     //'routes.js'
-// ], 'public/js/all.js');
-//
-// mix.version(["css/app.css", "js/all.js"]);
-// mix.stylesIn('resources/assets/css', 'public/css/plugins.css');

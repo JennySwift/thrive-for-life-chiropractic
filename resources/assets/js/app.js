@@ -28,10 +28,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 Vue.use(VueRouter);
 
-global.$ = require('jquery');
-global.jQuery = require('jquery');
-global._ = require('underscore');
-
 require('./components.js');
 
 import routes from './routes'

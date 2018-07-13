@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', 'PagesController@home');
-Route::get('/survey', 'HomeController@survey');
+Route::get('/', function () {
+    return view('pages/home');
+});
 
-Auth::routes();
-
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/survey', function () {
+    return view('pages/survey');
+});

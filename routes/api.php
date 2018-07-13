@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['namespace' => 'API', 'middleware' => 'auth:api'], function () {
     Route::resource('surveys', 'SurveysController');
 });
+

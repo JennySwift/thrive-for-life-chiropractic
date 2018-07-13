@@ -1,5 +1,5 @@
 import helpers from './Helpers'
-var _ = require('underscore');
+var _ = require('lodash');
 export default {
     /**
      *
